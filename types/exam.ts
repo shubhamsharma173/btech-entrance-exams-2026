@@ -2,6 +2,7 @@ export interface Exam {
   id: number
   name: string
   fullName: string
+  category: 'engineering' | 'medical' | 'law' | 'management' | 'design'
   conductedBy: string
   tier: string
   priority: string

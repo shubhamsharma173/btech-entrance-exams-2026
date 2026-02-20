@@ -3,25 +3,27 @@ import './globals.css'
 
 // SEO-optimized metadata
 export const metadata: Metadata = {
-  title: 'B.Tech Entrance Exams 2026 | Top 15 Engineering Exams Priority Guide',
-  description: 'Complete guide to India\'s top 15 B.Tech entrance exams including BITSAT, VITEEE, SRMJEEE, and more. Compare deadlines, fees, placements, and make informed decisions for your engineering admission.',
+  title: 'Entrance Exams 2026 | Engineering, Medical, Law, Management & Design Guide',
+  description: 'Complete guide to entrance exams 2026 in India. Engineering (JEE, BITSAT), Medical (NEET), Law (CLAT), Management (CAT, XAT), Design (UCEED, NID). Compare dates, fees, eligibility.',
   keywords: [
-    'btech entrance exams 2026',
+    'entrance exams 2026',
     'engineering entrance exams',
+    'medical entrance exams',
+    'neet 2026',
+    'jee main 2026',
     'bitsat 2026',
-    'viteee 2026',
-    'srmjeee 2026',
-    'comedk 2026',
-    'manipal met 2026',
-    'engineering admission',
+    'clat 2026',
+    'cat 2026',
+    'uceed 2026',
+    'law entrance exams',
+    'management entrance exams',
+    'design entrance exams',
     'entrance exam deadlines',
-    'btech admission guide',
-    'private engineering exams',
-    'state engineering exams'
+    'admission guide 2026'
   ],
-  authors: [{ name: 'B.Tech Exam Guide' }],
-  creator: 'B.Tech Exam Guide',
-  publisher: 'B.Tech Exam Guide',
+  authors: [{ name: 'Entrance Exams Guide' }],
+  creator: 'Entrance Exams Guide',
+  publisher: 'Entrance Exams Guide',
   robots: {
     index: true,
     follow: true,
@@ -36,30 +38,30 @@ export const metadata: Metadata = {
   openGraph: {
     type: 'website',
     locale: 'en_IN',
-    url: 'https://btech-entrance-exams.vercel.app',
-    title: 'B.Tech Entrance Exams 2026 | Top 15 Engineering Exams Priority Guide',
-    description: 'Complete guide to India\'s top 15 B.Tech entrance exams. Compare deadlines, fees, placements, and make informed decisions.',
-    siteName: 'B.Tech Entrance Exams Guide',
+    url: 'https://entrance-exams.vercel.app',
+    title: 'Entrance Exams 2026 | Engineering, Medical, Law, Management & Design',
+    description: 'Complete guide to entrance exams 2026 in India across Engineering, Medical, Law, Management and Design streams.',
+    siteName: 'Entrance Exams Guide 2026',
     images: [
       {
         url: '/og-image.png',
         width: 1200,
         height: 630,
-        alt: 'B.Tech Entrance Exams 2026 Guide',
+        alt: 'Entrance Exams 2026 Guide',
       },
     ],
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'B.Tech Entrance Exams 2026 | Top 15 Engineering Exams',
-    description: 'Complete guide to India\'s top 15 B.Tech entrance exams with deadlines, fees, and placement data.',
+    title: 'Entrance Exams 2026 | Engineering, Medical, Law, Management & Design',
+    description: 'Complete guide to entrance exams 2026 in India - NEET, JEE, CLAT, CAT, UCEED & more.',
     images: ['/og-image.png'],
   },
   verification: {
     google: 'google-site-verification-code', // Will be added after Google Search Console setup
   },
   alternates: {
-    canonical: 'https://btech-entrance-exams.vercel.app',
+    canonical: 'https://entrance-exams.vercel.app',
   },
 }
 
@@ -81,9 +83,9 @@ export default function RootLayout({
             __html: JSON.stringify({
               '@context': 'https://schema.org',
               '@type': 'EducationalOrganization',
-              name: 'B.Tech Entrance Exams Guide',
-              description: 'Comprehensive guide for B.Tech entrance exam preparation and application',
-              url: 'https://btech-entrance-exams.vercel.app',
+              name: 'Entrance Exams Guide 2026',
+              description: 'Comprehensive guide for entrance exam preparation and application across Engineering, Medical, Law, Management and Design streams',
+              url: 'https://entrance-exams.vercel.app',
               educationalLevel: 'Higher Education',
               areaServed: 'IN',
               audience: {

@@ -14,9 +14,13 @@ export default function ExamList({ exams }: ExamListProps) {
   const [filterPriority, setFilterPriority] = useState<string>('all')
   const [filterDifficulty, setFilterDifficulty] = useState<string>('all')
   const [searchQuery, setSearchQuery] = useState<string>('')
+  const [filterCategory, setFilterCategory] = useState<string>('engineering')
 
   const filteredAndSortedExams = useMemo(() => {
     let filtered = [...exams]
+
+    // Apply category filter
+    filtered = filtered.filter(exam => exam.category === filterCategory)
 
     // Apply search filter
     if (searchQuery) {
@@ -29,8 +33,8 @@ export default function ExamList({ exams }: ExamListProps) {
       )
     }
 
-    // Apply priority filter
-    if (filterPriority !== 'all') {
+    // Apply priority filter (only for engineering)
+    if (filterPriority !== 'all' && filterCategory === 'engineering') {
       filtered = filtered.filter(exam => exam.colorCode === filterPriority)
     }
 
@@ -58,7 +62,7 @@ export default function ExamList({ exams }: ExamListProps) {
     })
 
     return filtered
-  }, [exams, sortBy, filterPriority, filterDifficulty, searchQuery])
+  }, [exams, sortBy, filterPriority, filterDifficulty, searchQuery, filterCategory])
 
   return (
     <>
@@ -72,6 +76,8 @@ export default function ExamList({ exams }: ExamListProps) {
         setFilterDifficulty={setFilterDifficulty}
         searchQuery={searchQuery}
         setSearchQuery={setSearchQuery}
+        filterCategory={filterCategory}
+        setFilterCategory={setFilterCategory}
       />
 
       {/* Main Content */}
