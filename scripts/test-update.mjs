@@ -123,7 +123,67 @@ function runPhase1() {
   assert('No longer conducted filtered out', !active.find(e => e.name === 'LSAT'));
   assert('Active exams kept (BITSAT, CLAT)', active.length === 2);
 
-  // ── Test 4: JSON file integrity after mock write ──────────────────────────
+  // ── Test 4: prioritiseByDeadline ────────────────────────────────────────
+  console.log('\n  prioritiseByDeadline():');
+
+  const WINDOW = 60, CAP = 20;
+  const today  = new Date();
+  const soon   = new Date(today); soon.setDate(today.getDate() + 10);
+  const later  = new Date(today); later.setDate(today.getDate() + 90);
+  const past   = new Date(today); past.setDate(today.getDate() - 5);
+
+  const fmt = d => d.toISOString().split('T')[0];
+
+  function prioritiseByDeadline(exams) {
+    const cutoff = new Date(today); cutoff.setDate(today.getDate() + WINDOW);
+    function nearestDate(exam) {
+      let nearest = Infinity;
+      for (const raw of [exam.registrationEnd, exam.examDate, exam.resultDate]) {
+        if (!raw) continue;
+        const match = String(raw).match(/(\d{4}-\d{2}-\d{2})/);
+        if (!match) continue;
+        const d = new Date(match[1]);
+        if (!isNaN(d) && d >= today) nearest = Math.min(nearest, d.getTime());
+      }
+      return nearest;
+    }
+    const withDates = exams
+      .map(e => ({ exam: e, nearest: nearestDate(e) }))
+      .filter(({ nearest }) => nearest !== Infinity && nearest <= cutoff.getTime())
+      .sort((a, b) => a.nearest - b.nearest);
+    const result = withDates.map(({ exam }) => exam);
+    return (result.length > 0 ? result : exams).slice(0, CAP);
+  }
+
+  const mockExams = [
+    { id: 1, name: 'SOON_EXAM',   registrationEnd: fmt(soon),  examDate: null, resultDate: null },
+    { id: 2, name: 'LATER_EXAM',  registrationEnd: fmt(later), examDate: null, resultDate: null },
+    { id: 3, name: 'PAST_EXAM',   registrationEnd: fmt(past),  examDate: null, resultDate: null },
+    { id: 4, name: 'TBA_EXAM',    registrationEnd: 'TBA',      examDate: null, resultDate: null },
+  ];
+
+  const filtered = prioritiseByDeadline(mockExams);
+  assert('Upcoming exam included',     filtered.some(e => e.name === 'SOON_EXAM'));
+  assert('90-day exam excluded',       !filtered.some(e => e.name === 'LATER_EXAM'));
+  assert('Past deadline excluded',     !filtered.some(e => e.name === 'PAST_EXAM'));
+  assert('TBA excluded',               !filtered.some(e => e.name === 'TBA_EXAM'));
+
+  // Fallback: no upcoming → return all (quiet period)
+  const quietExams = [
+    { id: 5, name: 'PAST1', registrationEnd: fmt(past), examDate: null, resultDate: null },
+    { id: 6, name: 'PAST2', registrationEnd: fmt(past), examDate: null, resultDate: null },
+  ];
+  const quietResult = prioritiseByDeadline(quietExams);
+  assert('Quiet period fallback returns all exams', quietResult.length === 2);
+
+  // Cap enforcement
+  const manyExams = Array.from({ length: 25 }, (_, i) => ({
+    id: i, name: `EXAM_${i}`, registrationEnd: fmt(soon), examDate: null, resultDate: null,
+  }));
+  const capped = prioritiseByDeadline(manyExams);
+  assert(`Cap enforced at ${CAP}`, capped.length === CAP);
+
+  // ── Test 6: JSON file integrity after mock write ──────────────────────────
   console.log('\n  JSON file write (temp→rename):');
 
   const tmpPath  = path.join(process.cwd(), 'scripts', '.test-write.tmp.json');

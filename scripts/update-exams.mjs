@@ -31,6 +31,10 @@ const EXAM_FILTER = (() => {                           // --exam BITSAT
   return idx !== -1 ? args[idx + 1]?.toUpperCase() : null;
 })();
 
+// ─── Daily run config ─────────────────────────────────────────────────────────
+const DEADLINE_WINDOW_DAYS = 60;  // check exams with any deadline within 60 days
+const MAX_EXAMS_PER_RUN    = 20;  // hard cap to stay inside Tavily free tier
+
 // ─── Safety: only these fields may ever be patched by the LLM ────────────────
 const ALLOWED_CHANGE_FIELDS = new Set([
   'registrationStart',
@@ -74,6 +78,57 @@ function extractJson(text) {
     }
   }
   return null;
+}
+
+// ─── Deadline-aware exam prioritisation ──────────────────────────────────────
+
+/**
+ * From a list of active exams, return the ones with any date field that falls
+ * within the next DEADLINE_WINDOW_DAYS days, sorted by nearest deadline first.
+ * If none qualify (quiet period), fall back to all exams so we never skip a run.
+ * Hard-caps at MAX_EXAMS_PER_RUN to protect Tavily free tier.
+ */
+function prioritiseByDeadline(exams) {
+  const today  = new Date();
+  const cutoff = new Date(today);
+  cutoff.setDate(today.getDate() + DEADLINE_WINDOW_DAYS);
+
+  function nearestDate(exam) {
+    const dateFields = [
+      exam.registrationEnd,
+      exam.examDate,
+      exam.resultDate,
+      exam.registrationStart,
+    ];
+    let nearest = Infinity;
+    for (const raw of dateFields) {
+      if (!raw || raw === 'N/A' || raw.startsWith('TBA')) continue;
+      // Extract first ISO-ish date (YYYY-MM-DD) found in the string
+      const match = String(raw).match(/(\d{4}-\d{2}-\d{2})/);
+      if (!match) continue;
+      const d = new Date(match[1]);
+      if (!isNaN(d) && d >= today) nearest = Math.min(nearest, d.getTime());
+    }
+    return nearest;
+  }
+
+  const withDates = exams
+    .map(e => ({ exam: e, nearest: nearestDate(e) }))
+    .filter(({ nearest }) => nearest !== Infinity && nearest <= cutoff.getTime())
+    .sort((a, b) => a.nearest - b.nearest);
+
+  const result = withDates.map(({ exam }) => exam);
+
+  // Fallback: if nothing is upcoming (between exam cycles) check all
+  const finalList = result.length > 0 ? result : exams;
+  const capped    = finalList.slice(0, MAX_EXAMS_PER_RUN);
+
+  const reason = result.length === 0
+    ? `quiet period — checking all ${capped.length} exams`
+    : `${result.length} exams with deadlines within ${DEADLINE_WINDOW_DAYS} days`;
+
+  console.log(`📅 Smart filter: ${reason} (cap: ${MAX_EXAMS_PER_RUN})\n`);
+  return capped;
 }
 
 // ─── Tavily Web Search ────────────────────────────────────────────────────────
@@ -289,20 +344,25 @@ async function main() {
   const raw  = fs.readFileSync(DATA_PATH, 'utf-8');
   const data = JSON.parse(raw);
 
-  // Skip discontinued / merged exams
-  let activeExams = data.exams.filter(e =>
+  // Step 1: strip discontinued / merged
+  const allActive = data.exams.filter(e =>
     e.examDate !== 'N/A (Discontinued)' &&
     e.examDate !== 'N/A (Merged with NEET from 2020)' &&
     !String(e.priority).includes('No longer conducted')
   );
 
-  // --exam filter for targeted testing
+  // Step 2: --exam flag for targeted testing overrides everything
+  let activeExams;
   if (EXAM_FILTER) {
-    activeExams = activeExams.filter(e => e.name.toUpperCase() === EXAM_FILTER);
+    activeExams = allActive.filter(e => e.name.toUpperCase() === EXAM_FILTER);
     if (!activeExams.length) {
       console.error(`❌ No active exam found with name "${EXAM_FILTER}"`);
       process.exit(1);
     }
+    console.log(`Checking 1 exam (filter: ${EXAM_FILTER})…\n`);
+  } else {
+    // Step 3: smart daily filter — nearest deadline first, capped
+    activeExams = prioritiseByDeadline(allActive);
   }
 
   console.log(`Checking ${activeExams.length} exam(s)…\n`);

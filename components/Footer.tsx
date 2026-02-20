@@ -1,4 +1,11 @@
-export default function Footer() {
+function formatDate(iso: string): string {
+  const [year, month, day] = iso.split('-').map(Number)
+  return new Date(year, month - 1, day).toLocaleDateString('en-IN', {
+    year: 'numeric', month: 'long', day: 'numeric'
+  })
+}
+
+export default function Footer({ lastUpdated }: { lastUpdated: string }) {
   return (
     <footer className="mt-16 bg-gray-50 border-t border-gray-200">
       <div className="container mx-auto px-6 py-12">
@@ -53,7 +60,7 @@ export default function Footer() {
             Crafted with <span className="text-red-500">❤️</span> in <strong>Bengaluru</strong>, India
           </p>
           <p className="text-xs text-gray-500 mt-2">
-            Last Updated: <span className="font-semibold">February 18, 2026</span>
+            Data last verified: <span className="font-semibold">{formatDate(lastUpdated)}</span>
           </p>
         </div>
       </div>

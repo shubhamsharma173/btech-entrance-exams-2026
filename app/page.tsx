@@ -44,7 +44,7 @@ export default function Home() {
         <main className="flex-1">
           <ExamList exams={examsData.exams} />
         </main>
-        <Footer />
+        <Footer lastUpdated={examsData.lastUpdated} />
       </div>
     </>
   )

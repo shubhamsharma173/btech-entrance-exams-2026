@@ -1,8 +1,8 @@
-name: 🔄 Weekly Exam Data Update
+name: 🔄 Daily Exam Data Update
 
 on:
   schedule:
-    - cron: '0 2 * * 0'   # Every Sunday at 02:00 UTC
+    - cron: '0 2 * * *'   # Every day at 02:00 UTC (02:00 UTC = 07:30 IST)
   workflow_dispatch:        # Manual trigger from GitHub Actions UI
 
 permissions:
