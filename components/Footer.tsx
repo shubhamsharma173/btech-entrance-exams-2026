@@ -14,7 +14,7 @@ export default function Footer({ lastUpdated }: { lastUpdated: string }) {
           <div>
             <h3 className="text-sm font-semibold text-gray-900 mb-3">About</h3>
             <p className="text-sm text-gray-600 leading-relaxed">
-              Helping B.Tech students make informed decisions about entrance exam applications.
+              Helping students make informed decisions about entrance exam applications.
             </p>
           </div>
 
