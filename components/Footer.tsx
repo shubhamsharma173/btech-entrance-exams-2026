@@ -60,7 +60,7 @@ export default function Footer({ lastUpdated }: { lastUpdated: string }) {
             Crafted with <span className="text-red-500">❤️</span> in <strong>Bengaluru</strong>, India
           </p>
           <p className="text-xs text-gray-500 mt-2">
-            Data last verified: <span className="font-semibold">{formatDate(lastUpdated)}</span>
+            Data last updated: <span className="font-semibold">{formatDate(lastUpdated)}</span>
           </p>
         </div>
       </div>
