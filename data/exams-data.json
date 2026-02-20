@@ -1,0 +1,832 @@
+{
+  "lastUpdated": "2026-02-18",
+  "totalExams": 15,
+  "note": "Apply to exams 1-10 (universal). For state exams (11-15), apply to your home state + 2 neighboring states.",
+  "exams": [
+    {
+      "id": 1,
+      "name": "BITSAT",
+      "fullName": "Birla Institute of Technology and Science Admission Test",
+      "conductedBy": "BITS Pilani",
+      "tier": "Premium Private",
+      "priority": "Must Apply",
+      "registrationStart": "2025-12-15",
+      "registrationEnd": "2026-03-16",
+      "examDate": "2026-04-15 to 2026-04-17 (Session 1), 2026-05-24 to 2026-05-26 (Session 2)",
+      "resultDate": "Within 2-3 days of exam",
+      "applicationFee": "₹3,100 - ₹9,250 (varies by gender, center, session)",
+      "applyLink": "https://admissions.bits-pilani.ac.in/",
+      "officialWebsite": "https://admissions.bits-pilani.ac.in/",
+      "colleges": [
+        "BITS Pilani (Rajasthan)",
+        "BITS Goa",
+        "BITS Hyderabad"
+      ],
+      "totalSeats": "~4,000 across 3 campuses",
+      "eligibility": {
+        "education": "12th Pass (2025 or 2026 only)",
+        "minimumMarks": "75% aggregate in PCM/PCB, min 60% in each subject",
+        "ageLimit": "No age limit"
+      },
+      "examPattern": {
+        "mode": "Computer-Based Test (CBT)",
+        "duration": "3 hours",
+        "sections": "Physics (40), Chemistry (40), Mathematics (45), English & Logical Reasoning (15)",
+        "totalQuestions": 140,
+        "totalMarks": 390,
+        "markingScheme": "+3 for correct, -1 for incorrect"
+      },
+      "difficultyLevel": "High (Most difficult among private exams)",
+      "preparationTip": "Speed and accuracy crucial. JEE Main + NCERT is sufficient.",
+      "avgPlacement": "₹31.63 LPA",
+      "highestPlacement": "₹60+ LPA",
+      "approxFees": "₹5.7 lakh/year (₹22.8 lakh for 4 years)",
+      "location": "Pilani (Rajasthan), Goa, Hyderabad",
+      "topBranches": ["CSE", "EEE", "Mechanical", "Chemical"],
+      "keyHighlights": [
+        "Top private engineering college in India",
+        "Excellent placements (avg ₹31+ LPA)",
+        "No reservations - pure merit-based",
+        "Research-oriented curriculum",
+        "International exposure"
+      ],
+      "colorCode": "high",
+      "sources": [
+        "https://engineering.careers360.com/articles/bitsat-2026",
+        "https://admissions.bits-pilani.ac.in/"
+      ]
+    },
+    {
+      "id": 2,
+      "name": "VITEEE",
+      "fullName": "VIT Engineering Entrance Examination",
+      "conductedBy": "VIT University",
+      "tier": "Premium Private",
+      "priority": "Must Apply",
+      "registrationStart": "2025-11-15",
+      "registrationEnd": "2026-03-31",
+      "examDate": "2026-04-28 to 2026-05-03",
+      "resultDate": "June 2026 (expected)",
+      "applicationFee": "₹1,350 (non-refundable, all categories)",
+      "applyLink": "https://viteee.vit.ac.in/",
+      "officialWebsite": "https://viteee.vit.ac.in/",
+      "colleges": [
+        "VIT Vellore (Main Campus)",
+        "VIT Chennai",
+        "VIT Bhopal",
+        "VIT Amaravati (AP)"
+      ],
+      "totalSeats": "~8,000 across 4 campuses",
+      "eligibility": {
+        "education": "12th Pass or appearing",
+        "minimumMarks": "60% aggregate in PCM/PCB",
+        "ageLimit": "No age limit"
+      },
+      "examPattern": {
+        "mode": "Computer-Based Test (CBT)",
+        "duration": "2 hours 30 minutes",
+        "sections": "Physics (35), Chemistry (35), Maths/Biology (40), Aptitude (10), English (5)",
+        "totalQuestions": 125,
+        "totalMarks": 125,
+        "markingScheme": "+1 for correct, no negative marking"
+      },
+      "difficultyLevel": "Moderate-High",
+      "preparationTip": "Focus on PCM from NCERT. Aptitude section is unique to VITEEE.",
+      "avgPlacement": "₹7.62 LPA (₹14.8 LPA for CSE)",
+      "highestPlacement": "₹1.02 Crore (International offer)",
+      "approxFees": "₹2.1 lakh/year (₹8.4 lakh for 4 years)",
+      "location": "Vellore (TN), Chennai (TN), Bhopal (MP), Amaravati (AP)",
+      "topBranches": ["CSE", "IT", "ECE", "Mechanical"],
+      "keyHighlights": [
+        "Multiple campuses = more chances",
+        "Strong industry connections",
+        "Good CSE placements (avg ₹14.8 LPA)",
+        "100% placement record for eligible students",
+        "No negative marking (easier to attempt)"
+      ],
+      "colorCode": "high",
+      "sources": [
+        "https://engineering.careers360.com/articles/viteee-2026",
+        "https://viteee.vit.ac.in/"
+      ]
+    },
+    {
+      "id": 3,
+      "name": "SRMJEEE",
+      "fullName": "SRM Joint Engineering Entrance Examination",
+      "conductedBy": "SRM Institute of Science and Technology",
+      "tier": "Good Private",
+      "priority": "Strong Backup",
+      "registrationStart": "2025-10-30",
+      "registrationEnd": "2026-04-16 (Phase 1), 2026-06-04 (Phase 2), 2026-06-30 (Phase 3)",
+      "examDate": "2026-04-23 to 04-28 (P1), 2026-06-10 to 06-15 (P2), 2026-07-04 to 07-05 (P3)",
+      "resultDate": "Within 2 weeks of each phase",
+      "applicationFee": "₹1,400 per phase (non-refundable)",
+      "applyLink": "https://applications.srmist.edu.in/btech",
+      "officialWebsite": "https://applications.srmist.edu.in/btech",
+      "colleges": [
+        "SRM Kattankulathur (Chennai - Main)",
+        "SRM Ramapuram (Chennai)",
+        "SRM NCR (Ghaziabad)",
+        "SRM Sonepat (Haryana)",
+        "SRM Amaravati (AP)"
+      ],
+      "totalSeats": "~12,000 across multiple campuses",
+      "eligibility": {
+        "education": "12th Pass or appearing",
+        "minimumMarks": "50% in PCM/PCB (45% for reserved categories)",
+        "ageLimit": "No age limit"
+      },
+      "examPattern": {
+        "mode": "Remote Proctored Online (from home)",
+        "duration": "2 hours 30 minutes",
+        "sections": "Physics, Chemistry, Maths/Biology (125 MCQs)",
+        "totalQuestions": 125,
+        "totalMarks": 125,
+        "markingScheme": "+1 for correct, no negative marking"
+      },
+      "difficultyLevel": "Moderate (Easier than BITSAT/VITEEE)",
+      "preparationTip": "NCERT + JEE Main basics sufficient. Can attempt from home (remote proctored).",
+      "avgPlacement": "₹7.58 LPA",
+      "highestPlacement": "₹57 LPA",
+      "approxFees": "₹2.5 lakh/year (₹10 lakh for 4 years)",
+      "location": "Chennai (TN), Ghaziabad (UP), Sonepat (Haryana), Amaravati (AP)",
+      "topBranches": ["CSE", "IT", "ECE", "Mechanical"],
+      "keyHighlights": [
+        "3 phases = multiple attempts",
+        "Remote proctored (take from home)",
+        "No negative marking",
+        "Large campus and facilities",
+        "Good backup option"
+      ],
+      "colorCode": "medium",
+      "sources": [
+        "https://engineering.careers360.com/articles/srmjeee-2026",
+        "https://applications.srmist.edu.in/btech"
+      ]
+    },
+    {
+      "id": 4,
+      "name": "MANIPAL MET",
+      "fullName": "Manipal Entrance Test",
+      "conductedBy": "Manipal Academy of Higher Education",
+      "tier": "Good Private",
+      "priority": "Strong Backup",
+      "registrationStart": "2025-09-30",
+      "registrationEnd": "2026-03-15 (Phase 1)",
+      "examDate": "2026-04-13 to 04-14 (Phase 1), 2026-05-23 to 05-24 (Phase 2)",
+      "resultDate": "May-June 2026",
+      "applicationFee": "₹800 - ₹1,200 (varies by program)",
+      "applyLink": "https://www.manipal.edu/met",
+      "officialWebsite": "https://www.manipal.edu/",
+      "colleges": [
+        "Manipal Institute of Technology (MIT Manipal)",
+        "MAHE Bangalore",
+        "MAHE Jaipur"
+      ],
+      "totalSeats": "~3,000 seats",
+      "eligibility": {
+        "education": "12th Pass or appearing",
+        "minimumMarks": "50% aggregate in PCM (45% for reserved)",
+        "ageLimit": "No upper age limit"
+      },
+      "examPattern": {
+        "mode": "Computer-Based Test (CBT)",
+        "duration": "2 hours 30 minutes",
+        "sections": "Physics (50), Chemistry (50), Maths (50)",
+        "totalQuestions": 150,
+        "totalMarks": 150,
+        "markingScheme": "+1 for correct, no negative marking"
+      },
+      "difficultyLevel": "Moderate",
+      "preparationTip": "JEE Main preparation is enough. Focus on NCERT.",
+      "avgPlacement": "₹7.5 LPA",
+      "highestPlacement": "₹43 LPA",
+      "approxFees": "₹2.9 lakh/year (₹11.6 lakh for 4 years)",
+      "location": "Manipal (Karnataka), Bangalore, Jaipur",
+      "topBranches": ["CSE", "IT", "Mechanical", "Biotech"],
+      "keyHighlights": [
+        "Established reputation (65+ years)",
+        "Beautiful campus in Manipal",
+        "Strong alumni network",
+        "2 attempts (Phase 1 & 2)",
+        "No negative marking"
+      ],
+      "colorCode": "medium",
+      "sources": [
+        "https://collegedunia.com/exams/met",
+        "https://www.manipal.edu/"
+      ]
+    },
+    {
+      "id": 5,
+      "name": "COMEDK UGET",
+      "fullName": "COMEDK Undergraduate Entrance Test",
+      "conductedBy": "Consortium of Medical, Engineering and Dental Colleges of Karnataka",
+      "tier": "Good Private (Karnataka)",
+      "priority": "Strong Backup (if considering Karnataka)",
+      "registrationStart": "2026-02-03",
+      "registrationEnd": "2026-03-16",
+      "examDate": "2026-05-09",
+      "resultDate": "May 2026 (within 1 week)",
+      "applicationFee": "₹1,950 (COMEDK only), ₹3,200 (COMEDK + Uni-Gauge)",
+      "applyLink": "https://www.comedk.org/",
+      "officialWebsite": "https://www.comedk.org/",
+      "colleges": [
+        "RVCE Bangalore",
+        "PES University",
+        "MSRIT Bangalore",
+        "BMSCE Bangalore",
+        "150+ engineering colleges in Karnataka"
+      ],
+      "totalSeats": "~20,000 across 150+ colleges",
+      "eligibility": {
+        "education": "12th Pass or appearing",
+        "minimumMarks": "45% in PCM (40% for reserved)",
+        "ageLimit": "No age limit"
+      },
+      "examPattern": {
+        "mode": "Computer-Based Test (CBT)",
+        "duration": "3 hours",
+        "sections": "Physics (60), Chemistry (60), Mathematics (60)",
+        "totalQuestions": 180,
+        "totalMarks": 180,
+        "markingScheme": "+1 for correct, no negative marking"
+      },
+      "difficultyLevel": "Moderate",
+      "preparationTip": "NCERT + JEE Main basics. No negative marking makes it student-friendly.",
+      "avgPlacement": "₹7-10 LPA (varies by college)",
+      "highestPlacement": "₹40+ LPA (top colleges)",
+      "approxFees": "₹1.5-3 lakh/year (varies by college)",
+      "location": "Bangalore and across Karnataka",
+      "topBranches": ["CSE", "IT", "ECE", "Mechanical"],
+      "keyHighlights": [
+        "Access to 150+ Karnataka colleges",
+        "Top colleges: RVCE, PES, MSRIT",
+        "Bangalore = IT hub = great placements",
+        "No negative marking",
+        "Good value for money"
+      ],
+      "colorCode": "medium",
+      "sources": [
+        "https://engineering.careers360.com/articles/comedk-uget-2026",
+        "https://www.comedk.org/"
+      ]
+    },
+    {
+      "id": 6,
+      "name": "KIITEE",
+      "fullName": "Kalinga Institute of Industrial Technology Entrance Exam",
+      "conductedBy": "KIIT University, Bhubaneswar",
+      "tier": "Good Private",
+      "priority": "Safety Net",
+      "registrationStart": "2025-11-10",
+      "registrationEnd": "2026-04-08 (Phase 1)",
+      "examDate": "2026-04-16 to 04-20 (P1), 2026-06-04 to 06-08 (P2), 2026-07-05 to 07-07 (P3)",
+      "resultDate": "Within 1 week of each phase",
+      "applicationFee": "FREE (₹0) - No application fee",
+      "applyLink": "https://kiitee.kiit.ac.in/",
+      "officialWebsite": "https://kiitee.kiit.ac.in/",
+      "colleges": [
+        "KIIT University Bhubaneswar"
+      ],
+      "totalSeats": "~3,000 seats",
+      "eligibility": {
+        "education": "12th Pass or appearing",
+        "minimumMarks": "60% in PCM",
+        "ageLimit": "No age limit"
+      },
+      "examPattern": {
+        "mode": "Computer-Based Test (CBT)",
+        "duration": "2 hours 30 minutes",
+        "sections": "Physics (40), Chemistry (40), Mathematics (40)",
+        "totalQuestions": 120,
+        "totalMarks": 120,
+        "markingScheme": "+1 for correct, -0.25 for incorrect"
+      },
+      "difficultyLevel": "Moderate",
+      "preparationTip": "NCERT sufficient. Free exam - definitely apply!",
+      "avgPlacement": "₹6.5 LPA",
+      "highestPlacement": "₹39 LPA",
+      "approxFees": "₹2.3 lakh/year (₹9.2 lakh for 4 years)",
+      "location": "Bhubaneswar (Odisha)",
+      "topBranches": ["CSE", "IT", "ECE", "Mechanical"],
+      "keyHighlights": [
+        "FREE application - no fee!",
+        "3 phases = multiple attempts",
+        "Good infrastructure and campus",
+        "Deemed university status",
+        "Easy admission process"
+      ],
+      "colorCode": "low",
+      "sources": [
+        "https://engineering.careers360.com/articles/kiitee-2026",
+        "https://kiitee.kiit.ac.in/"
+      ]
+    },
+    {
+      "id": 7,
+      "name": "PESSAT",
+      "fullName": "PES Scholastic Aptitude Test",
+      "conductedBy": "PES University, Bangalore",
+      "tier": "Good Private (Karnataka)",
+      "priority": "Note: B.Tech admissions now via JEE Main/KCET",
+      "registrationStart": "2025-09-05",
+      "registrationEnd": "April 2026",
+      "examDate": "2026-04-21 to 05-12",
+      "resultDate": "May 2026",
+      "applicationFee": "₹1,200",
+      "applyLink": "https://admissions.pes.edu/",
+      "officialWebsite": "https://admissions.pes.edu/",
+      "colleges": [
+        "PES University Bangalore"
+      ],
+      "totalSeats": "~1,500 seats",
+      "eligibility": {
+        "education": "12th Pass or appearing",
+        "minimumMarks": "50% in PCM",
+        "ageLimit": "No age limit"
+      },
+      "examPattern": {
+        "mode": "Computer-Based Test (CBT)",
+        "duration": "2 hours 30 minutes",
+        "sections": "Physics, Chemistry, Mathematics",
+        "totalQuestions": 150,
+        "totalMarks": 150,
+        "markingScheme": "+1 for correct, no negative marking"
+      },
+      "difficultyLevel": "Moderate",
+      "preparationTip": "NOTE: For B.Tech 2026, admissions based on JEE Main/KCET scores, not PESSAT.",
+      "avgPlacement": "₹8 LPA",
+      "highestPlacement": "₹50+ LPA",
+      "approxFees": "₹2.8 lakh/year (₹11.2 lakh for 4 years)",
+      "location": "Bangalore (Karnataka)",
+      "topBranches": ["CSE", "IT", "ECE"],
+      "keyHighlights": [
+        "⚠️ B.Tech admissions via JEE Main/KCET in 2026",
+        "Strong for CSE/IT",
+        "Bangalore location advantage",
+        "Good industry exposure",
+        "PESSAT still used for other programs"
+      ],
+      "colorCode": "low",
+      "sources": [
+        "https://www.collegepravesh.com/entrance-exams/pessat/",
+        "https://admissions.pes.edu/"
+      ]
+    },
+    {
+      "id": 8,
+      "name": "AMITY JEE",
+      "fullName": "Amity Joint Entrance Examination",
+      "conductedBy": "Amity University",
+      "tier": "Tier 2 Private",
+      "priority": "Safety Net",
+      "registrationStart": "2025-11-01",
+      "registrationEnd": "TBA (April 2026 expected)",
+      "examDate": "April-May 2026 (TBA)",
+      "resultDate": "Within 2 weeks",
+      "applicationFee": "₹1,500 (non-refundable)",
+      "applyLink": "https://www.amity.edu/",
+      "officialWebsite": "https://www.amity.edu/",
+      "colleges": [
+        "Amity Noida",
+        "Amity Lucknow",
+        "Amity Jaipur",
+        "Amity Mumbai",
+        "Multiple campuses across India"
+      ],
+      "totalSeats": "~10,000 across all campuses",
+      "eligibility": {
+        "education": "12th Pass or appearing",
+        "minimumMarks": "60% in PCM",
+        "ageLimit": "No age limit"
+      },
+      "examPattern": {
+        "mode": "Computer-Based Test (CBT)",
+        "duration": "2 hours 30 minutes",
+        "sections": "Physics, Chemistry, Mathematics, English",
+        "totalQuestions": 125,
+        "totalMarks": 125,
+        "markingScheme": "+1 for correct, -0.25 for incorrect"
+      },
+      "difficultyLevel": "Moderate-Easy",
+      "preparationTip": "NCERT basics sufficient. Good backup option.",
+      "avgPlacement": "₹5-6 LPA",
+      "highestPlacement": "₹20+ LPA",
+      "approxFees": "₹2.5 lakh/year (₹10 lakh for 4 years)",
+      "location": "Multiple cities (Noida, Lucknow, Jaipur, Mumbai, etc.)",
+      "topBranches": ["CSE", "IT", "ECE"],
+      "keyHighlights": [
+        "Multiple campuses across India",
+        "Wide range of specializations",
+        "Easy admission process",
+        "Good infrastructure",
+        "Backup option"
+      ],
+      "colorCode": "low",
+      "sources": [
+        "https://www.vidyavision.com/entrance-exam/amity-jee",
+        "https://www.amity.edu/"
+      ]
+    },
+    {
+      "id": 9,
+      "name": "UPES DAT/UPESEAT",
+      "fullName": "UPES Engineering Aptitude Test",
+      "conductedBy": "UPES University, Dehradun",
+      "tier": "Specialized Private",
+      "priority": "Consider for Petroleum/CS",
+      "registrationStart": "2025-10-01",
+      "registrationEnd": "2026-02-25 (Phase 2)",
+      "examDate": "TBA",
+      "resultDate": "Within 2 weeks",
+      "applicationFee": "₹1,750 (B.Tech), ₹1,750 (B.Des)",
+      "applyLink": "https://www.upes.ac.in/admissions",
+      "officialWebsite": "https://www.upes.ac.in/",
+      "colleges": [
+        "UPES Dehradun"
+      ],
+      "totalSeats": "~2,500 seats",
+      "eligibility": {
+        "education": "12th Pass or appearing",
+        "minimumMarks": "50% in PCM",
+        "ageLimit": "No age limit"
+      },
+      "examPattern": {
+        "mode": "Computer-Based Test (CBT)",
+        "duration": "2 hours 30 minutes",
+        "sections": "Physics, Chemistry, Mathematics, English, Aptitude",
+        "totalQuestions": 150,
+        "totalMarks": 150,
+        "markingScheme": "+1 for correct, no negative marking"
+      },
+      "difficultyLevel": "Moderate",
+      "preparationTip": "Good for specialized engineering (Petroleum, Power, Aviation).",
+      "avgPlacement": "₹7.5 LPA",
+      "highestPlacement": "₹35+ LPA",
+      "approxFees": "₹2.8 lakh/year (₹11.2 lakh for 4 years)",
+      "location": "Dehradun (Uttarakhand)",
+      "topBranches": ["Petroleum Engineering", "Computer Science", "Power Engineering", "Aviation"],
+      "keyHighlights": [
+        "Specialized in Petroleum/Energy sector",
+        "Strong industry partnerships (Oil & Gas)",
+        "Good for niche engineering fields",
+        "Beautiful campus in Dehradun",
+        "Unique specializations"
+      ],
+      "colorCode": "low",
+      "sources": [
+        "https://www.shiksha.com/engineering/upeseat-exam",
+        "https://www.upes.ac.in/"
+      ]
+    },
+    {
+      "id": 10,
+      "name": "LPUNEST",
+      "fullName": "Lovely Professional University National Entrance and Scholarship Test",
+      "conductedBy": "Lovely Professional University",
+      "tier": "Tier 2 Private",
+      "priority": "Safety Net",
+      "registrationStart": "2025-10-01",
+      "registrationEnd": "2026-03-10 (Phase 2)",
+      "examDate": "2026-02-15 to 03-31 (Phase 2)",
+      "resultDate": "Within 1 week",
+      "applicationFee": "₹1,000 (soft copy), ₹1,500 (printed kit)",
+      "applyLink": "https://www.lpu.in/nest/",
+      "officialWebsite": "https://www.lpu.in/",
+      "colleges": [
+        "LPU Phagwara (Punjab)"
+      ],
+      "totalSeats": "~15,000 seats",
+      "eligibility": {
+        "education": "12th Pass or appearing",
+        "minimumMarks": "60% in PCM (50% for reserved)",
+        "ageLimit": "No age limit"
+      },
+      "examPattern": {
+        "mode": "Remote Proctored or Test Center",
+        "duration": "2 hours 30 minutes",
+        "sections": "Physics, Chemistry, Mathematics, English",
+        "totalQuestions": 125,
+        "totalMarks": 125,
+        "markingScheme": "+1 for correct, -0.25 for incorrect"
+      },
+      "difficultyLevel": "Easy-Moderate",
+      "preparationTip": "Can take from home. Good scholarship opportunities.",
+      "avgPlacement": "₹6 LPA",
+      "highestPlacement": "₹42 LPA",
+      "approxFees": "₹1.5 lakh/year (₹6 lakh for 4 years) - After scholarship",
+      "location": "Phagwara (Punjab)",
+      "topBranches": ["CSE", "IT", "Mechanical", "Civil"],
+      "keyHighlights": [
+        "Huge campus (600+ acres)",
+        "Remote proctored exam available",
+        "Good scholarship opportunities",
+        "Very affordable after scholarships",
+        "Large student community"
+      ],
+      "colorCode": "low",
+      "sources": [
+        "https://engineering.careers360.com/articles/lpunest-2026",
+        "https://www.lpu.in/nest/"
+      ]
+    },
+    {
+      "id": 11,
+      "name": "MHT CET",
+      "fullName": "Maharashtra Common Entrance Test",
+      "conductedBy": "State CET Cell, Maharashtra",
+      "tier": "State-Level",
+      "priority": "Must Apply (if from Maharashtra)",
+      "registrationStart": "2026-01-10",
+      "registrationEnd": "2026-02-20 (Extended)",
+      "examDate": "2026-04-11 to 04-19 (PCM), 2026-04-21 to 04-26 (PCB) - Session 1",
+      "resultDate": "May 2026",
+      "applicationFee": "₹1,300 (General), ₹1,000 (Reserved)",
+      "applyLink": "https://cetcell.mahacet.org/",
+      "officialWebsite": "https://cetcell.mahacet.org/",
+      "colleges": [
+        "VJTI Mumbai",
+        "COEP Pune",
+        "Government College of Engineering, Pune",
+        "Walchand College of Engineering, Sangli",
+        "100+ govt & private colleges in Maharashtra"
+      ],
+      "totalSeats": "~50,000+ seats",
+      "eligibility": {
+        "education": "12th Pass or appearing (Maharashtra domicile preferred)",
+        "minimumMarks": "50% in PCM (45% for reserved)",
+        "ageLimit": "No age limit"
+      },
+      "examPattern": {
+        "mode": "Computer-Based Test (CBT)",
+        "duration": "3 hours (each session)",
+        "sections": "Physics, Chemistry, Mathematics (50 MCQs each)",
+        "totalQuestions": 150,
+        "totalMarks": 200,
+        "markingScheme": "Varies: 1, 2, or 4 marks per question, no negative"
+      },
+      "difficultyLevel": "Moderate",
+      "preparationTip": "State board friendly. NCERT + Maharashtra board books recommended.",
+      "avgPlacement": "₹5-8 LPA (varies by college)",
+      "highestPlacement": "₹40+ LPA (VJTI, COEP)",
+      "approxFees": "₹50K-1 lakh/year for govt colleges (₹2-4 lakh total)",
+      "location": "Mumbai, Pune, Nagpur, and across Maharashtra",
+      "topBranches": ["CSE", "IT", "Mechanical", "Civil"],
+      "keyHighlights": [
+        "Very affordable (govt college fees)",
+        "Top colleges: VJTI, COEP",
+        "2 sessions = 2 attempts",
+        "No negative marking",
+        "Best value for money for Maharashtra students"
+      ],
+      "colorCode": "medium",
+      "sources": [
+        "https://engineering.careers360.com/articles/mht-cet-2026",
+        "https://cetcell.mahacet.org/"
+      ]
+    },
+    {
+      "id": 12,
+      "name": "KCET",
+      "fullName": "Karnataka Common Entrance Test",
+      "conductedBy": "Karnataka Examinations Authority",
+      "tier": "State-Level",
+      "priority": "Must Apply (if from Karnataka)",
+      "registrationStart": "2026-01-16",
+      "registrationEnd": "2026-02-22 (Extended)",
+      "examDate": "2026-04-23 and 04-24",
+      "resultDate": "May 2026",
+      "applicationFee": "₹500 (Karnataka General), ₹250 (Karnataka SC/ST), ₹750 (Outside Karnataka)",
+      "applyLink": "https://cetonline.karnataka.gov.in/",
+      "officialWebsite": "https://cetonline.karnataka.gov.in/",
+      "colleges": [
+        "NIE Mysore",
+        "BMS College of Engineering",
+        "RVCE Bangalore (some seats via KCET)",
+        "Dayananda Sagar College",
+        "200+ govt & private colleges in Karnataka"
+      ],
+      "totalSeats": "~40,000+ seats",
+      "eligibility": {
+        "education": "12th Pass or appearing (Karnataka domicile preferred)",
+        "minimumMarks": "45% in PCM",
+        "ageLimit": "No age limit"
+      },
+      "examPattern": {
+        "mode": "Pen & Paper (Offline)",
+        "duration": "2.5 hours (each subject on different day)",
+        "sections": "Physics (60), Chemistry (60), Mathematics (60)",
+        "totalQuestions": 180,
+        "totalMarks": 180,
+        "markingScheme": "+1 for correct, no negative marking"
+      },
+      "difficultyLevel": "Moderate",
+      "preparationTip": "Pen-paper exam. Karnataka board friendly. Practice time management.",
+      "avgPlacement": "₹6-9 LPA (varies by college)",
+      "highestPlacement": "₹45+ LPA (top colleges)",
+      "approxFees": "₹50K-1 lakh/year for govt colleges",
+      "location": "Bangalore, Mysore, Mangalore, across Karnataka",
+      "topBranches": ["CSE", "IT", "ECE", "Mechanical"],
+      "keyHighlights": [
+        "Very affordable govt colleges",
+        "Bangalore = IT hub advantage",
+        "No negative marking",
+        "Pen-paper exam (some prefer this)",
+        "Best for Karnataka students"
+      ],
+      "colorCode": "medium",
+      "sources": [
+        "https://engineering.careers360.com/articles/kcet-2026",
+        "https://cetonline.karnataka.gov.in/"
+      ]
+    },
+    {
+      "id": 13,
+      "name": "TS EAMCET",
+      "fullName": "Telangana State Engineering, Agriculture and Medical Common Entrance Test",
+      "conductedBy": "TSCHE (Telangana State Council of Higher Education)",
+      "tier": "State-Level",
+      "priority": "Must Apply (if from Telangana)",
+      "registrationStart": "2026-02-19",
+      "registrationEnd": "2026-04-04",
+      "examDate": "2026-05-09, 05-10, 05-11 (Engineering)",
+      "resultDate": "May-June 2026",
+      "applicationFee": "₹900 (General - 1 stream), ₹500 (SC/ST/PH - 1 stream)",
+      "applyLink": "https://eapcet.tgche.ac.in/",
+      "officialWebsite": "https://eapcet.tgche.ac.in/",
+      "colleges": [
+        "CBIT Hyderabad",
+        "Vasavi College of Engineering",
+        "MGIT Hyderabad",
+        "Osmania University",
+        "100+ govt & private colleges in Telangana"
+      ],
+      "totalSeats": "~30,000+ seats",
+      "eligibility": {
+        "education": "12th Pass or appearing (Telangana domicile preferred)",
+        "minimumMarks": "45% in PCM",
+        "ageLimit": "No age limit"
+      },
+      "examPattern": {
+        "mode": "Computer-Based Test (CBT)",
+        "duration": "3 hours",
+        "sections": "Physics (80), Chemistry (80), Mathematics (80)",
+        "totalQuestions": 160,
+        "totalMarks": 160,
+        "markingScheme": "+1 for correct, no negative marking"
+      },
+      "difficultyLevel": "Moderate",
+      "preparationTip": "Telangana board friendly. NCERT + state board textbooks.",
+      "avgPlacement": "₹5-7 LPA (varies by college)",
+      "highestPlacement": "₹30+ LPA (top colleges)",
+      "approxFees": "₹60K-1.5 lakh/year (varies by college)",
+      "location": "Hyderabad, Warangal, across Telangana",
+      "topBranches": ["CSE", "IT", "ECE", "Mechanical"],
+      "keyHighlights": [
+        "Affordable options in Hyderabad",
+        "Good colleges: CBIT, Vasavi",
+        "Hyderabad = emerging IT hub",
+        "No negative marking",
+        "Best for Telangana students"
+      ],
+      "colorCode": "medium",
+      "sources": [
+        "https://engineering.careers360.com/articles/ts-eamcet-2026",
+        "https://eapcet.tgche.ac.in/"
+      ]
+    },
+    {
+      "id": 14,
+      "name": "KEAM",
+      "fullName": "Kerala Engineering Architecture Medical",
+      "conductedBy": "CEE (Commissioner for Entrance Examinations), Kerala",
+      "tier": "State-Level",
+      "priority": "Must Apply (if from Kerala)",
+      "registrationStart": "2026-01-05",
+      "registrationEnd": "2026-02-06",
+      "examDate": "2026-04-17 to 04-23 (with buffer dates)",
+      "resultDate": "May 2026",
+      "applicationFee": "₹875 (General), ₹375 (SC) for Engineering",
+      "applyLink": "https://cee.kerala.gov.in/",
+      "officialWebsite": "https://cee.kerala.gov.in/",
+      "colleges": [
+        "Govt Engineering Colleges in Kerala",
+        "TKM College of Engineering",
+        "NSS College of Engineering",
+        "Model Engineering College",
+        "50+ govt & aided colleges in Kerala"
+      ],
+      "totalSeats": "~20,000+ seats",
+      "eligibility": {
+        "education": "12th Pass or appearing (Kerala domicile preferred)",
+        "minimumMarks": "45% in PCM",
+        "ageLimit": "No age limit"
+      },
+      "examPattern": {
+        "mode": "Computer-Based Test (CBT)",
+        "duration": "3 hours",
+        "sections": "Physics (40), Chemistry (40), Mathematics (80)",
+        "totalQuestions": 120,
+        "totalMarks": 480,
+        "markingScheme": "+4 for correct, -1 for incorrect"
+      },
+      "difficultyLevel": "Moderate-High (Maths weightage high)",
+      "preparationTip": "Focus on Maths (double weightage). Kerala board friendly.",
+      "avgPlacement": "₹6-8 LPA",
+      "highestPlacement": "₹40+ LPA",
+      "approxFees": "₹20K-80K/year (extremely affordable)",
+      "location": "Thiruvananthapuram, Kochi, Thrissur, across Kerala",
+      "topBranches": ["CSE", "ECE", "Mechanical", "Civil"],
+      "keyHighlights": [
+        "Extremely affordable (₹20K-80K/year)",
+        "High quality education",
+        "Beautiful campuses",
+        "Best value for money in India",
+        "Strong academic focus"
+      ],
+      "colorCode": "high",
+      "sources": [
+        "https://engineering.careers360.com/articles/keam-2026",
+        "https://cee.kerala.gov.in/"
+      ]
+    },
+    {
+      "id": 15,
+      "name": "WBJEE",
+      "fullName": "West Bengal Joint Entrance Examination",
+      "conductedBy": "WBJEEB (West Bengal Joint Entrance Examinations Board)",
+      "tier": "State-Level",
+      "priority": "Must Apply (if from West Bengal)",
+      "registrationStart": "February 2026 (expected)",
+      "registrationEnd": "TBA (March 2026 expected)",
+      "examDate": "April 26, 2026 (expected - last Sunday of April)",
+      "resultDate": "May 2026",
+      "applicationFee": "₹500 (General Male), ₹400 (Female & Reserved Male), ₹300 (Reserved Female)",
+      "applyLink": "https://wbjeeb.nic.in/",
+      "officialWebsite": "https://wbjeeb.nic.in/",
+      "colleges": [
+        "Jadavpur University",
+        "IIEST Shibpur",
+        "Heritage Institute of Technology",
+        "Kalyani Govt Engineering College",
+        "100+ colleges in West Bengal"
+      ],
+      "totalSeats": "~30,000+ seats",
+      "eligibility": {
+        "education": "12th Pass or appearing (West Bengal domicile preferred)",
+        "minimumMarks": "45% in PCM (aggregate)",
+        "ageLimit": "No age limit"
+      },
+      "examPattern": {
+        "mode": "Pen & Paper (Offline)",
+        "duration": "2 hours (each paper)",
+        "sections": "Paper I: Maths (75 Q), Paper II: Physics (40) + Chemistry (40)",
+        "totalQuestions": 155,
+        "totalMarks": 200,
+        "markingScheme": "1 mark per question, no negative marking"
+      },
+      "difficultyLevel": "Moderate",
+      "preparationTip": "Pen-paper exam. WB board friendly. Two separate papers on same day.",
+      "avgPlacement": "₹5-7 LPA (varies by college)",
+      "highestPlacement": "₹40+ LPA (Jadavpur, IIEST)",
+      "approxFees": "₹50K-1 lakh/year (govt colleges)",
+      "location": "Kolkata, Howrah, Durgapur, across West Bengal",
+      "topBranches": ["CSE", "IT", "ECE", "Mechanical"],
+      "keyHighlights": [
+        "Top colleges: Jadavpur, IIEST Shibpur",
+        "Very affordable govt colleges",
+        "No negative marking",
+        "Good academic reputation",
+        "Best for West Bengal students"
+      ],
+      "colorCode": "medium",
+      "sources": [
+        "https://engineering.careers360.com/articles/wbjee-application-form",
+        "https://wbjeeb.nic.in/"
+      ]
+    }
+  ],
+  "generalTips": [
+    "Apply to at least 8-10 exams for safety",
+    "Set calendar reminders for all deadlines",
+    "Keep documents ready: 10th/12th marksheets, ID proof, photo, signature",
+    "Budget ₹10,000-15,000 for all application fees",
+    "Start preparing early - most exams are JEE Main level",
+    "Don't skip state exams - they're affordable and good quality"
+  ],
+  "estimatedBudget": {
+    "allExamFees": "₹15,000-20,000 (for all 15 exams)",
+    "recommendedExams": "₹8,000-12,000 (for 8-10 exams)",
+    "travelCosts": "₹5,000-10,000 (if exam centers are in different cities)"
+  },
+  "dataSourcesCredits": [
+    "https://engineering.careers360.com/",
+    "https://www.shiksha.com/engineering/",
+    "https://collegedunia.com/exams/",
+    "Official university websites",
+    "NIRF Rankings 2024-25",
+    "Compiled by BMAD Research Team - Feb 2026"
+  ]
+}
