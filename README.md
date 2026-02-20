@@ -1,6 +1,6 @@
 # B.Tech Entrance Exams 2026 - Priority Guide
 
-A comprehensive, SEO-optimized website to help B.Tech students make informed decisions about entrance exam applications.
+A comprehensive, SEO-optimized website to help students make informed decisions about entrance exam applications.
 
 ## 🎯 Project Overview
 
