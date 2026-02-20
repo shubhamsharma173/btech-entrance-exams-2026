@@ -11,6 +11,8 @@
  *
  * Usage:
  *   GROQ_API_KEY=xxx TAVILY_API_KEY=yyy node scripts/update-exams.mjs
+ *   GROQ_API_KEY=xxx TAVILY_API_KEY=yyy node scripts/update-exams.mjs --dry-run
+ *   GROQ_API_KEY=xxx TAVILY_API_KEY=yyy node scripts/update-exams.mjs --exam BITSAT
  */
 
 import fs   from 'fs';
@@ -21,42 +23,90 @@ const TAVILY_API_KEY = process.env.TAVILY_API_KEY;
 const DATA_PATH      = path.join(process.cwd(), 'data', 'exams-data.json');
 const LOG_PATH       = path.join(process.cwd(), 'scripts', '.last-update-log.json');
 
+// ─── CLI flags ────────────────────────────────────────────────────────────────
+const args    = process.argv.slice(2);
+const DRY_RUN = args.includes('--dry-run');           // no file writes
+const EXAM_FILTER = (() => {                           // --exam BITSAT
+  const idx = args.indexOf('--exam');
+  return idx !== -1 ? args[idx + 1]?.toUpperCase() : null;
+})();
+
+// ─── Safety: only these fields may ever be patched by the LLM ────────────────
+const ALLOWED_CHANGE_FIELDS = new Set([
+  'registrationStart',
+  'registrationEnd',
+  'examDate',
+  'resultDate',
+  'applicationFee',
+]);
+
 // ─── Helpers ──────────────────────────────────────────────────────────────────
 
-/** Trusted domains for entrance-exam information */
-const TRUSTED_DOMAINS = [
-  'nta.ac.in', 'neet.nta.nic.in', 'jeemain.nta.nic.in',
-  'careers360.com', 'shiksha.com', 'collegedunia.com',
-  'admissions.bits-pilani.ac.in', 'viteee.vit.ac.in',
-  'consortiumofnlus.ac.in', 'iimcat.ac.in', 'xatonline.in',
-  'nift.ac.in', 'nid.edu', 'uceed.iitb.ac.in',
-];
-
-/** Sleep to stay inside free-tier rate limits (500 ms between calls) */
 const sleep = (ms) => new Promise(r => setTimeout(r, ms));
+
+/** Fetch with a hard timeout — prevents hanging in CI */
+async function fetchWithTimeout(url, options, timeoutMs = 15_000) {
+  const controller = new AbortController();
+  const timer = setTimeout(() => controller.abort(), timeoutMs);
+  try {
+    return await fetch(url, { ...options, signal: controller.signal });
+  } finally {
+    clearTimeout(timer);
+  }
+}
+
+/**
+ * Safely extract the FIRST balanced JSON object from an LLM response.
+ * Handles cases where the model wraps output in markdown or adds prose.
+ */
+function extractJson(text) {
+  let depth = 0, start = -1;
+  for (let i = 0; i < text.length; i++) {
+    if (text[i] === '{') {
+      if (depth === 0) start = i;
+      depth++;
+    } else if (text[i] === '}') {
+      depth--;
+      if (depth === 0 && start !== -1) {
+        try { return JSON.parse(text.slice(start, i + 1)); }
+        catch { start = -1; } // malformed — keep searching
+      }
+    }
+  }
+  return null;
+}
 
 // ─── Tavily Web Search ────────────────────────────────────────────────────────
 
 async function webSearch(query) {
-  const res = await fetch('https://api.tavily.com/search', {
-    method: 'POST',
-    headers: { 'Content-Type': 'application/json' },
-    body: JSON.stringify({
-      api_key: TAVILY_API_KEY,
-      query,
-      search_depth: 'basic',
-      max_results: 5,
-      include_domains: TRUSTED_DOMAINS,
-    }),
-  });
+  let res;
+  try {
+    res = await fetchWithTimeout('https://api.tavily.com/search', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({
+        api_key: TAVILY_API_KEY,
+        query,
+        search_depth: 'basic',
+        max_results: 5,
+        // NOTE: include_domains not used — not supported on Tavily free tier.
+        // Groq prompt + conservative rules handle source trustworthiness instead.
+      }),
+    });
+  } catch (err) {
+    console.warn(`  ⚠ Tavily timeout/network error: ${err.message}`);
+    return '';
+  }
 
   if (!res.ok) {
-    console.warn(`  ⚠ Tavily error ${res.status} for: ${query}`);
+    console.warn(`  ⚠ Tavily HTTP ${res.status} for: ${query}`);
     return '';
   }
 
   const data = await res.json();
-  return (data.results || [])
+  if (!data.results?.length) return '';
+
+  return data.results
     .map(r => `[${r.url}]\n${r.title}\n${r.content}`)
     .join('\n\n---\n\n');
 }
@@ -64,34 +114,47 @@ async function webSearch(query) {
 // ─── Groq LLM Call ───────────────────────────────────────────────────────────
 
 async function callGroq(systemPrompt, userPrompt) {
-  const res = await fetch('https://api.groq.com/openai/v1/chat/completions', {
-    method: 'POST',
-    headers: {
-      'Authorization': `Bearer ${GROQ_API_KEY}`,
-      'Content-Type': 'application/json',
-    },
-    body: JSON.stringify({
-      model: 'llama-3.3-70b-versatile',
-      temperature: 0.1,
-      max_tokens: 600,
-      messages: [
-        { role: 'system', content: systemPrompt },
-        { role: 'user',   content: userPrompt   },
-      ],
-    }),
-  });
-
-  if (!res.ok) {
-    console.warn(`  ⚠ Groq error ${res.status}`);
+  let res;
+  try {
+    res = await fetchWithTimeout(
+      'https://api.groq.com/openai/v1/chat/completions',
+      {
+        method: 'POST',
+        headers: {
+          'Authorization': `Bearer ${GROQ_API_KEY}`,
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({
+          model: 'llama-3.3-70b-versatile',
+          temperature: 0.1,
+          max_tokens: 600,
+          messages: [
+            { role: 'system', content: systemPrompt },
+            { role: 'user',   content: userPrompt   },
+          ],
+        }),
+      },
+      20_000, // Groq is fast but give 20s for large prompts
+    );
+  } catch (err) {
+    console.warn(`  ⚠ Groq timeout/network error: ${err.message}`);
     return null;
   }
 
-  const data  = await res.json();
-  const text  = data.choices?.[0]?.message?.content || '';
-  const match = text.match(/\{[\s\S]*\}/);
+  if (res.status === 429) {
+    console.warn('  ⚠ Groq rate limit hit — waiting 60s…');
+    await sleep(60_000);
+    return callGroq(systemPrompt, userPrompt); // one retry
+  }
 
-  try   { return match ? JSON.parse(match[0]) : null; }
-  catch { return null; }
+  if (!res.ok) {
+    console.warn(`  ⚠ Groq HTTP ${res.status}`);
+    return null;
+  }
+
+  const data = await res.json();
+  const text = data.choices?.[0]?.message?.content || '';
+  return extractJson(text); // ← uses balanced-brace extractor, not greedy regex
 }
 
 // ─── System Prompts ──────────────────────────────────────────────────────────
@@ -100,22 +163,29 @@ const CHANGE_DETECTOR_SYSTEM = `
 You are a data-integrity validator for an Indian entrance-exam guide website.
 
 Your ONLY job is to compare current exam data with web-search snippets and
-identify factual changes that are CONFIRMED by official sources or widely
-reported by trusted education portals.
+identify factual changes CONFIRMED by official sources or widely reported by
+trusted education portals (careers360, shiksha, nta.ac.in, official exam sites).
+
+Allowed fields to change: registrationStart, registrationEnd, examDate, resultDate, applicationFee
 
 Rules:
-- Only flag changes to these fields: registrationStart, registrationEnd,
-  examDate, resultDate, applicationFee
+- Only flag changes to the allowed fields listed above — nothing else
 - Ignore speculative or unconfirmed reports
 - Ignore minor wording differences; only flag real date/fee changes
 - If the search results do not clearly confirm a change → return changed: false
-- Output ONLY valid JSON — no markdown, no explanation outside the JSON block
+- Output ONLY valid JSON — no markdown fences, no text outside the JSON
 
-Output schema:
+Output schema (strict):
 {
-  "changed": true | false,
-  "changes": { "<fieldName>": "<new value as string>" },
-  "reason": "<one-line explanation with source domain>"
+  "changed": true,
+  "changes": { "registrationEnd": "2026-04-15" },
+  "reason": "NTA extended NEET-UG registration to April 15 (source: nta.ac.in)"
+}
+OR if no change:
+{
+  "changed": false,
+  "changes": {},
+  "reason": "No confirmed changes found in search results"
 }
 `.trim();
 
@@ -124,13 +194,14 @@ You are a researcher identifying NEW Indian entrance exams for 2026 that are
 not in the provided existing list.
 
 Rules:
-- Only flag exams that have an OFFICIAL 2026 notification released
+- Only flag exams with an OFFICIAL 2026 notification released
 - Ignore state-level exams with very low reach (< 10 000 seats)
-- Output ONLY valid JSON
+- Output ONLY valid JSON — no markdown, no explanation outside the JSON block
 
 Output schema:
-{ "newExams": ["<exam short name>", ...] }
-If none found: { "newExams": [] }
+{ "newExams": ["EXAM_SHORT_NAME"] }
+If none found:
+{ "newExams": [] }
 `.trim();
 
 // ─── Per-Exam Change Check ────────────────────────────────────────────────────
@@ -180,6 +251,31 @@ List any significant new exams NOT in the existing list above.
   return result || { newExams: [] };
 }
 
+// ─── Safe JSON patch — whitelisted fields only ───────────────────────────────
+
+function safeApplyChanges(examObj, changes) {
+  const applied = {};
+  const rejected = {};
+
+  for (const [field, value] of Object.entries(changes)) {
+    if (ALLOWED_CHANGE_FIELDS.has(field)) {
+      applied[field] = value;
+    } else {
+      rejected[field] = value;
+    }
+  }
+
+  if (Object.keys(rejected).length > 0) {
+    console.warn(`  ⚠ Rejected non-whitelisted fields: ${JSON.stringify(rejected)}`);
+  }
+
+  if (Object.keys(applied).length > 0) {
+    Object.assign(examObj, applied);
+  }
+
+  return applied;
+}
+
 // ─── Main ─────────────────────────────────────────────────────────────────────
 
 async function main() {
@@ -188,74 +284,109 @@ async function main() {
     process.exit(1);
   }
 
-  console.log('🔄 Weekly Exam Data Update — started\n');
+  console.log(`🔄 Weekly Exam Data Update${DRY_RUN ? ' [DRY RUN — no files will be written]' : ''}${EXAM_FILTER ? ` [exam filter: ${EXAM_FILTER}]` : ''}\n`);
 
-  const data = JSON.parse(fs.readFileSync(DATA_PATH, 'utf-8'));
+  const raw  = fs.readFileSync(DATA_PATH, 'utf-8');
+  const data = JSON.parse(raw);
 
   // Skip discontinued / merged exams
-  const activeExams = data.exams.filter(e =>
+  let activeExams = data.exams.filter(e =>
     e.examDate !== 'N/A (Discontinued)' &&
     e.examDate !== 'N/A (Merged with NEET from 2020)' &&
     !String(e.priority).includes('No longer conducted')
   );
 
-  console.log(`Checking ${activeExams.length} active exams…\n`);
+  // --exam filter for targeted testing
+  if (EXAM_FILTER) {
+    activeExams = activeExams.filter(e => e.name.toUpperCase() === EXAM_FILTER);
+    if (!activeExams.length) {
+      console.error(`❌ No active exam found with name "${EXAM_FILTER}"`);
+      process.exit(1);
+    }
+  }
 
-  const changeLog   = [];
+  console.log(`Checking ${activeExams.length} exam(s)…\n`);
+
+  const changeLog    = [];
   let   totalChanged = 0;
 
   for (const exam of activeExams) {
     process.stdout.write(`  ${exam.name.padEnd(20)} → `);
 
     const result = await checkExam(exam);
-    await sleep(500); // stay inside free-tier rate limits
+    await sleep(500); // stay inside free-tier RPM limits
 
     if (result?.changed && result.changes && Object.keys(result.changes).length > 0) {
-      console.log(`✅ changed  (${result.reason})`);
+      const idx     = data.exams.findIndex(e => e.id === exam.id);
+      const applied = DRY_RUN
+        ? (() => {
+            // In dry-run: validate whitelist but don't mutate
+            const ok = {}, bad = {};
+            for (const [k, v] of Object.entries(result.changes)) {
+              ALLOWED_CHANGE_FIELDS.has(k) ? (ok[k] = v) : (bad[k] = v);
+            }
+            if (Object.keys(bad).length) console.warn(`\n  ⚠ [DRY RUN] Would reject: ${JSON.stringify(bad)}`);
+            return ok;
+          })()
+        : safeApplyChanges(data.exams[idx], result.changes);
 
-      const idx = data.exams.findIndex(e => e.id === exam.id);
-      Object.assign(data.exams[idx], result.changes);
-
-      changeLog.push({ exam: exam.name, changes: result.changes, reason: result.reason });
-      totalChanged++;
+      if (Object.keys(applied).length > 0) {
+        console.log(`${DRY_RUN ? '[DRY RUN] would change' : '✅ changed'}  (${result.reason})`);
+        changeLog.push({ exam: exam.name, changes: applied, reason: result.reason });
+        if (!DRY_RUN) totalChanged++;
+      } else {
+        console.log('— rejected (non-whitelisted fields only)');
+      }
     } else {
       console.log('— no change');
     }
   }
 
-  // ── New exam scan ────────────────────────────────────────────────────────
-  console.log('\n🔍 Scanning for brand-new exams…');
-  const newExamResult = await checkForNewExams(data.exams.map(e => e.name));
+  // ── New exam scan (skip when targeting a single exam) ────────────────────
+  if (!EXAM_FILTER) {
+    console.log('\n🔍 Scanning for brand-new exams…');
+    const newExamResult = await checkForNewExams(data.exams.map(e => e.name));
 
-  if (newExamResult.newExams?.length > 0) {
-    console.log(`  ⚠ Potential new exams detected (needs manual review): ${newExamResult.newExams.join(', ')}`);
-    changeLog.push({
-      exam   : '⚠ NEW EXAMS DETECTED — manual review required',
-      changes: { candidates: newExamResult.newExams },
-      reason : 'Auto-detected via web search. Do NOT add without manual verification.',
-    });
-  } else {
-    console.log('  — none found');
+    if (newExamResult.newExams?.length > 0) {
+      console.log(`  ⚠ Potential new exams detected (needs manual review): ${newExamResult.newExams.join(', ')}`);
+      changeLog.push({
+        exam   : '⚠ NEW EXAMS DETECTED — manual review required',
+        changes: { candidates: newExamResult.newExams },
+        reason : 'Auto-detected via web search. Do NOT add without manual verification.',
+      });
+    } else {
+      console.log('  — none found');
+    }
   }
 
-  // ── Persist if anything changed ──────────────────────────────────────────
+  // ── Build run log ────────────────────────────────────────────────────────
   const runLog = {
     date        : new Date().toISOString().split('T')[0],
-    totalChanged,
+    dryRun      : DRY_RUN,
+    examFilter  : EXAM_FILTER || null,
+    totalChanged: DRY_RUN ? 0 : totalChanged,
     changeLog,
   };
 
-  fs.writeFileSync(LOG_PATH, JSON.stringify(runLog, null, 2));
+  // ── Persist (skip in dry-run) ────────────────────────────────────────────
+  if (!DRY_RUN) {
+    fs.writeFileSync(LOG_PATH, JSON.stringify(runLog, null, 2));
 
-  if (totalChanged > 0) {
-    data.lastUpdated = runLog.date;
-    fs.writeFileSync(DATA_PATH, JSON.stringify(data, null, 2));
-    console.log(`\n✅ ${totalChanged} exam(s) updated. JSON saved.`);
+    if (totalChanged > 0) {
+      data.lastUpdated = runLog.date;
+      // Write to temp file first, then rename — prevents corrupt JSON on crash
+      const tmpPath = DATA_PATH + '.tmp';
+      fs.writeFileSync(tmpPath, JSON.stringify(data, null, 2));
+      fs.renameSync(tmpPath, DATA_PATH);
+      console.log(`\n✅ ${totalChanged} exam(s) updated. JSON saved.`);
+    } else {
+      console.log('\n✅ Everything is up to date — no changes needed.');
+    }
   } else {
-    console.log('\n✅ Everything is up to date — no changes needed.');
+    console.log(`\n[DRY RUN] Would have changed ${changeLog.filter(c => !c.exam.includes('NEW')).length} exam(s). No files written.`);
   }
 
-  // ── Print summary for PR body ────────────────────────────────────────────
+  // ── Print change summary ─────────────────────────────────────────────────
   if (changeLog.length > 0) {
     console.log('\n── Change Summary ──────────────────────────────');
     changeLog.forEach(c => {
@@ -264,6 +395,8 @@ async function main() {
       console.log(`     Reason  : ${c.reason}`);
     });
   }
+
+  // Exit 0 always — let GitHub Actions check git diff to decide on PR
 }
 
 main().catch(err => {

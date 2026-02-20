@@ -7,7 +7,11 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "update-data": "node scripts/update-exams.mjs"
+    "update-data": "node scripts/update-exams.mjs",
+    "test:update": "node scripts/test-update.mjs",
+    "test:update:unit": "node scripts/test-update.mjs --phase 1",
+    "test:update:api": "node scripts/test-update.mjs --phase 2",
+    "test:update:integration": "node scripts/test-update.mjs --phase 3"
   },
   "keywords": [
     "entrance exams",
