@@ -1,0 +1,64 @@
+{
+  "date": "2026-02-20",
+  "dryRun": false,
+  "examFilter": null,
+  "totalChanged": 8,
+  "changeLog": [
+    {
+      "exam": "KCET",
+      "changes": {
+        "registrationEnd": "2026-02-22"
+      },
+      "reason": "KEA extended KCET 2026 registration to February 22 and fee payment to February 24 (source: shiksha.com, collegedekho.com, telegraphindia.com, careers360.com)"
+    },
+    {
+      "exam": "MAT",
+      "changes": {
+        "registrationEnd": "2026-02-23"
+      },
+      "reason": "AIMA rescheduled MAT registration end date to February 23 (source: aima.in, shiksha.com)"
+    },
+    {
+      "exam": "MIT DAT",
+      "changes": {
+        "examDate": "2026-04-05"
+      },
+      "reason": "MITID DAT 2026 exam date changed to April 5, 2026 (source: collegedunia.com)"
+    },
+    {
+      "exam": "NEET-UG",
+      "changes": {
+        "registrationEnd": "2026-03-08"
+      },
+      "reason": "NTA changed NEET-UG registration end date to March 8, 2026 (source: neet.nta.nic.in, careers360, testbook)"
+    },
+    {
+      "exam": "SEED",
+      "changes": {
+        "registrationEnd": "2026-04-15"
+      },
+      "reason": "Symbiosis extended SEED 2026 registration to April 15 (source: set-test.org)"
+    },
+    {
+      "exam": "TS EAMCET",
+      "changes": {
+        "examDate": "2026-05-04, 05-05, 05-09, 05-10, 05-11"
+      },
+      "reason": "TG EAPCET 2026 exam dates updated: Agriculture and Pharmacy streams on May 4-5, Engineering on May 9-11 (source: eapcet.tgche.ac.in, indianexpress.com)"
+    },
+    {
+      "exam": "SRMJEEE",
+      "changes": {
+        "examDate": "2026-04-22 to 04-27 (P1)"
+      },
+      "reason": "SRMJEEE 2026 Phase 1 exam dates changed to April 22 to 27, 2026 (source: testbook.com)"
+    },
+    {
+      "exam": "KEAM",
+      "changes": {
+        "examDate": "2026-04-13 to 04-25"
+      },
+      "reason": "KEAM 2026 exam date revised to April 13 to 25 (source: shiksha.com)"
+    }
+  ]
+}
