@@ -4,10 +4,10 @@ export default function Header() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
         <div className="text-center">
           <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-slate-900 mb-3">
-            🎓 Engineering Entrance Exams 2026
+            🎯 Entrance Exams 2026
           </h1>
           <p className="text-lg sm:text-xl text-slate-600">
-            Top 15 Exams Every B.Tech Aspirant Should Know
+            Complete Guide to Engineering, Medical, Law, Management & Design Entrance Exams
           </p>
         </div>
       </div>

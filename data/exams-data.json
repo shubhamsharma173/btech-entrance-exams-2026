@@ -1,7 +1,7 @@
 {
   "lastUpdated": "2026-02-18",
-  "totalExams": 15,
-  "note": "Apply to exams 1-10 (universal). For state exams (11-15), apply to your home state + 2 neighboring states.",
+  "totalExams": 34,
+  "note": "Engineering: Apply to exams 1-10 (universal) + your state exam (11-15). Medical: NEET-UG is mandatory. Law: CLAT for NLUs, SLAT for Symbiosis. Management: CAT for IIMs, SNAP/NMAT for private B-Schools. Design: UCEED for IITs, NIFT for fashion, NID for design.",
   "exams": [
     {
       "id": 1,
@@ -20,7 +20,8 @@
       "colleges": [
         "BITS Pilani (Rajasthan)",
         "BITS Goa",
-        "BITS Hyderabad"
+        "BITS Hyderabad",
+        "BITS Dubai"
       ],
       "totalSeats": "~4,000 across 3 campuses",
       "eligibility": {
@@ -31,8 +32,8 @@
       "examPattern": {
         "mode": "Computer-Based Test (CBT)",
         "duration": "3 hours",
-        "sections": "Physics (40), Chemistry (40), Mathematics (45), English & Logical Reasoning (15)",
-        "totalQuestions": 140,
+        "sections": "Physics (30), Chemistry (30), Mathematics/Biology (40), Logical Reasoning (20), English Proficiency (10)",
+        "totalQuestions": 130,
         "totalMarks": 390,
         "markingScheme": "+3 for correct, -1 for incorrect"
       },
@@ -42,7 +43,12 @@
       "highestPlacement": "₹60+ LPA",
       "approxFees": "₹5.7 lakh/year (₹22.8 lakh for 4 years)",
       "location": "Pilani (Rajasthan), Goa, Hyderabad",
-      "topBranches": ["CSE", "EEE", "Mechanical", "Chemical"],
+      "topBranches": [
+        "CSE",
+        "EEE",
+        "Mechanical",
+        "Chemical"
+      ],
       "keyHighlights": [
         "Top private engineering college in India",
         "Excellent placements (avg ₹31+ LPA)",
@@ -54,7 +60,8 @@
       "sources": [
         "https://engineering.careers360.com/articles/bitsat-2026",
         "https://admissions.bits-pilani.ac.in/"
-      ]
+      ],
+      "category": "engineering"
     },
     {
       "id": 2,
@@ -74,7 +81,8 @@
         "VIT Vellore (Main Campus)",
         "VIT Chennai",
         "VIT Bhopal",
-        "VIT Amaravati (AP)"
+        "VIT Amaravati (AP)",
+        "VIT-AP University"
       ],
       "totalSeats": "~8,000 across 4 campuses",
       "eligibility": {
@@ -96,7 +104,12 @@
       "highestPlacement": "₹1.02 Crore (International offer)",
       "approxFees": "₹2.1 lakh/year (₹8.4 lakh for 4 years)",
       "location": "Vellore (TN), Chennai (TN), Bhopal (MP), Amaravati (AP)",
-      "topBranches": ["CSE", "IT", "ECE", "Mechanical"],
+      "topBranches": [
+        "CSE",
+        "IT",
+        "ECE",
+        "Mechanical"
+      ],
       "keyHighlights": [
         "Multiple campuses = more chances",
         "Strong industry connections",
@@ -108,7 +121,8 @@
       "sources": [
         "https://engineering.careers360.com/articles/viteee-2026",
         "https://viteee.vit.ac.in/"
-      ]
+      ],
+      "category": "engineering"
     },
     {
       "id": 3,
@@ -129,7 +143,8 @@
         "SRM Ramapuram (Chennai)",
         "SRM NCR (Ghaziabad)",
         "SRM Sonepat (Haryana)",
-        "SRM Amaravati (AP)"
+        "SRM Amaravati (AP)",
+        "SRM Trichy"
       ],
       "totalSeats": "~12,000 across multiple campuses",
       "eligibility": {
@@ -151,7 +166,12 @@
       "highestPlacement": "₹57 LPA",
       "approxFees": "₹2.5 lakh/year (₹10 lakh for 4 years)",
       "location": "Chennai (TN), Ghaziabad (UP), Sonepat (Haryana), Amaravati (AP)",
-      "topBranches": ["CSE", "IT", "ECE", "Mechanical"],
+      "topBranches": [
+        "CSE",
+        "IT",
+        "ECE",
+        "Mechanical"
+      ],
       "keyHighlights": [
         "3 phases = multiple attempts",
         "Remote proctored (take from home)",
@@ -163,7 +183,8 @@
       "sources": [
         "https://engineering.careers360.com/articles/srmjeee-2026",
         "https://applications.srmist.edu.in/btech"
-      ]
+      ],
+      "category": "engineering"
     },
     {
       "id": 4,
@@ -204,7 +225,12 @@
       "highestPlacement": "₹43 LPA",
       "approxFees": "₹2.9 lakh/year (₹11.6 lakh for 4 years)",
       "location": "Manipal (Karnataka), Bangalore, Jaipur",
-      "topBranches": ["CSE", "IT", "Mechanical", "Biotech"],
+      "topBranches": [
+        "CSE",
+        "IT",
+        "Mechanical",
+        "Biotech"
+      ],
       "keyHighlights": [
         "Established reputation (65+ years)",
         "Beautiful campus in Manipal",
@@ -216,7 +242,8 @@
       "sources": [
         "https://collegedunia.com/exams/met",
         "https://www.manipal.edu/"
-      ]
+      ],
+      "category": "engineering"
     },
     {
       "id": 5,
@@ -237,6 +264,10 @@
         "PES University",
         "MSRIT Bangalore",
         "BMSCE Bangalore",
+        "Dayananda Sagar College",
+        "BMS College of Engineering",
+        "RNSIT Bangalore",
+        "CMR Institute of Technology",
         "150+ engineering colleges in Karnataka"
       ],
       "totalSeats": "~20,000 across 150+ colleges",
@@ -259,7 +290,12 @@
       "highestPlacement": "₹40+ LPA (top colleges)",
       "approxFees": "₹1.5-3 lakh/year (varies by college)",
       "location": "Bangalore and across Karnataka",
-      "topBranches": ["CSE", "IT", "ECE", "Mechanical"],
+      "topBranches": [
+        "CSE",
+        "IT",
+        "ECE",
+        "Mechanical"
+      ],
       "keyHighlights": [
         "Access to 150+ Karnataka colleges",
         "Top colleges: RVCE, PES, MSRIT",
@@ -271,7 +307,8 @@
       "sources": [
         "https://engineering.careers360.com/articles/comedk-uget-2026",
         "https://www.comedk.org/"
-      ]
+      ],
+      "category": "engineering"
     },
     {
       "id": 6,
@@ -310,7 +347,12 @@
       "highestPlacement": "₹39 LPA",
       "approxFees": "₹2.3 lakh/year (₹9.2 lakh for 4 years)",
       "location": "Bhubaneswar (Odisha)",
-      "topBranches": ["CSE", "IT", "ECE", "Mechanical"],
+      "topBranches": [
+        "CSE",
+        "IT",
+        "ECE",
+        "Mechanical"
+      ],
       "keyHighlights": [
         "FREE application - no fee!",
         "3 phases = multiple attempts",
@@ -322,7 +364,8 @@
       "sources": [
         "https://engineering.careers360.com/articles/kiitee-2026",
         "https://kiitee.kiit.ac.in/"
-      ]
+      ],
+      "category": "engineering"
     },
     {
       "id": 7,
@@ -361,7 +404,11 @@
       "highestPlacement": "₹50+ LPA",
       "approxFees": "₹2.8 lakh/year (₹11.2 lakh for 4 years)",
       "location": "Bangalore (Karnataka)",
-      "topBranches": ["CSE", "IT", "ECE"],
+      "topBranches": [
+        "CSE",
+        "IT",
+        "ECE"
+      ],
       "keyHighlights": [
         "⚠️ B.Tech admissions via JEE Main/KCET in 2026",
         "Strong for CSE/IT",
@@ -373,7 +420,8 @@
       "sources": [
         "https://www.collegepravesh.com/entrance-exams/pessat/",
         "https://admissions.pes.edu/"
-      ]
+      ],
+      "category": "engineering"
     },
     {
       "id": 8,
@@ -416,7 +464,11 @@
       "highestPlacement": "₹20+ LPA",
       "approxFees": "₹2.5 lakh/year (₹10 lakh for 4 years)",
       "location": "Multiple cities (Noida, Lucknow, Jaipur, Mumbai, etc.)",
-      "topBranches": ["CSE", "IT", "ECE"],
+      "topBranches": [
+        "CSE",
+        "IT",
+        "ECE"
+      ],
       "keyHighlights": [
         "Multiple campuses across India",
         "Wide range of specializations",
@@ -428,7 +480,8 @@
       "sources": [
         "https://www.vidyavision.com/entrance-exam/amity-jee",
         "https://www.amity.edu/"
-      ]
+      ],
+      "category": "engineering"
     },
     {
       "id": 9,
@@ -467,7 +520,12 @@
       "highestPlacement": "₹35+ LPA",
       "approxFees": "₹2.8 lakh/year (₹11.2 lakh for 4 years)",
       "location": "Dehradun (Uttarakhand)",
-      "topBranches": ["Petroleum Engineering", "Computer Science", "Power Engineering", "Aviation"],
+      "topBranches": [
+        "Petroleum Engineering",
+        "Computer Science",
+        "Power Engineering",
+        "Aviation"
+      ],
       "keyHighlights": [
         "Specialized in Petroleum/Energy sector",
         "Strong industry partnerships (Oil & Gas)",
@@ -479,7 +537,8 @@
       "sources": [
         "https://www.shiksha.com/engineering/upeseat-exam",
         "https://www.upes.ac.in/"
-      ]
+      ],
+      "category": "engineering"
     },
     {
       "id": 10,
@@ -518,7 +577,12 @@
       "highestPlacement": "₹42 LPA",
       "approxFees": "₹1.5 lakh/year (₹6 lakh for 4 years) - After scholarship",
       "location": "Phagwara (Punjab)",
-      "topBranches": ["CSE", "IT", "Mechanical", "Civil"],
+      "topBranches": [
+        "CSE",
+        "IT",
+        "Mechanical",
+        "Civil"
+      ],
       "keyHighlights": [
         "Huge campus (600+ acres)",
         "Remote proctored exam available",
@@ -530,7 +594,8 @@
       "sources": [
         "https://engineering.careers360.com/articles/lpunest-2026",
         "https://www.lpu.in/nest/"
-      ]
+      ],
+      "category": "engineering"
     },
     {
       "id": 11,
@@ -573,7 +638,12 @@
       "highestPlacement": "₹40+ LPA (VJTI, COEP)",
       "approxFees": "₹50K-1 lakh/year for govt colleges (₹2-4 lakh total)",
       "location": "Mumbai, Pune, Nagpur, and across Maharashtra",
-      "topBranches": ["CSE", "IT", "Mechanical", "Civil"],
+      "topBranches": [
+        "CSE",
+        "IT",
+        "Mechanical",
+        "Civil"
+      ],
       "keyHighlights": [
         "Very affordable (govt college fees)",
         "Top colleges: VJTI, COEP",
@@ -585,7 +655,8 @@
       "sources": [
         "https://engineering.careers360.com/articles/mht-cet-2026",
         "https://cetcell.mahacet.org/"
-      ]
+      ],
+      "category": "engineering"
     },
     {
       "id": 12,
@@ -628,7 +699,12 @@
       "highestPlacement": "₹45+ LPA (top colleges)",
       "approxFees": "₹50K-1 lakh/year for govt colleges",
       "location": "Bangalore, Mysore, Mangalore, across Karnataka",
-      "topBranches": ["CSE", "IT", "ECE", "Mechanical"],
+      "topBranches": [
+        "CSE",
+        "IT",
+        "ECE",
+        "Mechanical"
+      ],
       "keyHighlights": [
         "Very affordable govt colleges",
         "Bangalore = IT hub advantage",
@@ -640,7 +716,8 @@
       "sources": [
         "https://engineering.careers360.com/articles/kcet-2026",
         "https://cetonline.karnataka.gov.in/"
-      ]
+      ],
+      "category": "engineering"
     },
     {
       "id": 13,
@@ -672,7 +749,7 @@
       "examPattern": {
         "mode": "Computer-Based Test (CBT)",
         "duration": "3 hours",
-        "sections": "Physics (80), Chemistry (80), Mathematics (80)",
+        "sections": "Mathematics (80), Physics (40), Chemistry (40)",
         "totalQuestions": 160,
         "totalMarks": 160,
         "markingScheme": "+1 for correct, no negative marking"
@@ -683,7 +760,12 @@
       "highestPlacement": "₹30+ LPA (top colleges)",
       "approxFees": "₹60K-1.5 lakh/year (varies by college)",
       "location": "Hyderabad, Warangal, across Telangana",
-      "topBranches": ["CSE", "IT", "ECE", "Mechanical"],
+      "topBranches": [
+        "CSE",
+        "IT",
+        "ECE",
+        "Mechanical"
+      ],
       "keyHighlights": [
         "Affordable options in Hyderabad",
         "Good colleges: CBIT, Vasavi",
@@ -695,7 +777,8 @@
       "sources": [
         "https://engineering.careers360.com/articles/ts-eamcet-2026",
         "https://eapcet.tgche.ac.in/"
-      ]
+      ],
+      "category": "engineering"
     },
     {
       "id": 14,
@@ -727,9 +810,9 @@
       "examPattern": {
         "mode": "Computer-Based Test (CBT)",
         "duration": "3 hours",
-        "sections": "Physics (40), Chemistry (40), Mathematics (80)",
-        "totalQuestions": 120,
-        "totalMarks": 480,
+        "sections": "Mathematics (75), Physics (45), Chemistry (30)",
+        "totalQuestions": 150,
+        "totalMarks": 600,
         "markingScheme": "+4 for correct, -1 for incorrect"
       },
       "difficultyLevel": "Moderate-High (Maths weightage high)",
@@ -738,7 +821,12 @@
       "highestPlacement": "₹40+ LPA",
       "approxFees": "₹20K-80K/year (extremely affordable)",
       "location": "Thiruvananthapuram, Kochi, Thrissur, across Kerala",
-      "topBranches": ["CSE", "ECE", "Mechanical", "Civil"],
+      "topBranches": [
+        "CSE",
+        "ECE",
+        "Mechanical",
+        "Civil"
+      ],
       "keyHighlights": [
         "Extremely affordable (₹20K-80K/year)",
         "High quality education",
@@ -750,7 +838,8 @@
       "sources": [
         "https://engineering.careers360.com/articles/keam-2026",
         "https://cee.kerala.gov.in/"
-      ]
+      ],
+      "category": "engineering"
     },
     {
       "id": 15,
@@ -785,7 +874,7 @@
         "sections": "Paper I: Maths (75 Q), Paper II: Physics (40) + Chemistry (40)",
         "totalQuestions": 155,
         "totalMarks": 200,
-        "markingScheme": "1 mark per question, no negative marking"
+        "markingScheme": "Cat 1: +1/-0.25 (single correct), Cat 2: +2/-0.5 (single correct), Cat 3: +2/no negative (multiple correct)"
       },
       "difficultyLevel": "Moderate",
       "preparationTip": "Pen-paper exam. WB board friendly. Two separate papers on same day.",
@@ -793,7 +882,12 @@
       "highestPlacement": "₹40+ LPA (Jadavpur, IIEST)",
       "approxFees": "₹50K-1 lakh/year (govt colleges)",
       "location": "Kolkata, Howrah, Durgapur, across West Bengal",
-      "topBranches": ["CSE", "IT", "ECE", "Mechanical"],
+      "topBranches": [
+        "CSE",
+        "IT",
+        "ECE",
+        "Mechanical"
+      ],
       "keyHighlights": [
         "Top colleges: Jadavpur, IIEST Shibpur",
         "Very affordable govt colleges",
@@ -805,6 +899,1177 @@
       "sources": [
         "https://engineering.careers360.com/articles/wbjee-application-form",
         "https://wbjeeb.nic.in/"
+      ],
+      "category": "engineering"
+    },
+    {
+      "id": 16,
+      "name": "NEET-UG",
+      "fullName": "National Eligibility cum Entrance Test (Undergraduate)",
+      "category": "medical",
+      "conductedBy": "National Testing Agency (NTA)",
+      "tier": "National-Level",
+      "priority": "Must Apply (for MBBS/BDS/AYUSH)",
+      "registrationStart": "2026-02-08",
+      "registrationEnd": "2026-03-15 (expected)",
+      "examDate": "2026-05-03 (expected - First Sunday of May)",
+      "resultDate": "June 2026",
+      "applicationFee": "₹1,700 (General), ₹1,600 (EWS/OBC), ₹1,000 (SC/ST/PwD), ₹9,500 (Outside India)",
+      "applyLink": "https://neet.nta.nic.in/",
+      "officialWebsite": "https://neet.nta.nic.in/",
+      "colleges": [
+        "AIIMS (16 institutes)",
+        "JIPMER Puducherry",
+        "PGIMER Chandigarh",
+        "BHU (Varanasi)",
+        "AMU (Aligarh)",
+        "All Government Medical Colleges (600+)",
+        "Private Medical Colleges (300+)",
+        "Deemed Universities",
+        "AYUSH Colleges"
+      ],
+      "totalSeats": "~1,08,000 MBBS seats (Govt + Private)",
+      "eligibility": {
+        "education": "12th Pass or appearing with Physics, Chemistry, Biology/Biotechnology",
+        "minimumMarks": "50% in PCB (40% for SC/ST/OBC, 45% for PwD)",
+        "ageLimit": "Minimum 17 years as of Dec 31, 2026. No upper age limit."
+      },
+      "examPattern": {
+        "mode": "Pen & Paper (Offline)",
+        "duration": "3 hours 20 minutes",
+        "sections": "Physics (50 Q), Chemistry (50 Q), Biology (100 Q - 50 Botany + 50 Zoology)",
+        "totalQuestions": 200,
+        "totalMarks": 720,
+        "markingScheme": "+4 for correct, -1 for incorrect"
+      },
+      "difficultyLevel": "Very High (Most competitive medical exam in India)",
+      "preparationTip": "NCERT is BIBLE for NEET. 85-90% questions directly from NCERT. Focus on Biology (double weightage).",
+      "avgPlacement": "N/A (Doctor salary varies: ₹6-12 LPA for freshers, ₹50+ LPA for specialists)",
+      "highestPlacement": "N/A",
+      "approxFees": "₹50K-2 lakh/year (Govt), ₹15-25 lakh/year (Private)",
+      "location": "Pan-India (Govt + Private Medical Colleges)",
+      "topBranches": [
+        "MBBS",
+        "BDS",
+        "BAMS",
+        "BHMS",
+        "BUMS"
+      ],
+      "keyHighlights": [
+        "ONLY exam for MBBS/BDS admission in India",
+        "20+ lakh students appear annually",
+        "NCERT-based (85-90% direct questions)",
+        "Single exam for 1000+ colleges",
+        "Government college fees: ₹50K-2L/year",
+        "Cutoff: 50th percentile (General), 40th (SC/ST/OBC)"
+      ],
+      "colorCode": "high",
+      "sources": [
+        "https://neet.nta.nic.in/",
+        "https://www.mcc.nic.in/"
+      ]
+    },
+    {
+      "id": 17,
+      "name": "AIIMS INICET",
+      "fullName": "AIIMS INI Entrance Test (Discontinued for UG from 2020)",
+      "category": "medical",
+      "conductedBy": "AIIMS (Now merged with NEET-UG)",
+      "tier": "N/A",
+      "priority": "⚠️ No longer conducted - Use NEET-UG for AIIMS admission",
+      "registrationStart": "N/A",
+      "registrationEnd": "N/A",
+      "examDate": "N/A (Discontinued)",
+      "resultDate": "N/A",
+      "applicationFee": "N/A",
+      "applyLink": "https://aiimsexams.ac.in/",
+      "officialWebsite": "https://aiimsexams.ac.in/",
+      "colleges": [
+        "AIIMS New Delhi",
+        "AIIMS Bhopal",
+        "AIIMS Bhubaneswar",
+        "AIIMS Jodhpur",
+        "AIIMS Patna",
+        "AIIMS Raipur",
+        "AIIMS Rishikesh",
+        "And 9 more AIIMS"
+      ],
+      "totalSeats": "~1,200 MBBS seats across 16 AIIMS",
+      "eligibility": {
+        "education": "N/A - Apply via NEET-UG",
+        "minimumMarks": "N/A",
+        "ageLimit": "N/A"
+      },
+      "examPattern": {
+        "mode": "N/A",
+        "duration": "N/A",
+        "sections": "N/A",
+        "totalQuestions": 0,
+        "totalMarks": 0,
+        "markingScheme": "N/A"
+      },
+      "difficultyLevel": "N/A",
+      "preparationTip": "⚠️ IMPORTANT: AIIMS UG admissions now through NEET-UG only. Prepare for NEET to get into AIIMS.",
+      "avgPlacement": "N/A",
+      "highestPlacement": "N/A",
+      "approxFees": "₹5,850/year (Govt subsidy)",
+      "location": "16 AIIMS across India",
+      "topBranches": [
+        "MBBS"
+      ],
+      "keyHighlights": [
+        "⚠️ AIIMS MBBS admission now via NEET-UG",
+        "Counselling done by MCC",
+        "Extremely affordable (₹5,850/year)",
+        "Best medical education in India",
+        "Apply through NEET-UG only"
+      ],
+      "colorCode": "low",
+      "sources": [
+        "https://aiimsexams.ac.in/",
+        "https://www.mcc.nic.in/"
+      ]
+    },
+    {
+      "id": 18,
+      "name": "JIPMER",
+      "fullName": "JIPMER MBBS (Now merged with NEET-UG from 2020)",
+      "category": "medical",
+      "conductedBy": "JIPMER (Now merged with NEET)",
+      "tier": "N/A",
+      "priority": "⚠️ No longer conducted - Use NEET-UG",
+      "registrationStart": "N/A",
+      "registrationEnd": "N/A",
+      "examDate": "N/A (Merged with NEET from 2020)",
+      "resultDate": "N/A",
+      "applicationFee": "N/A",
+      "applyLink": "https://neet.nta.nic.in/",
+      "officialWebsite": "https://jipmer.edu.in/",
+      "colleges": [
+        "JIPMER Puducherry",
+        "JIPMER Karaikal"
+      ],
+      "totalSeats": "~200 MBBS seats (Both campuses)",
+      "eligibility": {
+        "education": "N/A - Apply via NEET-UG",
+        "minimumMarks": "N/A",
+        "ageLimit": "N/A"
+      },
+      "examPattern": {
+        "mode": "N/A",
+        "duration": "N/A",
+        "sections": "N/A",
+        "totalQuestions": 0,
+        "totalMarks": 0,
+        "markingScheme": "N/A"
+      },
+      "difficultyLevel": "N/A",
+      "preparationTip": "⚠️ JIPMER admissions now through NEET-UG. Counselling by MCC.",
+      "avgPlacement": "N/A",
+      "highestPlacement": "N/A",
+      "approxFees": "₹3,000-5,000/year (Highly subsidized)",
+      "location": "Puducherry, Karaikal",
+      "topBranches": [
+        "MBBS"
+      ],
+      "keyHighlights": [
+        "⚠️ JIPMER MBBS admission now via NEET-UG",
+        "Premier medical institute",
+        "Extremely affordable",
+        "Apply through NEET-UG only",
+        "Counselling by MCC"
+      ],
+      "colorCode": "low",
+      "sources": [
+        "https://jipmer.edu.in/",
+        "https://www.mcc.nic.in/"
+      ]
+    },
+    {
+      "id": 19,
+      "name": "CLAT",
+      "fullName": "Common Law Admission Test",
+      "category": "law",
+      "conductedBy": "Consortium of National Law Universities",
+      "tier": "National-Level",
+      "priority": "Must Apply (for NLU admission)",
+      "registrationStart": "2026-01-06",
+      "registrationEnd": "2026-03-24",
+      "examDate": "2026-05-11 (Second Sunday of May)",
+      "resultDate": "May-June 2026",
+      "applicationFee": "₹4,000 (General/OBC/EWS), ₹3,500 (SC/ST/PwD/BPL)",
+      "applyLink": "https://consortiumofnlus.ac.in/",
+      "officialWebsite": "https://consortiumofnlus.ac.in/",
+      "colleges": [
+        "NLSIU Bangalore",
+        "NALSAR Hyderabad",
+        "NLU Delhi",
+        "NUJS Kolkata",
+        "NLU Jodhpur",
+        "HNLU Raipur",
+        "GNLU Gandhinagar",
+        "RMLNLU Lucknow",
+        "And 16 more NLUs"
+      ],
+      "totalSeats": "~3,000 UG seats (BA LLB - 5 years) across 24 NLUs",
+      "eligibility": {
+        "education": "12th Pass or appearing (any stream)",
+        "minimumMarks": "45% (General/OBC/EWS), 40% (SC/ST)",
+        "ageLimit": "No upper age limit (from 2023)"
+      },
+      "examPattern": {
+        "mode": "Pen & Paper (Offline)",
+        "duration": "2 hours",
+        "sections": "English (22 Q), Current Affairs (28 Q), Legal Reasoning (32 Q), Logical Reasoning (28 Q), Quantitative Techniques (10 Q)",
+        "totalQuestions": 120,
+        "totalMarks": 120,
+        "markingScheme": "+1 for correct, -0.25 for incorrect"
+      },
+      "difficultyLevel": "High (Very competitive)",
+      "preparationTip": "Focus on Legal Reasoning and Current Affairs. Read newspapers daily. Practice reading comprehension.",
+      "avgPlacement": "₹10-18 LPA (from top NLUs like NLSIU, NALSAR)",
+      "highestPlacement": "₹25+ LPA (International law firms)",
+      "approxFees": "₹2-4 lakh/year (varies by NLU)",
+      "location": "Pan-India (24 NLUs)",
+      "topBranches": [
+        "BA LLB (Hons.)",
+        "BCom LLB",
+        "BBA LLB"
+      ],
+      "keyHighlights": [
+        "Single exam for 24 NLUs",
+        "Top law colleges in India",
+        "Excellent career prospects (Corporate Law, Judiciary, Civil Services)",
+        "Good starting salaries (₹10-18 LPA)",
+        "No age limit (from 2023)",
+        "All India Ranking"
+      ],
+      "colorCode": "high",
+      "sources": [
+        "https://consortiumofnlus.ac.in/",
+        "https://www.livelaw.in/clat-exam"
+      ]
+    },
+    {
+      "id": 20,
+      "name": "AILET",
+      "fullName": "All India Law Entrance Test",
+      "category": "law",
+      "conductedBy": "National Law University, Delhi",
+      "tier": "University-Level",
+      "priority": "Apply if interested in NLU Delhi",
+      "registrationStart": "2026-01-01 (expected)",
+      "registrationEnd": "2026-03-31 (expected)",
+      "examDate": "2026-05-18 (expected)",
+      "resultDate": "June 2026",
+      "applicationFee": "₹3,750 (General), ₹1,875 (SC/ST/PwD)",
+      "applyLink": "https://nludelhi.ac.in/",
+      "officialWebsite": "https://nludelhi.ac.in/",
+      "colleges": [
+        "NLU Delhi"
+      ],
+      "totalSeats": "~118 BA LLB seats",
+      "eligibility": {
+        "education": "12th Pass or appearing (any stream)",
+        "minimumMarks": "50% (General), 45% (SC/ST)",
+        "ageLimit": "No upper age limit (from 2023)"
+      },
+      "examPattern": {
+        "mode": "Pen & Paper (Offline)",
+        "duration": "1 hour 30 minutes",
+        "sections": "English (35 Q), General Knowledge & Current Affairs (35 Q), Legal Aptitude (50 Q), Logical Reasoning (30 Q)",
+        "totalQuestions": 150,
+        "totalMarks": 150,
+        "markingScheme": "+1 for correct, -0.25 for incorrect"
+      },
+      "difficultyLevel": "High",
+      "preparationTip": "Legal Aptitude carries max weight (50 Q). Prepare deeply for legal reasoning and current affairs.",
+      "avgPlacement": "₹12-15 LPA",
+      "highestPlacement": "₹20+ LPA",
+      "approxFees": "₹3.5 lakh/year",
+      "location": "New Delhi",
+      "topBranches": [
+        "BA LLB (Hons.)"
+      ],
+      "keyHighlights": [
+        "Premier law university in Delhi",
+        "Located in national capital",
+        "Strong judiciary preparation",
+        "Good placement record",
+        "Close to Supreme Court",
+        "Separate from CLAT"
+      ],
+      "colorCode": "medium",
+      "sources": [
+        "https://nludelhi.ac.in/",
+        "https://www.livelaw.in/ailet"
+      ]
+    },
+    {
+      "id": 21,
+      "name": "CAT",
+      "fullName": "Common Admission Test",
+      "category": "management",
+      "conductedBy": "IIMs (Rotated annually)",
+      "tier": "National-Level",
+      "priority": "Must Apply (for IIMs/Top B-Schools)",
+      "registrationStart": "2026-08-01 (expected)",
+      "registrationEnd": "2026-09-20 (expected)",
+      "examDate": "2026-11-22 (Last Sunday of November)",
+      "resultDate": "January 2027",
+      "applicationFee": "₹2,400 (General/OBC), ₹1,200 (SC/ST/PwD)",
+      "applyLink": "https://iimcat.ac.in/",
+      "officialWebsite": "https://iimcat.ac.in/",
+      "colleges": [
+        "IIM Ahmedabad",
+        "IIM Bangalore",
+        "IIM Calcutta",
+        "IIM Lucknow",
+        "IIM Kozhikode",
+        "IIM Indore",
+        "And 14 more IIMs",
+        "1000+ B-Schools accept CAT scores (FMS, SPJIMR, MDI, etc.)"
+      ],
+      "totalSeats": "~5,000 MBA seats across 20 IIMs",
+      "eligibility": {
+        "education": "Bachelor's degree (any stream) with 50% marks (45% for SC/ST/PwD)",
+        "minimumMarks": "50% in graduation (45% for reserved)",
+        "ageLimit": "No age limit"
+      },
+      "examPattern": {
+        "mode": "Computer-Based Test (CBT)",
+        "duration": "2 hours (40 min per section)",
+        "sections": "VARC (24 Q), DILR (20 Q), QA (22 Q)",
+        "totalQuestions": 66,
+        "totalMarks": 198,
+        "markingScheme": "+3 for correct, -1 for incorrect (MCQs), 0 for wrong (TITA)"
+      },
+      "difficultyLevel": "Very High (Most competitive MBA exam)",
+      "preparationTip": "Start 6-8 months early. Focus on speed and accuracy. Mock tests are crucial. 99+ percentile for top IIMs.",
+      "avgPlacement": "₹25-35 LPA (IIMs), varies by college",
+      "highestPlacement": "₹1.5+ Crore (IIM A/B/C - International offers)",
+      "approxFees": "₹23-28 lakh for 2 years (IIMs)",
+      "location": "Pan-India (20 IIMs + 1000+ B-Schools)",
+      "topBranches": [
+        "MBA",
+        "PGDM",
+        "PGP"
+      ],
+      "keyHighlights": [
+        "Premier MBA entrance exam in India",
+        "Single exam for 20 IIMs + 1000+ colleges",
+        "99+ percentile for IIM A/B/C calls",
+        "Excellent ROI (₹25L+ packages)",
+        "2.5 lakh+ candidates annually",
+        "Top IIMs: A, B, C, L, I, K"
+      ],
+      "colorCode": "high",
+      "sources": [
+        "https://iimcat.ac.in/",
+        "https://www.mba.com/mbas-and-business-masters/india"
+      ]
+    },
+    {
+      "id": 22,
+      "name": "XAT",
+      "fullName": "Xavier Aptitude Test",
+      "category": "management",
+      "conductedBy": "XLRI Jamshedpur",
+      "tier": "Premier B-School Exam",
+      "priority": "Apply if targeting XLRI/Top B-Schools",
+      "registrationStart": "2026-08-10 (expected)",
+      "registrationEnd": "2026-11-30 (expected)",
+      "examDate": "2027-01-03 (First Sunday of January)",
+      "resultDate": "January 2027",
+      "applicationFee": "₹2,000 (XLRI), +₹300 per additional program",
+      "applyLink": "https://xatonline.in/",
+      "officialWebsite": "https://xlri.ac.in/",
+      "colleges": [
+        "XLRI Jamshedpur",
+        "XLRI Delhi",
+        "SPJIMR Mumbai",
+        "IMT Ghaziabad",
+        "LIBA Chennai",
+        "XIMB Bhubaneswar",
+        "And 150+ B-Schools"
+      ],
+      "totalSeats": "~500 seats across XLRI campuses",
+      "eligibility": {
+        "education": "Bachelor's degree (any stream) with 50%",
+        "minimumMarks": "50% in graduation",
+        "ageLimit": "No age limit"
+      },
+      "examPattern": {
+        "mode": "Computer-Based Test (CBT)",
+        "duration": "3 hours 30 minutes",
+        "sections": "Verbal & Logical Ability (26 Q), Decision Making (21 Q), Quantitative Ability (28 Q), General Knowledge (25 Q)",
+        "totalQuestions": 100,
+        "totalMarks": 100,
+        "markingScheme": "+1 for correct, -0.25 for incorrect, -0.10 for unattempted"
+      },
+      "difficultyLevel": "High",
+      "preparationTip": "Decision Making is unique to XAT. GK section requires current affairs prep. Negative for unattempted!",
+      "avgPlacement": "₹25-30 LPA (XLRI)",
+      "highestPlacement": "₹78 LPA (XLRI BM)",
+      "approxFees": "₹26 lakh for 2 years (XLRI)",
+      "location": "Jamshedpur, Delhi, and via 150+ other B-Schools",
+      "topBranches": [
+        "PGDM (BM)",
+        "PGDM (HRM)",
+        "MBA"
+      ],
+      "keyHighlights": [
+        "Premier B-School exam (after CAT)",
+        "XLRI is top 5 B-School in India",
+        "150+ colleges accept XAT",
+        "Unique Decision Making section",
+        "Negative for unattempted questions (-0.10)",
+        "Good alternative to CAT"
+      ],
+      "colorCode": "high",
+      "sources": [
+        "https://xatonline.in/",
+        "https://xlri.ac.in/"
+      ]
+    },
+    {
+      "id": 23,
+      "name": "UCEED",
+      "fullName": "Undergraduate Common Entrance Examination for Design",
+      "category": "design",
+      "conductedBy": "IIT Bombay (on behalf of IITs)",
+      "tier": "National-Level",
+      "priority": "Must Apply (for IIT Design programs)",
+      "registrationStart": "2025-10-01 (expected)",
+      "registrationEnd": "2025-11-10 (expected)",
+      "examDate": "2026-01-18 (Third Sunday of January)",
+      "resultDate": "March 2026",
+      "applicationFee": "₹2,000 (Female/SC/ST/PwD), ₹4,000 (Others)",
+      "applyLink": "https://uceed.iitb.ac.in/",
+      "officialWebsite": "https://uceed.iitb.ac.in/",
+      "colleges": [
+        "IIT Bombay (IDC)",
+        "IIT Guwahati (DoD)",
+        "IIT Hyderabad (DoD)",
+        "IIITDM Jabalpur"
+      ],
+      "totalSeats": "~250 B.Des seats across IITs",
+      "eligibility": {
+        "education": "12th Pass or appearing (any stream)",
+        "minimumMarks": "No minimum percentage required",
+        "ageLimit": "No age limit"
+      },
+      "examPattern": {
+        "mode": "Computer-Based Test (CBT)",
+        "duration": "3 hours",
+        "sections": "Part A: NAT (Numerical), MCQ (72 Q), Part B: Drawing (3 Q)",
+        "totalQuestions": 75,
+        "totalMarks": 300,
+        "markingScheme": "Part A: +4/-1 (MCQ), +4/0 (NAT), Part B: 0-60 marks per drawing"
+      },
+      "difficultyLevel": "High (Requires creative & analytical thinking)",
+      "preparationTip": "Practice drawing, observation, visualization. No specific syllabus. Creativity + logical thinking.",
+      "avgPlacement": "₹10-15 LPA (IIT B.Des graduates)",
+      "highestPlacement": "₹30+ LPA",
+      "approxFees": "₹2.5 lakh/year (IITs)",
+      "location": "IIT Bombay, Guwahati, Hyderabad, IIITDM Jabalpur",
+      "topBranches": [
+        "B.Des (Product Design)",
+        "B.Des (Visual Communication)",
+        "B.Des (Interaction Design)"
+      ],
+      "keyHighlights": [
+        "Premier design entrance exam",
+        "Admission to IIT design programs",
+        "No specific syllabus - creativity tested",
+        "Drawing section in Part B",
+        "High starting salaries in design field",
+        "UX/UI, Product Design careers"
+      ],
+      "colorCode": "high",
+      "sources": [
+        "https://uceed.iitb.ac.in/",
+        "https://www.iitb.ac.in/idc/"
+      ]
+    },
+    {
+      "id": 24,
+      "name": "NID DAT",
+      "fullName": "National Institute of Design - Design Aptitude Test",
+      "category": "design",
+      "conductedBy": "National Institute of Design (NID)",
+      "tier": "Premier Design Institute",
+      "priority": "Must Apply (for NID campuses)",
+      "registrationStart": "2025-11-01 (expected)",
+      "registrationEnd": "2026-01-15 (expected)",
+      "examDate": "2026-01-05 (Prelims), 2026-03-15 (Mains - Studio Test)",
+      "resultDate": "April 2026",
+      "applicationFee": "₹2,000 (General/OBC), ₹1,000 (SC/ST)",
+      "applyLink": "https://admissions.nid.edu/",
+      "officialWebsite": "https://www.nid.edu/",
+      "colleges": [
+        "NID Ahmedabad",
+        "NID Gandhinagar",
+        "NID Bangalore",
+        "NID Vijayawada"
+      ],
+      "totalSeats": "~300 B.Des seats across 4 NID campuses",
+      "eligibility": {
+        "education": "12th Pass or appearing (any stream)",
+        "minimumMarks": "55% (General), 50% (SC/ST/PwD)",
+        "ageLimit": "23 years as of July 1, 2026"
+      },
+      "examPattern": {
+        "mode": "Prelims: CBT, Mains: Studio Test (Offline)",
+        "duration": "Prelims: 3 hours, Mains: 3-4 days",
+        "sections": "Prelims: Creativity, Drawing, Observation, Design Thinking. Mains: Studio Test (hands-on design)",
+        "totalQuestions": 100,
+        "totalMarks": 100,
+        "markingScheme": "Prelims: +1/0/-0.25, Mains: Qualitative assessment"
+      },
+      "difficultyLevel": "Very High (Studio test requires hands-on creative work)",
+      "preparationTip": "Practice sketching, observation, creative thinking. Mains is 3-4 day intensive studio test at NID campus.",
+      "avgPlacement": "₹8-12 LPA",
+      "highestPlacement": "₹25+ LPA",
+      "approxFees": "₹2.5 lakh/year",
+      "location": "Ahmedabad, Gandhinagar, Bangalore, Vijayawada",
+      "topBranches": [
+        "Product Design",
+        "Textile Design",
+        "Communication Design",
+        "Ceramic & Glass Design"
+      ],
+      "keyHighlights": [
+        "India's premier design institute",
+        "Two-stage selection: Prelims + Mains (Studio Test)",
+        "Mains is 3-4 day on-campus design test",
+        "World-class faculty and facilities",
+        "Strong industry connect",
+        "Graduates work in top design studios globally"
+      ],
+      "colorCode": "high",
+      "sources": [
+        "https://www.nid.edu/",
+        "https://admissions.nid.edu/"
+      ]
+    },
+    {
+      "id": 25,
+      "name": "SLAT",
+      "fullName": "Symbiosis Law Admission Test",
+      "category": "law",
+      "conductedBy": "Symbiosis International University",
+      "tier": "Premier Private Law Schools",
+      "priority": "Must Apply (for Symbiosis Law Schools)",
+      "registrationStart": "2025-11-01 (expected)",
+      "registrationEnd": "2025-12-15",
+      "examDate": "2025-12-20 and 2025-12-28",
+      "resultDate": "2026-01-15",
+      "applicationFee": "₹2,250 + ₹1,000 per institute",
+      "applyLink": "https://www.slat-test.org/",
+      "officialWebsite": "https://www.slat-test.org/",
+      "colleges": [
+        "Symbiosis Law School Pune",
+        "Symbiosis Law School Noida",
+        "Symbiosis Law School Hyderabad",
+        "Symbiosis Law School Nagpur"
+      ],
+      "totalSeats": "~500 BA LLB seats across 4 SLS campuses",
+      "eligibility": {
+        "education": "12th Pass or appearing (any stream)",
+        "minimumMarks": "45% (General/OBC/EWS), 40% (SC/ST)",
+        "ageLimit": "No age limit"
+      },
+      "examPattern": {
+        "mode": "Computer-Based Test (CBT) - Online",
+        "duration": "60 minutes",
+        "sections": "Logical Reasoning (12), Legal Reasoning (12), Analytical Reasoning (12), Reading Comprehension (12), General Knowledge (12)",
+        "totalQuestions": 60,
+        "totalMarks": 60,
+        "markingScheme": "+1 for correct, no negative marking"
+      },
+      "difficultyLevel": "High",
+      "preparationTip": "Focus on Legal Reasoning (12 marks). GK section requires current affairs. Can attempt exam on both dates.",
+      "avgPlacement": "₹8-12 LPA",
+      "highestPlacement": "₹18+ LPA",
+      "approxFees": "₹3-3.5 lakh/year (5-year BA LLB)",
+      "location": "Pune, Noida, Hyderabad, Nagpur",
+      "topBranches": [
+        "BA LLB (Hons.)",
+        "BBA LLB (Hons.)",
+        "BCom LLB (Hons.)"
+      ],
+      "keyHighlights": [
+        "4 Symbiosis Law Schools accept SLAT",
+        "Can appear on both exam dates (Dec 20 & 28)",
+        "Selection: SLAT score + Personal Interview",
+        "Good score: 48-55 marks",
+        "No negative marking",
+        "Strong corporate law focus"
+      ],
+      "colorCode": "high",
+      "sources": [
+        "https://www.slat-test.org/",
+        "https://www.shiksha.com/law/slat-exam"
+      ]
+    },
+    {
+      "id": 26,
+      "name": "LSAT India",
+      "fullName": "Law School Admission Test India (Discontinued)",
+      "category": "law",
+      "conductedBy": "Pearson VUE / LSAC (Discontinued)",
+      "tier": "N/A",
+      "priority": "⚠️ Exam Discontinued from 2026",
+      "registrationStart": "N/A (Exam discontinued)",
+      "registrationEnd": "N/A",
+      "examDate": "N/A (Discontinued by LSAC)",
+      "resultDate": "N/A",
+      "applicationFee": "N/A",
+      "applyLink": "N/A",
+      "officialWebsite": "N/A",
+      "colleges": [
+        "Previously accepted by 85+ private law schools",
+        "GD Goenka University",
+        "ISBR Law College",
+        "BML Munjal University",
+        "Lloyd Law College",
+        "Alliance University"
+      ],
+      "totalSeats": "N/A",
+      "eligibility": {
+        "education": "N/A - Exam discontinued",
+        "minimumMarks": "N/A",
+        "ageLimit": "N/A"
+      },
+      "examPattern": {
+        "mode": "N/A",
+        "duration": "N/A",
+        "sections": "N/A",
+        "totalQuestions": 0,
+        "totalMarks": 0,
+        "markingScheme": "N/A"
+      },
+      "difficultyLevel": "N/A",
+      "preparationTip": "⚠️ LSAT India discontinued by Law School Admission Council (LSAC). Alternative: Apply to CLAT, AILET, or directly to private law schools.",
+      "avgPlacement": "N/A",
+      "highestPlacement": "N/A",
+      "approxFees": "N/A",
+      "location": "N/A",
+      "topBranches": [
+        "N/A"
+      ],
+      "keyHighlights": [
+        "⚠️ Discontinued from 2026",
+        "LSAC unable to meet business objectives",
+        "Alternative: CLAT (24 NLUs)",
+        "Alternative: AILET (NLU Delhi)",
+        "Alternative: SLAT (Symbiosis Law Schools)",
+        "Check directly with private law schools for admission"
+      ],
+      "colorCode": "low",
+      "sources": [
+        "https://www.upes.ac.in/blog/exams/lsat-india-exam-and-preparation",
+        "https://stepincollege.com/exam/LSAT/EXMID41"
+      ]
+    },
+    {
+      "id": 27,
+      "name": "SNAP",
+      "fullName": "Symbiosis National Aptitude Test",
+      "category": "management",
+      "conductedBy": "Symbiosis International University (SIU)",
+      "tier": "Premier B-School Exam",
+      "priority": "Must Apply (for Symbiosis B-Schools)",
+      "registrationStart": "2026-08-01 (expected)",
+      "registrationEnd": "2026-11-30 (expected)",
+      "examDate": "December 2026 (3 different dates)",
+      "resultDate": "January 2027",
+      "applicationFee": "₹2,200 per exam + ₹1,000 per program",
+      "applyLink": "https://www.snaptest.org/",
+      "officialWebsite": "https://www.snaptest.org/",
+      "colleges": [
+        "SIBM Pune",
+        "SCMHRD Pune",
+        "SIBM Bangalore",
+        "SIBM Hyderabad",
+        "SIIB Pune",
+        "SIOM Nashik",
+        "SITM Pune",
+        "15 Symbiosis B-Schools in total"
+      ],
+      "totalSeats": "~2,000 MBA seats across 15 institutes",
+      "eligibility": {
+        "education": "Graduate from recognized university (any discipline)",
+        "minimumMarks": "50% (General), 45% (SC/ST)",
+        "ageLimit": "No age limit"
+      },
+      "examPattern": {
+        "mode": "Computer-Based Test (CBT)",
+        "duration": "60 minutes",
+        "sections": "General English (15 Q), Quantitative (20 Q), Reasoning (25 Q)",
+        "totalQuestions": 60,
+        "totalMarks": 60,
+        "markingScheme": "+1 for correct, no negative marking"
+      },
+      "difficultyLevel": "High",
+      "preparationTip": "Fast-paced exam (1 min/Q). Can attempt on all 3 dates. Best score considered. Focus on speed.",
+      "avgPlacement": "₹18-25 LPA (SIBM Pune), varies by institute",
+      "highestPlacement": "₹42 LPA (SIBM Pune)",
+      "approxFees": "₹12-18 lakh for 2 years (varies by institute)",
+      "location": "Pune, Bangalore, Hyderabad, Nashik, Nagpur",
+      "topBranches": [
+        "MBA",
+        "MBA (Operations)",
+        "MBA (Healthcare)",
+        "MBA (Agri-Business)"
+      ],
+      "keyHighlights": [
+        "Gateway to 15 Symbiosis B-Schools",
+        "Top institutes: SIBM Pune, SCMHRD Pune",
+        "3 exam attempts in December",
+        "Best of 3 scores considered",
+        "No negative marking",
+        "60 questions in 60 minutes"
+      ],
+      "colorCode": "high",
+      "sources": [
+        "https://www.snaptest.org/",
+        "https://www.shiksha.com/mba/articles/snap-2026-exam-blogId-217318"
+      ]
+    },
+    {
+      "id": 28,
+      "name": "NMAT",
+      "fullName": "NMIMS Management Aptitude Test",
+      "category": "management",
+      "conductedBy": "GMAC (for NMIMS admission)",
+      "tier": "Premier B-School Exam",
+      "priority": "Must Apply (for NMIMS campuses)",
+      "registrationStart": "2026-08-01",
+      "registrationEnd": "2026-10-18",
+      "examDate": "2026-11-05 to 2026-12-19",
+      "resultDate": "January 2027",
+      "applicationFee": "₹3,000 per attempt (GMAC) + ₹2,900 (NMIMS Application)",
+      "applyLink": "https://nmat.nmims.edu/",
+      "officialWebsite": "https://nmat.nmims.edu/",
+      "colleges": [
+        "NMIMS Mumbai (Flagship)",
+        "NMIMS Bangalore",
+        "NMIMS Hyderabad",
+        "NMIMS Navi Mumbai",
+        "NMIMS Indore",
+        "NMIMS Shirpur",
+        "SVKM's NMIMS Dhule"
+      ],
+      "totalSeats": "~2,500 MBA seats across campuses",
+      "eligibility": {
+        "education": "Bachelor's degree (any discipline)",
+        "minimumMarks": "50% (General), 45% (SC/ST/OBC)",
+        "ageLimit": "No age limit"
+      },
+      "examPattern": {
+        "mode": "Computer-Based Test (CBT)",
+        "duration": "120 minutes (28+52+40)",
+        "sections": "Language Skills (36 Q, 28 min), Quantitative Skills (48 Q, 52 min), Logical Reasoning (36 Q, 40 min)",
+        "totalQuestions": 120,
+        "totalMarks": 360,
+        "markingScheme": "+3 for correct, no negative marking"
+      },
+      "difficultyLevel": "High",
+      "preparationTip": "Sectional time limits. Target 209+ overall, 62+ sectional for NMIMS Mumbai. Can retake 3 times.",
+      "avgPlacement": "₹23.07 LPA (NMIMS Mumbai)",
+      "highestPlacement": "₹57.65 LPA (NMIMS Mumbai)",
+      "approxFees": "₹23-26 lakh for 2 years (NMIMS Mumbai)",
+      "location": "Mumbai, Bangalore, Hyderabad, Navi Mumbai, Indore, Shirpur",
+      "topBranches": [
+        "MBA (Core)",
+        "MBA (HR)",
+        "MBA (Business Analytics)",
+        "MBA (Digital Transformation)",
+        "MBA (Pharma)"
+      ],
+      "keyHighlights": [
+        "NMIMS Mumbai is top 10 B-School",
+        "Can retake exam 3 times",
+        "Best score considered",
+        "Cutoff: 209 overall, 62 sectional (Mumbai)",
+        "Sectional time limits (challenging)",
+        "Selection: NMAT + Competency Test + PI"
+      ],
+      "colorCode": "high",
+      "sources": [
+        "https://nmat.nmims.edu/",
+        "https://www.shiksha.com/mba/nmat-exam"
+      ]
+    },
+    {
+      "id": 29,
+      "name": "CMAT",
+      "fullName": "Common Management Admission Test",
+      "category": "management",
+      "conductedBy": "National Testing Agency (NTA)",
+      "tier": "National-Level",
+      "priority": "Good Backup (1000+ AICTE colleges)",
+      "registrationStart": "2025-11-01 (expected)",
+      "registrationEnd": "2025-11-24",
+      "examDate": "2026-01-25",
+      "resultDate": "2026-02-14",
+      "applicationFee": "₹1,200 (General male), ₹1,000 (Reserved/Female/Transgender)",
+      "applyLink": "https://cmat.nta.nic.in/",
+      "officialWebsite": "https://cmat.nta.nic.in/",
+      "colleges": [
+        "JBIMS Mumbai",
+        "SIMSREE Mumbai",
+        "KJ Somaiya Mumbai",
+        "Welingkar Mumbai",
+        "PUMBA Pune",
+        "GIM Goa",
+        "1000+ AICTE-approved colleges"
+      ],
+      "totalSeats": "~40,000+ seats (AICTE colleges)",
+      "eligibility": {
+        "education": "Graduation (any discipline) or final year appearing",
+        "minimumMarks": "No minimum percentage required",
+        "ageLimit": "No age limit"
+      },
+      "examPattern": {
+        "mode": "Computer-Based Test (CBT)",
+        "duration": "3 hours",
+        "sections": "Quantitative Techniques (25 Q), Logical Reasoning (25 Q), Language Comprehension (25 Q), General Awareness (25 Q), Innovation (1 Q)",
+        "totalQuestions": 101,
+        "totalMarks": 400,
+        "markingScheme": "+4 for correct, -1 for incorrect"
+      },
+      "difficultyLevel": "Moderate",
+      "preparationTip": "Good for tier-2 MBA colleges. Target 180+ for JBIMS/SIMSREE. Negative marking (-1).",
+      "avgPlacement": "₹8-12 LPA (varies by college)",
+      "highestPlacement": "₹25+ LPA (JBIMS, SIMSREE)",
+      "approxFees": "₹3-8 lakh for 2 years (varies by college)",
+      "location": "Pan-India (1000+ colleges)",
+      "topBranches": [
+        "MBA",
+        "PGDM"
+      ],
+      "keyHighlights": [
+        "Accepted by 1000+ AICTE colleges",
+        "Top colleges: JBIMS, SIMSREE, KJ Somaiya",
+        "Single attempt in January",
+        "Affordable option for tier-2 B-Schools",
+        "Good backup to CAT/XAT",
+        "NTA-conducted (same as JEE, NEET)"
+      ],
+      "colorCode": "medium",
+      "sources": [
+        "https://cmat.nta.nic.in/",
+        "https://www.mbauniverse.com/cmat"
+      ]
+    },
+    {
+      "id": 30,
+      "name": "MAT",
+      "fullName": "Management Aptitude Test",
+      "category": "management",
+      "conductedBy": "All India Management Association (AIMA)",
+      "tier": "National-Level",
+      "priority": "Good Backup (600+ colleges)",
+      "registrationStart": "2026-01-15 (Feb session)",
+      "registrationEnd": "2026-02-25 (Feb session)",
+      "examDate": "2026-03-01 (PBT), 2026-03-08 (CBT)",
+      "resultDate": "Within 2-3 weeks",
+      "applicationFee": "₹2,200 (1 session), ₹3,800 (2 sessions)",
+      "applyLink": "https://mat.aima.in/",
+      "officialWebsite": "https://www.aima.in/mat.html",
+      "colleges": [
+        "BIMTECH (specialized programs)",
+        "JAGSOM Bangalore",
+        "Jaipuria Noida",
+        "IPE Hyderabad",
+        "SIES Mumbai",
+        "IBA Bangalore",
+        "Rajagiri Kochi",
+        "NISM Mumbai",
+        "600+ colleges accept MAT"
+      ],
+      "totalSeats": "~25,000+ seats (600+ colleges)",
+      "eligibility": {
+        "education": "Graduation from recognized university (any discipline)",
+        "minimumMarks": "No minimum percentage required",
+        "ageLimit": "No age or work experience limit"
+      },
+      "examPattern": {
+        "mode": "Paper-Based Test (PBT) or Computer-Based Test (CBT)",
+        "duration": "150 minutes",
+        "sections": "Language Comprehension (40 Q), Mathematical Skills (40 Q), Data Analysis (40 Q), Intelligence & Critical Reasoning (40 Q), Indian & Global Environment (40 Q)",
+        "totalQuestions": 200,
+        "totalMarks": 200,
+        "markingScheme": "+1 for correct, -0.25 for incorrect"
+      },
+      "difficultyLevel": "Moderate",
+      "preparationTip": "Conducted 4 times/year (Feb, May, Sep, Dec). Choose PBT or CBT. Target 500+ for top colleges.",
+      "avgPlacement": "₹6-10 LPA (varies by college)",
+      "highestPlacement": "₹18+ LPA (top colleges)",
+      "approxFees": "₹4-8 lakh for 2 years (varies by college)",
+      "location": "Pan-India (600+ colleges)",
+      "topBranches": [
+        "MBA",
+        "PGDM"
+      ],
+      "keyHighlights": [
+        "4 attempts per year (Feb, May, Sep, Dec)",
+        "600+ colleges accept MAT scores",
+        "Choose Paper-Based (PBT) or Computer-Based (CBT)",
+        "Conducted by AIMA (established 1956)",
+        "Good for working professionals",
+        "Most affordable MBA entrance exam"
+      ],
+      "colorCode": "medium",
+      "sources": [
+        "https://www.aima.in/mat.html",
+        "https://www.shiksha.com/mba/mat-exam"
+      ]
+    },
+    {
+      "id": 31,
+      "name": "NIFT",
+      "fullName": "National Institute of Fashion Technology Entrance Exam",
+      "category": "design",
+      "conductedBy": "National Testing Agency (NTA)",
+      "tier": "Premier Design Institute",
+      "priority": "Must Apply (for Fashion/Textile Design)",
+      "registrationStart": "2025-12-08",
+      "registrationEnd": "2026-01-19 (with late fee ₹5,000)",
+      "examDate": "2026-02-08",
+      "resultDate": "March 2026",
+      "applicationFee": "₹3,000 (1 program), ₹4,500 (2 programs) + ₹5,000 (late fee)",
+      "applyLink": "https://exams.nta.nic.in/niftee/",
+      "officialWebsite": "https://www.nift.ac.in/",
+      "colleges": [
+        "NIFT Delhi",
+        "NIFT Mumbai",
+        "NIFT Bangalore",
+        "NIFT Kolkata",
+        "NIFT Hyderabad",
+        "NIFT Chennai",
+        "NIFT Gandhinagar",
+        "NIFT Kannur",
+        "18 NIFT campuses across India"
+      ],
+      "totalSeats": "~3,500 B.Des/B.FTech seats across 18 campuses",
+      "eligibility": {
+        "education": "12th Pass from recognized board (any stream)",
+        "minimumMarks": "No minimum percentage required",
+        "ageLimit": "Maximum 24 years as of Aug 1, 2026 (UG)"
+      },
+      "examPattern": {
+        "mode": "Pen & Paper (Offline)",
+        "duration": "GAT: 2 hours, CAT: 3 hours",
+        "sections": "General Ability Test (GAT): 100 Q, Creative Ability Test (CAT): Hands-on sketching",
+        "totalQuestions": 100,
+        "totalMarks": 100,
+        "markingScheme": "+1 for correct, -0.25 for incorrect (GAT), Qualitative (CAT)"
+      },
+      "difficultyLevel": "High (Creative test challenging)",
+      "preparationTip": "GAT: General knowledge + English. CAT: Drawing skills essential. Practice fashion sketching.",
+      "avgPlacement": "₹7-10 LPA",
+      "highestPlacement": "₹20+ LPA (International fashion houses)",
+      "approxFees": "₹1.9-2.4 lakh/year (varies by program)",
+      "location": "18 campuses across India",
+      "topBranches": [
+        "B.Des Fashion Design",
+        "B.Des Textile Design",
+        "B.Des Accessory Design",
+        "B.FTech (Apparel Production)"
+      ],
+      "keyHighlights": [
+        "India's premier fashion institute",
+        "18 campuses nationwide",
+        "Two-stage exam: GAT + CAT",
+        "CAT requires drawing/sketching skills",
+        "Top recruiters: Zara, H&M, Louis Vuitton",
+        "Government institute with affordable fees"
+      ],
+      "colorCode": "high",
+      "sources": [
+        "https://exams.nta.nic.in/niftee/",
+        "https://design.careers360.com/articles/nift-2026"
+      ]
+    },
+    {
+      "id": 32,
+      "name": "SEED",
+      "fullName": "Symbiosis Entrance Exam for Design",
+      "category": "design",
+      "conductedBy": "Symbiosis International University",
+      "tier": "Premier Private Design Institute",
+      "priority": "Apply for Symbiosis Institute of Design",
+      "registrationStart": "2026-01-12 (Round 2)",
+      "registrationEnd": "2026-03-15 (Round 2)",
+      "examDate": "2026-01-11 (Round 1 done), 2026-03-22 (Round 2)",
+      "resultDate": "Within 2 weeks of exam",
+      "applicationFee": "₹3,250 (₹2,250 SEED + ₹1,000 SID)",
+      "applyLink": "https://www.siu.edu.in/",
+      "officialWebsite": "https://sid.edu.in/",
+      "colleges": [
+        "Symbiosis Institute of Design (SID) Pune"
+      ],
+      "totalSeats": "~200 B.Des seats",
+      "eligibility": {
+        "education": "10+2 (any stream) or equivalent 10+3 diploma",
+        "minimumMarks": "50% (General), 45% (SC/ST)",
+        "ageLimit": "No age limit"
+      },
+      "examPattern": {
+        "mode": "Online Test",
+        "duration": "1 hour",
+        "sections": "Design Aptitude, Creativity, Problem-Solving, General Awareness (Design)",
+        "totalQuestions": 60,
+        "totalMarks": 60,
+        "markingScheme": "+1 for correct, no negative marking"
+      },
+      "difficultyLevel": "Moderate-High",
+      "preparationTip": "Focus on visual thinking, design concepts, creativity. 2 rounds available - can apply to both.",
+      "avgPlacement": "₹5-8 LPA",
+      "highestPlacement": "₹15+ LPA",
+      "approxFees": "₹3.5 lakh/year",
+      "location": "Pune (Maharashtra)",
+      "topBranches": [
+        "B.Des (Communication Design)",
+        "B.Des (Fashion Design)",
+        "B.Des (Fashion Communication)",
+        "B.Des (Product Design)"
+      ],
+      "keyHighlights": [
+        "2 rounds per year (Jan & March)",
+        "Can apply to both rounds",
+        "Selection: SEED + Personal Interview",
+        "Strong industry connections",
+        "Pune location advantage",
+        "No negative marking"
+      ],
+      "colorCode": "high",
+      "sources": [
+        "https://sid.edu.in/",
+        "https://www.shiksha.com/college/symbiosis-institute-of-design-symbiosis-international-pune/seed-exam"
+      ]
+    },
+    {
+      "id": 33,
+      "name": "MIT DAT",
+      "fullName": "MIT Institute of Design - Design Entrance Test",
+      "category": "design",
+      "conductedBy": "MIT Institute of Design, Pune",
+      "tier": "Premier Private Design Institute",
+      "priority": "Apply for MIT Design programs",
+      "registrationStart": "2025-10-17",
+      "registrationEnd": "2026-02-28",
+      "examDate": "2026-04-12",
+      "resultDate": "May 2026",
+      "applicationFee": "₹3,000 (Indian), ₹4,500 (NRI/Foreign)",
+      "applyLink": "https://www.mitid.edu.in/",
+      "officialWebsite": "https://www.mitid.edu.in/",
+      "colleges": [
+        "MIT Institute of Design (MITID) Pune"
+      ],
+      "totalSeats": "~300 B.Des/M.Des seats",
+      "eligibility": {
+        "education": "10+2 (any stream) with 50% for B.Des, Bachelor's degree for M.Des",
+        "minimumMarks": "50% in qualifying exam",
+        "ageLimit": "No age limit"
+      },
+      "examPattern": {
+        "mode": "Design Entrance Test (DET) - Online, Studio Test - Offline",
+        "duration": "DET: 2 hours, Studio Test: 6-8 hours",
+        "sections": "DET: Design aptitude, analytical skills. Studio Test: Material handling, creative problem-solving",
+        "totalQuestions": 100,
+        "totalMarks": 100,
+        "markingScheme": "DET: MCQs, Studio Test: Qualitative assessment"
+      },
+      "difficultyLevel": "Very High (Studio test intensive)",
+      "preparationTip": "2-stage: DET (online) + Studio Test + Portfolio Interview. Studio test is hands-on creative work.",
+      "avgPlacement": "₹6-10 LPA",
+      "highestPlacement": "₹20+ LPA",
+      "approxFees": "₹5-6 lakh/year",
+      "location": "Pune (Maharashtra)",
+      "topBranches": [
+        "B.Des (Product Design)",
+        "B.Des (Communication Design)",
+        "B.Des (Film & Video)",
+        "B.Des (Fashion Design)"
+      ],
+      "keyHighlights": [
+        "Three-stage selection: DET + Studio Test + Interview",
+        "Studio test is intensive (6-8 hours hands-on)",
+        "Portfolio review mandatory",
+        "Strong industry partnerships",
+        "International faculty",
+        "Located in Pune IT hub"
+      ],
+      "colorCode": "high",
+      "sources": [
+        "https://www.mitid.edu.in/",
+        "https://design.careers360.com/articles/mitid-dat"
+      ]
+    },
+    {
+      "id": 34,
+      "name": "Pearl Academy",
+      "fullName": "Pearl Academy Entrance Exam",
+      "category": "design",
+      "conductedBy": "Pearl Academy",
+      "tier": "Private Design Institute",
+      "priority": "Good Backup (Fashion & Design)",
+      "registrationStart": "2025-11-01 (expected)",
+      "registrationEnd": "2026-01-13 (January cycle)",
+      "examDate": "2026-01-17 (January cycle) - 5 cycles yearly",
+      "resultDate": "Within 1 week",
+      "applicationFee": "₹2,000 (Bachelor's/Master's), ₹500 (Certificate)",
+      "applyLink": "https://www.pearlacademy.com/",
+      "officialWebsite": "https://www.pearlacademy.com/",
+      "colleges": [
+        "Pearl Academy Delhi",
+        "Pearl Academy Mumbai",
+        "Pearl Academy Jaipur",
+        "Pearl Academy Bengaluru"
+      ],
+      "totalSeats": "~1,500 seats across 4 campuses",
+      "eligibility": {
+        "education": "10+2 from recognized board (any stream)",
+        "minimumMarks": "No minimum percentage required",
+        "ageLimit": "No age limit"
+      },
+      "examPattern": {
+        "mode": "Online Test",
+        "duration": "GPT: 60 min, DAT: 90 min",
+        "sections": "General Proficiency Test (GPT): English, GK, Reasoning. Design Aptitude Test (DAT): Creative thinking",
+        "totalQuestions": 100,
+        "totalMarks": 100,
+        "markingScheme": "No negative marking"
+      },
+      "difficultyLevel": "Moderate",
+      "preparationTip": "5 cycles yearly (Jan, Apr, Jun, Aug, Sep). Selection: GPT + DAT + Personal Interview. Scholarships available.",
+      "avgPlacement": "₹4-7 LPA",
+      "highestPlacement": "₹12+ LPA",
+      "approxFees": "₹4-5 lakh/year (scholarships available)",
+      "location": "Delhi, Mumbai, Jaipur, Bengaluru",
+      "topBranches": [
+        "B.Des Fashion Design",
+        "B.Des Fashion Styling",
+        "B.Des Interior Design",
+        "B.Des Product Design"
+      ],
+      "keyHighlights": [
+        "5 admission cycles per year",
+        "Multiple campuses (Delhi, Mumbai, Jaipur, Bangalore)",
+        "Scholarship based on exam performance",
+        "No negative marking",
+        "Industry-oriented curriculum",
+        "Fashion & lifestyle design focus"
+      ],
+      "colorCode": "medium",
+      "sources": [
+        "https://www.pearlacademy.com/",
+        "https://design.careers360.com/articles/pearl-academy-entrance-exam-2026"
       ]
     }
   ],
