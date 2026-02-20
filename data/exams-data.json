@@ -32,8 +32,8 @@
       "examPattern": {
         "mode": "Computer-Based Test (CBT)",
         "duration": "3 hours",
-        "sections": "Physics (40), Chemistry (40), Mathematics (45), English & Logical Reasoning (15)",
-        "totalQuestions": 140,
+        "sections": "Physics (30), Chemistry (30), Mathematics/Biology (40), Logical Reasoning (20), English Proficiency (10)",
+        "totalQuestions": 130,
         "totalMarks": 390,
         "markingScheme": "+3 for correct, -1 for incorrect"
       },
@@ -749,7 +749,7 @@
       "examPattern": {
         "mode": "Computer-Based Test (CBT)",
         "duration": "3 hours",
-        "sections": "Physics (80), Chemistry (80), Mathematics (80)",
+        "sections": "Mathematics (80), Physics (40), Chemistry (40)",
         "totalQuestions": 160,
         "totalMarks": 160,
         "markingScheme": "+1 for correct, no negative marking"
@@ -810,9 +810,9 @@
       "examPattern": {
         "mode": "Computer-Based Test (CBT)",
         "duration": "3 hours",
-        "sections": "Physics (40), Chemistry (40), Mathematics (80)",
-        "totalQuestions": 120,
-        "totalMarks": 480,
+        "sections": "Mathematics (75), Physics (45), Chemistry (30)",
+        "totalQuestions": 150,
+        "totalMarks": 600,
         "markingScheme": "+4 for correct, -1 for incorrect"
       },
       "difficultyLevel": "Moderate-High (Maths weightage high)",
@@ -874,7 +874,7 @@
         "sections": "Paper I: Maths (75 Q), Paper II: Physics (40) + Chemistry (40)",
         "totalQuestions": 155,
         "totalMarks": 200,
-        "markingScheme": "1 mark per question, no negative marking"
+        "markingScheme": "Cat 1: +1/-0.25 (single correct), Cat 2: +2/-0.5 (single correct), Cat 3: +2/no negative (multiple correct)"
       },
       "difficultyLevel": "Moderate",
       "preparationTip": "Pen-paper exam. WB board friendly. Two separate papers on same day.",
@@ -1097,7 +1097,7 @@
       "registrationEnd": "2026-03-24",
       "examDate": "2026-05-11 (Second Sunday of May)",
       "resultDate": "May-June 2026",
-      "applicationFee": "₹5,000 (General/OBC/EWS), ₹2,500 (SC/ST/PwD/BPL)",
+      "applicationFee": "₹4,000 (General/OBC/EWS), ₹3,500 (SC/ST/PwD/BPL)",
       "applyLink": "https://consortiumofnlus.ac.in/",
       "officialWebsite": "https://consortiumofnlus.ac.in/",
       "colleges": [
