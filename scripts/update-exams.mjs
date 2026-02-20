@@ -44,6 +44,11 @@ const ALLOWED_CHANGE_FIELDS = new Set([
   'applicationFee',
 ]);
 
+const DATE_FIELDS = new Set(['registrationStart', 'registrationEnd', 'examDate', 'resultDate']);
+
+// Computed once at startup so every validation uses the same reference date
+const TODAY_ISO = new Date().toISOString().split('T')[0]; // e.g. "2026-02-20"
+
 // ─── Helpers ──────────────────────────────────────────────────────────────────
 
 const sleep = (ms) => new Promise(r => setTimeout(r, ms));
@@ -306,22 +311,107 @@ List any significant new exams NOT in the existing list above.
   return result || { newExams: [] };
 }
 
-// ─── Safe JSON patch — whitelisted fields only ───────────────────────────────
+// ─── Field-level validation — prevents stale/malformed LLM output ────────────
 
-function safeApplyChanges(examObj, changes) {
-  const applied = {};
-  const rejected = {};
+/**
+ * Returns an error string if `newValue` is invalid for `field`, or null if OK.
+ *
+ * Rules enforced:
+ *  - Date fields: must match YYYY-MM-DD; all dates must be today or future
+ *  - applicationFee: must contain ₹ symbol (rejects bare numbers like "1150")
+ */
+function validateFieldValue(field, newValue) {
+  const val = String(newValue ?? '').trim();
 
-  for (const [field, value] of Object.entries(changes)) {
-    if (ALLOWED_CHANGE_FIELDS.has(field)) {
-      applied[field] = value;
-    } else {
-      rejected[field] = value;
+  // Sentinel values are always acceptable
+  const isSpecial =
+    val === '' || val === 'N/A' ||
+    val.startsWith('TBA') ||
+    val.toLowerCase().includes('to be announced');
+  if (isSpecial) return null;
+
+  if (DATE_FIELDS.has(field)) {
+    const dates = val.match(/(\d{4}-\d{2}-\d{2})/g);
+    if (!dates) {
+      return `"${val}" is not a recognised date format (expected YYYY-MM-DD)`;
+    }
+    for (const d of dates) {
+      if (isNaN(new Date(d).getTime())) {
+        return `"${d}" in "${val}" is not a valid calendar date`;
+      }
+    }
+    // Every extracted date must be today or in the future
+    if (dates.every(d => d < TODAY_ISO)) {
+      return `all dates in "${val}" are in the past (today: ${TODAY_ISO}) — likely stale LLM output`;
+    }
+    return null; // ✅
+  }
+
+  if (field === 'applicationFee') {
+    if (!val.includes('₹')) {
+      return `fee "${val}" is missing the ₹ symbol — likely incomplete LLM output`;
+    }
+    return null; // ✅
+  }
+
+  return null; // other whitelisted fields have no extra constraints
+}
+
+// ─── Pre-write integrity check — catches any corruption before it hits disk ──
+
+/**
+ * Validates the full data object before the atomic write.
+ * Returns an array of error strings; empty array = all good.
+ */
+function validateDataIntegrity(data) {
+  const errors = [];
+
+  if (!data.lastUpdated || !/^\d{4}-\d{2}-\d{2}$/.test(data.lastUpdated)) {
+    errors.push(`lastUpdated "${data.lastUpdated}" is not a valid YYYY-MM-DD date`);
+  }
+  if (!Array.isArray(data.exams) || data.exams.length === 0) {
+    errors.push('exams array is missing or empty — refusing to overwrite with empty data');
+  }
+
+  const requiredFields = ['id', 'name', 'fullName', 'category'];
+  for (const exam of (data.exams ?? [])) {
+    for (const f of requiredFields) {
+      if (!exam[f]) {
+        errors.push(`exam missing required field "${f}": ${JSON.stringify(exam).slice(0, 100)}`);
+      }
     }
   }
 
-  if (Object.keys(rejected).length > 0) {
-    console.warn(`  ⚠ Rejected non-whitelisted fields: ${JSON.stringify(rejected)}`);
+  // Ensure JSON roundtrip is clean (catches non-serialisable values)
+  try {
+    JSON.parse(JSON.stringify(data));
+  } catch (e) {
+    errors.push(`JSON roundtrip failed: ${e.message}`);
+  }
+
+  return errors;
+}
+
+// ─── Safe JSON patch — whitelisted fields + value validation ─────────────────
+
+function safeApplyChanges(examObj, changes) {
+  const applied = {};
+
+  for (const [field, value] of Object.entries(changes)) {
+    // 1. Whitelist check
+    if (!ALLOWED_CHANGE_FIELDS.has(field)) {
+      console.warn(`  ⚠ Rejected (not in whitelist): "${field}" = ${JSON.stringify(value)}`);
+      continue;
+    }
+
+    // 2. Value-level validation
+    const err = validateFieldValue(field, value);
+    if (err) {
+      console.warn(`  ⚠ Rejected "${field}": ${err}`);
+      continue;
+    }
+
+    applied[field] = value;
   }
 
   if (Object.keys(applied).length > 0) {
@@ -380,12 +470,20 @@ async function main() {
       const idx     = data.exams.findIndex(e => e.id === exam.id);
       const applied = DRY_RUN
         ? (() => {
-            // In dry-run: validate whitelist but don't mutate
-            const ok = {}, bad = {};
+            // In dry-run: simulate whitelist + value validation without mutating
+            const ok = {};
             for (const [k, v] of Object.entries(result.changes)) {
-              ALLOWED_CHANGE_FIELDS.has(k) ? (ok[k] = v) : (bad[k] = v);
+              if (!ALLOWED_CHANGE_FIELDS.has(k)) {
+                console.warn(`\n  ⚠ [DRY RUN] Would reject (not in whitelist): "${k}"`);
+                continue;
+              }
+              const err = validateFieldValue(k, v);
+              if (err) {
+                console.warn(`\n  ⚠ [DRY RUN] Would reject "${k}": ${err}`);
+                continue;
+              }
+              ok[k] = v;
             }
-            if (Object.keys(bad).length) console.warn(`\n  ⚠ [DRY RUN] Would reject: ${JSON.stringify(bad)}`);
             return ok;
           })()
         : safeApplyChanges(data.exams[idx], result.changes);
@@ -395,7 +493,7 @@ async function main() {
         changeLog.push({ exam: exam.name, changes: applied, reason: result.reason });
         if (!DRY_RUN) totalChanged++;
       } else {
-        console.log('— rejected (non-whitelisted fields only)');
+        console.log('— all changes rejected (whitelist / validation)');
       }
     } else {
       console.log('— no change');
@@ -434,6 +532,15 @@ async function main() {
 
     if (totalChanged > 0) {
       data.lastUpdated = runLog.date;
+
+      // ── Final integrity gate — abort if anything looks wrong ──────────────
+      const integrityErrors = validateDataIntegrity(data);
+      if (integrityErrors.length > 0) {
+        console.error('\n❌ Data integrity check failed — aborting write to protect production data:');
+        integrityErrors.forEach(e => console.error(`   • ${e}`));
+        process.exit(1);
+      }
+
       // Write to temp file first, then rename — prevents corrupt JSON on crash
       const tmpPath = DATA_PATH + '.tmp';
       fs.writeFileSync(tmpPath, JSON.stringify(data, null, 2));
