@@ -196,6 +196,93 @@ function runPhase1() {
   assert('Temp-rename write is atomic and readable', readBack.test === true && readBack.value === 42);
   fs.unlinkSync(finalPath);
   assert('Cleanup succeeded', !fs.existsSync(finalPath));
+
+  // ── Test 7: validateFieldValue — date fields ──────────────────────────────
+  console.log('\n  validateFieldValue() — date fields:');
+
+  const DATE_FIELDS_T = new Set(['registrationStart', 'registrationEnd', 'examDate', 'resultDate']);
+  const TODAY_T = new Date().toISOString().split('T')[0];
+
+  // Build future and past date strings relative to today
+  const futureDate = (() => { const d = new Date(); d.setFullYear(d.getFullYear() + 1); return d.toISOString().split('T')[0]; })();
+  const pastDate   = '2025-01-01'; // well in the past
+
+  function validateFieldValue_T(field, newValue) {
+    const val = String(newValue ?? '').trim();
+    const isSpecial = val === '' || val === 'N/A' || val.startsWith('TBA') || val.toLowerCase().includes('to be announced');
+    if (isSpecial) return null;
+    if (DATE_FIELDS_T.has(field)) {
+      const dates = val.match(/(\d{4}-\d{2}-\d{2})/g);
+      if (!dates) return `"${val}" is not a recognised date format`;
+      for (const d of dates) { if (isNaN(new Date(d).getTime())) return `"${d}" is not a valid calendar date`; }
+      if (dates.every(d => d < TODAY_T)) return `all dates in "${val}" are in the past`;
+      return null;
+    }
+    if (field === 'applicationFee') {
+      if (!val.includes('₹')) return `fee "${val}" is missing the ₹ symbol`;
+      return null;
+    }
+    return null;
+  }
+
+  assert('Future date accepted',              validateFieldValue_T('examDate', futureDate) === null);
+  assert('Today\'s date accepted',            validateFieldValue_T('examDate', TODAY_T) === null);
+  assert('Past date rejected',                validateFieldValue_T('examDate', pastDate) !== null,   `got null for past date`);
+  assert('Past date 2025-01-01 rejected',     validateFieldValue_T('registrationEnd', '2025-11-07') !== null);
+  assert('Sentinel N/A accepted',             validateFieldValue_T('examDate', 'N/A') === null);
+  assert('Sentinel TBA accepted',             validateFieldValue_T('examDate', 'TBA 2026') === null);
+  assert('Bad format (month name) rejected',  validateFieldValue_T('examDate', 'April 15, 2026') !== null);
+  assert('Bad format (plain number) rejected',validateFieldValue_T('examDate', '1150') !== null);
+
+  // Range with at least one future date: should pass
+  assert('Range with future date accepted',   validateFieldValue_T('registrationEnd', `${pastDate} to ${futureDate}`) === null);
+  // Range where both dates are past: should fail
+  assert('Range of all-past dates rejected',  validateFieldValue_T('examDate', '2025-03-01 to 2025-04-01') !== null);
+
+  // ── Test 8: validateFieldValue — applicationFee ───────────────────────────
+  console.log('\n  validateFieldValue() — applicationFee:');
+
+  assert('Fee with ₹ accepted',           validateFieldValue_T('applicationFee', '₹1,500') === null);
+  assert('Fee with ₹ range accepted',     validateFieldValue_T('applicationFee', '₹1,000 / ₹500 (SC/ST)') === null);
+  assert('Bare number rejected',          validateFieldValue_T('applicationFee', '1150') !== null);
+  assert('Number with $ rejected',        validateFieldValue_T('applicationFee', '$15') !== null);
+  assert('Fee N/A accepted',              validateFieldValue_T('applicationFee', 'N/A') === null);
+
+  // ── Test 9: validateDataIntegrity ─────────────────────────────────────────
+  console.log('\n  validateDataIntegrity():');
+
+  function validateDataIntegrity_T(data) {
+    const errors = [];
+    if (!data.lastUpdated || !/^\d{4}-\d{2}-\d{2}$/.test(data.lastUpdated)) {
+      errors.push(`lastUpdated "${data.lastUpdated}" is not a valid YYYY-MM-DD date`);
+    }
+    if (!Array.isArray(data.exams) || data.exams.length === 0) {
+      errors.push('exams array is missing or empty');
+    }
+    const required = ['id', 'name', 'fullName', 'category'];
+    for (const exam of (data.exams ?? [])) {
+      for (const f of required) {
+        if (!exam[f]) errors.push(`exam missing "${f}"`);
+      }
+    }
+    try { JSON.parse(JSON.stringify(data)); } catch (e) { errors.push(`JSON roundtrip failed: ${e.message}`); }
+    return errors;
+  }
+
+  const goodData = {
+    lastUpdated: TODAY_T,
+    exams: [{ id: 1, name: 'TEST', fullName: 'Test Exam', category: 'engineering' }],
+  };
+  assert('Valid data has no errors',          validateDataIntegrity_T(goodData).length === 0);
+
+  const badDate = { ...goodData, lastUpdated: 'not-a-date' };
+  assert('Invalid lastUpdated flagged',       validateDataIntegrity_T(badDate).length > 0);
+
+  const emptyExams = { ...goodData, exams: [] };
+  assert('Empty exams array flagged',         validateDataIntegrity_T(emptyExams).length > 0);
+
+  const missingField = { ...goodData, exams: [{ id: 2, name: 'X', category: 'engineering' }] }; // no fullName
+  assert('Missing required field flagged',    validateDataIntegrity_T(missingField).length > 0);
 }
 
 // ─────────────────────────────────────────────────────────────────────────────
