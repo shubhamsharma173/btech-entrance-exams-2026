@@ -1,52 +1,50 @@
 {
-  "date": "2026-02-22",
+  "date": "2026-02-23",
   "dryRun": false,
   "examFilter": null,
   "totalChanged": 5,
   "changeLog": [
     {
-      "exam": "KCET",
+      "exam": "MHT CET",
       "changes": {
-        "registrationEnd": "2026-02-27",
-        "examDate": "2026-05-25 and 05-26"
+        "registrationEnd": "2026-02-24"
       },
-      "reason": "KEA extended KCET registration deadline to February 27 and rescheduled exam dates to May 25 and 26 (source: indianexpress.com, shiksha.com, collegedunia.com, timesofindia.indiatimes.com, freepressjournal.in)"
+      "reason": "MHT CET 2026 registration deadline extended to February 24 without late fee (source: official notice, careers360, indianexpress, and other trusted portals)"
     },
     {
       "exam": "UPES DAT/UPESEAT",
       "changes": {
-        "registrationEnd": "2026-02-28"
+        "registrationEnd": "2026-02-25"
       },
-      "reason": "UPES extended registration to February 28 and announced exam dates as January 22-24 (source: collegedunia.com, educationtimes.com)"
+      "reason": "UPES Dehradun announced the last date to apply for UPESEAT 2026 as February 25, 2026 (source: collegepravesh.com)"
     },
     {
-      "exam": "MHT CET",
+      "exam": "MIT DAT",
       "changes": {
-        "registrationEnd": "2026-02-27"
+        "resultDate": "2026-04-23"
       },
-      "reason": "MHT CET 2026 registration end date confirmed as February 27 with late fee by multiple sources including shiksha.com and official extension notices"
+      "reason": "Result date updated to April 23, 2026 (source: zollege.in)"
     },
     {
-      "exam": "SEED",
+      "exam": "MANIPAL MET",
       "changes": {
-        "registrationEnd": "2026-03-15",
-        "examDate": "2026-03-22",
-        "resultDate": "2026-03-25"
+        "examDate": "2026-04-13, 2026-04-14, 2026-05-23, 2026-05-24",
+        "registrationEnd": "2026-03-15"
       },
-      "reason": "Confirmed changes found on official website sid.edu.in and other trusted sources"
+      "reason": "Confirmed exam dates for MET 2026: Phase 1 - April 13 & 14, Phase 2 - May 23 & 24 (source: instagram.com, other trusted sites confirm registration end date as March 15)"
     },
     {
-      "exam": "AILET",
+      "exam": "KIITEE",
       "changes": {
-        "applicationFee": "₹3,500 (General), ₹1,500 (SC/ST/PwD)"
+        "registrationEnd": "2026-05-30"
       },
-      "reason": "NLU Delhi announced the last date to apply for AILET 2026 as November 10, 2025, and the application fee as ₹3,500 for Gen/OBC and ₹1,500 for SC/ST/PwD (source: careers360, pw.live)"
+      "reason": "KIITEE 2026 Phase 2 Application Deadline is May 30, 2026 (source: studyriserr.com)"
     },
     {
       "exam": "⚠ NEW EXAMS DETECTED — manual review required",
       "changes": {
         "candidates": [
-          "AICLET"
+          "CUET"
         ]
       },
       "reason": "Auto-detected via web search. Do NOT add without manual verification."
