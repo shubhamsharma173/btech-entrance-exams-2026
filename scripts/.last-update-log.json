@@ -1,49 +1,35 @@
 {
-  "date": "2026-02-23",
+  "date": "2026-03-22",
   "dryRun": false,
   "examFilter": null,
-  "totalChanged": 5,
+  "totalChanged": 3,
   "changeLog": [
-    {
-      "exam": "MHT CET",
-      "changes": {
-        "registrationEnd": "2026-02-24"
-      },
-      "reason": "MHT CET 2026 registration deadline extended to February 24 without late fee (source: official notice, careers360, indianexpress, and other trusted portals)"
-    },
-    {
-      "exam": "UPES DAT/UPESEAT",
-      "changes": {
-        "registrationEnd": "2026-02-25"
-      },
-      "reason": "UPES Dehradun announced the last date to apply for UPESEAT 2026 as February 25, 2026 (source: collegepravesh.com)"
-    },
-    {
-      "exam": "MIT DAT",
-      "changes": {
-        "resultDate": "2026-04-23"
-      },
-      "reason": "Result date updated to April 23, 2026 (source: zollege.in)"
-    },
     {
       "exam": "MANIPAL MET",
       "changes": {
-        "examDate": "2026-04-13, 2026-04-14, 2026-05-23, 2026-05-24",
-        "registrationEnd": "2026-03-15"
+        "registrationEnd": "2026-03-23"
       },
-      "reason": "Confirmed exam dates for MET 2026: Phase 1 - April 13 & 14, Phase 2 - May 23 & 24 (source: instagram.com, other trusted sites confirm registration end date as March 15)"
+      "reason": "MET 2026 registration end date changed to March 23 (source: shiksha.com, manipal.edu)"
     },
     {
       "exam": "KIITEE",
       "changes": {
-        "registrationEnd": "2026-05-30"
+        "registrationEnd": "2026-04-08"
       },
-      "reason": "KIITEE 2026 Phase 2 Application Deadline is May 30, 2026 (source: studyriserr.com)"
+      "reason": "KIITEE 2026 registration end date for Phase 1 changed to April 8 (source: selfstudys.com, shiksha.com)"
+    },
+    {
+      "exam": "COMEDK UGET",
+      "changes": {
+        "registrationEnd": "2026-03-23"
+      },
+      "reason": "COMEDK UGET 2026 registration deadline extended to March 23 (source: careers360.com)"
     },
     {
       "exam": "⚠ NEW EXAMS DETECTED — manual review required",
       "changes": {
         "candidates": [
+          "AIE CET",
           "CUET"
         ]
       },
