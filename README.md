@@ -1,238 +1,97 @@
-# B.Tech Entrance Exams 2026 - Priority Guide
+# Entrance Exams Guide — 2026
 
-A comprehensive, SEO-optimized website to help students make informed decisions about entrance exam applications.
+A Next.js application for exploring Indian entrance exams by category, priority and deadline. It combines a searchable exam dataset with a reviewable data-update pipeline built around Tavily search, Groq and GitHub Actions.
 
-## 🎯 Project Overview
+The repository name reflects its original B.Tech scope. The checked-in dataset now contains **34 records across engineering, medical, law, management and design**, including discontinued or merged exams retained for context.
 
-This project provides a complete guide to India's top 15 B.Tech entrance exams, including:
-- Registration deadlines with real-time countdown timers
-- Application fees and course costs
-- Average placement data
-- Difficulty levels and preparation tips
-- College information and key highlights
-- Smart filtering and sorting
+## What is implemented
 
-## 🚀 Features
+- Exam cards and detail views with dates, fees, eligibility, college information and source links.
+- Category and priority filters, search, sorting and registration countdowns.
+- Next.js App Router pages, metadata, structured data, sitemap and robots configuration.
+- A script that proposes changes to selected date and application-fee fields, with field restrictions, value checks and a dry-run mode.
+- A scheduled workflow that opens a data-update pull request for human review.
 
-### Core Features
-- **15 Comprehensive Exam Profiles**: BITSAT, VITEEE, SRMJEEE, Manipal MET, COMEDK, KIITEE, PESSAT, Amity JEE, UPES DAT, LPUNEST, MHT CET, KCET, TS EAMCET, KEAM, WBJEE
-- **Real-time Countdown Timers**: Live countdown to registration deadlines
-- **Advanced Filtering**: Filter by priority level, difficulty, and more
-- **Smart Sorting**: Sort by priority, deadline, or application fee
-- **Responsive Design**: Mobile-first approach supporting all devices (320px+)
-- **Color-coded Priority System**: Visual priority indicators (High/Medium/Low)
+**Stack:** Next.js 16, React 19, TypeScript and Tailwind CSS 4. Exam data is stored in JSON; the website does not require an application database or updater API keys to render that dataset.
 
-### SEO Optimization (Priority #1)
-- ✅ **Server-side Rendering**: All content pre-rendered for search engines
-- ✅ **Comprehensive Meta Tags**: Title, description, keywords optimized
-- ✅ **JSON-LD Structured Data**: Rich snippets for search results
-- ✅ **Open Graph Tags**: Optimized for social media sharing
-- ✅ **Twitter Cards**: Enhanced Twitter previews
-- ✅ **Sitemap.xml**: Automated sitemap generation
-- ✅ **Robots.txt**: Proper search engine directives
-- ✅ **Semantic HTML**: Proper HTML5 structure for accessibility and SEO
+## Data status and limitations
 
-## 🛠️ Tech Stack
+As inspected on **18 October 2026**, `data/exams-data.json` reports `lastUpdated: 2026-02-22`. That timestamp describes the dataset, not the freshness of every individual record. Dates, eligibility, fees and placement figures may be stale, and an updater reporting no changes does not establish their accuracy.
 
-- **Framework**: Next.js 16 (React 19)
-- **Language**: TypeScript
-- **Styling**: Tailwind CSS v4
-- **Fonts**: Inter (Google Fonts)
-- **Build Tool**: Turbopack
-- **Node Version**: 16+ recommended
+Use this as a software project and reference interface. Before making an application decision, verify the relevant information on the exam's official website. Priorities and difficulty labels are editorial data, not personalized recommendations. Automated proposals require source checking before merge; an LLM response is not verification.
 
-## 📦 Installation
+## Run locally
 
-### Prerequisites
-- Node.js 16 or higher
-- npm or yarn
+Use npm and a supported Node.js release meeting the [Next.js minimum of Node 20.9](https://nextjs.org/docs/app/getting-started/installation#system-requirements). The existing update workflow selects Node 20.
 
-### Setup Instructions
-
-1. **Clone or navigate to the project directory**:
-   ```bash
-   cd entrance-exams
-   ```
-
-2. **Install dependencies**:
-   ```bash
-   npm install
-   ```
-
-3. **Run development server**:
-   ```bash
-   npm run dev
-   ```
-
-4. **Open in browser**:
-   ```
-   http://localhost:3000
-   ```
-
-## 🏗️ Project Structure
-
-```
-entrance-exams/
-├── app/                      # Next.js App Router
-│   ├── layout.tsx           # Root layout with SEO metadata
-│   ├── page.tsx             # Home page with structured data
-│   ├── globals.css          # Global styles with Tailwind
-│   └── sitemap.ts           # Dynamic sitemap generation
-├── components/              # React components
-│   ├── Header.tsx           # Site header
-│   ├── Footer.tsx           # Site footer
-│   ├── ExamCard.tsx         # Individual exam card
-│   ├── ExamList.tsx         # Exam list with filtering (Client)
-│   ├── FilterBar.tsx        # Filter controls
-│   └── CountdownTimer.tsx   # Real-time countdown (Client)
-├── data/
-│   └── exams-data.json      # Complete exam database (15 exams)
-├── types/
-│   └── exam.ts              # TypeScript type definitions
-├── public/
-│   └── robots.txt           # Search engine directives
-├── next.config.js           # Next.js configuration
-├── tailwind.config.js       # Tailwind CSS configuration
-├── tsconfig.json            # TypeScript configuration
-└── package.json             # Dependencies and scripts
-```
-
-## 📝 Available Scripts
-
-```bash
-# Development server with hot reload
+```sh
+git clone https://github.com/shubhamsharma173/btech-entrance-exams-2026.git
+cd btech-entrance-exams-2026
+npm ci
 npm run dev
-
-# Production build
-npm run build
-
-# Start production server
-npm run start
-
-# Run linter
-npm run lint
 ```
 
-## 🎨 Design System
+Open `http://localhost:3000`. To build and serve the production application:
 
-### Colors
-- **Primary Blue**: #3B82F6 (Links, buttons, branding)
-- **High Priority**: #EF4444 (Red gradient)
-- **Medium Priority**: #F59E0B (Orange gradient)
-- **Low Priority**: #10B981 (Green gradient)
-
-### Typography
-- **Font Family**: Inter
-- **Weights**: 400 (Regular), 500 (Medium), 600 (Semibold), 700 (Bold)
-
-### Breakpoints
-- **Mobile**: 320px - 767px (1 column grid)
-- **Tablet**: 768px - 1023px (2 column grid)
-- **Desktop**: 1024px+ (3 column grid)
-
-## 🔍 SEO Implementation Details
-
-### Meta Tags (layout.tsx)
-```typescript
-- Title: "B.Tech Entrance Exams 2026 | Top 15 Engineering Exams Priority Guide"
-- Description: Complete guide with deadlines, fees, placements
-- Keywords: btech entrance exams 2026, engineering entrance exams, etc.
-- Author, Creator, Publisher metadata
-- Robots directives for indexing
-```
-
-### Structured Data (page.tsx)
-```typescript
-- Schema.org ItemList for all 15 exams
-- EducationalOccupationalCredential type
-- Price and offer information
-```
-
-### Performance Optimizations
-- Server-side rendering for instant content
-- Optimized font loading (Google Fonts)
-- Efficient component structure
-- Minimal JavaScript payload for client-side
-
-## 📊 Data Structure
-
-Each exam includes:
-- Basic info (name, full name, conducted by)
-- Dates (registration, exam, result)
-- Fees (application, course)
-- Eligibility criteria
-- Exam pattern details
-- Colleges and seats
-- Placement statistics
-- Difficulty level
-- Preparation tips
-- Key highlights
-- Priority color code
-- Official links
-
-## 🚀 Deployment
-
-### Recommended: Vercel (Optimal for Next.js)
-
-1. **Install Vercel CLI**:
-   ```bash
-   npm i -g vercel
-   ```
-
-2. **Deploy**:
-   ```bash
-   vercel
-   ```
-
-3. **Production deployment**:
-   ```bash
-   vercel --prod
-   ```
-
-### Alternative: Any Node.js hosting
-```bash
+```sh
 npm run build
 npm run start
 ```
 
-## 📈 Future Enhancements
+The existing `npm run lint` script still invokes `next lint`; it has not been migrated to the direct ESLint/Biome configuration expected by current Next.js. Do not treat that script as a working quality gate. This documentation update does not change application dependencies or tooling.
 
-Potential features for future iterations:
-- User authentication for saving favorite exams
-- Email reminders for deadlines
-- Personalized exam recommendations
-- State-based filtering for regional exams
-- Comparison tool (compare 2-3 exams side by side)
-- Mobile app version
-- Integration with application portals
+## How data updates work
 
-## 🤝 Contributing
+[`scripts/update-exams.mjs`](scripts/update-exams.mjs) reads the dataset, selects active exams with nearby deadlines and caps a normal run at 20 records. If no deadlines fall within the configured window, it falls back to active exams. A targeted `--exam` run bypasses that selection.
 
-This is an educational project. Contributions welcome:
-1. Fork the repository
-2. Create feature branch
-3. Make changes
-4. Submit pull request
+For each selected exam, the script searches through Tavily and asks Groq to propose a structured diff. Only registration dates, exam/result dates and application fees may change. The script applies value checks, validates the dataset shape and writes through a temporary file before renaming. New-exam suggestions are flagged for manual review rather than added automatically.
 
-## 📄 License
+Set `GROQ_API_KEY` and `TAVILY_API_KEY` in the process environment to run the updater. They are only needed for update/API checks; never commit their values. The scripts read `process.env` directly and do not load a `.env` file themselves. Calls use external services and are subject to their limits and charges.
 
-MIT License - Feel free to use for educational purposes
+Start with a targeted dry run after supplying those environment variables:
 
-## 🙏 Acknowledgments
+```sh
+npm run update-data -- --dry-run --exam BITSAT
+```
 
-- Data sources: Careers360, Shiksha, CollegeDunia, Official exam websites
-- NIRF Rankings 2024-25
-- Compiled by BMAD Research Team - Feb 2026
+`--dry-run` still calls the external APIs but does not write the dataset or update log. Running without it can update `data/exams-data.json` and `scripts/.last-update-log.json`; inspect the diff and verify every changed value against its official source.
 
-## 📞 Support
+Despite its filename, [`.github/workflows/weekly-update.yml`](.github/workflows/weekly-update.yml) is configured to run **daily at 02:00 UTC**. It checks out `dev`, uses repository secrets, and creates or updates `auto/daily-exam-update` with a pull request targeting `dev`. Its PR checklist calls for official-source verification, full-diff review, a build and preview checks. The workflow does not itself establish that those reviews have happened or publish changes to `main`.
 
-For questions or issues:
-- Open an issue on GitHub
-- Check documentation
-- Review official exam websites for latest updates
+## Checks and coverage boundaries
 
----
+| Command | Purpose | External calls |
+| --- | --- | --- |
+| `npm run build` | Next.js production build | May fetch configured remote font resources |
+| `npm run test:update:unit` | JSON extraction, field restrictions, date/fee checks, selection and temporary-file checks | No API calls |
+| `npm run test:update:api` | Tavily and Groq connectivity smoke checks | Yes; both API keys required |
+| `npm run test:update:integration` | Runs the production updater in dry-run mode for BITSAT and checks for unintended writes | Yes; both API keys required |
+| `npm run test:update` | Runs all three updater-test phases | API phases skip when keys are absent |
 
-**Last Updated**: February 2026
-**Version**: 1.0.0
-**Built with**: Next.js, TypeScript, Tailwind CSS
+Several unit-test helpers duplicate production logic rather than importing it, so those checks alone do not prove the updater behaves identically. The API/integration phases can skip without keys; a successful process exit does not mean every phase ran. There is no claim of complete application, accessibility or end-to-end coverage here. No checks were rerun as part of this README-only revision.
+
+## Repository map
+
+```text
+app/                         Pages, layout, metadata and styles
+components/                  Exam cards, detail views, filters and countdowns
+data/exams-data.json          Dated exam dataset
+types/exam.ts                Dataset types
+scripts/update-exams.mjs      Search/LLM-assisted update pipeline
+scripts/test-update.mjs       Phased updater checks
+.github/workflows/           Scheduled data-update workflow
+.github/PULL_REQUEST_TEMPLATE/ Data review checklist
+```
+
+[`ARCHITECTURE.md`](ARCHITECTURE.md) and [`DEPLOYMENT.md`](DEPLOYMENT.md) retain earlier design and deployment notes; some describe the original narrower dataset. Use the checked-in configuration and this README for current scope and commands.
+
+## Next improvements
+
+- Refresh and source-check the dataset, recording provenance for individual changes.
+- Share validation helpers between the updater and tests, and add malformed-response and partial-failure coverage.
+- Migrate lint tooling and add automated build, type and browser checks.
+- Keep automated suggestions separate from reviewed published data.
+
+## Attribution and licensing
+
+Data-source credits are recorded in `data/exams-data.json`; individual records include official links. Source material remains subject to its original terms. The package manifest declares MIT, but this repository does not yet include a standalone license file; that documentation gap should be resolved before relying on the declaration for reuse.
