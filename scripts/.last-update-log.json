@@ -1,52 +1,36 @@
 {
-  "date": "2026-02-22",
+  "date": "2026-03-22",
   "dryRun": false,
   "examFilter": null,
-  "totalChanged": 5,
+  "totalChanged": 3,
   "changeLog": [
     {
-      "exam": "KCET",
+      "exam": "MANIPAL MET",
       "changes": {
-        "registrationEnd": "2026-02-27",
-        "examDate": "2026-05-25 and 05-26"
+        "registrationEnd": "2026-03-23"
       },
-      "reason": "KEA extended KCET registration deadline to February 27 and rescheduled exam dates to May 25 and 26 (source: indianexpress.com, shiksha.com, collegedunia.com, timesofindia.indiatimes.com, freepressjournal.in)"
+      "reason": "MET 2026 registration end date changed to March 23 (source: shiksha.com, manipal.edu)"
     },
     {
-      "exam": "UPES DAT/UPESEAT",
+      "exam": "KIITEE",
       "changes": {
-        "registrationEnd": "2026-02-28"
+        "registrationEnd": "2026-04-08"
       },
-      "reason": "UPES extended registration to February 28 and announced exam dates as January 22-24 (source: collegedunia.com, educationtimes.com)"
+      "reason": "KIITEE 2026 registration end date for Phase 1 changed to April 8 (source: selfstudys.com, shiksha.com)"
     },
     {
-      "exam": "MHT CET",
+      "exam": "COMEDK UGET",
       "changes": {
-        "registrationEnd": "2026-02-27"
+        "registrationEnd": "2026-03-23"
       },
-      "reason": "MHT CET 2026 registration end date confirmed as February 27 with late fee by multiple sources including shiksha.com and official extension notices"
-    },
-    {
-      "exam": "SEED",
-      "changes": {
-        "registrationEnd": "2026-03-15",
-        "examDate": "2026-03-22",
-        "resultDate": "2026-03-25"
-      },
-      "reason": "Confirmed changes found on official website sid.edu.in and other trusted sources"
-    },
-    {
-      "exam": "AILET",
-      "changes": {
-        "applicationFee": "₹3,500 (General), ₹1,500 (SC/ST/PwD)"
-      },
-      "reason": "NLU Delhi announced the last date to apply for AILET 2026 as November 10, 2025, and the application fee as ₹3,500 for Gen/OBC and ₹1,500 for SC/ST/PwD (source: careers360, pw.live)"
+      "reason": "COMEDK UGET 2026 registration deadline extended to March 23 (source: careers360.com)"
     },
     {
       "exam": "⚠ NEW EXAMS DETECTED — manual review required",
       "changes": {
         "candidates": [
-          "AICLET"
+          "AIE CET",
+          "CUET"
         ]
       },
       "reason": "Auto-detected via web search. Do NOT add without manual verification."
