@@ -1,14 +1,7 @@
-import { MetadataRoute } from 'next'
+import type { MetadataRoute } from 'next'
+import { siteUrl } from '@/lib/site'
+import data from '@/data/exams-data.json'
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const baseUrl = 'https://btech-entrance-exams.vercel.app'
-
-  return [
-    {
-      url: baseUrl,
-      lastModified: new Date('2026-02-18'),
-      changeFrequency: 'daily',
-      priority: 1,
-    },
-  ]
+  return [{ url: siteUrl, lastModified: new Date(`${data.lastUpdated}T00:00:00+05:30`), changeFrequency: 'weekly', priority: 1 }]
 }

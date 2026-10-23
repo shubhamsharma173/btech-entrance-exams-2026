@@ -1,7 +1,7 @@
 {
-  "lastUpdated": "2026-02-22",
-  "totalExams": 34,
-  "note": "Engineering: Apply to exams 1-10 (universal) + your state exam (11-15). Medical: NEET-UG is mandatory. Law: CLAT for NLUs, SLAT for Symbiosis. Management: CAT for IIMs, SNAP/NMAT for private B-Schools. Design: UCEED for IITs, NIFT for fashion, NID for design.",
+  "lastUpdated": "2026-10-23",
+  "totalExams": 36,
+  "note": "Content reviewed on 2026-10-23. This records an editorial revision, not verification of every fact. Each profile identifies its cycle and status; only verification.fields entries have cited checks. Historical schedules are labelled. Unknowns are explicit; no 2027 date is inferred from a prior year.",
   "exams": [
     {
       "id": 1,
@@ -9,59 +9,71 @@
       "fullName": "Birla Institute of Technology and Science Admission Test",
       "conductedBy": "BITS Pilani",
       "tier": "Premium Private",
-      "priority": "Must Apply",
-      "registrationStart": "2025-12-15",
-      "registrationEnd": "2026-03-16",
-      "examDate": "2026-04-15 to 2026-04-17 (Session 1), 2026-05-24 to 2026-05-26 (Session 2) updated to 15–17 April 2026 (Session 1), 24 May – 26 May 2026 (Session 2)",
-      "resultDate": "Within 2-3 days of exam",
-      "applicationFee": "₹3,100 - ₹9,250 (varies by gender, center, session)",
+      "priority": "Consider if the course and eligibility match",
+      "registrationStart": "2025-12-15 (Session 1/both); 2026-04-20 (Session 2)",
+      "registrationEnd": "2026-03-19 (Session 1/both); 2026-05-05 (Session 2)",
+      "examDate": "2026-04-15 to 2026-04-16 (Session 1); 2026-05-24 to 2026-05-26 (Session 2)",
+      "resultDate": "Not verified for this cycle",
+      "applicationFee": "Not verified for this cycle",
       "applyLink": "https://admissions.bits-pilani.ac.in/",
       "officialWebsite": "https://admissions.bits-pilani.ac.in/",
       "colleges": [
-        "BITS Pilani (Rajasthan)",
+        "BITS Pilani",
         "BITS Goa",
-        "BITS Hyderabad",
-        "BITS Dubai"
+        "BITS Hyderabad"
       ],
-      "totalSeats": "~4,000 across 3 campuses",
+      "totalSeats": "Not verified for this cycle",
       "eligibility": {
-        "education": "12th Pass (2025 or 2026 only)",
-        "minimumMarks": "75% aggregate in PCM/PCB, min 60% in each subject",
-        "ageLimit": "No age limit"
+        "education": "Not verified for this cycle",
+        "minimumMarks": "Not verified for this cycle",
+        "ageLimit": "Not verified for this cycle"
       },
       "examPattern": {
-        "mode": "Computer-Based Test (CBT)",
-        "duration": "3 hours",
-        "sections": "Physics (30), Chemistry (30), Mathematics/Biology (40), Logical Reasoning (20), English Proficiency (10)",
-        "totalQuestions": 130,
-        "totalMarks": 390,
-        "markingScheme": "+3 for correct, -1 for incorrect"
+        "mode": "Not verified for this cycle",
+        "duration": "Not verified for this cycle",
+        "sections": "Not verified for this cycle",
+        "totalQuestions": null,
+        "totalMarks": null,
+        "markingScheme": "Not verified for this cycle"
       },
-      "difficultyLevel": "High (Most difficult among private exams)",
-      "preparationTip": "Speed and accuracy crucial. JEE Main + NCERT is sufficient.",
-      "avgPlacement": "₹31.63 LPA",
-      "highestPlacement": "₹60+ LPA",
-      "approxFees": "₹5.7 lakh/year (₹22.8 lakh for 4 years)",
+      "difficultyLevel": "Not independently assessed",
+      "preparationTip": "Use the official syllabus and sample papers for the stated cycle; check programme-specific eligibility and selection stages.",
+      "avgPlacement": "Not verified for this cycle",
+      "highestPlacement": "Not verified for this cycle",
+      "approxFees": "Not verified for this cycle",
       "location": "Pilani (Rajasthan), Goa, Hyderabad",
       "topBranches": [
-        "CSE",
-        "EEE",
-        "Mechanical",
-        "Chemical"
+        "Programme list not verified for this cycle"
       ],
       "keyHighlights": [
-        "Top private engineering college in India",
-        "Excellent placements (avg ₹31+ LPA)",
-        "No reservations - pure merit-based",
-        "Research-oriented curriculum",
-        "International exposure"
+        "Only fields with cited evidence are verified."
       ],
       "colorCode": "high",
       "sources": [
-        "https://engineering.careers360.com/articles/bitsat-2026",
-        "https://admissions.bits-pilani.ac.in/"
+        "https://admissions.bits-pilani.ac.in/BITSAT_LP/"
       ],
-      "category": "engineering"
+      "category": "engineering",
+      "cycleYear": 2026,
+      "status": "active",
+      "verification": {
+        "reviewedAt": "2026-10-23",
+        "status": "partial",
+        "fields": {
+          "registrationStart": {
+            "checkedAt": "2026-10-23",
+            "sourceUrl": "https://admissions.bits-pilani.ac.in/BITSAT_LP/"
+          },
+          "registrationEnd": {
+            "checkedAt": "2026-10-23",
+            "sourceUrl": "https://admissions.bits-pilani.ac.in/BITSAT_LP/"
+          },
+          "examDate": {
+            "checkedAt": "2026-10-23",
+            "sourceUrl": "https://admissions.bits-pilani.ac.in/BITSAT_LP/"
+          }
+        },
+        "note": "The official 2026 landing page supersedes earlier brochure dates. Fees, pattern, seat totals, placements and eligibility were not established. Only listed evidence fields were checked; other profile details remain incomplete."
+      }
     },
     {
       "id": 2,
@@ -69,60 +81,100 @@
       "fullName": "VIT Engineering Entrance Examination",
       "conductedBy": "VIT University",
       "tier": "Premium Private",
-      "priority": "Must Apply",
-      "registrationStart": "2025-11-15",
-      "registrationEnd": "2026-03-31",
-      "examDate": "2026-04-28 to 2026-05-03",
-      "resultDate": "June 2026 (expected)",
-      "applicationFee": "₹1,350 (non-refundable, all categories)",
+      "priority": "Consider if the course and eligibility match",
+      "registrationStart": "Not verified for this cycle",
+      "registrationEnd": "Not verified for this cycle",
+      "examDate": "2026-04-28 to 2026-05-03 (published as tentative)",
+      "resultDate": "Not verified for this cycle",
+      "applicationFee": "₹1,350 for Indian test centres; INR equivalent of USD 90 abroad",
       "applyLink": "https://viteee.vit.ac.in/",
       "officialWebsite": "https://viteee.vit.ac.in/",
       "colleges": [
-        "VIT Vellore (Main Campus)",
+        "VIT Vellore",
         "VIT Chennai",
-        "VIT Bhopal",
-        "VIT Amaravati (AP)",
-        "VIT-AP University"
+        "VIT-AP",
+        "VIT Bhopal"
       ],
-      "totalSeats": "~8,000 across 4 campuses",
+      "totalSeats": "Not verified for this cycle",
       "eligibility": {
-        "education": "12th Pass or appearing",
-        "minimumMarks": "60% aggregate in PCM/PCB",
-        "ageLimit": "No age limit"
+        "education": "Not verified for this cycle",
+        "minimumMarks": "Not verified for this cycle",
+        "ageLimit": "Not verified for this cycle"
       },
       "examPattern": {
-        "mode": "Computer-Based Test (CBT)",
+        "mode": "Computer-based test",
         "duration": "2 hours 30 minutes",
-        "sections": "Physics (35), Chemistry (35), Maths/Biology (40), Aptitude (10), English (5)",
+        "sections": "Mathematics/Biology 40; Physics 35; Chemistry 35; Aptitude 10; English 5",
         "totalQuestions": 125,
-        "totalMarks": 125,
-        "markingScheme": "+1 for correct, no negative marking"
+        "totalMarks": 500,
+        "markingScheme": "+4 correct; −1 incorrect; 0 unanswered"
       },
-      "difficultyLevel": "Moderate-High",
-      "preparationTip": "Focus on PCM from NCERT. Aptitude section is unique to VITEEE.",
-      "avgPlacement": "₹7.62 LPA (₹14.8 LPA for CSE)",
-      "highestPlacement": "₹1.02 Crore (International offer)",
-      "approxFees": "₹2.1 lakh/year (₹8.4 lakh for 4 years)",
+      "difficultyLevel": "Not independently assessed",
+      "preparationTip": "Use the official syllabus and sample papers for the stated cycle; check programme-specific eligibility and selection stages.",
+      "avgPlacement": "Not verified for this cycle",
+      "highestPlacement": "Not verified for this cycle",
+      "approxFees": "Not verified for this cycle",
       "location": "Vellore (TN), Chennai (TN), Bhopal (MP), Amaravati (AP)",
       "topBranches": [
-        "CSE",
-        "IT",
-        "ECE",
-        "Mechanical"
+        "Programme list not verified for this cycle"
       ],
       "keyHighlights": [
-        "Multiple campuses = more chances",
-        "Strong industry connections",
-        "Good CSE placements (avg ₹14.8 LPA)",
-        "100% placement record for eligible students",
-        "No negative marking (easier to attempt)"
+        "VITEEE 2026 has +4/−1 marking."
       ],
       "colorCode": "high",
       "sources": [
-        "https://engineering.careers360.com/articles/viteee-2026",
-        "https://viteee.vit.ac.in/"
+        "https://viteee.vit.ac.in/?odn_id=9490&open-reg="
       ],
-      "category": "engineering"
+      "category": "engineering",
+      "cycleYear": 2026,
+      "status": "active",
+      "verification": {
+        "reviewedAt": "2026-10-23",
+        "status": "partial",
+        "fields": {
+          "examDate": {
+            "checkedAt": "2026-10-23",
+            "sourceUrl": "https://viteee.vit.ac.in/?odn_id=9490&open-reg=",
+            "note": "Retrieved page explicitly headed VITEEE 2026; the generic portal also serves 2027 content."
+          },
+          "applicationFee": {
+            "checkedAt": "2026-10-23",
+            "sourceUrl": "https://viteee.vit.ac.in/?odn_id=9490&open-reg=",
+            "note": "Retrieved page explicitly headed VITEEE 2026; the generic portal also serves 2027 content."
+          },
+          "colleges": {
+            "checkedAt": "2026-10-23",
+            "sourceUrl": "https://viteee.vit.ac.in/?odn_id=9490&open-reg=",
+            "note": "Retrieved page explicitly headed VITEEE 2026; the generic portal also serves 2027 content."
+          },
+          "examPattern.mode": {
+            "checkedAt": "2026-10-23",
+            "sourceUrl": "https://viteee.vit.ac.in/?odn_id=9490&open-reg="
+          },
+          "examPattern.duration": {
+            "checkedAt": "2026-10-23",
+            "sourceUrl": "https://viteee.vit.ac.in/?odn_id=9490&open-reg="
+          },
+          "examPattern.sections": {
+            "checkedAt": "2026-10-23",
+            "sourceUrl": "https://viteee.vit.ac.in/?odn_id=9490&open-reg="
+          },
+          "examPattern.totalQuestions": {
+            "checkedAt": "2026-10-23",
+            "sourceUrl": "https://viteee.vit.ac.in/?odn_id=9490&open-reg="
+          },
+          "examPattern.totalMarks": {
+            "checkedAt": "2026-10-23",
+            "sourceUrl": "https://viteee.vit.ac.in/?odn_id=9490&open-reg=",
+            "note": "Derived maximum: 125 questions × 4 marks."
+          },
+          "examPattern.markingScheme": {
+            "checkedAt": "2026-10-23",
+            "sourceUrl": "https://viteee.vit.ac.in/?odn_id=9490&open-reg="
+          }
+        },
+        "note": "The accessible 2026 content corrects the old no-negative-marking claim. Do not mix it with the generic portal’s 2027 pattern. Final registration deadline and actual result release remain unverified. Only listed evidence fields were checked; other profile details remain incomplete."
+      }
     },
     {
       "id": 3,
@@ -130,61 +182,97 @@
       "fullName": "SRM Joint Engineering Entrance Examination",
       "conductedBy": "SRM Institute of Science and Technology",
       "tier": "Good Private",
-      "priority": "Strong Backup",
-      "registrationStart": "2025-10-30",
-      "registrationEnd": "2026-04-16 (Phase 1), 2026-06-04 (Phase 2), 2026-06-30 (Phase 3)",
-      "examDate": "2026-04-23 to 04-28 (P1), 2026-06-10 to 06-15 (P2)",
-      "resultDate": "Within 2 weeks of each phase",
-      "applicationFee": "₹1,400 per phase (non-refundable)",
+      "priority": "Consider if the course and eligibility match",
+      "registrationStart": "Not verified for this cycle",
+      "registrationEnd": "2026-04-16 (Phase 1); 2026-06-04 (Phase 2); 2026-06-30 (Phase 3)",
+      "examDate": "2026-04-24 to 2026-04-29 (Phase 1, revised); 2026-06-10 to 2026-06-15 (Phase 2, published); 2026-07-04 to 2026-07-05 (Phase 3, published)",
+      "resultDate": "Not verified for this cycle",
+      "applicationFee": "₹1,400 per phase",
       "applyLink": "https://applications.srmist.edu.in/btech",
       "officialWebsite": "https://applications.srmist.edu.in/btech",
       "colleges": [
-        "SRM Kattankulathur (Chennai - Main)",
-        "SRM Ramapuram (Chennai)",
-        "SRM NCR (Ghaziabad)",
-        "SRM Sonepat (Haryana)",
-        "SRM Amaravati (AP)",
-        "SRM Trichy"
+        "Participating institutions not verified for this cycle"
       ],
-      "totalSeats": "~12,000 across multiple campuses",
+      "totalSeats": "Not verified for this cycle",
       "eligibility": {
-        "education": "12th Pass or appearing",
-        "minimumMarks": "50% in PCM/PCB (45% for reserved categories)",
-        "ageLimit": "No age limit"
+        "education": "Not verified for this cycle",
+        "minimumMarks": "Not verified for this cycle",
+        "ageLimit": "Not verified for this cycle"
       },
       "examPattern": {
-        "mode": "Remote Proctored Online (from home)",
+        "mode": "Remote proctored online test",
         "duration": "2 hours 30 minutes",
-        "sections": "Physics, Chemistry, Maths/Biology (125 MCQs)",
-        "totalQuestions": 125,
-        "totalMarks": 125,
-        "markingScheme": "+1 for correct, no negative marking"
+        "sections": "Physics 35; Chemistry 35; Mathematics/Biology 40; English and Aptitude 20",
+        "totalQuestions": 130,
+        "totalMarks": 130,
+        "markingScheme": "+1 correct; no negative marking"
       },
-      "difficultyLevel": "Moderate (Easier than BITSAT/VITEEE)",
-      "preparationTip": "NCERT + JEE Main basics sufficient. Can attempt from home (remote proctored).",
-      "avgPlacement": "₹7.58 LPA",
-      "highestPlacement": "₹57 LPA",
-      "approxFees": "₹2.5 lakh/year (₹10 lakh for 4 years)",
+      "difficultyLevel": "Not independently assessed",
+      "preparationTip": "Use the official syllabus and sample papers for the stated cycle; check programme-specific eligibility and selection stages.",
+      "avgPlacement": "Not verified for this cycle",
+      "highestPlacement": "Not verified for this cycle",
+      "approxFees": "Not verified for this cycle",
       "location": "Chennai (TN), Ghaziabad (UP), Sonepat (Haryana), Amaravati (AP)",
       "topBranches": [
-        "CSE",
-        "IT",
-        "ECE",
-        "Mechanical"
+        "Programme list not verified for this cycle"
       ],
       "keyHighlights": [
-        "3 phases = multiple attempts",
-        "Remote proctored (take from home)",
-        "No negative marking",
-        "Large campus and facilities",
-        "Good backup option"
+        "Separate registration and fee for each phase."
       ],
       "colorCode": "medium",
       "sources": [
-        "https://engineering.careers360.com/articles/srmjeee-2026",
-        "https://applications.srmist.edu.in/btech"
+        "https://applications.srmist.edu.in/b-tech-application-form-2026-phase-3",
+        "https://webstor.srmist.edu.in/web_assets/downloads/2026/srmjeee-2026-faqs.pdf",
+        "https://webstor.srmist.edu.in/web_assets/downloads/2026/important-dates-for-srmjeee-2026-phase-i.pdf",
+        "https://webstor.srmist.edu.in/web_assets/downloads/2026/srmjeee-examination-pattern.pdf"
       ],
-      "category": "engineering"
+      "category": "engineering",
+      "cycleYear": 2026,
+      "status": "active",
+      "verification": {
+        "reviewedAt": "2026-10-23",
+        "status": "partial",
+        "fields": {
+          "registrationEnd": {
+            "checkedAt": "2026-10-23",
+            "sourceUrl": "https://applications.srmist.edu.in/b-tech-application-form-2026-phase-3"
+          },
+          "applicationFee": {
+            "checkedAt": "2026-10-23",
+            "sourceUrl": "https://webstor.srmist.edu.in/web_assets/downloads/2026/srmjeee-2026-faqs.pdf"
+          },
+          "examDate": {
+            "checkedAt": "2026-10-23",
+            "sourceUrl": "https://webstor.srmist.edu.in/web_assets/downloads/2026/important-dates-for-srmjeee-2026-phase-i.pdf",
+            "note": "Phase 1 corrected by this notice; Phases 2/3 from 2026 FAQ in sources. Later phase-specific amendments not checked."
+          },
+          "examPattern.mode": {
+            "checkedAt": "2026-10-23",
+            "sourceUrl": "https://webstor.srmist.edu.in/web_assets/downloads/2026/srmjeee-2026-faqs.pdf"
+          },
+          "examPattern.duration": {
+            "checkedAt": "2026-10-23",
+            "sourceUrl": "https://webstor.srmist.edu.in/web_assets/downloads/2026/srmjeee-examination-pattern.pdf"
+          },
+          "examPattern.sections": {
+            "checkedAt": "2026-10-23",
+            "sourceUrl": "https://webstor.srmist.edu.in/web_assets/downloads/2026/srmjeee-examination-pattern.pdf"
+          },
+          "examPattern.totalQuestions": {
+            "checkedAt": "2026-10-23",
+            "sourceUrl": "https://webstor.srmist.edu.in/web_assets/downloads/2026/srmjeee-examination-pattern.pdf"
+          },
+          "examPattern.totalMarks": {
+            "checkedAt": "2026-10-23",
+            "sourceUrl": "https://webstor.srmist.edu.in/web_assets/downloads/2026/srmjeee-examination-pattern.pdf"
+          },
+          "examPattern.markingScheme": {
+            "checkedAt": "2026-10-23",
+            "sourceUrl": "https://webstor.srmist.edu.in/web_assets/downloads/2026/srmjeee-examination-pattern.pdf"
+          }
+        },
+        "note": "The later Phase 1 notice overrides the FAQ. The pattern PDF establishes 130 questions/marks. Phases 2/3 are the published FAQ schedule, not a claim that every later amendment was checked. Only listed evidence fields were checked; other profile details remain incomplete."
+      }
     },
     {
       "id": 4,
@@ -192,58 +280,54 @@
       "fullName": "Manipal Entrance Test",
       "conductedBy": "Manipal Academy of Higher Education",
       "tier": "Good Private",
-      "priority": "Strong Backup",
-      "registrationStart": "2025-09-30",
-      "registrationEnd": "2026-03-15 (Phase 1)",
-      "examDate": "2026-04-14",
-      "resultDate": "May-June 2026",
-      "applicationFee": "₹2,000",
-      "applyLink": "https://www.manipal.edu/met",
-      "officialWebsite": "https://www.manipal.edu/",
+      "priority": "Consider if the course and eligibility match",
+      "registrationStart": "Not verified for this cycle",
+      "registrationEnd": "Not verified for this cycle",
+      "examDate": "Not verified for this cycle",
+      "resultDate": "Not verified for this cycle",
+      "applicationFee": "Not verified for this cycle",
+      "applyLink": "https://www.manipal.edu/entrancetest",
+      "officialWebsite": "https://www.manipal.edu/entrancetest",
       "colleges": [
-        "Manipal Institute of Technology (MIT Manipal)",
-        "MAHE Bangalore",
-        "MAHE Jaipur"
+        "Participating institutions not verified for this cycle"
       ],
-      "totalSeats": "~3,000 seats",
+      "totalSeats": "Not verified for this cycle",
       "eligibility": {
-        "education": "12th Pass or appearing",
-        "minimumMarks": "50% aggregate in PCM (45% for reserved)",
-        "ageLimit": "No upper age limit"
+        "education": "Not verified for this cycle",
+        "minimumMarks": "Not verified for this cycle",
+        "ageLimit": "Not verified for this cycle"
       },
       "examPattern": {
-        "mode": "Computer-Based Test (CBT)",
-        "duration": "2 hours 30 minutes",
-        "sections": "Physics (50), Chemistry (50), Maths (50)",
-        "totalQuestions": 150,
-        "totalMarks": 150,
-        "markingScheme": "+1 for correct, no negative marking"
+        "mode": "Not verified for this cycle",
+        "duration": "Not verified for this cycle",
+        "sections": "Not verified for this cycle",
+        "totalQuestions": null,
+        "totalMarks": null,
+        "markingScheme": "Not verified for this cycle"
       },
-      "difficultyLevel": "Moderate",
-      "preparationTip": "JEE Main preparation is enough. Focus on NCERT.",
-      "avgPlacement": "₹7.5 LPA",
-      "highestPlacement": "₹43 LPA",
-      "approxFees": "₹2.9 lakh/year (₹11.6 lakh for 4 years)",
+      "difficultyLevel": "Not independently assessed",
+      "preparationTip": "Use the official syllabus and sample papers for the stated cycle; check programme-specific eligibility and selection stages.",
+      "avgPlacement": "Not verified for this cycle",
+      "highestPlacement": "Not verified for this cycle",
+      "approxFees": "Not verified for this cycle",
       "location": "Manipal (Karnataka), Bangalore, Jaipur",
       "topBranches": [
-        "CSE",
-        "IT",
-        "Mechanical",
-        "Biotech"
+        "Programme list not verified for this cycle"
       ],
       "keyHighlights": [
-        "Established reputation (65+ years)",
-        "Beautiful campus in Manipal",
-        "Strong alumni network",
-        "2 attempts (Phase 1 & 2)",
-        "No negative marking"
+        "Only fields with cited evidence are verified."
       ],
       "colorCode": "medium",
-      "sources": [
-        "https://collegedunia.com/exams/met",
-        "https://www.manipal.edu/"
-      ],
-      "category": "engineering"
+      "sources": [],
+      "category": "engineering",
+      "cycleYear": 2026,
+      "status": "needs-review",
+      "verification": {
+        "reviewedAt": "2026-10-23",
+        "status": "unverified",
+        "fields": {},
+        "note": "The 2026 schedule was indexed, but the live PDF and entrance-test page did not return it. Unsupported historical dates and the 150-question/no-negative pattern were withdrawn pending accessible evidence. Only listed evidence fields were checked; other profile details remain incomplete."
+      }
     },
     {
       "id": 5,
@@ -251,64 +335,98 @@
       "fullName": "COMEDK Undergraduate Entrance Test",
       "conductedBy": "Consortium of Medical, Engineering and Dental Colleges of Karnataka",
       "tier": "Good Private (Karnataka)",
-      "priority": "Strong Backup (if considering Karnataka)",
+      "priority": "Consider if the course and eligibility match",
       "registrationStart": "2026-02-03",
-      "registrationEnd": "2026-03-16",
+      "registrationEnd": "2026-03-23 (revised; 16:00 IST)",
       "examDate": "2026-05-09",
-      "resultDate": "May 2026 (within 1 week)",
-      "applicationFee": "₹1,950 (COMEDK only), ₹3,200 (COMEDK + Uni-Gauge)",
+      "resultDate": "2026-05-29 (revised result schedule; 18:00 IST)",
+      "applicationFee": "₹1,950 COMEDK only; ₹3,200 COMEDK + Uni-GAUGE; transaction charges extra",
       "applyLink": "https://www.comedk.org/",
       "officialWebsite": "https://www.comedk.org/",
       "colleges": [
-        "RVCE Bangalore",
-        "PES University",
-        "MSRIT Bangalore",
-        "BMSCE Bangalore",
-        "Dayananda Sagar College",
-        "BMS College of Engineering",
-        "RNSIT Bangalore",
-        "CMR Institute of Technology",
-        "150+ engineering colleges in Karnataka"
+        "Participating institutions not verified for this cycle"
       ],
-      "totalSeats": "~20,000 across 150+ colleges",
+      "totalSeats": "Not verified for this cycle",
       "eligibility": {
-        "education": "12th Pass or appearing",
-        "minimumMarks": "45% in PCM (40% for reserved)",
-        "ageLimit": "No age limit"
+        "education": "Not verified for this cycle",
+        "minimumMarks": "Not verified for this cycle",
+        "ageLimit": "Not verified for this cycle"
       },
       "examPattern": {
-        "mode": "Computer-Based Test (CBT)",
-        "duration": "3 hours",
-        "sections": "Physics (60), Chemistry (60), Mathematics (60)",
+        "mode": "Computer-based test",
+        "duration": "Not verified for this cycle",
+        "sections": "Physics 60; Chemistry 60; Mathematics 60",
         "totalQuestions": 180,
         "totalMarks": 180,
-        "markingScheme": "+1 for correct, no negative marking"
+        "markingScheme": "+1 correct; no negative marking"
       },
-      "difficultyLevel": "Moderate",
-      "preparationTip": "NCERT + JEE Main basics. No negative marking makes it student-friendly.",
-      "avgPlacement": "₹7-10 LPA (varies by college)",
-      "highestPlacement": "₹40+ LPA (top colleges)",
-      "approxFees": "₹1.5-3 lakh/year (varies by college)",
+      "difficultyLevel": "Not independently assessed",
+      "preparationTip": "Use the official syllabus and sample papers for the stated cycle; check programme-specific eligibility and selection stages.",
+      "avgPlacement": "Not verified for this cycle",
+      "highestPlacement": "Not verified for this cycle",
+      "approxFees": "Not verified for this cycle",
       "location": "Bangalore and across Karnataka",
       "topBranches": [
-        "CSE",
-        "IT",
-        "ECE",
-        "Mechanical"
+        "Programme list not verified for this cycle"
       ],
       "keyHighlights": [
-        "Access to 150+ Karnataka colleges",
-        "Top colleges: RVCE, PES, MSRIT",
-        "Bangalore = IT hub = great placements",
-        "No negative marking",
-        "Good value for money"
+        "Only fields with cited evidence are verified."
       ],
       "colorCode": "medium",
       "sources": [
-        "https://engineering.careers360.com/articles/comedk-uget-2026",
-        "https://www.comedk.org/"
+        "https://www.comedk.org/index.php/about-uget-and-notification-2026",
+        "https://comedk.org/uploads/Information-brochure-2026-version-1.0.pdf"
       ],
-      "category": "engineering"
+      "category": "engineering",
+      "cycleYear": 2026,
+      "status": "active",
+      "verification": {
+        "reviewedAt": "2026-10-23",
+        "status": "partial",
+        "fields": {
+          "registrationStart": {
+            "checkedAt": "2026-10-23",
+            "sourceUrl": "https://www.comedk.org/index.php/about-uget-and-notification-2026"
+          },
+          "registrationEnd": {
+            "checkedAt": "2026-10-23",
+            "sourceUrl": "https://www.comedk.org/index.php/about-uget-and-notification-2026"
+          },
+          "examDate": {
+            "checkedAt": "2026-10-23",
+            "sourceUrl": "https://www.comedk.org/index.php/about-uget-and-notification-2026"
+          },
+          "resultDate": {
+            "checkedAt": "2026-10-23",
+            "sourceUrl": "https://www.comedk.org/index.php/about-uget-and-notification-2026"
+          },
+          "applicationFee": {
+            "checkedAt": "2026-10-23",
+            "sourceUrl": "https://comedk.org/uploads/Information-brochure-2026-version-1.0.pdf"
+          },
+          "examPattern.mode": {
+            "checkedAt": "2026-10-23",
+            "sourceUrl": "https://www.comedk.org/index.php/about-uget-and-notification-2026"
+          },
+          "examPattern.sections": {
+            "checkedAt": "2026-10-23",
+            "sourceUrl": "https://www.comedk.org/index.php/about-uget-and-notification-2026"
+          },
+          "examPattern.totalQuestions": {
+            "checkedAt": "2026-10-23",
+            "sourceUrl": "https://www.comedk.org/index.php/about-uget-and-notification-2026"
+          },
+          "examPattern.totalMarks": {
+            "checkedAt": "2026-10-23",
+            "sourceUrl": "https://www.comedk.org/index.php/about-uget-and-notification-2026"
+          },
+          "examPattern.markingScheme": {
+            "checkedAt": "2026-10-23",
+            "sourceUrl": "https://www.comedk.org/index.php/about-uget-and-notification-2026"
+          }
+        },
+        "note": "Revised dates supersede the original brochure. Unsupported college examples were removed rather than presenting a stale participation list. Only listed evidence fields were checked; other profile details remain incomplete."
+      }
     },
     {
       "id": 6,
@@ -316,229 +434,294 @@
       "fullName": "Kalinga Institute of Industrial Technology Entrance Exam",
       "conductedBy": "KIIT University, Bhubaneswar",
       "tier": "Good Private",
-      "priority": "Safety Net",
-      "registrationStart": "2025-11-10",
-      "registrationEnd": "2026-04-08 (Phase 1)",
-      "examDate": "2026-04-16 to 04-20 (P1), 2026-06-04 to 06-08 (P2), 2026-07-05 to 07-07 (P3)",
-      "resultDate": "Within 1 week of each phase",
-      "applicationFee": "FREE (₹0) - No application fee",
+      "priority": "Consider if the course and eligibility match",
+      "registrationStart": "2025-11-10 (Phase 1); 2026-04-13 (Phase 2); 2026-07-01 (Phase 4); 2026-08-03 (Phase 5)",
+      "registrationEnd": "2026-04-08 (Phase 1); 2026-05-30 (Phase 2); 2026-07-30 (Phase 4); 2026-08-28 (Phase 5)",
+      "examDate": "2026-04-16 to 2026-04-20 (Phase 1); 2026-06-05 to 2026-06-07 (Phase 2); 2026-08-01 (Phase 4); 2026-08-30 (Phase 5); Phase 3 not verified",
+      "resultDate": "Not verified for this cycle",
+      "applicationFee": "Free — no application or examination fee",
       "applyLink": "https://kiitee.kiit.ac.in/",
       "officialWebsite": "https://kiitee.kiit.ac.in/",
       "colleges": [
-        "KIIT University Bhubaneswar"
+        "Participating institutions not verified for this cycle"
       ],
-      "totalSeats": "~3,000 seats",
+      "totalSeats": "Not verified for this cycle",
       "eligibility": {
-        "education": "12th Pass or appearing",
-        "minimumMarks": "60% in PCM",
-        "ageLimit": "No age limit"
+        "education": "Not verified for this cycle",
+        "minimumMarks": "Not verified for this cycle",
+        "ageLimit": "Not verified for this cycle"
       },
       "examPattern": {
-        "mode": "Computer-Based Test (CBT)",
-        "duration": "2 hours 30 minutes",
-        "sections": "Physics (40), Chemistry (40), Mathematics (40)",
-        "totalQuestions": 120,
-        "totalMarks": 120,
-        "markingScheme": "+1 for correct, -0.25 for incorrect"
+        "mode": "Not verified for this cycle",
+        "duration": "Not verified for this cycle",
+        "sections": "Not verified for this cycle",
+        "totalQuestions": null,
+        "totalMarks": null,
+        "markingScheme": "Not verified for this cycle"
       },
-      "difficultyLevel": "Moderate",
-      "preparationTip": "NCERT sufficient. Free exam - definitely apply!",
-      "avgPlacement": "₹6.5 LPA",
-      "highestPlacement": "₹39 LPA",
-      "approxFees": "₹2.3 lakh/year (₹9.2 lakh for 4 years)",
+      "difficultyLevel": "Not independently assessed",
+      "preparationTip": "Use the official syllabus and sample papers for the stated cycle; check programme-specific eligibility and selection stages.",
+      "avgPlacement": "Not verified for this cycle",
+      "highestPlacement": "Not verified for this cycle",
+      "approxFees": "Not verified for this cycle",
       "location": "Bhubaneswar (Odisha)",
       "topBranches": [
-        "CSE",
-        "IT",
-        "ECE",
-        "Mechanical"
+        "Programme list not verified for this cycle"
       ],
       "keyHighlights": [
-        "FREE application - no fee!",
-        "3 phases = multiple attempts",
-        "Good infrastructure and campus",
-        "Deemed university status",
-        "Easy admission process"
+        "The official calendar labels these dates tentative and omits Phase 3."
       ],
       "colorCode": "low",
       "sources": [
-        "https://engineering.careers360.com/articles/kiitee-2026",
-        "https://kiitee.kiit.ac.in/"
+        "https://kiitee.kiit.ac.in/calendar-of-events/",
+        "https://kiitee.kiit.ac.in/kiitee-2026/"
       ],
-      "category": "engineering"
+      "category": "engineering",
+      "cycleYear": 2026,
+      "status": "active",
+      "verification": {
+        "reviewedAt": "2026-10-23",
+        "status": "partial",
+        "fields": {
+          "registrationStart": {
+            "checkedAt": "2026-10-23",
+            "sourceUrl": "https://kiitee.kiit.ac.in/calendar-of-events/",
+            "note": "Only the phases shown on the official calendar are represented; Phase 3 is missing."
+          },
+          "registrationEnd": {
+            "checkedAt": "2026-10-23",
+            "sourceUrl": "https://kiitee.kiit.ac.in/calendar-of-events/",
+            "note": "Only the phases shown on the official calendar are represented; Phase 3 is missing."
+          },
+          "examDate": {
+            "checkedAt": "2026-10-23",
+            "sourceUrl": "https://kiitee.kiit.ac.in/calendar-of-events/",
+            "note": "Only the phases shown on the official calendar are represented; Phase 3 is missing."
+          },
+          "applicationFee": {
+            "checkedAt": "2026-10-23",
+            "sourceUrl": "https://kiitee.kiit.ac.in/kiitee-2026/"
+          }
+        },
+        "note": "The calendar covers Phases 1, 2, 4 and 5 and labels dates tentative. No assumption is made that all candidates can take every phase or receive the same scholarship terms. Only listed evidence fields were checked; other profile details remain incomplete."
+      }
     },
     {
       "id": 7,
-      "name": "PESSAT",
-      "fullName": "PES Scholastic Aptitude Test",
+      "name": "PESSAT (B.Tech discontinued)",
+      "fullName": "Former PES Scholastic Aptitude Test route for B.Tech",
       "conductedBy": "PES University, Bangalore",
       "tier": "Good Private (Karnataka)",
-      "priority": "Note: B.Tech admissions now via JEE Main/KCET",
-      "registrationStart": "2025-09-05",
-      "registrationEnd": "April 2026",
-      "examDate": "2026-04-21 to 05-12",
-      "resultDate": "May 2026",
-      "applicationFee": "₹1,200",
-      "applyLink": "https://admissions.pes.edu/",
-      "officialWebsite": "https://admissions.pes.edu/",
+      "priority": "Consider if the course and eligibility match",
+      "registrationStart": "Not applicable: B.Tech PESSAT discontinued",
+      "registrationEnd": "Not applicable: use the relevant JEE Main/KCET admission route",
+      "examDate": "No separate PESSAT B.Tech examination",
+      "resultDate": "Not applicable",
+      "applicationFee": "No separate PESSAT B.Tech exam fee; check the relevant admission route",
+      "applyLink": "https://pes.edu/btech/",
+      "officialWebsite": "https://pes.edu/btech/",
       "colleges": [
-        "PES University Bangalore"
+        "PES University"
       ],
-      "totalSeats": "~1,500 seats",
+      "totalSeats": "Not verified for this cycle",
       "eligibility": {
-        "education": "12th Pass or appearing",
-        "minimumMarks": "50% in PCM",
-        "ageLimit": "No age limit"
+        "education": "Not verified for this cycle",
+        "minimumMarks": "Not verified for this cycle",
+        "ageLimit": "Not verified for this cycle"
       },
       "examPattern": {
-        "mode": "Computer-Based Test (CBT)",
-        "duration": "2 hours 30 minutes",
-        "sections": "Physics, Chemistry, Mathematics",
-        "totalQuestions": 150,
-        "totalMarks": 150,
-        "markingScheme": "+1 for correct, no negative marking"
+        "mode": "Not verified for this cycle",
+        "duration": "Not verified for this cycle",
+        "sections": "Not verified for this cycle",
+        "totalQuestions": null,
+        "totalMarks": null,
+        "markingScheme": "Not verified for this cycle"
       },
-      "difficultyLevel": "Moderate",
-      "preparationTip": "NOTE: For B.Tech 2026, admissions based on JEE Main/KCET scores, not PESSAT.",
-      "avgPlacement": "₹8 LPA",
-      "highestPlacement": "₹50+ LPA",
-      "approxFees": "₹2.8 lakh/year (₹11.2 lakh for 4 years)",
+      "difficultyLevel": "Not independently assessed",
+      "preparationTip": "Check the current JEE Main/KCET route and PES B.Tech admission criteria.",
+      "avgPlacement": "Not verified for this cycle",
+      "highestPlacement": "Not verified for this cycle",
+      "approxFees": "Not verified for this cycle",
       "location": "Bangalore (Karnataka)",
       "topBranches": [
-        "CSE",
-        "IT",
-        "ECE"
+        "Programme list not verified for this cycle"
       ],
       "keyHighlights": [
-        "⚠️ B.Tech admissions via JEE Main/KCET in 2026",
-        "Strong for CSE/IT",
-        "Bangalore location advantage",
-        "Good industry exposure",
-        "PESSAT still used for other programs"
+        "PES states that PESSAT is discontinued for B.Tech."
       ],
       "colorCode": "low",
       "sources": [
-        "https://www.collegepravesh.com/entrance-exams/pessat/",
-        "https://admissions.pes.edu/"
+        "https://pes.edu/faqs/"
       ],
-      "category": "engineering"
+      "category": "engineering",
+      "cycleYear": 2026,
+      "status": "discontinued",
+      "verification": {
+        "reviewedAt": "2026-10-23",
+        "status": "partial",
+        "fields": {
+          "status": {
+            "checkedAt": "2026-10-23",
+            "sourceUrl": "https://pes.edu/faqs/"
+          },
+          "name": {
+            "checkedAt": "2026-10-23",
+            "sourceUrl": "https://pes.edu/faqs/"
+          },
+          "fullName": {
+            "checkedAt": "2026-10-23",
+            "sourceUrl": "https://pes.edu/faqs/"
+          },
+          "examDate": {
+            "checkedAt": "2026-10-23",
+            "sourceUrl": "https://pes.edu/faqs/"
+          },
+          "registrationStart": {
+            "checkedAt": "2026-10-23",
+            "sourceUrl": "https://pes.edu/faqs/"
+          },
+          "registrationEnd": {
+            "checkedAt": "2026-10-23",
+            "sourceUrl": "https://pes.edu/faqs/"
+          },
+          "resultDate": {
+            "checkedAt": "2026-10-23",
+            "sourceUrl": "https://pes.edu/faqs/"
+          }
+        },
+        "note": "PES replaces the B.Tech PESSAT route with JEE Main/KCET. This is a historical route, not an open exam. Other PES programme admission processes are not declared discontinued. Only listed evidence fields were checked; other profile details remain incomplete."
+      }
     },
     {
       "id": 8,
-      "name": "AMITY JEE",
-      "fullName": "Amity Joint Entrance Examination",
+      "name": "Amity engineering admissions (exam needs review)",
+      "fullName": "Amity engineering admission and selection process",
       "conductedBy": "Amity University",
       "tier": "Tier 2 Private",
-      "priority": "Safety Net",
-      "registrationStart": "2025-11-01",
-      "registrationEnd": "TBA (April 2026 expected)",
-      "examDate": "April-May 2026 (TBA)",
-      "resultDate": "Within 2 weeks",
-      "applicationFee": "₹1,500 (non-refundable)",
-      "applyLink": "https://www.amity.edu/",
-      "officialWebsite": "https://www.amity.edu/",
+      "priority": "Consider if the course and eligibility match",
+      "registrationStart": "Not verified for this cycle",
+      "registrationEnd": "Not verified for this cycle",
+      "examDate": "Not verified for this cycle",
+      "resultDate": "Not verified for this cycle",
+      "applicationFee": "₹1,500 application form on the reviewed Amity procedure page; confirm campus/programme",
+      "applyLink": "https://amity.edu/Application-Procedure.aspx",
+      "officialWebsite": "https://amity.edu/Application-Procedure.aspx",
       "colleges": [
-        "Amity Noida",
-        "Amity Lucknow",
-        "Amity Jaipur",
-        "Amity Mumbai",
-        "Multiple campuses across India"
+        "Participating institutions not verified for this cycle"
       ],
-      "totalSeats": "~10,000 across all campuses",
+      "totalSeats": "Not verified for this cycle",
       "eligibility": {
-        "education": "12th Pass or appearing",
-        "minimumMarks": "60% in PCM",
-        "ageLimit": "No age limit"
+        "education": "Not verified for this cycle",
+        "minimumMarks": "Not verified for this cycle",
+        "ageLimit": "Not verified for this cycle"
       },
       "examPattern": {
-        "mode": "Computer-Based Test (CBT)",
-        "duration": "2 hours 30 minutes",
-        "sections": "Physics, Chemistry, Mathematics, English",
-        "totalQuestions": 125,
-        "totalMarks": 125,
-        "markingScheme": "+1 for correct, -0.25 for incorrect"
+        "mode": "Not verified for this cycle",
+        "duration": "Not verified for this cycle",
+        "sections": "Not verified for this cycle",
+        "totalQuestions": null,
+        "totalMarks": null,
+        "markingScheme": "Not verified for this cycle"
       },
-      "difficultyLevel": "Moderate-Easy",
-      "preparationTip": "NCERT basics sufficient. Good backup option.",
-      "avgPlacement": "₹5-6 LPA",
-      "highestPlacement": "₹20+ LPA",
-      "approxFees": "₹2.5 lakh/year (₹10 lakh for 4 years)",
+      "difficultyLevel": "Not independently assessed",
+      "preparationTip": "Use the official syllabus and sample papers for the stated cycle; check programme-specific eligibility and selection stages.",
+      "avgPlacement": "Not verified for this cycle",
+      "highestPlacement": "Not verified for this cycle",
+      "approxFees": "Not verified for this cycle",
       "location": "Multiple cities (Noida, Lucknow, Jaipur, Mumbai, etc.)",
       "topBranches": [
-        "CSE",
-        "IT",
-        "ECE"
+        "Programme list not verified for this cycle"
       ],
       "keyHighlights": [
-        "Multiple campuses across India",
-        "Wide range of specializations",
-        "Easy admission process",
-        "Good infrastructure",
-        "Backup option"
+        "A current common Amity JEE schedule was not established.",
+        "Selection varies by campus and programme."
       ],
       "colorCode": "low",
       "sources": [
-        "https://www.vidyavision.com/entrance-exam/amity-jee",
-        "https://www.amity.edu/"
+        "https://amity.edu/Application-Procedure.aspx"
       ],
-      "category": "engineering"
+      "category": "engineering",
+      "cycleYear": 2026,
+      "status": "needs-review",
+      "verification": {
+        "reviewedAt": "2026-10-23",
+        "status": "partial",
+        "fields": {
+          "applicationFee": {
+            "checkedAt": "2026-10-23",
+            "sourceUrl": "https://amity.edu/Application-Procedure.aspx"
+          }
+        },
+        "note": "The procedure page confirms the form cost, but selection is programme/campus-specific. Old official AmityJEE material does not establish a current common 2026 test. Only listed evidence fields were checked; other profile details remain incomplete."
+      }
     },
     {
       "id": 9,
-      "name": "UPES DAT/UPESEAT",
+      "name": "UPESEAT",
       "fullName": "UPES Engineering Aptitude Test",
       "conductedBy": "UPES University, Dehradun",
       "tier": "Specialized Private",
-      "priority": "Consider for Petroleum/CS",
-      "registrationStart": "2025-10-01",
-      "registrationEnd": "2026-02-28",
-      "examDate": "TBA",
-      "resultDate": "Within 2 weeks",
-      "applicationFee": "₹1,750 (B.Tech), ₹1,750 (B.Des)",
-      "applyLink": "https://www.upes.ac.in/admissions",
-      "officialWebsite": "https://www.upes.ac.in/",
+      "priority": "Consider if the course and eligibility match",
+      "registrationStart": "Not verified for this cycle",
+      "registrationEnd": "Not verified for this cycle",
+      "examDate": "Not verified for this cycle",
+      "resultDate": "Not verified for this cycle",
+      "applicationFee": "Not verified for this cycle",
+      "applyLink": "https://www.upes.ac.in/admissions/admission-alerts/upeseat",
+      "officialWebsite": "https://www.upes.ac.in/admissions/admission-alerts/upeseat",
       "colleges": [
-        "UPES Dehradun"
+        "Participating institutions not verified for this cycle"
       ],
-      "totalSeats": "~2,500 seats",
+      "totalSeats": "Not verified for this cycle",
       "eligibility": {
-        "education": "12th Pass or appearing",
-        "minimumMarks": "50% in PCM",
-        "ageLimit": "No age limit"
+        "education": "Not verified for this cycle",
+        "minimumMarks": "Not verified for this cycle",
+        "ageLimit": "Not verified for this cycle"
       },
       "examPattern": {
-        "mode": "Computer-Based Test (CBT)",
-        "duration": "2 hours 30 minutes",
-        "sections": "Physics, Chemistry, Mathematics, English, Aptitude",
-        "totalQuestions": 150,
-        "totalMarks": 150,
-        "markingScheme": "+1 for correct, no negative marking"
+        "mode": "Not verified for this cycle",
+        "duration": "Not verified for this cycle",
+        "sections": "Not verified for this cycle",
+        "totalQuestions": null,
+        "totalMarks": null,
+        "markingScheme": "Not verified for this cycle"
       },
-      "difficultyLevel": "Moderate",
-      "preparationTip": "Good for specialized engineering (Petroleum, Power, Aviation).",
-      "avgPlacement": "₹7.5 LPA",
-      "highestPlacement": "₹35+ LPA",
-      "approxFees": "₹2.8 lakh/year (₹11.2 lakh for 4 years)",
+      "difficultyLevel": "Not independently assessed",
+      "preparationTip": "Use the official syllabus and sample papers for the stated cycle; check programme-specific eligibility and selection stages.",
+      "avgPlacement": "Not verified for this cycle",
+      "highestPlacement": "Not verified for this cycle",
+      "approxFees": "Not verified for this cycle",
       "location": "Dehradun (Uttarakhand)",
       "topBranches": [
-        "Petroleum Engineering",
-        "Computer Science",
-        "Power Engineering",
-        "Aviation"
+        "Programme list not verified for this cycle"
       ],
       "keyHighlights": [
-        "Specialized in Petroleum/Energy sector",
-        "Strong industry partnerships (Oil & Gas)",
-        "Good for niche engineering fields",
-        "Beautiful campus in Dehradun",
-        "Unique specializations"
+        "UPESEAT is for engineering; UPESDAT is a separate design test."
       ],
       "colorCode": "low",
       "sources": [
-        "https://www.shiksha.com/engineering/upeseat-exam",
-        "https://www.upes.ac.in/"
+        "https://www.upes.ac.in/admissions/admission-alerts/upeseat"
       ],
-      "category": "engineering"
+      "category": "engineering",
+      "cycleYear": 2026,
+      "status": "needs-review",
+      "verification": {
+        "reviewedAt": "2026-10-23",
+        "status": "partial",
+        "fields": {
+          "name": {
+            "checkedAt": "2026-10-23",
+            "sourceUrl": "https://www.upes.ac.in/admissions/admission-alerts/upeseat",
+            "note": "Identity and engineering scope only; the live page describes 2027-28."
+          },
+          "fullName": {
+            "checkedAt": "2026-10-23",
+            "sourceUrl": "https://www.upes.ac.in/admissions/admission-alerts/upeseat",
+            "note": "Identity and engineering scope only; the live page describes 2027-28."
+          }
+        },
+        "note": "The mixed UPES DAT/UPESEAT name was corrected. The live page has rolled to 2027-28, so its dates and pattern were not copied into this 2026 profile. Only listed evidence fields were checked; other profile details remain incomplete."
+      }
     },
     {
       "id": 10,
@@ -546,117 +729,152 @@
       "fullName": "Lovely Professional University National Entrance and Scholarship Test",
       "conductedBy": "Lovely Professional University",
       "tier": "Tier 2 Private",
-      "priority": "Safety Net",
-      "registrationStart": "2025-10-01",
-      "registrationEnd": "2026-03-10 (Phase 2)",
-      "examDate": "2026-03-15 to 2026-03-31",
-      "resultDate": "Within 1 week",
-      "applicationFee": "₹1,000 (soft copy), ₹1,500 (printed kit)",
+      "priority": "Consider if the course and eligibility match",
+      "registrationStart": "Not verified for this cycle",
+      "registrationEnd": "Not verified for this cycle",
+      "examDate": "Not verified for this cycle",
+      "resultDate": "Not verified for this cycle",
+      "applicationFee": "₹1,000 soft-copy kit; ₹1,500 printed kit (2026 B.Tech booklet)",
       "applyLink": "https://www.lpu.in/nest/",
       "officialWebsite": "https://www.lpu.in/",
       "colleges": [
-        "LPU Phagwara (Punjab)"
+        "Participating institutions not verified for this cycle"
       ],
-      "totalSeats": "~15,000 seats",
+      "totalSeats": "Not verified for this cycle",
       "eligibility": {
-        "education": "12th Pass or appearing",
-        "minimumMarks": "60% in PCM (50% for reserved)",
-        "ageLimit": "No age limit"
+        "education": "Not verified for this cycle",
+        "minimumMarks": "Not verified for this cycle",
+        "ageLimit": "Not verified for this cycle"
       },
       "examPattern": {
-        "mode": "Remote Proctored or Test Center",
-        "duration": "2 hours 30 minutes",
-        "sections": "Physics, Chemistry, Mathematics, English",
-        "totalQuestions": 125,
-        "totalMarks": 125,
-        "markingScheme": "+1 for correct, -0.25 for incorrect"
+        "mode": "Not verified for this cycle",
+        "duration": "Not verified for this cycle",
+        "sections": "Not verified for this cycle",
+        "totalQuestions": null,
+        "totalMarks": null,
+        "markingScheme": "Not verified for this cycle"
       },
-      "difficultyLevel": "Easy-Moderate",
-      "preparationTip": "Can take from home. Good scholarship opportunities.",
-      "avgPlacement": "₹6 LPA",
-      "highestPlacement": "₹42 LPA",
-      "approxFees": "₹1.5 lakh/year (₹6 lakh for 4 years) - After scholarship",
+      "difficultyLevel": "Not independently assessed",
+      "preparationTip": "Use the official syllabus and sample papers for the stated cycle; check programme-specific eligibility and selection stages.",
+      "avgPlacement": "Not verified for this cycle",
+      "highestPlacement": "Not verified for this cycle",
+      "approxFees": "Not verified for this cycle",
       "location": "Phagwara (Punjab)",
       "topBranches": [
-        "CSE",
-        "IT",
-        "Mechanical",
-        "Civil"
+        "Programme list not verified for this cycle"
       ],
       "keyHighlights": [
-        "Huge campus (600+ acres)",
-        "Remote proctored exam available",
-        "Good scholarship opportunities",
-        "Very affordable after scholarships",
-        "Large student community"
+        "Only fields with cited evidence are verified."
       ],
       "colorCode": "low",
       "sources": [
-        "https://engineering.careers360.com/articles/lpunest-2026",
-        "https://www.lpu.in/nest/"
+        "https://www.lpu.in/lpu-assets/download/prospectus/booklets/lpunest-btech-entrance-booklet.pdf"
       ],
-      "category": "engineering"
+      "category": "engineering",
+      "cycleYear": 2026,
+      "status": "needs-review",
+      "verification": {
+        "reviewedAt": "2026-10-23",
+        "status": "partial",
+        "fields": {
+          "applicationFee": {
+            "checkedAt": "2026-10-23",
+            "sourceUrl": "https://www.lpu.in/lpu-assets/download/prospectus/booklets/lpunest-btech-entrance-booklet.pdf",
+            "note": "2026 B.Tech booklet, printed page 2; downloaded from the official URL and visually inspected after the browser reader hit its size limit. Not all LPUNEST programmes."
+          }
+        },
+        "note": "The official B.Tech booklet was downloaded and page 2 visually checked to confirm kit prices. The legacy March-only schedule and question counts were not verified for the full 2026 cycle. Only listed evidence fields were checked; other profile details remain incomplete."
+      }
     },
     {
       "id": 11,
-      "name": "MHT CET",
+      "name": "MHT CET (PCM)",
       "fullName": "Maharashtra Common Entrance Test",
       "conductedBy": "State CET Cell, Maharashtra",
       "tier": "State-Level",
-      "priority": "Must Apply (if from Maharashtra)",
+      "priority": "Consider if the course and eligibility match",
       "registrationStart": "2026-01-10",
-      "registrationEnd": "2026-02-27",
-      "examDate": "2026-04-11 to 04-19 (PCM), 2026-04-21 to 04-26 (PCB) - Session 1",
-      "resultDate": "May 2026",
-      "applicationFee": "₹1,300 (General), ₹1,000 (Reserved)",
+      "registrationEnd": "2026-02-12 (advertised; later extensions not verified)",
+      "examDate": "Not verified for this cycle",
+      "resultDate": "Not verified for this cycle",
+      "applicationFee": "Per attempt: ₹1,300 general/OMS/J&K; ₹1,000 eligible Maharashtra reserved/PwD categories. Two attempts: ₹2,600/₹2,000.",
       "applyLink": "https://cetcell.mahacet.org/",
       "officialWebsite": "https://cetcell.mahacet.org/",
       "colleges": [
-        "VJTI Mumbai",
-        "COEP Pune",
-        "Government College of Engineering, Pune",
-        "Walchand College of Engineering, Sangli",
-        "100+ govt & private colleges in Maharashtra"
+        "Participating institutions not verified for this cycle"
       ],
-      "totalSeats": "~50,000+ seats",
+      "totalSeats": "Not verified for this cycle",
       "eligibility": {
-        "education": "12th Pass or appearing (Maharashtra domicile preferred)",
-        "minimumMarks": "50% in PCM (45% for reserved)",
-        "ageLimit": "No age limit"
+        "education": "Not verified for this cycle",
+        "minimumMarks": "Not verified for this cycle",
+        "ageLimit": "Not verified for this cycle"
       },
       "examPattern": {
-        "mode": "Computer-Based Test (CBT)",
-        "duration": "3 hours (each session)",
-        "sections": "Physics, Chemistry, Mathematics (50 MCQs each)",
+        "mode": "Computer-based test",
+        "duration": "180 minutes (PCM)",
+        "sections": "Physics, Chemistry and Mathematics (PCM)",
         "totalQuestions": 150,
         "totalMarks": 200,
-        "markingScheme": "Varies: 1, 2, or 4 marks per question, no negative"
+        "markingScheme": "Physics/Chemistry +1; Mathematics +2; no negative marking"
       },
-      "difficultyLevel": "Moderate",
-      "preparationTip": "State board friendly. NCERT + Maharashtra board books recommended.",
-      "avgPlacement": "₹5-8 LPA (varies by college)",
-      "highestPlacement": "₹40+ LPA (VJTI, COEP)",
-      "approxFees": "₹50K-1 lakh/year for govt colleges (₹2-4 lakh total)",
+      "difficultyLevel": "Not independently assessed",
+      "preparationTip": "Use the official syllabus and sample papers for the stated cycle; check programme-specific eligibility and selection stages.",
+      "avgPlacement": "Not verified for this cycle",
+      "highestPlacement": "Not verified for this cycle",
+      "approxFees": "Not verified for this cycle",
       "location": "Mumbai, Pune, Nagpur, and across Maharashtra",
       "topBranches": [
-        "CSE",
-        "IT",
-        "Mechanical",
-        "Civil"
+        "Programme list not verified for this cycle"
       ],
       "keyHighlights": [
-        "Very affordable (govt college fees)",
-        "Top colleges: VJTI, COEP",
-        "2 sessions = 2 attempts",
-        "No negative marking",
-        "Best value for money for Maharashtra students"
+        "Engineering/PCM scope; PCB has a different question count."
       ],
       "colorCode": "medium",
       "sources": [
-        "https://engineering.careers360.com/articles/mht-cet-2026",
-        "https://cetcell.mahacet.org/"
+        "https://cetcell.mahacet.org/wp-content/uploads/2023/12/MHT-CET-2026-Information-Brochure-Updated-on-10.02.2026.pdf"
       ],
-      "category": "engineering"
+      "category": "engineering",
+      "cycleYear": 2026,
+      "status": "needs-review",
+      "verification": {
+        "reviewedAt": "2026-10-23",
+        "status": "partial",
+        "fields": {
+          "registrationStart": {
+            "checkedAt": "2026-10-23",
+            "sourceUrl": "https://cetcell.mahacet.org/wp-content/uploads/2023/12/MHT-CET-2026-Information-Brochure-Updated-on-10.02.2026.pdf"
+          },
+          "applicationFee": {
+            "checkedAt": "2026-10-23",
+            "sourceUrl": "https://cetcell.mahacet.org/wp-content/uploads/2023/12/MHT-CET-2026-Information-Brochure-Updated-on-10.02.2026.pdf"
+          },
+          "examPattern.mode": {
+            "checkedAt": "2026-10-23",
+            "sourceUrl": "https://cetcell.mahacet.org/wp-content/uploads/2023/12/MHT-CET-2026-Information-Brochure-Updated-on-10.02.2026.pdf"
+          },
+          "examPattern.duration": {
+            "checkedAt": "2026-10-23",
+            "sourceUrl": "https://cetcell.mahacet.org/wp-content/uploads/2023/12/MHT-CET-2026-Information-Brochure-Updated-on-10.02.2026.pdf"
+          },
+          "examPattern.sections": {
+            "checkedAt": "2026-10-23",
+            "sourceUrl": "https://cetcell.mahacet.org/wp-content/uploads/2023/12/MHT-CET-2026-Information-Brochure-Updated-on-10.02.2026.pdf"
+          },
+          "examPattern.totalQuestions": {
+            "checkedAt": "2026-10-23",
+            "sourceUrl": "https://cetcell.mahacet.org/wp-content/uploads/2023/12/MHT-CET-2026-Information-Brochure-Updated-on-10.02.2026.pdf"
+          },
+          "examPattern.totalMarks": {
+            "checkedAt": "2026-10-23",
+            "sourceUrl": "https://cetcell.mahacet.org/wp-content/uploads/2023/12/MHT-CET-2026-Information-Brochure-Updated-on-10.02.2026.pdf"
+          },
+          "examPattern.markingScheme": {
+            "checkedAt": "2026-10-23",
+            "sourceUrl": "https://cetcell.mahacet.org/wp-content/uploads/2023/12/MHT-CET-2026-Information-Brochure-Updated-on-10.02.2026.pdf"
+          }
+        },
+        "note": "The updated brochure supports PCM pattern and fees but leaves exam dates to a later notice. The advertised registration deadline is not certified as final. Only listed evidence fields were checked; other profile details remain incomplete."
+      }
     },
     {
       "id": 12,
@@ -664,182 +882,185 @@
       "fullName": "Karnataka Common Entrance Test",
       "conductedBy": "Karnataka Examinations Authority",
       "tier": "State-Level",
-      "priority": "Must Apply (if from Karnataka)",
-      "registrationStart": "2026-01-16",
-      "registrationEnd": "2026-02-27",
-      "examDate": "2026-05-25 and 05-26",
-      "resultDate": "May 2026",
-      "applicationFee": "₹500 (Karnataka General), ₹250 (Karnataka SC/ST), ₹750 (Outside Karnataka)",
-      "applyLink": "https://cetonline.karnataka.gov.in/",
-      "officialWebsite": "https://cetonline.karnataka.gov.in/",
+      "priority": "Consider if the course and eligibility match",
+      "registrationStart": "Not verified for this cycle",
+      "registrationEnd": "Not verified for this cycle",
+      "examDate": "Not verified for this cycle",
+      "resultDate": "Not verified for this cycle",
+      "applicationFee": "Not verified for this cycle",
+      "applyLink": "https://cetonline.karnataka.gov.in/kea/",
+      "officialWebsite": "https://cetonline.karnataka.gov.in/kea/",
       "colleges": [
-        "NIE Mysore",
-        "BMS College of Engineering",
-        "RVCE Bangalore (some seats via KCET)",
-        "Dayananda Sagar College",
-        "200+ govt & private colleges in Karnataka"
+        "Participating institutions not verified for this cycle"
       ],
-      "totalSeats": "~40,000+ seats",
+      "totalSeats": "Not verified for this cycle",
       "eligibility": {
-        "education": "12th Pass or appearing (Karnataka domicile preferred)",
-        "minimumMarks": "45% in PCM",
-        "ageLimit": "No age limit"
+        "education": "Not verified for this cycle",
+        "minimumMarks": "Not verified for this cycle",
+        "ageLimit": "Not verified for this cycle"
       },
       "examPattern": {
-        "mode": "Pen & Paper (Offline)",
-        "duration": "2.5 hours (each subject on different day)",
-        "sections": "Physics (60), Chemistry (60), Mathematics (60)",
-        "totalQuestions": 180,
-        "totalMarks": 180,
-        "markingScheme": "+1 for correct, no negative marking"
+        "mode": "Not verified for this cycle",
+        "duration": "Not verified for this cycle",
+        "sections": "Not verified for this cycle",
+        "totalQuestions": null,
+        "totalMarks": null,
+        "markingScheme": "Not verified for this cycle"
       },
-      "difficultyLevel": "Moderate",
-      "preparationTip": "Pen-paper exam. Karnataka board friendly. Practice time management.",
-      "avgPlacement": "₹6-9 LPA (varies by college)",
-      "highestPlacement": "₹45+ LPA (top colleges)",
-      "approxFees": "₹50K-1 lakh/year for govt colleges",
+      "difficultyLevel": "Not independently assessed",
+      "preparationTip": "Use the official syllabus and sample papers for the stated cycle; check programme-specific eligibility and selection stages.",
+      "avgPlacement": "Not verified for this cycle",
+      "highestPlacement": "Not verified for this cycle",
+      "approxFees": "Not verified for this cycle",
       "location": "Bangalore, Mysore, Mangalore, across Karnataka",
       "topBranches": [
-        "CSE",
-        "IT",
-        "ECE",
-        "Mechanical"
+        "Programme list not verified for this cycle"
       ],
       "keyHighlights": [
-        "Very affordable govt colleges",
-        "Bangalore = IT hub advantage",
-        "No negative marking",
-        "Pen-paper exam (some prefer this)",
-        "Best for Karnataka students"
+        "Only fields with cited evidence are verified."
       ],
       "colorCode": "medium",
-      "sources": [
-        "https://engineering.careers360.com/articles/kcet-2026",
-        "https://cetonline.karnataka.gov.in/"
-      ],
-      "category": "engineering"
+      "sources": [],
+      "category": "engineering",
+      "cycleYear": 2026,
+      "status": "needs-review",
+      "verification": {
+        "reviewedAt": "2026-10-23",
+        "status": "unverified",
+        "fields": {},
+        "note": "The KEA portal timed out; no accessible official 2026 notice was obtained. Conflicting secondary dates were not promoted to evidence. Fees and the old subject-duration claims remain unverified. Only listed evidence fields were checked; other profile details remain incomplete."
+      }
     },
     {
       "id": 13,
-      "name": "TS EAMCET",
-      "fullName": "Telangana State Engineering, Agriculture and Medical Common Entrance Test",
+      "name": "TG EAPCET (formerly TS EAMCET)",
+      "fullName": "Telangana Engineering, Agriculture and Pharmacy Common Entrance Test",
       "conductedBy": "TSCHE (Telangana State Council of Higher Education)",
       "tier": "State-Level",
-      "priority": "Must Apply (if from Telangana)",
-      "registrationStart": "2026-02-19",
-      "registrationEnd": "2026-04-04",
-      "examDate": "2026-05-04, 05-05, 05-09, 05-10, 05-11",
-      "resultDate": "May-June 2026",
-      "applicationFee": "₹900 (General - 1 stream), ₹500 (SC/ST/PH - 1 stream)",
+      "priority": "Consider if the course and eligibility match",
+      "registrationStart": "Not verified for this cycle",
+      "registrationEnd": "Not verified for this cycle",
+      "examDate": "Not verified for this cycle",
+      "resultDate": "Not verified for this cycle",
+      "applicationFee": "Not verified for this cycle",
       "applyLink": "https://eapcet.tgche.ac.in/",
       "officialWebsite": "https://eapcet.tgche.ac.in/",
       "colleges": [
-        "CBIT Hyderabad",
-        "Vasavi College of Engineering",
-        "MGIT Hyderabad",
-        "Osmania University",
-        "100+ govt & private colleges in Telangana"
+        "Participating institutions not verified for this cycle"
       ],
-      "totalSeats": "~30,000+ seats",
+      "totalSeats": "Not verified for this cycle",
       "eligibility": {
-        "education": "12th Pass or appearing (Telangana domicile preferred)",
-        "minimumMarks": "45% in PCM",
-        "ageLimit": "No age limit"
+        "education": "Not verified for this cycle",
+        "minimumMarks": "Not verified for this cycle",
+        "ageLimit": "Not verified for this cycle"
       },
       "examPattern": {
-        "mode": "Computer-Based Test (CBT)",
-        "duration": "3 hours",
-        "sections": "Mathematics (80), Physics (40), Chemistry (40)",
-        "totalQuestions": 160,
-        "totalMarks": 160,
-        "markingScheme": "+1 for correct, no negative marking"
+        "mode": "Not verified for this cycle",
+        "duration": "Not verified for this cycle",
+        "sections": "Not verified for this cycle",
+        "totalQuestions": null,
+        "totalMarks": null,
+        "markingScheme": "Not verified for this cycle"
       },
-      "difficultyLevel": "Moderate",
-      "preparationTip": "Telangana board friendly. NCERT + state board textbooks.",
-      "avgPlacement": "₹5-7 LPA (varies by college)",
-      "highestPlacement": "₹30+ LPA (top colleges)",
-      "approxFees": "₹60K-1.5 lakh/year (varies by college)",
+      "difficultyLevel": "Not independently assessed",
+      "preparationTip": "Use the official syllabus and sample papers for the stated cycle; check programme-specific eligibility and selection stages.",
+      "avgPlacement": "Not verified for this cycle",
+      "highestPlacement": "Not verified for this cycle",
+      "approxFees": "Not verified for this cycle",
       "location": "Hyderabad, Warangal, across Telangana",
       "topBranches": [
-        "CSE",
-        "IT",
-        "ECE",
-        "Mechanical"
+        "Programme list not verified for this cycle"
       ],
       "keyHighlights": [
-        "Affordable options in Hyderabad",
-        "Good colleges: CBIT, Vasavi",
-        "Hyderabad = emerging IT hub",
-        "No negative marking",
-        "Best for Telangana students"
+        "Only fields with cited evidence are verified."
       ],
       "colorCode": "medium",
-      "sources": [
-        "https://engineering.careers360.com/articles/ts-eamcet-2026",
-        "https://eapcet.tgche.ac.in/"
-      ],
-      "category": "engineering"
+      "sources": [],
+      "category": "engineering",
+      "cycleYear": 2026,
+      "status": "needs-review",
+      "verification": {
+        "reviewedAt": "2026-10-23",
+        "status": "unverified",
+        "fields": {},
+        "note": "The portal could not be fetched. Its current naming replaces the legacy TS EAMCET label, but no 2026 field is certified. Secondary news coverage is not treated as an official notice. Only listed evidence fields were checked; other profile details remain incomplete."
+      }
     },
     {
       "id": 14,
-      "name": "KEAM",
+      "name": "KEAM (engineering)",
       "fullName": "Kerala Engineering Architecture Medical",
       "conductedBy": "CEE (Commissioner for Entrance Examinations), Kerala",
       "tier": "State-Level",
-      "priority": "Must Apply (if from Kerala)",
+      "priority": "Consider if the course and eligibility match",
       "registrationStart": "2026-01-05",
-      "registrationEnd": "2026-02-06",
-      "examDate": "2026-04-13 to 04-25",
-      "resultDate": "May 2026",
-      "applicationFee": "₹875 (General), ₹375 (SC) for Engineering",
+      "registrationEnd": "Not verified for this cycle",
+      "examDate": "2026-04-17 to 2026-04-22 (engineering, 14:00–17:00 IST)",
+      "resultDate": "2026-05-12 (engineering/pharmacy scores)",
+      "applicationFee": "Not verified for this cycle",
       "applyLink": "https://cee.kerala.gov.in/",
       "officialWebsite": "https://cee.kerala.gov.in/",
       "colleges": [
-        "Govt Engineering Colleges in Kerala",
-        "TKM College of Engineering",
-        "NSS College of Engineering",
-        "Model Engineering College",
-        "50+ govt & aided colleges in Kerala"
+        "Participating institutions not verified for this cycle"
       ],
-      "totalSeats": "~20,000+ seats",
+      "totalSeats": "Not verified for this cycle",
       "eligibility": {
-        "education": "12th Pass or appearing (Kerala domicile preferred)",
-        "minimumMarks": "45% in PCM",
-        "ageLimit": "No age limit"
+        "education": "Not verified for this cycle",
+        "minimumMarks": "Not verified for this cycle",
+        "ageLimit": "Not verified for this cycle"
       },
       "examPattern": {
-        "mode": "Computer-Based Test (CBT)",
-        "duration": "3 hours",
-        "sections": "Mathematics (75), Physics (45), Chemistry (30)",
-        "totalQuestions": 150,
-        "totalMarks": 600,
-        "markingScheme": "+4 for correct, -1 for incorrect"
+        "mode": "Not verified for this cycle",
+        "duration": "3 hours (engineering)",
+        "sections": "Not verified for this cycle",
+        "totalQuestions": null,
+        "totalMarks": null,
+        "markingScheme": "Not verified for this cycle"
       },
-      "difficultyLevel": "Moderate-High (Maths weightage high)",
-      "preparationTip": "Focus on Maths (double weightage). Kerala board friendly.",
-      "avgPlacement": "₹6-8 LPA",
-      "highestPlacement": "₹40+ LPA",
-      "approxFees": "₹20K-80K/year (extremely affordable)",
+      "difficultyLevel": "Not independently assessed",
+      "preparationTip": "Use the official syllabus and sample papers for the stated cycle; check programme-specific eligibility and selection stages.",
+      "avgPlacement": "Not verified for this cycle",
+      "highestPlacement": "Not verified for this cycle",
+      "approxFees": "Not verified for this cycle",
       "location": "Thiruvananthapuram, Kochi, Thrissur, across Kerala",
       "topBranches": [
-        "CSE",
-        "ECE",
-        "Mechanical",
-        "Civil"
+        "Programme list not verified for this cycle"
       ],
       "keyHighlights": [
-        "Extremely affordable (₹20K-80K/year)",
-        "High quality education",
-        "Beautiful campuses",
-        "Best value for money in India",
-        "Strong academic focus"
+        "Engineering schedule only; pharmacy has different timings."
       ],
       "colorCode": "high",
       "sources": [
-        "https://engineering.careers360.com/articles/keam-2026",
-        "https://cee.kerala.gov.in/"
+        "https://www.cee.kerala.gov.in/keam2026/noti_view/26/Upload1",
+        "https://cee.kerala.gov.in/keamonline2026/pdf/Prospectus.pdf",
+        "https://cee.kerala.gov.in/keam2026/notification?page=13"
       ],
-      "category": "engineering"
+      "category": "engineering",
+      "cycleYear": 2026,
+      "status": "active",
+      "verification": {
+        "reviewedAt": "2026-10-23",
+        "status": "partial",
+        "fields": {
+          "examDate": {
+            "checkedAt": "2026-10-23",
+            "sourceUrl": "https://www.cee.kerala.gov.in/keam2026/noti_view/26/Upload1"
+          },
+          "examPattern.duration": {
+            "checkedAt": "2026-10-23",
+            "sourceUrl": "https://www.cee.kerala.gov.in/keam2026/noti_view/26/Upload1"
+          },
+          "registrationStart": {
+            "checkedAt": "2026-10-23",
+            "sourceUrl": "https://cee.kerala.gov.in/keamonline2026/pdf/Prospectus.pdf"
+          },
+          "resultDate": {
+            "checkedAt": "2026-10-23",
+            "sourceUrl": "https://cee.kerala.gov.in/keam2026/notification?page=13"
+          }
+        },
+        "note": "The April 8 revised notice overrides the preliminary exam window. Final application deadline, fees and question counts remain unverified. Only listed evidence fields were checked; other profile details remain incomplete."
+      }
     },
     {
       "id": 15,
@@ -847,60 +1068,73 @@
       "fullName": "West Bengal Joint Entrance Examination",
       "conductedBy": "WBJEEB (West Bengal Joint Entrance Examinations Board)",
       "tier": "State-Level",
-      "priority": "Must Apply (if from West Bengal)",
-      "registrationStart": "February 2026 (expected)",
-      "registrationEnd": "TBA (March 2026 expected)",
-      "examDate": "April 26, 2026 (expected - last Sunday of April)",
-      "resultDate": "May 2026",
-      "applicationFee": "₹500 (General Male), ₹400 (Female & Reserved Male), ₹300 (Reserved Female)",
+      "priority": "Consider if the course and eligibility match",
+      "registrationStart": "2026-03-10",
+      "registrationEnd": "2026-04-08",
+      "examDate": "2026-05-24",
+      "resultDate": "Not verified for this cycle",
+      "applicationFee": "Not verified for this cycle",
       "applyLink": "https://wbjeeb.nic.in/",
       "officialWebsite": "https://wbjeeb.nic.in/",
       "colleges": [
-        "Jadavpur University",
-        "IIEST Shibpur",
-        "Heritage Institute of Technology",
-        "Kalyani Govt Engineering College",
-        "100+ colleges in West Bengal"
+        "Participating institutions not verified for this cycle"
       ],
-      "totalSeats": "~30,000+ seats",
+      "totalSeats": "Not verified for this cycle",
       "eligibility": {
-        "education": "12th Pass or appearing (West Bengal domicile preferred)",
-        "minimumMarks": "45% in PCM (aggregate)",
-        "ageLimit": "No age limit"
+        "education": "Not verified for this cycle",
+        "minimumMarks": "Not verified for this cycle",
+        "ageLimit": "Not verified for this cycle"
       },
       "examPattern": {
-        "mode": "Pen & Paper (Offline)",
-        "duration": "2 hours (each paper)",
-        "sections": "Paper I: Maths (75 Q), Paper II: Physics (40) + Chemistry (40)",
-        "totalQuestions": 155,
-        "totalMarks": 200,
-        "markingScheme": "Cat 1: +1/-0.25 (single correct), Cat 2: +2/-0.5 (single correct), Cat 3: +2/no negative (multiple correct)"
+        "mode": "OMR-based examination",
+        "duration": "Not verified for this cycle",
+        "sections": "Not verified for this cycle",
+        "totalQuestions": null,
+        "totalMarks": null,
+        "markingScheme": "Not verified for this cycle"
       },
-      "difficultyLevel": "Moderate",
-      "preparationTip": "Pen-paper exam. WB board friendly. Two separate papers on same day.",
-      "avgPlacement": "₹5-7 LPA (varies by college)",
-      "highestPlacement": "₹40+ LPA (Jadavpur, IIEST)",
-      "approxFees": "₹50K-1 lakh/year (govt colleges)",
+      "difficultyLevel": "Not independently assessed",
+      "preparationTip": "Use the official syllabus and sample papers for the stated cycle; check programme-specific eligibility and selection stages.",
+      "avgPlacement": "Not verified for this cycle",
+      "highestPlacement": "Not verified for this cycle",
+      "approxFees": "Not verified for this cycle",
       "location": "Kolkata, Howrah, Durgapur, across West Bengal",
       "topBranches": [
-        "CSE",
-        "IT",
-        "ECE",
-        "Mechanical"
+        "Programme list not verified for this cycle"
       ],
       "keyHighlights": [
-        "Top colleges: Jadavpur, IIEST Shibpur",
-        "Very affordable govt colleges",
-        "No negative marking",
-        "Good academic reputation",
-        "Best for West Bengal students"
+        "Only fields with cited evidence are verified."
       ],
       "colorCode": "medium",
       "sources": [
-        "https://engineering.careers360.com/articles/wbjee-application-form",
-        "https://wbjeeb.nic.in/"
+        "https://wbjeeb.nic.in/wbjee/"
       ],
-      "category": "engineering"
+      "category": "engineering",
+      "cycleYear": 2026,
+      "status": "active",
+      "verification": {
+        "reviewedAt": "2026-10-23",
+        "status": "partial",
+        "fields": {
+          "registrationStart": {
+            "checkedAt": "2026-10-23",
+            "sourceUrl": "https://wbjeeb.nic.in/wbjee/"
+          },
+          "registrationEnd": {
+            "checkedAt": "2026-10-23",
+            "sourceUrl": "https://wbjeeb.nic.in/wbjee/"
+          },
+          "examDate": {
+            "checkedAt": "2026-10-23",
+            "sourceUrl": "https://wbjeeb.nic.in/wbjee/"
+          },
+          "examPattern.mode": {
+            "checkedAt": "2026-10-23",
+            "sourceUrl": "https://wbjeeb.nic.in/wbjee/"
+          }
+        },
+        "note": "The board page corrects the old April exam date. Unsupported zero-negative-marking and college participation claims were removed. Only listed evidence fields were checked; other profile details remain incomplete."
+      }
     },
     {
       "id": 16,
@@ -909,301 +1143,430 @@
       "category": "medical",
       "conductedBy": "National Testing Agency (NTA)",
       "tier": "National-Level",
-      "priority": "Must Apply (for MBBS/BDS/AYUSH)",
+      "priority": "Consider if the course and eligibility match",
       "registrationStart": "2026-02-08",
-      "registrationEnd": "2026-03-08",
-      "examDate": "2026-05-03 (expected - First Sunday of May)",
-      "resultDate": "June 2026",
-      "applicationFee": "₹1,700 (General), ₹1,600 (EWS/OBC), ₹1,000 (SC/ST/PwD), ₹9,500 (Outside India)",
+      "registrationEnd": "2026-03-11 (extended; application 21:00 IST, payment 23:50 IST)",
+      "examDate": "2026-06-21 (re-examination; original scheduled test was 2026-05-03)",
+      "resultDate": "2026-07-16",
+      "applicationFee": "India: ₹1,700 general; ₹1,600 EWS/OBC-NCL; ₹1,000 SC/ST/PwBD/PwD/third gender. Outside India: ₹9,500; processing charges extra.",
       "applyLink": "https://neet.nta.nic.in/",
       "officialWebsite": "https://neet.nta.nic.in/",
       "colleges": [
-        "AIIMS (16 institutes)",
-        "JIPMER Puducherry",
-        "PGIMER Chandigarh",
-        "BHU (Varanasi)",
-        "AMU (Aligarh)",
-        "All Government Medical Colleges (600+)",
-        "Private Medical Colleges (300+)",
-        "Deemed Universities",
-        "AYUSH Colleges"
+        "Participating institutions not verified for this cycle"
       ],
-      "totalSeats": "~1,08,000 MBBS seats (Govt + Private)",
+      "totalSeats": "Not verified for this cycle",
       "eligibility": {
-        "education": "12th Pass or appearing with Physics, Chemistry, Biology/Biotechnology",
-        "minimumMarks": "50% in PCB (40% for SC/ST/OBC, 45% for PwD)",
-        "ageLimit": "Minimum 17 years as of Dec 31, 2026. No upper age limit."
+        "education": "Not verified for this cycle",
+        "minimumMarks": "Not verified for this cycle",
+        "ageLimit": "Not verified for this cycle"
       },
       "examPattern": {
-        "mode": "Pen & Paper (Offline)",
-        "duration": "3 hours 20 minutes",
-        "sections": "Physics (50 Q), Chemistry (50 Q), Biology (100 Q - 50 Botany + 50 Zoology)",
-        "totalQuestions": 200,
+        "mode": "Pen-and-paper test",
+        "duration": "3 hours",
+        "sections": "Physics 45; Chemistry 45; Biology 90",
+        "totalQuestions": 180,
         "totalMarks": 720,
-        "markingScheme": "+4 for correct, -1 for incorrect"
+        "markingScheme": "+4 correct; −1 incorrect; 0 unanswered"
       },
-      "difficultyLevel": "Very High (Most competitive medical exam in India)",
-      "preparationTip": "NCERT is BIBLE for NEET. 85-90% questions directly from NCERT. Focus on Biology (double weightage).",
-      "avgPlacement": "N/A (Doctor salary varies: ₹6-12 LPA for freshers, ₹50+ LPA for specialists)",
-      "highestPlacement": "N/A",
-      "approxFees": "₹50K-2 lakh/year (Govt), ₹15-25 lakh/year (Private)",
+      "difficultyLevel": "Not independently assessed",
+      "preparationTip": "Use the official syllabus and sample papers for the stated cycle; check programme-specific eligibility and selection stages.",
+      "avgPlacement": "Not verified for this cycle",
+      "highestPlacement": "Not verified for this cycle",
+      "approxFees": "Not verified for this cycle",
       "location": "Pan-India (Govt + Private Medical Colleges)",
       "topBranches": [
-        "MBBS",
-        "BDS",
-        "BAMS",
-        "BHMS",
-        "BUMS"
+        "Programme list not verified for this cycle"
       ],
       "keyHighlights": [
-        "ONLY exam for MBBS/BDS admission in India",
-        "20+ lakh students appear annually",
-        "NCERT-based (85-90% direct questions)",
-        "Single exam for 1000+ colleges",
-        "Government college fees: ₹50K-2L/year",
-        "Cutoff: 50th percentile (General), 40th (SC/ST/OBC)"
+        "The result notice refers to the June 21 re-examination.",
+        "AIIMS/JIPMER MBBS use NEET-UG, not separate undergraduate entrance tests."
       ],
       "colorCode": "high",
       "sources": [
-        "https://neet.nta.nic.in/",
-        "https://www.mcc.nic.in/"
-      ]
+        "https://cdnbbsr.s3waas.gov.in/s37bc1ec1d9c3426357e69acd5bf320061/uploads/2026/02/202602231394640855.pdf",
+        "https://cdnbbsr.s3waas.gov.in/s37bc1ec1d9c3426357e69acd5bf320061/uploads/2026/03/20260308653856316.pdf",
+        "https://cdnbbsr.s3waas.gov.in/s37bc1ec1d9c3426357e69acd5bf320061/uploads/2026/07/20260716477215762.pdf"
+      ],
+      "cycleYear": 2026,
+      "status": "active",
+      "verification": {
+        "reviewedAt": "2026-10-23",
+        "status": "partial",
+        "fields": {
+          "registrationStart": {
+            "checkedAt": "2026-10-23",
+            "sourceUrl": "https://cdnbbsr.s3waas.gov.in/s37bc1ec1d9c3426357e69acd5bf320061/uploads/2026/02/202602231394640855.pdf"
+          },
+          "applicationFee": {
+            "checkedAt": "2026-10-23",
+            "sourceUrl": "https://cdnbbsr.s3waas.gov.in/s37bc1ec1d9c3426357e69acd5bf320061/uploads/2026/02/202602231394640855.pdf"
+          },
+          "registrationEnd": {
+            "checkedAt": "2026-10-23",
+            "sourceUrl": "https://cdnbbsr.s3waas.gov.in/s37bc1ec1d9c3426357e69acd5bf320061/uploads/2026/03/20260308653856316.pdf"
+          },
+          "examDate": {
+            "checkedAt": "2026-10-23",
+            "sourceUrl": "https://cdnbbsr.s3waas.gov.in/s37bc1ec1d9c3426357e69acd5bf320061/uploads/2026/07/20260716477215762.pdf"
+          },
+          "resultDate": {
+            "checkedAt": "2026-10-23",
+            "sourceUrl": "https://cdnbbsr.s3waas.gov.in/s37bc1ec1d9c3426357e69acd5bf320061/uploads/2026/07/20260716477215762.pdf"
+          },
+          "examPattern.mode": {
+            "checkedAt": "2026-10-23",
+            "sourceUrl": "https://cdnbbsr.s3waas.gov.in/s37bc1ec1d9c3426357e69acd5bf320061/uploads/2026/02/202602231394640855.pdf"
+          },
+          "examPattern.duration": {
+            "checkedAt": "2026-10-23",
+            "sourceUrl": "https://cdnbbsr.s3waas.gov.in/s37bc1ec1d9c3426357e69acd5bf320061/uploads/2026/02/202602231394640855.pdf"
+          },
+          "examPattern.sections": {
+            "checkedAt": "2026-10-23",
+            "sourceUrl": "https://cdnbbsr.s3waas.gov.in/s37bc1ec1d9c3426357e69acd5bf320061/uploads/2026/02/202602231394640855.pdf"
+          },
+          "examPattern.totalQuestions": {
+            "checkedAt": "2026-10-23",
+            "sourceUrl": "https://cdnbbsr.s3waas.gov.in/s37bc1ec1d9c3426357e69acd5bf320061/uploads/2026/02/202602231394640855.pdf"
+          },
+          "examPattern.totalMarks": {
+            "checkedAt": "2026-10-23",
+            "sourceUrl": "https://cdnbbsr.s3waas.gov.in/s37bc1ec1d9c3426357e69acd5bf320061/uploads/2026/02/202602231394640855.pdf"
+          },
+          "examPattern.markingScheme": {
+            "checkedAt": "2026-10-23",
+            "sourceUrl": "https://cdnbbsr.s3waas.gov.in/s37bc1ec1d9c3426357e69acd5bf320061/uploads/2026/02/202602231394640855.pdf"
+          }
+        },
+        "note": "The official result notice establishes the June re-examination and July result, replacing the original May timetable. The bulletin corrects the stale 200-question/3h20 pattern. Only listed evidence fields were checked; other profile details remain incomplete."
+      }
     },
     {
       "id": 17,
-      "name": "AIIMS INICET",
-      "fullName": "AIIMS INI Entrance Test (Discontinued for UG from 2020)",
+      "name": "AIIMS MBBS (via NEET-UG)",
+      "fullName": "AIIMS undergraduate MBBS admission through NEET-UG",
       "category": "medical",
-      "conductedBy": "AIIMS (Now merged with NEET-UG)",
+      "conductedBy": "NEET-UG: National Testing Agency; counselling authority as applicable",
       "tier": "N/A",
-      "priority": "⚠️ No longer conducted - Use NEET-UG for AIIMS admission",
-      "registrationStart": "N/A",
-      "registrationEnd": "N/A",
-      "examDate": "N/A (Discontinued)",
-      "resultDate": "N/A",
-      "applicationFee": "N/A",
-      "applyLink": "https://aiimsexams.ac.in/",
+      "priority": "Consider if the course and eligibility match",
+      "registrationStart": "Use NEET-UG and the applicable counselling schedules",
+      "registrationEnd": "Use NEET-UG and the applicable counselling schedules",
+      "examDate": "No separate undergraduate MBBS entrance test; use NEET-UG",
+      "resultDate": "Use NEET-UG results and counselling allotments",
+      "applicationFee": "NEET-UG fee plus applicable counselling charges; no separate exam fee verified",
+      "applyLink": "https://neet.nta.nic.in/",
       "officialWebsite": "https://aiimsexams.ac.in/",
       "colleges": [
-        "AIIMS New Delhi",
-        "AIIMS Bhopal",
-        "AIIMS Bhubaneswar",
-        "AIIMS Jodhpur",
-        "AIIMS Patna",
-        "AIIMS Raipur",
-        "AIIMS Rishikesh",
-        "And 9 more AIIMS"
+        "AIIMS"
       ],
-      "totalSeats": "~1,200 MBBS seats across 16 AIIMS",
+      "totalSeats": "Not verified for this cycle",
       "eligibility": {
-        "education": "N/A - Apply via NEET-UG",
-        "minimumMarks": "N/A",
-        "ageLimit": "N/A"
+        "education": "Not verified for this cycle",
+        "minimumMarks": "Not verified for this cycle",
+        "ageLimit": "Not verified for this cycle"
       },
       "examPattern": {
-        "mode": "N/A",
-        "duration": "N/A",
-        "sections": "N/A",
-        "totalQuestions": 0,
-        "totalMarks": 0,
-        "markingScheme": "N/A"
+        "mode": "Not verified for this cycle",
+        "duration": "Not verified for this cycle",
+        "sections": "Not verified for this cycle",
+        "totalQuestions": null,
+        "totalMarks": null,
+        "markingScheme": "Not verified for this cycle"
       },
-      "difficultyLevel": "N/A",
-      "preparationTip": "⚠️ IMPORTANT: AIIMS UG admissions now through NEET-UG only. Prepare for NEET to get into AIIMS.",
-      "avgPlacement": "N/A",
-      "highestPlacement": "N/A",
-      "approxFees": "₹5,850/year (Govt subsidy)",
+      "difficultyLevel": "Not independently assessed",
+      "preparationTip": "Prepare for NEET-UG and follow the applicable MBBS counselling process.",
+      "avgPlacement": "Not verified for this cycle",
+      "highestPlacement": "Not verified for this cycle",
+      "approxFees": "Not verified for this cycle",
       "location": "16 AIIMS across India",
       "topBranches": [
-        "MBBS"
+        "Programme list not verified for this cycle"
       ],
       "keyHighlights": [
-        "⚠️ AIIMS MBBS admission now via NEET-UG",
-        "Counselling done by MCC",
-        "Extremely affordable (₹5,850/year)",
-        "Best medical education in India",
-        "Apply through NEET-UG only"
+        "Undergraduate MBBS admission route through NEET-UG."
       ],
       "colorCode": "low",
       "sources": [
-        "https://aiimsexams.ac.in/",
-        "https://www.mcc.nic.in/"
-      ]
+        "https://cdnbbsr.s3waas.gov.in/s37bc1ec1d9c3426357e69acd5bf320061/uploads/2026/02/202602231394640855.pdf"
+      ],
+      "cycleYear": 2026,
+      "status": "merged",
+      "verification": {
+        "reviewedAt": "2026-10-23",
+        "status": "partial",
+        "fields": {
+          "name": {
+            "checkedAt": "2026-10-23",
+            "sourceUrl": "https://cdnbbsr.s3waas.gov.in/s37bc1ec1d9c3426357e69acd5bf320061/uploads/2026/02/202602231394640855.pdf",
+            "note": "The bulletin includes AIIMS/JIPMER MBBS admission. Merged is scoped to the undergraduate admission route."
+          },
+          "fullName": {
+            "checkedAt": "2026-10-23",
+            "sourceUrl": "https://cdnbbsr.s3waas.gov.in/s37bc1ec1d9c3426357e69acd5bf320061/uploads/2026/02/202602231394640855.pdf",
+            "note": "The bulletin includes AIIMS/JIPMER MBBS admission. Merged is scoped to the undergraduate admission route."
+          },
+          "status": {
+            "checkedAt": "2026-10-23",
+            "sourceUrl": "https://cdnbbsr.s3waas.gov.in/s37bc1ec1d9c3426357e69acd5bf320061/uploads/2026/02/202602231394640855.pdf",
+            "note": "The bulletin includes AIIMS/JIPMER MBBS admission. Merged is scoped to the undergraduate admission route."
+          },
+          "examDate": {
+            "checkedAt": "2026-10-23",
+            "sourceUrl": "https://cdnbbsr.s3waas.gov.in/s37bc1ec1d9c3426357e69acd5bf320061/uploads/2026/02/202602231394640855.pdf",
+            "note": "The bulletin includes AIIMS/JIPMER MBBS admission. Merged is scoped to the undergraduate admission route."
+          }
+        },
+        "note": "The former record mixed undergraduate MBBS with postgraduate INI-CET. It now describes AIIMS MBBS via NEET-UG. INI-CET is a separate postgraduate exam and is not declared discontinued. Only listed evidence fields were checked; other profile details remain incomplete."
+      }
     },
     {
       "id": 18,
-      "name": "JIPMER",
-      "fullName": "JIPMER MBBS (Now merged with NEET-UG from 2020)",
+      "name": "JIPMER MBBS (via NEET-UG)",
+      "fullName": "JIPMER undergraduate MBBS admission through NEET-UG",
       "category": "medical",
-      "conductedBy": "JIPMER (Now merged with NEET)",
+      "conductedBy": "NEET-UG: National Testing Agency; counselling authority as applicable",
       "tier": "N/A",
-      "priority": "⚠️ No longer conducted - Use NEET-UG",
-      "registrationStart": "N/A",
-      "registrationEnd": "N/A",
-      "examDate": "N/A (Merged with NEET from 2020)",
-      "resultDate": "N/A",
-      "applicationFee": "N/A",
+      "priority": "Consider if the course and eligibility match",
+      "registrationStart": "Use NEET-UG and the applicable counselling schedules",
+      "registrationEnd": "Use NEET-UG and the applicable counselling schedules",
+      "examDate": "No separate undergraduate MBBS entrance test; use NEET-UG",
+      "resultDate": "Use NEET-UG results and counselling allotments",
+      "applicationFee": "NEET-UG fee plus applicable counselling charges; no separate exam fee verified",
       "applyLink": "https://neet.nta.nic.in/",
       "officialWebsite": "https://jipmer.edu.in/",
       "colleges": [
-        "JIPMER Puducherry",
-        "JIPMER Karaikal"
+        "JIPMER"
       ],
-      "totalSeats": "~200 MBBS seats (Both campuses)",
+      "totalSeats": "Not verified for this cycle",
       "eligibility": {
-        "education": "N/A - Apply via NEET-UG",
-        "minimumMarks": "N/A",
-        "ageLimit": "N/A"
+        "education": "Not verified for this cycle",
+        "minimumMarks": "Not verified for this cycle",
+        "ageLimit": "Not verified for this cycle"
       },
       "examPattern": {
-        "mode": "N/A",
-        "duration": "N/A",
-        "sections": "N/A",
-        "totalQuestions": 0,
-        "totalMarks": 0,
-        "markingScheme": "N/A"
+        "mode": "Not verified for this cycle",
+        "duration": "Not verified for this cycle",
+        "sections": "Not verified for this cycle",
+        "totalQuestions": null,
+        "totalMarks": null,
+        "markingScheme": "Not verified for this cycle"
       },
-      "difficultyLevel": "N/A",
-      "preparationTip": "⚠️ JIPMER admissions now through NEET-UG. Counselling by MCC.",
-      "avgPlacement": "N/A",
-      "highestPlacement": "N/A",
-      "approxFees": "₹3,000-5,000/year (Highly subsidized)",
+      "difficultyLevel": "Not independently assessed",
+      "preparationTip": "Prepare for NEET-UG and follow the applicable MBBS counselling process.",
+      "avgPlacement": "Not verified for this cycle",
+      "highestPlacement": "Not verified for this cycle",
+      "approxFees": "Not verified for this cycle",
       "location": "Puducherry, Karaikal",
       "topBranches": [
-        "MBBS"
+        "Programme list not verified for this cycle"
       ],
       "keyHighlights": [
-        "⚠️ JIPMER MBBS admission now via NEET-UG",
-        "Premier medical institute",
-        "Extremely affordable",
-        "Apply through NEET-UG only",
-        "Counselling by MCC"
+        "Undergraduate MBBS admission route through NEET-UG."
       ],
       "colorCode": "low",
       "sources": [
-        "https://jipmer.edu.in/",
-        "https://www.mcc.nic.in/"
-      ]
+        "https://cdnbbsr.s3waas.gov.in/s37bc1ec1d9c3426357e69acd5bf320061/uploads/2026/02/202602231394640855.pdf"
+      ],
+      "cycleYear": 2026,
+      "status": "merged",
+      "verification": {
+        "reviewedAt": "2026-10-23",
+        "status": "partial",
+        "fields": {
+          "name": {
+            "checkedAt": "2026-10-23",
+            "sourceUrl": "https://cdnbbsr.s3waas.gov.in/s37bc1ec1d9c3426357e69acd5bf320061/uploads/2026/02/202602231394640855.pdf",
+            "note": "The bulletin includes AIIMS/JIPMER MBBS admission. Merged is scoped to the undergraduate admission route."
+          },
+          "fullName": {
+            "checkedAt": "2026-10-23",
+            "sourceUrl": "https://cdnbbsr.s3waas.gov.in/s37bc1ec1d9c3426357e69acd5bf320061/uploads/2026/02/202602231394640855.pdf",
+            "note": "The bulletin includes AIIMS/JIPMER MBBS admission. Merged is scoped to the undergraduate admission route."
+          },
+          "status": {
+            "checkedAt": "2026-10-23",
+            "sourceUrl": "https://cdnbbsr.s3waas.gov.in/s37bc1ec1d9c3426357e69acd5bf320061/uploads/2026/02/202602231394640855.pdf",
+            "note": "The bulletin includes AIIMS/JIPMER MBBS admission. Merged is scoped to the undergraduate admission route."
+          },
+          "examDate": {
+            "checkedAt": "2026-10-23",
+            "sourceUrl": "https://cdnbbsr.s3waas.gov.in/s37bc1ec1d9c3426357e69acd5bf320061/uploads/2026/02/202602231394640855.pdf",
+            "note": "The bulletin includes AIIMS/JIPMER MBBS admission. Merged is scoped to the undergraduate admission route."
+          }
+        },
+        "note": "This is JIPMER MBBS admission via NEET-UG. Counselling dates, institutional fees and seat counts require separate evidence. Only listed evidence fields were checked; other profile details remain incomplete."
+      }
     },
     {
       "id": 19,
-      "name": "CLAT",
+      "name": "CLAT (UG)",
       "fullName": "Common Law Admission Test",
       "category": "law",
       "conductedBy": "Consortium of National Law Universities",
       "tier": "National-Level",
-      "priority": "Must Apply (for NLU admission)",
-      "registrationStart": "2026-01-06",
-      "registrationEnd": "2026-03-24",
-      "examDate": "2026-05-11 (Second Sunday of May)",
-      "resultDate": "May-June 2026",
-      "applicationFee": "₹4,000 (General/OBC/EWS), ₹3,500 (SC/ST/PwD/BPL)",
+      "priority": "Consider if the course and eligibility match",
+      "registrationStart": "2025-08-01",
+      "registrationEnd": "2025-10-31 (advertised; subsequent extension not verified)",
+      "examDate": "2025-12-07 (CLAT 2026 admission cycle)",
+      "resultDate": "Not verified for this cycle",
+      "applicationFee": "₹4,000 general/OBC; ₹3,500 SC/ST/BPL/PwD. Previous papers ₹500 extra if selected.",
       "applyLink": "https://consortiumofnlus.ac.in/",
       "officialWebsite": "https://consortiumofnlus.ac.in/",
       "colleges": [
-        "NLSIU Bangalore",
-        "NALSAR Hyderabad",
-        "NLU Delhi",
-        "NUJS Kolkata",
-        "NLU Jodhpur",
-        "HNLU Raipur",
-        "GNLU Gandhinagar",
-        "RMLNLU Lucknow",
-        "And 16 more NLUs"
+        "Participating institutions not verified for this cycle"
       ],
-      "totalSeats": "~3,000 UG seats (BA LLB - 5 years) across 24 NLUs",
+      "totalSeats": "Not verified for this cycle",
       "eligibility": {
-        "education": "12th Pass or appearing (any stream)",
-        "minimumMarks": "45% (General/OBC/EWS), 40% (SC/ST)",
-        "ageLimit": "No upper age limit (from 2023)"
+        "education": "Not verified for this cycle",
+        "minimumMarks": "Not verified for this cycle",
+        "ageLimit": "Not verified for this cycle"
       },
       "examPattern": {
-        "mode": "Pen & Paper (Offline)",
+        "mode": "Offline test",
         "duration": "2 hours",
-        "sections": "English (22 Q), Current Affairs (28 Q), Legal Reasoning (32 Q), Logical Reasoning (28 Q), Quantitative Techniques (10 Q)",
+        "sections": "Approximate allocations: English 22–26; Current Affairs/GK 28–32; Legal Reasoning 28–32; Logical Reasoning 22–26; Quantitative Techniques 10–14",
         "totalQuestions": 120,
         "totalMarks": 120,
-        "markingScheme": "+1 for correct, -0.25 for incorrect"
+        "markingScheme": "+1 correct; −0.25 incorrect"
       },
-      "difficultyLevel": "High (Very competitive)",
-      "preparationTip": "Focus on Legal Reasoning and Current Affairs. Read newspapers daily. Practice reading comprehension.",
-      "avgPlacement": "₹10-18 LPA (from top NLUs like NLSIU, NALSAR)",
-      "highestPlacement": "₹25+ LPA (International law firms)",
-      "approxFees": "₹2-4 lakh/year (varies by NLU)",
+      "difficultyLevel": "Not independently assessed",
+      "preparationTip": "Use the official syllabus and sample papers for the stated cycle; check programme-specific eligibility and selection stages.",
+      "avgPlacement": "Not verified for this cycle",
+      "highestPlacement": "Not verified for this cycle",
+      "approxFees": "Not verified for this cycle",
       "location": "Pan-India (24 NLUs)",
       "topBranches": [
-        "BA LLB (Hons.)",
-        "BCom LLB",
-        "BBA LLB"
+        "Programme list not verified for this cycle"
       ],
       "keyHighlights": [
-        "Single exam for 24 NLUs",
-        "Top law colleges in India",
-        "Excellent career prospects (Corporate Law, Judiciary, Civil Services)",
-        "Good starting salaries (₹10-18 LPA)",
-        "No age limit (from 2023)",
-        "All India Ranking"
+        "The CLAT 2026 cycle examination was in December 2025."
       ],
       "colorCode": "high",
       "sources": [
-        "https://consortiumofnlus.ac.in/",
-        "https://www.livelaw.in/clat-exam"
-      ]
+        "https://clat2026.consortiumofnlus.ac.in/clat-2026/ug-instructions.html",
+        "https://clat2026.consortiumofnlus.ac.in/clat-2026/ug-question-format.html"
+      ],
+      "cycleYear": 2026,
+      "status": "active",
+      "verification": {
+        "reviewedAt": "2026-10-23",
+        "status": "partial",
+        "fields": {
+          "registrationStart": {
+            "checkedAt": "2026-10-23",
+            "sourceUrl": "https://clat2026.consortiumofnlus.ac.in/clat-2026/ug-instructions.html"
+          },
+          "examDate": {
+            "checkedAt": "2026-10-23",
+            "sourceUrl": "https://clat2026.consortiumofnlus.ac.in/clat-2026/ug-instructions.html"
+          },
+          "applicationFee": {
+            "checkedAt": "2026-10-23",
+            "sourceUrl": "https://clat2026.consortiumofnlus.ac.in/clat-2026/ug-instructions.html"
+          },
+          "examPattern.mode": {
+            "checkedAt": "2026-10-23",
+            "sourceUrl": "https://clat2026.consortiumofnlus.ac.in/clat-2026/ug-instructions.html"
+          },
+          "examPattern.duration": {
+            "checkedAt": "2026-10-23",
+            "sourceUrl": "https://clat2026.consortiumofnlus.ac.in/clat-2026/ug-question-format.html"
+          },
+          "examPattern.sections": {
+            "checkedAt": "2026-10-23",
+            "sourceUrl": "https://clat2026.consortiumofnlus.ac.in/clat-2026/ug-question-format.html"
+          },
+          "examPattern.totalQuestions": {
+            "checkedAt": "2026-10-23",
+            "sourceUrl": "https://clat2026.consortiumofnlus.ac.in/clat-2026/ug-question-format.html"
+          },
+          "examPattern.totalMarks": {
+            "checkedAt": "2026-10-23",
+            "sourceUrl": "https://clat2026.consortiumofnlus.ac.in/clat-2026/ug-question-format.html"
+          },
+          "examPattern.markingScheme": {
+            "checkedAt": "2026-10-23",
+            "sourceUrl": "https://clat2026.consortiumofnlus.ac.in/clat-2026/ug-question-format.html"
+          }
+        },
+        "note": "The official instructions resolve the cycle contradiction. A subsequent application extension is listed, but its final date was not established; the advertised deadline is not certified as final. Only listed evidence fields were checked; other profile details remain incomplete."
+      }
     },
     {
       "id": 20,
-      "name": "AILET",
+      "name": "AILET (UG)",
       "fullName": "All India Law Entrance Test",
       "category": "law",
       "conductedBy": "National Law University, Delhi",
       "tier": "University-Level",
-      "priority": "Apply if interested in NLU Delhi",
-      "registrationStart": "2026-01-01 (expected)",
-      "registrationEnd": "2026-03-31 (expected)",
-      "examDate": "2026-05-18 (expected)",
-      "resultDate": "June 2026",
-      "applicationFee": "₹3,500 (General), ₹1,500 (SC/ST/PwD)",
+      "priority": "Consider if the course and eligibility match",
+      "registrationStart": "2025-08-07",
+      "registrationEnd": "2025-11-10 (advertised; later extension not verified)",
+      "examDate": "2025-12-14 (AILET 2026; 14:00–16:00 IST)",
+      "resultDate": "2025-12-18",
+      "applicationFee": "Not verified for this cycle",
       "applyLink": "https://nludelhi.ac.in/",
       "officialWebsite": "https://nludelhi.ac.in/",
       "colleges": [
-        "NLU Delhi"
+        "Participating institutions not verified for this cycle"
       ],
-      "totalSeats": "~118 BA LLB seats",
+      "totalSeats": "Not verified for this cycle",
       "eligibility": {
-        "education": "12th Pass or appearing (any stream)",
-        "minimumMarks": "50% (General), 45% (SC/ST)",
-        "ageLimit": "No upper age limit (from 2023)"
+        "education": "Not verified for this cycle",
+        "minimumMarks": "Not verified for this cycle",
+        "ageLimit": "Not verified for this cycle"
       },
       "examPattern": {
-        "mode": "Pen & Paper (Offline)",
-        "duration": "1 hour 30 minutes",
-        "sections": "English (35 Q), General Knowledge & Current Affairs (35 Q), Legal Aptitude (50 Q), Logical Reasoning (30 Q)",
-        "totalQuestions": 150,
-        "totalMarks": 150,
-        "markingScheme": "+1 for correct, -0.25 for incorrect"
+        "mode": "Not verified for this cycle",
+        "duration": "2 hours",
+        "sections": "Not verified for this cycle",
+        "totalQuestions": null,
+        "totalMarks": null,
+        "markingScheme": "Not verified for this cycle"
       },
-      "difficultyLevel": "High",
-      "preparationTip": "Legal Aptitude carries max weight (50 Q). Prepare deeply for legal reasoning and current affairs.",
-      "avgPlacement": "₹12-15 LPA",
-      "highestPlacement": "₹20+ LPA",
-      "approxFees": "₹3.5 lakh/year",
+      "difficultyLevel": "Not independently assessed",
+      "preparationTip": "Use the official syllabus and sample papers for the stated cycle; check programme-specific eligibility and selection stages.",
+      "avgPlacement": "Not verified for this cycle",
+      "highestPlacement": "Not verified for this cycle",
+      "approxFees": "Not verified for this cycle",
       "location": "New Delhi",
       "topBranches": [
-        "BA LLB (Hons.)"
+        "Programme list not verified for this cycle"
       ],
       "keyHighlights": [
-        "Premier law university in Delhi",
-        "Located in national capital",
-        "Strong judiciary preparation",
-        "Good placement record",
-        "Close to Supreme Court",
-        "Separate from CLAT"
+        "Only fields with cited evidence are verified."
       ],
       "colorCode": "medium",
       "sources": [
-        "https://nludelhi.ac.in/",
-        "https://www.livelaw.in/ailet"
-      ]
+        "https://nationallawuniversitydelhi.in/notification/AILET-2026-DETAILED-INSTRUCTIONS-TO-CANDIDATES.pdf",
+        "https://nludelhi.ac.in/wp-content/uploads/2025/07/Revised-Notification-AILET-AIET-2026.pdf",
+        "https://2026.nationallawuniversitydelhi.in/"
+      ],
+      "cycleYear": 2026,
+      "status": "active",
+      "verification": {
+        "reviewedAt": "2026-10-23",
+        "status": "partial",
+        "fields": {
+          "examDate": {
+            "checkedAt": "2026-10-23",
+            "sourceUrl": "https://nationallawuniversitydelhi.in/notification/AILET-2026-DETAILED-INSTRUCTIONS-TO-CANDIDATES.pdf"
+          },
+          "examPattern.duration": {
+            "checkedAt": "2026-10-23",
+            "sourceUrl": "https://nationallawuniversitydelhi.in/notification/AILET-2026-DETAILED-INSTRUCTIONS-TO-CANDIDATES.pdf"
+          },
+          "registrationStart": {
+            "checkedAt": "2026-10-23",
+            "sourceUrl": "https://nludelhi.ac.in/wp-content/uploads/2025/07/Revised-Notification-AILET-AIET-2026.pdf"
+          },
+          "resultDate": {
+            "checkedAt": "2026-10-23",
+            "sourceUrl": "https://2026.nationallawuniversitydelhi.in/"
+          }
+        },
+        "note": "The instructions correct the old 90-minute duration. The final registration extension, detailed pattern and fees remain unverified. Only listed evidence fields were checked; other profile details remain incomplete."
+      }
     },
     {
       "id": 21,
@@ -1212,62 +1575,81 @@
       "category": "management",
       "conductedBy": "IIMs (Rotated annually)",
       "tier": "National-Level",
-      "priority": "Must Apply (for IIMs/Top B-Schools)",
-      "registrationStart": "2026-08-01 (expected)",
-      "registrationEnd": "2026-09-20 (expected)",
-      "examDate": "2026-11-22 (Last Sunday of November)",
-      "resultDate": "January 2027",
-      "applicationFee": "₹2,400 (General/OBC), ₹1,200 (SC/ST/PwD)",
+      "priority": "Consider if the course and eligibility match",
+      "registrationStart": "2026-08-03 (10:00 IST)",
+      "registrationEnd": "2026-09-15 (advertised; later extension not verified)",
+      "examDate": "2026-11-29",
+      "resultDate": "First week of January 2027 (tentative in advertisement)",
+      "applicationFee": "₹2,700 other categories; ₹1,350 SC/ST/PwD",
       "applyLink": "https://iimcat.ac.in/",
       "officialWebsite": "https://iimcat.ac.in/",
       "colleges": [
-        "IIM Ahmedabad",
-        "IIM Bangalore",
-        "IIM Calcutta",
-        "IIM Lucknow",
-        "IIM Kozhikode",
-        "IIM Indore",
-        "And 14 more IIMs",
-        "1000+ B-Schools accept CAT scores (FMS, SPJIMR, MDI, etc.)"
+        "Participating institutions not verified for this cycle"
       ],
-      "totalSeats": "~5,000 MBA seats across 20 IIMs",
+      "totalSeats": "Not verified for this cycle",
       "eligibility": {
-        "education": "Bachelor's degree (any stream) with 50% marks (45% for SC/ST/PwD)",
-        "minimumMarks": "50% in graduation (45% for reserved)",
-        "ageLimit": "No age limit"
+        "education": "Not verified for this cycle",
+        "minimumMarks": "Not verified for this cycle",
+        "ageLimit": "Not verified for this cycle"
       },
       "examPattern": {
-        "mode": "Computer-Based Test (CBT)",
-        "duration": "2 hours (40 min per section)",
-        "sections": "VARC (24 Q), DILR (20 Q), QA (22 Q)",
-        "totalQuestions": 66,
-        "totalMarks": 198,
-        "markingScheme": "+3 for correct, -1 for incorrect (MCQs), 0 for wrong (TITA)"
+        "mode": "Computer-based test in three sessions",
+        "duration": "Not verified for this cycle",
+        "sections": "Not verified for this cycle",
+        "totalQuestions": null,
+        "totalMarks": null,
+        "markingScheme": "Not verified for this cycle"
       },
-      "difficultyLevel": "Very High (Most competitive MBA exam)",
-      "preparationTip": "Start 6-8 months early. Focus on speed and accuracy. Mock tests are crucial. 99+ percentile for top IIMs.",
-      "avgPlacement": "₹25-35 LPA (IIMs), varies by college",
-      "highestPlacement": "₹1.5+ Crore (IIM A/B/C - International offers)",
-      "approxFees": "₹23-28 lakh for 2 years (IIMs)",
+      "difficultyLevel": "Not independently assessed",
+      "preparationTip": "Use the official syllabus and sample papers for the stated cycle; check programme-specific eligibility and selection stages.",
+      "avgPlacement": "Not verified for this cycle",
+      "highestPlacement": "Not verified for this cycle",
+      "approxFees": "Not verified for this cycle",
       "location": "Pan-India (20 IIMs + 1000+ B-Schools)",
       "topBranches": [
-        "MBA",
-        "PGDM",
-        "PGP"
+        "Programme list not verified for this cycle"
       ],
       "keyHighlights": [
-        "Premier MBA entrance exam in India",
-        "Single exam for 20 IIMs + 1000+ colleges",
-        "99+ percentile for IIM A/B/C calls",
-        "Excellent ROI (₹25L+ packages)",
-        "2.5 lakh+ candidates annually",
-        "Top IIMs: A, B, C, L, I, K"
+        "CAT 2026 timetable is from the official advertisement.",
+        "Question count and detailed pattern remain unverified."
       ],
       "colorCode": "high",
       "sources": [
-        "https://iimcat.ac.in/",
-        "https://www.mba.com/mbas-and-business-masters/india"
-      ]
+        "https://www.iimcal.ac.in/node/7647"
+      ],
+      "cycleYear": 2026,
+      "status": "active",
+      "verification": {
+        "reviewedAt": "2026-10-23",
+        "status": "partial",
+        "fields": {
+          "registrationStart": {
+            "checkedAt": "2026-10-23",
+            "sourceUrl": "https://www.iimcal.ac.in/node/7647",
+            "note": "Official IIM Calcutta advertisement rendered and visually inspected."
+          },
+          "examDate": {
+            "checkedAt": "2026-10-23",
+            "sourceUrl": "https://www.iimcal.ac.in/node/7647",
+            "note": "Official IIM Calcutta advertisement rendered and visually inspected."
+          },
+          "resultDate": {
+            "checkedAt": "2026-10-23",
+            "sourceUrl": "https://www.iimcal.ac.in/node/7647",
+            "note": "Official IIM Calcutta advertisement rendered and visually inspected."
+          },
+          "applicationFee": {
+            "checkedAt": "2026-10-23",
+            "sourceUrl": "https://www.iimcal.ac.in/node/7647",
+            "note": "Official IIM Calcutta advertisement rendered and visually inspected."
+          },
+          "examPattern.mode": {
+            "checkedAt": "2026-10-23",
+            "sourceUrl": "https://www.iimcal.ac.in/node/7647"
+          }
+        },
+        "note": "The image-based official advertisement gives November 29, correcting the legacy late-2025 date. September 15 is only the advertised closing date; no later extension is certified. cycleYear retains the named CAT 2026 cycle. Only listed evidence fields were checked; other profile details remain incomplete."
+      }
     },
     {
       "id": 22,
@@ -1276,61 +1658,80 @@
       "category": "management",
       "conductedBy": "XLRI Jamshedpur",
       "tier": "Premier B-School Exam",
-      "priority": "Apply if targeting XLRI/Top B-Schools",
-      "registrationStart": "2026-08-10 (expected)",
-      "registrationEnd": "2026-11-30 (expected)",
-      "examDate": "2027-01-03 (First Sunday of January)",
-      "resultDate": "January 2027",
-      "applicationFee": "₹2,000 (XLRI), +₹300 per additional program",
+      "priority": "Consider if the course and eligibility match",
+      "registrationStart": "2026-07-15",
+      "registrationEnd": "2026-12-06",
+      "examDate": "2027-01-03 (14:00–17:00 IST)",
+      "resultDate": "Not verified for this cycle",
+      "applicationFee": "₹2,300; additional XLRI programme fee ₹200 per programme. Foreign candidate route: ₹5,000.",
       "applyLink": "https://xatonline.in/",
-      "officialWebsite": "https://xlri.ac.in/",
+      "officialWebsite": "https://xatonline.in/",
       "colleges": [
-        "XLRI Jamshedpur",
-        "XLRI Delhi",
-        "SPJIMR Mumbai",
-        "IMT Ghaziabad",
-        "LIBA Chennai",
-        "XIMB Bhubaneswar",
-        "And 150+ B-Schools"
+        "Participating institutions not verified for this cycle"
       ],
-      "totalSeats": "~500 seats across XLRI campuses",
+      "totalSeats": "Not verified for this cycle",
       "eligibility": {
-        "education": "Bachelor's degree (any stream) with 50%",
-        "minimumMarks": "50% in graduation",
-        "ageLimit": "No age limit"
+        "education": "Not verified for this cycle",
+        "minimumMarks": "Not verified for this cycle",
+        "ageLimit": "Not verified for this cycle"
       },
       "examPattern": {
-        "mode": "Computer-Based Test (CBT)",
-        "duration": "3 hours 30 minutes",
-        "sections": "Verbal & Logical Ability (26 Q), Decision Making (21 Q), Quantitative Ability (28 Q), General Knowledge (25 Q)",
-        "totalQuestions": 100,
-        "totalMarks": 100,
-        "markingScheme": "+1 for correct, -0.25 for incorrect, -0.10 for unattempted"
+        "mode": "Not verified for this cycle",
+        "duration": "3 hours",
+        "sections": "Not verified for this cycle",
+        "totalQuestions": null,
+        "totalMarks": null,
+        "markingScheme": "Not verified for this cycle"
       },
-      "difficultyLevel": "High",
-      "preparationTip": "Decision Making is unique to XAT. GK section requires current affairs prep. Negative for unattempted!",
-      "avgPlacement": "₹25-30 LPA (XLRI)",
-      "highestPlacement": "₹78 LPA (XLRI BM)",
-      "approxFees": "₹26 lakh for 2 years (XLRI)",
+      "difficultyLevel": "Not independently assessed",
+      "preparationTip": "Use the official syllabus and sample papers for the stated cycle; check programme-specific eligibility and selection stages.",
+      "avgPlacement": "Not verified for this cycle",
+      "highestPlacement": "Not verified for this cycle",
+      "approxFees": "Not verified for this cycle",
       "location": "Jamshedpur, Delhi, and via 150+ other B-Schools",
       "topBranches": [
-        "PGDM (BM)",
-        "PGDM (HRM)",
-        "MBA"
+        "Programme list not verified for this cycle"
       ],
       "keyHighlights": [
-        "Premier B-School exam (after CAT)",
-        "XLRI is top 5 B-School in India",
-        "150+ colleges accept XAT",
-        "Unique Decision Making section",
-        "Negative for unattempted questions (-0.10)",
-        "Good alternative to CAT"
+        "XAT 2027 is explicitly announced; dates are not projected."
       ],
       "colorCode": "high",
       "sources": [
-        "https://xatonline.in/",
-        "https://xlri.ac.in/"
-      ]
+        "https://xlri.ac.in/academic-programmes/admission-procedure/overview/xat"
+      ],
+      "cycleYear": 2027,
+      "status": "active",
+      "verification": {
+        "reviewedAt": "2026-10-23",
+        "status": "partial",
+        "fields": {
+          "cycleYear": {
+            "checkedAt": "2026-10-23",
+            "sourceUrl": "https://xlri.ac.in/academic-programmes/admission-procedure/overview/xat"
+          },
+          "registrationStart": {
+            "checkedAt": "2026-10-23",
+            "sourceUrl": "https://xlri.ac.in/academic-programmes/admission-procedure/overview/xat"
+          },
+          "registrationEnd": {
+            "checkedAt": "2026-10-23",
+            "sourceUrl": "https://xlri.ac.in/academic-programmes/admission-procedure/overview/xat"
+          },
+          "examDate": {
+            "checkedAt": "2026-10-23",
+            "sourceUrl": "https://xlri.ac.in/academic-programmes/admission-procedure/overview/xat"
+          },
+          "applicationFee": {
+            "checkedAt": "2026-10-23",
+            "sourceUrl": "https://xlri.ac.in/academic-programmes/admission-procedure/overview/xat"
+          },
+          "examPattern.duration": {
+            "checkedAt": "2026-10-23",
+            "sourceUrl": "https://xlri.ac.in/academic-programmes/admission-procedure/overview/xat"
+          }
+        },
+        "note": "XLRI explicitly publishes XAT 2027. Detailed question allocations, marking and institutional costs remain unverified. Only listed evidence fields were checked; other profile details remain incomplete."
+      }
     },
     {
       "id": 23,
@@ -1339,119 +1740,163 @@
       "category": "design",
       "conductedBy": "IIT Bombay (on behalf of IITs)",
       "tier": "National-Level",
-      "priority": "Must Apply (for IIT Design programs)",
-      "registrationStart": "2025-10-01 (expected)",
-      "registrationEnd": "2025-11-10 (expected)",
-      "examDate": "2026-01-18 (Third Sunday of January)",
-      "resultDate": "March 2026",
-      "applicationFee": "₹2,000 (Female/SC/ST/PwD), ₹4,000 (Others)",
-      "applyLink": "https://uceed.iitb.ac.in/",
-      "officialWebsite": "https://uceed.iitb.ac.in/",
+      "priority": "Consider if the course and eligibility match",
+      "registrationStart": "2025-10-01",
+      "registrationEnd": "2025-11-05 (regular fee); 2025-11-10 (late fee, 17:00 IST)",
+      "examDate": "2026-01-18 (09:00–12:00 IST)",
+      "resultDate": "2026-03-06",
+      "applicationFee": "Indian nationals: ₹2,000 female/SC/ST/PwD; ₹4,000 others; ₹500 late fee. Foreign categories differ.",
+      "applyLink": "https://www.uceed.iitb.ac.in/2026/",
+      "officialWebsite": "https://www.uceed.iitb.ac.in/2026/",
       "colleges": [
-        "IIT Bombay (IDC)",
-        "IIT Guwahati (DoD)",
-        "IIT Hyderabad (DoD)",
-        "IIITDM Jabalpur"
+        "Participating institutions not verified for this cycle"
       ],
-      "totalSeats": "~250 B.Des seats across IITs",
+      "totalSeats": "Not verified for this cycle",
       "eligibility": {
-        "education": "12th Pass or appearing (any stream)",
-        "minimumMarks": "No minimum percentage required",
-        "ageLimit": "No age limit"
+        "education": "Not verified for this cycle",
+        "minimumMarks": "Not verified for this cycle",
+        "ageLimit": "Not verified for this cycle"
       },
       "examPattern": {
-        "mode": "Computer-Based Test (CBT)",
-        "duration": "3 hours",
-        "sections": "Part A: NAT (Numerical), MCQ (72 Q), Part B: Drawing (3 Q)",
-        "totalQuestions": 75,
+        "mode": "Part A computer based; Part B on paper",
+        "duration": "3 hours: Part A 2 hours and Part B 1 hour",
+        "sections": "Part A: NAT 14, MSQ 15, MCQ 28; Part B: sketching 1, design aptitude 1",
+        "totalQuestions": 59,
         "totalMarks": 300,
-        "markingScheme": "Part A: +4/-1 (MCQ), +4/0 (NAT), Part B: 0-60 marks per drawing"
+        "markingScheme": "NAT +4/no negative; MSQ up to +4 with partial credit and −1 for incorrect combinations; MCQ +3/−0.71. Part B: 50 marks per question."
       },
-      "difficultyLevel": "High (Requires creative & analytical thinking)",
-      "preparationTip": "Practice drawing, observation, visualization. No specific syllabus. Creativity + logical thinking.",
-      "avgPlacement": "₹10-15 LPA (IIT B.Des graduates)",
-      "highestPlacement": "₹30+ LPA",
-      "approxFees": "₹2.5 lakh/year (IITs)",
+      "difficultyLevel": "Not independently assessed",
+      "preparationTip": "Use the official syllabus and sample papers for the stated cycle; check programme-specific eligibility and selection stages.",
+      "avgPlacement": "Not verified for this cycle",
+      "highestPlacement": "Not verified for this cycle",
+      "approxFees": "Not verified for this cycle",
       "location": "IIT Bombay, Guwahati, Hyderabad, IIITDM Jabalpur",
       "topBranches": [
-        "B.Des (Product Design)",
-        "B.Des (Visual Communication)",
-        "B.Des (Interaction Design)"
+        "Programme list not verified for this cycle"
       ],
       "keyHighlights": [
-        "Premier design entrance exam",
-        "Admission to IIT design programs",
-        "No specific syllabus - creativity tested",
-        "Drawing section in Part B",
-        "High starting salaries in design field",
-        "UX/UI, Product Design careers"
+        "UCEED publishes an official syllabus."
       ],
       "colorCode": "high",
       "sources": [
-        "https://uceed.iitb.ac.in/",
-        "https://www.iitb.ac.in/idc/"
-      ]
+        "https://www.uceed.iitb.ac.in/2026/important-dates.html",
+        "https://www.uceed.iitb.ac.in/2026/registration.html",
+        "https://www.uceed.iitb.ac.in/2026/question-paper.html",
+        "https://www.uceed.iitb.ac.in/2026/syllabus.html"
+      ],
+      "cycleYear": 2026,
+      "status": "active",
+      "verification": {
+        "reviewedAt": "2026-10-23",
+        "status": "partial",
+        "fields": {
+          "registrationStart": {
+            "checkedAt": "2026-10-23",
+            "sourceUrl": "https://www.uceed.iitb.ac.in/2026/important-dates.html"
+          },
+          "registrationEnd": {
+            "checkedAt": "2026-10-23",
+            "sourceUrl": "https://www.uceed.iitb.ac.in/2026/important-dates.html"
+          },
+          "examDate": {
+            "checkedAt": "2026-10-23",
+            "sourceUrl": "https://www.uceed.iitb.ac.in/2026/important-dates.html"
+          },
+          "resultDate": {
+            "checkedAt": "2026-10-23",
+            "sourceUrl": "https://www.uceed.iitb.ac.in/2026/important-dates.html"
+          },
+          "applicationFee": {
+            "checkedAt": "2026-10-23",
+            "sourceUrl": "https://www.uceed.iitb.ac.in/2026/registration.html"
+          },
+          "examPattern.mode": {
+            "checkedAt": "2026-10-23",
+            "sourceUrl": "https://www.uceed.iitb.ac.in/2026/question-paper.html"
+          },
+          "examPattern.duration": {
+            "checkedAt": "2026-10-23",
+            "sourceUrl": "https://www.uceed.iitb.ac.in/2026/question-paper.html"
+          },
+          "examPattern.sections": {
+            "checkedAt": "2026-10-23",
+            "sourceUrl": "https://www.uceed.iitb.ac.in/2026/question-paper.html"
+          },
+          "examPattern.totalQuestions": {
+            "checkedAt": "2026-10-23",
+            "sourceUrl": "https://www.uceed.iitb.ac.in/2026/question-paper.html"
+          },
+          "examPattern.totalMarks": {
+            "checkedAt": "2026-10-23",
+            "sourceUrl": "https://www.uceed.iitb.ac.in/2026/question-paper.html"
+          },
+          "examPattern.markingScheme": {
+            "checkedAt": "2026-10-23",
+            "sourceUrl": "https://www.uceed.iitb.ac.in/2026/question-paper.html"
+          },
+          "keyHighlights": {
+            "checkedAt": "2026-10-23",
+            "sourceUrl": "https://www.uceed.iitb.ac.in/2026/syllabus.html"
+          }
+        },
+        "note": "Cycle-specific IIT Bombay pages support the schedule, fee and 59-question/two-part format. The no-syllabus claim was removed. Participating institutions and programme eligibility are not fully audited. Only listed evidence fields were checked; other profile details remain incomplete."
+      }
     },
     {
       "id": 24,
-      "name": "NID DAT",
+      "name": "NID DAT (B.Des)",
       "fullName": "National Institute of Design - Design Aptitude Test",
       "category": "design",
       "conductedBy": "National Institute of Design (NID)",
       "tier": "Premier Design Institute",
-      "priority": "Must Apply (for NID campuses)",
-      "registrationStart": "2025-11-01 (expected)",
-      "registrationEnd": "2026-01-15 (expected)",
-      "examDate": "2026-01-05 (Prelims), 2026-03-15 (Mains - Studio Test)",
-      "resultDate": "April 2026",
-      "applicationFee": "₹2,000 (General/OBC), ₹1,000 (SC/ST)",
+      "priority": "Consider if the course and eligibility match",
+      "registrationStart": "2025-09-11 (historical; live source unavailable)",
+      "registrationEnd": "2025-12-01 (historical; live source unavailable)",
+      "examDate": "2025-12-21 (historical 2026 prelims date; live source unavailable)",
+      "resultDate": "2026-04-07 (prelims date in historical handbook; live source unavailable)",
+      "applicationFee": "Not verified for this cycle",
       "applyLink": "https://admissions.nid.edu/",
-      "officialWebsite": "https://www.nid.edu/",
+      "officialWebsite": "https://admissions.nid.edu/",
       "colleges": [
-        "NID Ahmedabad",
-        "NID Gandhinagar",
-        "NID Bangalore",
-        "NID Vijayawada"
+        "Participating institutions not verified for this cycle"
       ],
-      "totalSeats": "~300 B.Des seats across 4 NID campuses",
+      "totalSeats": "Not verified for this cycle",
       "eligibility": {
-        "education": "12th Pass or appearing (any stream)",
-        "minimumMarks": "55% (General), 50% (SC/ST/PwD)",
-        "ageLimit": "23 years as of July 1, 2026"
+        "education": "Not verified for this cycle",
+        "minimumMarks": "Not verified for this cycle",
+        "ageLimit": "Not verified for this cycle"
       },
       "examPattern": {
-        "mode": "Prelims: CBT, Mains: Studio Test (Offline)",
-        "duration": "Prelims: 3 hours, Mains: 3-4 days",
-        "sections": "Prelims: Creativity, Drawing, Observation, Design Thinking. Mains: Studio Test (hands-on design)",
-        "totalQuestions": 100,
-        "totalMarks": 100,
-        "markingScheme": "Prelims: +1/0/-0.25, Mains: Qualitative assessment"
+        "mode": "Not verified for this cycle",
+        "duration": "Not verified for this cycle",
+        "sections": "Not verified for this cycle",
+        "totalQuestions": null,
+        "totalMarks": null,
+        "markingScheme": "Not verified for this cycle"
       },
-      "difficultyLevel": "Very High (Studio test requires hands-on creative work)",
-      "preparationTip": "Practice sketching, observation, creative thinking. Mains is 3-4 day intensive studio test at NID campus.",
-      "avgPlacement": "₹8-12 LPA",
-      "highestPlacement": "₹25+ LPA",
-      "approxFees": "₹2.5 lakh/year",
+      "difficultyLevel": "Not independently assessed",
+      "preparationTip": "Use the official syllabus and sample papers for the stated cycle; check programme-specific eligibility and selection stages.",
+      "avgPlacement": "Not verified for this cycle",
+      "highestPlacement": "Not verified for this cycle",
+      "approxFees": "Not verified for this cycle",
       "location": "Ahmedabad, Gandhinagar, Bangalore, Vijayawada",
       "topBranches": [
-        "Product Design",
-        "Textile Design",
-        "Communication Design",
-        "Ceramic & Glass Design"
+        "Programme list not verified for this cycle"
       ],
       "keyHighlights": [
-        "India's premier design institute",
-        "Two-stage selection: Prelims + Mains (Studio Test)",
-        "Mains is 3-4 day on-campus design test",
-        "World-class faculty and facilities",
-        "Strong industry connect",
-        "Graduates work in top design studios globally"
+        "Historical 2026 B.Des record requiring source recovery.",
+        "DAT Prelims and Mains are separate stages."
       ],
       "colorCode": "high",
-      "sources": [
-        "https://www.nid.edu/",
-        "https://admissions.nid.edu/"
-      ]
+      "sources": [],
+      "cycleYear": 2026,
+      "status": "needs-review",
+      "verification": {
+        "reviewedAt": "2026-10-23",
+        "status": "unverified",
+        "fields": {},
+        "note": "The indexed official 2026-27 handbook supports the historical dates, but its PDF now returns 404 after the switch to 2027. No field receives a verification stamp. Unsupported CBT/negative-marking/question-count claims were removed. Only listed evidence fields were checked; other profile details remain incomplete."
+      }
     },
     {
       "id": 25,
@@ -1460,118 +1905,151 @@
       "category": "law",
       "conductedBy": "Symbiosis International University",
       "tier": "Premier Private Law Schools",
-      "priority": "Must Apply (for Symbiosis Law Schools)",
-      "registrationStart": "2025-11-01 (expected)",
-      "registrationEnd": "2025-12-15",
-      "examDate": "2025-12-20 and 2025-12-28",
-      "resultDate": "2026-01-15",
-      "applicationFee": "₹2,250 + ₹1,000 per institute",
+      "priority": "Consider if the course and eligibility match",
+      "registrationStart": "Not verified for this cycle",
+      "registrationEnd": "2026-12-04",
+      "examDate": "2026-12-19 (test 1); 2026-12-26 (test 2)",
+      "resultDate": "2027-01-12 (published schedule)",
+      "applicationFee": "₹2,550 per test date + ₹1,000 per programme; applicable taxes extra",
       "applyLink": "https://www.slat-test.org/",
       "officialWebsite": "https://www.slat-test.org/",
       "colleges": [
-        "Symbiosis Law School Pune",
-        "Symbiosis Law School Noida",
-        "Symbiosis Law School Hyderabad",
-        "Symbiosis Law School Nagpur"
+        "Participating institutions not verified for this cycle"
       ],
-      "totalSeats": "~500 BA LLB seats across 4 SLS campuses",
+      "totalSeats": "Not verified for this cycle",
       "eligibility": {
-        "education": "12th Pass or appearing (any stream)",
-        "minimumMarks": "45% (General/OBC/EWS), 40% (SC/ST)",
-        "ageLimit": "No age limit"
+        "education": "Not verified for this cycle",
+        "minimumMarks": "Not verified for this cycle",
+        "ageLimit": "Not verified for this cycle"
       },
       "examPattern": {
-        "mode": "Computer-Based Test (CBT) - Online",
+        "mode": "Computer-based test",
         "duration": "60 minutes",
-        "sections": "Logical Reasoning (12), Legal Reasoning (12), Analytical Reasoning (12), Reading Comprehension (12), General Knowledge (12)",
-        "totalQuestions": 60,
-        "totalMarks": 60,
-        "markingScheme": "+1 for correct, no negative marking"
+        "sections": "Not verified for this cycle",
+        "totalQuestions": null,
+        "totalMarks": null,
+        "markingScheme": "Not verified for this cycle"
       },
-      "difficultyLevel": "High",
-      "preparationTip": "Focus on Legal Reasoning (12 marks). GK section requires current affairs. Can attempt exam on both dates.",
-      "avgPlacement": "₹8-12 LPA",
-      "highestPlacement": "₹18+ LPA",
-      "approxFees": "₹3-3.5 lakh/year (5-year BA LLB)",
+      "difficultyLevel": "Not independently assessed",
+      "preparationTip": "Use the official syllabus and sample papers for the stated cycle; check programme-specific eligibility and selection stages.",
+      "avgPlacement": "Not verified for this cycle",
+      "highestPlacement": "Not verified for this cycle",
+      "approxFees": "Not verified for this cycle",
       "location": "Pune, Noida, Hyderabad, Nagpur",
       "topBranches": [
-        "BA LLB (Hons.)",
-        "BBA LLB (Hons.)",
-        "BCom LLB (Hons.)"
+        "Programme list not verified for this cycle"
       ],
       "keyHighlights": [
-        "4 Symbiosis Law Schools accept SLAT",
-        "Can appear on both exam dates (Dec 20 & 28)",
-        "Selection: SLAT score + Personal Interview",
-        "Good score: 48-55 marks",
-        "No negative marking",
-        "Strong corporate law focus"
+        "SLAT 2027 is explicitly announced.",
+        "Test and programme registrations require separate payments."
       ],
       "colorCode": "high",
       "sources": [
-        "https://www.slat-test.org/",
-        "https://www.shiksha.com/law/slat-exam"
-      ]
+        "https://www.slat-test.org/register.php",
+        "https://www.slat-test.org/important-dates.php"
+      ],
+      "cycleYear": 2027,
+      "status": "active",
+      "verification": {
+        "reviewedAt": "2026-10-23",
+        "status": "partial",
+        "fields": {
+          "cycleYear": {
+            "checkedAt": "2026-10-23",
+            "sourceUrl": "https://www.slat-test.org/register.php"
+          },
+          "registrationEnd": {
+            "checkedAt": "2026-10-23",
+            "sourceUrl": "https://www.slat-test.org/register.php"
+          },
+          "examDate": {
+            "checkedAt": "2026-10-23",
+            "sourceUrl": "https://www.slat-test.org/register.php"
+          },
+          "applicationFee": {
+            "checkedAt": "2026-10-23",
+            "sourceUrl": "https://www.slat-test.org/register.php"
+          },
+          "resultDate": {
+            "checkedAt": "2026-10-23",
+            "sourceUrl": "https://www.slat-test.org/important-dates.php",
+            "note": "Dated schedule table used, not the contradictory stale result banner."
+          },
+          "examPattern.mode": {
+            "checkedAt": "2026-10-23",
+            "sourceUrl": "https://www.slat-test.org/important-dates.php"
+          },
+          "examPattern.duration": {
+            "checkedAt": "2026-10-23",
+            "sourceUrl": "https://www.slat-test.org/important-dates.php"
+          }
+        },
+        "note": "The official 2027 schedule supplies December 2026 tests and the January 2027 result date. An impossible January 2026 result banner was ignored in favour of the dated table. Opening date and detailed scoring remain unverified. Only listed evidence fields were checked; other profile details remain incomplete."
+      }
     },
     {
       "id": 26,
-      "name": "LSAT India",
-      "fullName": "Law School Admission Test India (Discontinued)",
+      "name": "LSAT India (historical; status needs review)",
+      "fullName": "Law School Admission Test—India (historical programme)",
       "category": "law",
       "conductedBy": "Pearson VUE / LSAC (Discontinued)",
       "tier": "N/A",
-      "priority": "⚠️ Exam Discontinued from 2026",
-      "registrationStart": "N/A (Exam discontinued)",
-      "registrationEnd": "N/A",
-      "examDate": "N/A (Discontinued by LSAC)",
-      "resultDate": "N/A",
-      "applicationFee": "N/A",
-      "applyLink": "N/A",
-      "officialWebsite": "N/A",
+      "priority": "Consider if the course and eligibility match",
+      "registrationStart": "Not verified for this cycle",
+      "registrationEnd": "Not verified for this cycle",
+      "examDate": "Not verified for this cycle",
+      "resultDate": "Not verified for this cycle",
+      "applicationFee": "Not verified for this cycle",
+      "applyLink": "https://www.lsac.org/about/lsac-policies/trademarks",
+      "officialWebsite": "https://www.lsac.org/about/lsac-policies/trademarks",
       "colleges": [
-        "Previously accepted by 85+ private law schools",
-        "GD Goenka University",
-        "ISBR Law College",
-        "BML Munjal University",
-        "Lloyd Law College",
-        "Alliance University"
+        "Participating institutions not verified for this cycle"
       ],
-      "totalSeats": "N/A",
+      "totalSeats": "Not verified for this cycle",
       "eligibility": {
-        "education": "N/A - Exam discontinued",
-        "minimumMarks": "N/A",
-        "ageLimit": "N/A"
+        "education": "Not verified for this cycle",
+        "minimumMarks": "Not verified for this cycle",
+        "ageLimit": "Not verified for this cycle"
       },
       "examPattern": {
-        "mode": "N/A",
-        "duration": "N/A",
-        "sections": "N/A",
-        "totalQuestions": 0,
-        "totalMarks": 0,
-        "markingScheme": "N/A"
+        "mode": "Not verified for this cycle",
+        "duration": "Not verified for this cycle",
+        "sections": "Not verified for this cycle",
+        "totalQuestions": null,
+        "totalMarks": null,
+        "markingScheme": "Not verified for this cycle"
       },
-      "difficultyLevel": "N/A",
-      "preparationTip": "⚠️ LSAT India discontinued by Law School Admission Council (LSAC). Alternative: Apply to CLAT, AILET, or directly to private law schools.",
-      "avgPlacement": "N/A",
-      "highestPlacement": "N/A",
-      "approxFees": "N/A",
+      "difficultyLevel": "Not independently assessed",
+      "preparationTip": "Use the official syllabus and sample papers for the stated cycle; check programme-specific eligibility and selection stages.",
+      "avgPlacement": "Not verified for this cycle",
+      "highestPlacement": "Not verified for this cycle",
+      "approxFees": "Not verified for this cycle",
       "location": "N/A",
       "topBranches": [
-        "N/A"
+        "Programme list not verified for this cycle"
       ],
       "keyHighlights": [
-        "⚠️ Discontinued from 2026",
-        "LSAC unable to meet business objectives",
-        "Alternative: CLAT (24 NLUs)",
-        "Alternative: AILET (NLU Delhi)",
-        "Alternative: SLAT (Symbiosis Law Schools)",
-        "Check directly with private law schools for admission"
+        "No current LSAT India application or official discontinuation notice was verified.",
+        "The global LSAT is a separate continuing examination."
       ],
       "colorCode": "low",
       "sources": [
-        "https://www.upes.ac.in/blog/exams/lsat-india-exam-and-preparation",
-        "https://stepincollege.com/exam/LSAT/EXMID41"
-      ]
+        "https://www.lsac.org/about/lsac-policies/trademarks"
+      ],
+      "cycleYear": 2026,
+      "status": "needs-review",
+      "verification": {
+        "reviewedAt": "2026-10-23",
+        "status": "partial",
+        "fields": {
+          "name": {
+            "checkedAt": "2026-10-23",
+            "sourceUrl": "https://www.lsac.org/about/lsac-policies/trademarks",
+            "note": "LSAC identifies the distinct LSAT—India trademark; this does not verify a current offering or discontinuation date."
+          }
+        },
+        "note": "The old discontinuation-from-2026 claim and business rationale lacked an accessible official notice. This record has no verified application window and links to information only. Global LSAT registration is not substituted. Only listed evidence fields were checked; other profile details remain incomplete."
+      }
     },
     {
       "id": 27,
@@ -1580,128 +2058,200 @@
       "category": "management",
       "conductedBy": "Symbiosis International University (SIU)",
       "tier": "Premier B-School Exam",
-      "priority": "Must Apply (for Symbiosis B-Schools)",
-      "registrationStart": "2026-08-01 (expected)",
-      "registrationEnd": "2026-11-30 (expected)",
-      "examDate": "December 2026 (3 different dates)",
-      "resultDate": "January 2027",
-      "applicationFee": "₹2,200 per exam + ₹1,000 per program",
+      "priority": "Consider if the course and eligibility match",
+      "registrationStart": "Not verified for this cycle",
+      "registrationEnd": "2026-11-25",
+      "examDate": "2026-12-13; 2026-12-19; 2026-12-26 (SNAP 2026 for 2027-28 admission)",
+      "resultDate": "2027-01-12",
+      "applicationFee": "₹2,550 per test + ₹1,000 per programme; applicable taxes extra",
       "applyLink": "https://www.snaptest.org/",
       "officialWebsite": "https://www.snaptest.org/",
       "colleges": [
-        "SIBM Pune",
-        "SCMHRD Pune",
-        "SIBM Bangalore",
-        "SIBM Hyderabad",
-        "SIIB Pune",
-        "SIOM Nashik",
-        "SITM Pune",
-        "15 Symbiosis B-Schools in total"
+        "Participating institutions not verified for this cycle"
       ],
-      "totalSeats": "~2,000 MBA seats across 15 institutes",
+      "totalSeats": "Not verified for this cycle",
       "eligibility": {
-        "education": "Graduate from recognized university (any discipline)",
-        "minimumMarks": "50% (General), 45% (SC/ST)",
-        "ageLimit": "No age limit"
+        "education": "Not verified for this cycle",
+        "minimumMarks": "Not verified for this cycle",
+        "ageLimit": "Not verified for this cycle"
       },
       "examPattern": {
-        "mode": "Computer-Based Test (CBT)",
+        "mode": "Not verified for this cycle",
         "duration": "60 minutes",
-        "sections": "General English (15 Q), Quantitative (20 Q), Reasoning (25 Q)",
+        "sections": "Not verified for this cycle",
         "totalQuestions": 60,
-        "totalMarks": 60,
-        "markingScheme": "+1 for correct, no negative marking"
+        "totalMarks": null,
+        "markingScheme": "25% deduction for each incorrect answer"
       },
-      "difficultyLevel": "High",
-      "preparationTip": "Fast-paced exam (1 min/Q). Can attempt on all 3 dates. Best score considered. Focus on speed.",
-      "avgPlacement": "₹18-25 LPA (SIBM Pune), varies by institute",
-      "highestPlacement": "₹42 LPA (SIBM Pune)",
-      "approxFees": "₹12-18 lakh for 2 years (varies by institute)",
+      "difficultyLevel": "Not independently assessed",
+      "preparationTip": "Use the official syllabus and sample papers for the stated cycle; check programme-specific eligibility and selection stages.",
+      "avgPlacement": "Not verified for this cycle",
+      "highestPlacement": "Not verified for this cycle",
+      "approxFees": "Not verified for this cycle",
       "location": "Pune, Bangalore, Hyderabad, Nashik, Nagpur",
       "topBranches": [
-        "MBA",
-        "MBA (Operations)",
-        "MBA (Healthcare)",
-        "MBA (Agri-Business)"
+        "Programme list not verified for this cycle"
       ],
       "keyHighlights": [
-        "Gateway to 15 Symbiosis B-Schools",
-        "Top institutes: SIBM Pune, SCMHRD Pune",
-        "3 exam attempts in December",
-        "Best of 3 scores considered",
-        "No negative marking",
-        "60 questions in 60 minutes"
+        "SNAP 2026 scores are for 2027-28 admission.",
+        "Up to three attempts; separate programme fees apply."
       ],
       "colorCode": "high",
       "sources": [
-        "https://www.snaptest.org/",
-        "https://www.shiksha.com/mba/articles/snap-2026-exam-blogId-217318"
-      ]
+        "https://www.snaptest.org/blogs/snap-test-faq"
+      ],
+      "cycleYear": 2027,
+      "status": "active",
+      "verification": {
+        "reviewedAt": "2026-10-23",
+        "status": "partial",
+        "fields": {
+          "cycleYear": {
+            "checkedAt": "2026-10-23",
+            "sourceUrl": "https://www.snaptest.org/blogs/snap-test-faq"
+          },
+          "registrationEnd": {
+            "checkedAt": "2026-10-23",
+            "sourceUrl": "https://www.snaptest.org/blogs/snap-test-faq"
+          },
+          "examDate": {
+            "checkedAt": "2026-10-23",
+            "sourceUrl": "https://www.snaptest.org/blogs/snap-test-faq"
+          },
+          "resultDate": {
+            "checkedAt": "2026-10-23",
+            "sourceUrl": "https://www.snaptest.org/blogs/snap-test-faq"
+          },
+          "applicationFee": {
+            "checkedAt": "2026-10-23",
+            "sourceUrl": "https://www.snaptest.org/blogs/snap-test-faq"
+          },
+          "examPattern.duration": {
+            "checkedAt": "2026-10-23",
+            "sourceUrl": "https://www.snaptest.org/blogs/snap-test-faq"
+          },
+          "examPattern.totalQuestions": {
+            "checkedAt": "2026-10-23",
+            "sourceUrl": "https://www.snaptest.org/blogs/snap-test-faq"
+          },
+          "examPattern.markingScheme": {
+            "checkedAt": "2026-10-23",
+            "sourceUrl": "https://www.snaptest.org/blogs/snap-test-faq"
+          }
+        },
+        "note": "Official SNAP sources publish 2026 tests for 2027-28 entry, so cycleYear is 2027 and examDate labels SNAP 2026. The old no-negative-marking claim was corrected. Opening date and complete scoring remain unverified. Only listed evidence fields were checked; other profile details remain incomplete."
+      }
     },
     {
       "id": 28,
       "name": "NMAT",
-      "fullName": "NMIMS Management Aptitude Test",
+      "fullName": "NMAT by GMAC",
       "category": "management",
-      "conductedBy": "GMAC (for NMIMS admission)",
+      "conductedBy": "Graduate Management Admission Council (GMAC)",
       "tier": "Premier B-School Exam",
-      "priority": "Must Apply (for NMIMS campuses)",
-      "registrationStart": "2026-08-01",
-      "registrationEnd": "2026-10-18",
-      "examDate": "2026-11-05 to 2026-12-19",
-      "resultDate": "January 2027",
-      "applicationFee": "₹3,000 per attempt (GMAC) + ₹2,900 (NMIMS Application)",
-      "applyLink": "https://nmat.nmims.edu/",
-      "officialWebsite": "https://nmat.nmims.edu/",
+      "priority": "Consider if the course and eligibility match",
+      "registrationStart": "2026-08-20",
+      "registrationEnd": "2026-10-25",
+      "examDate": "2026-11-02 to 2026-12-20",
+      "resultDate": "Normally within 48 hours; security audits may take 10 working days",
+      "applicationFee": "Not verified for this cycle",
+      "applyLink": "https://www.mba.com/exams/nmat/register-schedule",
+      "officialWebsite": "https://www.mba.com/exams/nmat",
       "colleges": [
-        "NMIMS Mumbai (Flagship)",
-        "NMIMS Bangalore",
-        "NMIMS Hyderabad",
-        "NMIMS Navi Mumbai",
-        "NMIMS Indore",
-        "NMIMS Shirpur",
-        "SVKM's NMIMS Dhule"
+        "Participating institutions not verified for this cycle"
       ],
-      "totalSeats": "~2,500 MBA seats across campuses",
+      "totalSeats": "Not verified for this cycle",
       "eligibility": {
-        "education": "Bachelor's degree (any discipline)",
-        "minimumMarks": "50% (General), 45% (SC/ST/OBC)",
-        "ageLimit": "No age limit"
+        "education": "Not verified for this cycle",
+        "minimumMarks": "Not verified for this cycle",
+        "ageLimit": "Not verified for this cycle"
       },
       "examPattern": {
-        "mode": "Computer-Based Test (CBT)",
-        "duration": "120 minutes (28+52+40)",
-        "sections": "Language Skills (36 Q, 28 min), Quantitative Skills (48 Q, 52 min), Logical Reasoning (36 Q, 40 min)",
-        "totalQuestions": 120,
-        "totalMarks": 360,
-        "markingScheme": "+3 for correct, no negative marking"
+        "mode": "Computer-based test",
+        "duration": "120 minutes",
+        "sections": "Language Skills: 36 questions/28 minutes; Quantitative Skills: 36/52; Logical Reasoning: 36/40",
+        "totalQuestions": 108,
+        "totalMarks": null,
+        "markingScheme": "Scaled section scores 12–120; total 36–360. Not a fixed +3 raw-mark scheme."
       },
-      "difficultyLevel": "High",
-      "preparationTip": "Sectional time limits. Target 209+ overall, 62+ sectional for NMIMS Mumbai. Can retake 3 times.",
-      "avgPlacement": "₹23.07 LPA (NMIMS Mumbai)",
-      "highestPlacement": "₹57.65 LPA (NMIMS Mumbai)",
-      "approxFees": "₹23-26 lakh for 2 years (NMIMS Mumbai)",
+      "difficultyLevel": "Not independently assessed",
+      "preparationTip": "Use the official syllabus and sample papers for the stated cycle; check programme-specific eligibility and selection stages.",
+      "avgPlacement": "Not verified for this cycle",
+      "highestPlacement": "Not verified for this cycle",
+      "approxFees": "Not verified for this cycle",
       "location": "Mumbai, Bangalore, Hyderabad, Navi Mumbai, Indore, Shirpur",
       "topBranches": [
-        "MBA (Core)",
-        "MBA (HR)",
-        "MBA (Business Analytics)",
-        "MBA (Digital Transformation)",
-        "MBA (Pharma)"
+        "Programme list not verified for this cycle"
       ],
       "keyHighlights": [
-        "NMIMS Mumbai is top 10 B-School",
-        "Can retake exam 3 times",
-        "Best score considered",
-        "Cutoff: 209 overall, 62 sectional (Mumbai)",
-        "Sectional time limits (challenging)",
-        "Selection: NMAT + Competency Test + PI"
+        "Maximum three total attempts: initial attempt plus two retakes.",
+        "School applications are separate from NMAT registration."
       ],
       "colorCode": "high",
       "sources": [
-        "https://nmat.nmims.edu/",
-        "https://www.shiksha.com/mba/nmat-exam"
-      ]
+        "https://www.mba.com/exams/nmat?trk=organization_guest_main-feed-card-text",
+        "https://www.mba.com/exams/nmat/about",
+        "https://www.mba.com/exams/nmat/register-schedule"
+      ],
+      "cycleYear": 2026,
+      "status": "active",
+      "verification": {
+        "reviewedAt": "2026-10-23",
+        "status": "partial",
+        "fields": {
+          "registrationStart": {
+            "checkedAt": "2026-10-23",
+            "sourceUrl": "https://www.mba.com/exams/nmat?trk=organization_guest_main-feed-card-text"
+          },
+          "registrationEnd": {
+            "checkedAt": "2026-10-23",
+            "sourceUrl": "https://www.mba.com/exams/nmat?trk=organization_guest_main-feed-card-text"
+          },
+          "examDate": {
+            "checkedAt": "2026-10-23",
+            "sourceUrl": "https://www.mba.com/exams/nmat?trk=organization_guest_main-feed-card-text"
+          },
+          "resultDate": {
+            "checkedAt": "2026-10-23",
+            "sourceUrl": "https://www.mba.com/exams/nmat/about"
+          },
+          "examPattern.mode": {
+            "checkedAt": "2026-10-23",
+            "sourceUrl": "https://www.mba.com/exams/nmat/about"
+          },
+          "examPattern.duration": {
+            "checkedAt": "2026-10-23",
+            "sourceUrl": "https://www.mba.com/exams/nmat/about"
+          },
+          "examPattern.sections": {
+            "checkedAt": "2026-10-23",
+            "sourceUrl": "https://www.mba.com/exams/nmat/about"
+          },
+          "examPattern.totalQuestions": {
+            "checkedAt": "2026-10-23",
+            "sourceUrl": "https://www.mba.com/exams/nmat/about"
+          },
+          "examPattern.markingScheme": {
+            "checkedAt": "2026-10-23",
+            "sourceUrl": "https://www.mba.com/exams/nmat/about"
+          },
+          "keyHighlights": {
+            "checkedAt": "2026-10-23",
+            "sourceUrl": "https://www.mba.com/exams/nmat/register-schedule"
+          },
+          "fullName": {
+            "checkedAt": "2026-10-23",
+            "sourceUrl": "https://www.mba.com/exams/nmat/about",
+            "note": "Official GMAC branding and exam-provider page; NMAT is not restricted to NMIMS."
+          },
+          "conductedBy": {
+            "checkedAt": "2026-10-23",
+            "sourceUrl": "https://www.mba.com/exams/nmat/about",
+            "note": "Official GMAC branding and exam-provider page; NMAT is not restricted to NMIMS."
+          }
+        },
+        "note": "The official name is NMAT by GMAC, provided by the Graduate Management Admission Council; it is not an NMIMS-only examination. GMAC establishes the dates, 108 questions and scaled scoring. totalMarks is null because 360 is a scaled score, not a raw maximum. Fee content was unreadable; NMIMS fees are not substituted for NMAT fees. Only listed evidence fields were checked; other profile details remain incomplete."
+      }
     },
     {
       "id": 29,
@@ -1710,190 +2260,251 @@
       "category": "management",
       "conductedBy": "National Testing Agency (NTA)",
       "tier": "National-Level",
-      "priority": "Good Backup (1000+ AICTE colleges)",
-      "registrationStart": "2025-11-01 (expected)",
-      "registrationEnd": "2025-11-24",
+      "priority": "Consider if the course and eligibility match",
+      "registrationStart": "2025-10-17",
+      "registrationEnd": "Not verified for this cycle",
       "examDate": "2026-01-25",
-      "resultDate": "2026-02-14",
-      "applicationFee": "₹1,200 (General male), ₹1,000 (Reserved/Female/Transgender)",
+      "resultDate": "2026-02-17",
+      "applicationFee": "₹2,500 general male; ₹1,250 general female, EWS/SC/ST/OBC-NCL/PwD/PwBD and third gender; processing charges/GST extra",
       "applyLink": "https://cmat.nta.nic.in/",
       "officialWebsite": "https://cmat.nta.nic.in/",
       "colleges": [
-        "JBIMS Mumbai",
-        "SIMSREE Mumbai",
-        "KJ Somaiya Mumbai",
-        "Welingkar Mumbai",
-        "PUMBA Pune",
-        "GIM Goa",
-        "1000+ AICTE-approved colleges"
+        "Participating institutions not verified for this cycle"
       ],
-      "totalSeats": "~40,000+ seats (AICTE colleges)",
+      "totalSeats": "Not verified for this cycle",
       "eligibility": {
-        "education": "Graduation (any discipline) or final year appearing",
-        "minimumMarks": "No minimum percentage required",
-        "ageLimit": "No age limit"
+        "education": "Bachelor’s degree in any discipline; final-year results must precede 2026-27 admission",
+        "minimumMarks": "Not verified for this cycle",
+        "ageLimit": "No age restriction for the examination"
       },
       "examPattern": {
-        "mode": "Computer-Based Test (CBT)",
-        "duration": "3 hours",
-        "sections": "Quantitative Techniques (25 Q), Logical Reasoning (25 Q), Language Comprehension (25 Q), General Awareness (25 Q), Innovation (1 Q)",
-        "totalQuestions": 101,
+        "mode": "Computer-based test",
+        "duration": "180 minutes",
+        "sections": "20 each: Quantitative Techniques/Data Interpretation; Logical Reasoning; Language Comprehension; General Awareness; Innovation/Entrepreneurship",
+        "totalQuestions": 100,
         "totalMarks": 400,
-        "markingScheme": "+4 for correct, -1 for incorrect"
+        "markingScheme": "+4 correct; −1 incorrect; 0 unanswered"
       },
-      "difficultyLevel": "Moderate",
-      "preparationTip": "Good for tier-2 MBA colleges. Target 180+ for JBIMS/SIMSREE. Negative marking (-1).",
-      "avgPlacement": "₹8-12 LPA (varies by college)",
-      "highestPlacement": "₹25+ LPA (JBIMS, SIMSREE)",
-      "approxFees": "₹3-8 lakh for 2 years (varies by college)",
+      "difficultyLevel": "Not independently assessed",
+      "preparationTip": "Use the official syllabus and sample papers for the stated cycle; check programme-specific eligibility and selection stages.",
+      "avgPlacement": "Not verified for this cycle",
+      "highestPlacement": "Not verified for this cycle",
+      "approxFees": "Not verified for this cycle",
       "location": "Pan-India (1000+ colleges)",
       "topBranches": [
-        "MBA",
-        "PGDM"
+        "Programme list not verified for this cycle"
       ],
       "keyHighlights": [
-        "Accepted by 1000+ AICTE colleges",
-        "Top colleges: JBIMS, SIMSREE, KJ Somaiya",
-        "Single attempt in January",
-        "Affordable option for tier-2 B-Schools",
-        "Good backup to CAT/XAT",
-        "NTA-conducted (same as JEE, NEET)"
+        "CMAT 2026 has 100 questions, not 101.",
+        "Apply separately to participating institutions."
       ],
       "colorCode": "medium",
       "sources": [
-        "https://cmat.nta.nic.in/",
-        "https://www.mbauniverse.com/cmat"
-      ]
+        "https://cdnbbsr.s3waas.gov.in/s3a381c2c35c9157f6b67fd07d5a200ae1/uploads/2025/10/202510171049586023.pdf",
+        "https://www.nta.ac.in/Download/Notice/Notice_20251204175253.pdf",
+        "https://nta.ac.in/Download/Notice/Notice_20260217210319.pdf"
+      ],
+      "cycleYear": 2026,
+      "status": "active",
+      "verification": {
+        "reviewedAt": "2026-10-23",
+        "status": "partial",
+        "fields": {
+          "registrationStart": {
+            "checkedAt": "2026-10-23",
+            "sourceUrl": "https://cdnbbsr.s3waas.gov.in/s3a381c2c35c9157f6b67fd07d5a200ae1/uploads/2025/10/202510171049586023.pdf"
+          },
+          "applicationFee": {
+            "checkedAt": "2026-10-23",
+            "sourceUrl": "https://cdnbbsr.s3waas.gov.in/s3a381c2c35c9157f6b67fd07d5a200ae1/uploads/2025/10/202510171049586023.pdf"
+          },
+          "examDate": {
+            "checkedAt": "2026-10-23",
+            "sourceUrl": "https://www.nta.ac.in/Download/Notice/Notice_20251204175253.pdf"
+          },
+          "resultDate": {
+            "checkedAt": "2026-10-23",
+            "sourceUrl": "https://nta.ac.in/Download/Notice/Notice_20260217210319.pdf"
+          },
+          "examPattern.mode": {
+            "checkedAt": "2026-10-23",
+            "sourceUrl": "https://cdnbbsr.s3waas.gov.in/s3a381c2c35c9157f6b67fd07d5a200ae1/uploads/2025/10/202510171049586023.pdf"
+          },
+          "examPattern.duration": {
+            "checkedAt": "2026-10-23",
+            "sourceUrl": "https://cdnbbsr.s3waas.gov.in/s3a381c2c35c9157f6b67fd07d5a200ae1/uploads/2025/10/202510171049586023.pdf"
+          },
+          "examPattern.sections": {
+            "checkedAt": "2026-10-23",
+            "sourceUrl": "https://cdnbbsr.s3waas.gov.in/s3a381c2c35c9157f6b67fd07d5a200ae1/uploads/2025/10/202510171049586023.pdf"
+          },
+          "examPattern.totalQuestions": {
+            "checkedAt": "2026-10-23",
+            "sourceUrl": "https://cdnbbsr.s3waas.gov.in/s3a381c2c35c9157f6b67fd07d5a200ae1/uploads/2025/10/202510171049586023.pdf"
+          },
+          "examPattern.totalMarks": {
+            "checkedAt": "2026-10-23",
+            "sourceUrl": "https://cdnbbsr.s3waas.gov.in/s3a381c2c35c9157f6b67fd07d5a200ae1/uploads/2025/10/202510171049586023.pdf"
+          },
+          "examPattern.markingScheme": {
+            "checkedAt": "2026-10-23",
+            "sourceUrl": "https://cdnbbsr.s3waas.gov.in/s3a381c2c35c9157f6b67fd07d5a200ae1/uploads/2025/10/202510171049586023.pdf"
+          },
+          "eligibility.education": {
+            "checkedAt": "2026-10-23",
+            "sourceUrl": "https://cdnbbsr.s3waas.gov.in/s3a381c2c35c9157f6b67fd07d5a200ae1/uploads/2025/10/202510171049586023.pdf"
+          },
+          "eligibility.ageLimit": {
+            "checkedAt": "2026-10-23",
+            "sourceUrl": "https://cdnbbsr.s3waas.gov.in/s3a381c2c35c9157f6b67fd07d5a200ae1/uploads/2025/10/202510171049586023.pdf"
+          }
+        },
+        "note": "The accessible bulletin confirms 100 questions/400 marks. Schedule and result notices establish dates. The final registration extension notice was image-only and is not certified here. Only listed evidence fields were checked; other profile details remain incomplete."
+      }
     },
     {
       "id": 30,
-      "name": "MAT",
+      "name": "MAT (December 2026)",
       "fullName": "Management Aptitude Test",
       "category": "management",
       "conductedBy": "All India Management Association (AIMA)",
       "tier": "National-Level",
-      "priority": "Good Backup (600+ colleges)",
-      "registrationStart": "2026-01-15 (Feb session)",
-      "registrationEnd": "2026-02-23",
-      "examDate": "2026-03-01 (PBT), 2026-03-08 (CBT)",
-      "resultDate": "Within 2-3 weeks",
-      "applicationFee": "₹2,200 (1 session), ₹3,800 (2 sessions)",
-      "applyLink": "https://mat.aima.in/",
-      "officialWebsite": "https://www.aima.in/mat.html",
+      "priority": "Consider if the course and eligibility match",
+      "registrationStart": "Not verified for this cycle",
+      "registrationEnd": "2026-12-14 (PBT); 2026-12-21 (CBT)",
+      "examDate": "2026-12-20 (PBT); 2026-12-27 (CBT)",
+      "resultDate": "Not verified for this cycle",
+      "applicationFee": "₹2,300 one mode; ₹4,000 both PBT and CBT",
+      "applyLink": "https://aima.in/mat/",
+      "officialWebsite": "https://aima.in/mat/",
       "colleges": [
-        "BIMTECH (specialized programs)",
-        "JAGSOM Bangalore",
-        "Jaipuria Noida",
-        "IPE Hyderabad",
-        "SIES Mumbai",
-        "IBA Bangalore",
-        "Rajagiri Kochi",
-        "NISM Mumbai",
-        "600+ colleges accept MAT"
+        "Participating institutions not verified for this cycle"
       ],
-      "totalSeats": "~25,000+ seats (600+ colleges)",
+      "totalSeats": "Not verified for this cycle",
       "eligibility": {
-        "education": "Graduation from recognized university (any discipline)",
-        "minimumMarks": "No minimum percentage required",
-        "ageLimit": "No age or work experience limit"
+        "education": "Not verified for this cycle",
+        "minimumMarks": "Not verified for this cycle",
+        "ageLimit": "Not verified for this cycle"
       },
       "examPattern": {
-        "mode": "Paper-Based Test (PBT) or Computer-Based Test (CBT)",
-        "duration": "150 minutes",
-        "sections": "Language Comprehension (40 Q), Mathematical Skills (40 Q), Data Analysis (40 Q), Intelligence & Critical Reasoning (40 Q), Indian & Global Environment (40 Q)",
-        "totalQuestions": 200,
-        "totalMarks": 200,
-        "markingScheme": "+1 for correct, -0.25 for incorrect"
+        "mode": "Not verified for this cycle",
+        "duration": "120 minutes",
+        "sections": "30 each: Language Comprehension; Intelligence/Critical Reasoning; Mathematical Skills; Data Analysis/Sufficiency; Economic/Business Environment",
+        "totalQuestions": 150,
+        "totalMarks": null,
+        "markingScheme": "−0.25 per incorrect answer; reported MAT scores are scaled"
       },
-      "difficultyLevel": "Moderate",
-      "preparationTip": "Conducted 4 times/year (Feb, May, Sep, Dec). Choose PBT or CBT. Target 500+ for top colleges.",
-      "avgPlacement": "₹6-10 LPA (varies by college)",
-      "highestPlacement": "₹18+ LPA (top colleges)",
-      "approxFees": "₹4-8 lakh for 2 years (varies by college)",
+      "difficultyLevel": "Not independently assessed",
+      "preparationTip": "Use the official syllabus and sample papers for the stated cycle; check programme-specific eligibility and selection stages.",
+      "avgPlacement": "Not verified for this cycle",
+      "highestPlacement": "Not verified for this cycle",
+      "approxFees": "Not verified for this cycle",
       "location": "Pan-India (600+ colleges)",
       "topBranches": [
-        "MBA",
-        "PGDM"
+        "Programme list not verified for this cycle"
       ],
       "keyHighlights": [
-        "4 attempts per year (Feb, May, Sep, Dec)",
-        "600+ colleges accept MAT scores",
-        "Choose Paper-Based (PBT) or Computer-Based (CBT)",
-        "Conducted by AIMA (established 1956)",
-        "Good for working professionals",
-        "Most affordable MBA entrance exam"
+        "Dates cover December 2026, not every MAT session."
       ],
       "colorCode": "medium",
       "sources": [
-        "https://www.aima.in/mat.html",
-        "https://www.shiksha.com/mba/mat-exam"
-      ]
+        "https://aima.in/mat/test-dates/",
+        "https://aima.in/mat/refund-policy/",
+        "https://www.aima.in/content/testing-and-assessment/mat/mat?ref_campaign=Deep-Links&ref_medium=Desktop&ref_source=CI-EN"
+      ],
+      "cycleYear": 2026,
+      "status": "active",
+      "verification": {
+        "reviewedAt": "2026-10-23",
+        "status": "partial",
+        "fields": {
+          "registrationEnd": {
+            "checkedAt": "2026-10-23",
+            "sourceUrl": "https://aima.in/mat/test-dates/"
+          },
+          "examDate": {
+            "checkedAt": "2026-10-23",
+            "sourceUrl": "https://aima.in/mat/test-dates/"
+          },
+          "applicationFee": {
+            "checkedAt": "2026-10-23",
+            "sourceUrl": "https://aima.in/mat/refund-policy/"
+          },
+          "examPattern.duration": {
+            "checkedAt": "2026-10-23",
+            "sourceUrl": "https://www.aima.in/content/testing-and-assessment/mat/mat?ref_campaign=Deep-Links&ref_medium=Desktop&ref_source=CI-EN"
+          },
+          "examPattern.sections": {
+            "checkedAt": "2026-10-23",
+            "sourceUrl": "https://www.aima.in/content/testing-and-assessment/mat/mat?ref_campaign=Deep-Links&ref_medium=Desktop&ref_source=CI-EN"
+          },
+          "examPattern.totalQuestions": {
+            "checkedAt": "2026-10-23",
+            "sourceUrl": "https://www.aima.in/content/testing-and-assessment/mat/mat?ref_campaign=Deep-Links&ref_medium=Desktop&ref_source=CI-EN"
+          },
+          "examPattern.markingScheme": {
+            "checkedAt": "2026-10-23",
+            "sourceUrl": "https://www.aima.in/content/testing-and-assessment/mat/mat?ref_campaign=Deep-Links&ref_medium=Desktop&ref_source=CI-EN"
+          }
+        },
+        "note": "AIMA publishes December deadlines/dates. Its 2026 pattern page corrects the old 200-question/150-minute profile. Raw marks are not conflated with scaled scores. Result/opening dates remain unverified. Only listed evidence fields were checked; other profile details remain incomplete."
+      }
     },
     {
       "id": 31,
-      "name": "NIFT",
+      "name": "NIFT entrance (B.Des)",
       "fullName": "National Institute of Fashion Technology Entrance Exam",
       "category": "design",
       "conductedBy": "National Testing Agency (NTA)",
       "tier": "Premier Design Institute",
-      "priority": "Must Apply (for Fashion/Textile Design)",
-      "registrationStart": "2025-12-08",
-      "registrationEnd": "2026-01-19 (with late fee ₹5,000)",
-      "examDate": "2026-02-08",
-      "resultDate": "March 2026",
-      "applicationFee": "₹3,000 (1 program), ₹4,500 (2 programs) + ₹5,000 (late fee)",
+      "priority": "Consider if the course and eligibility match",
+      "registrationStart": "Not verified for this cycle",
+      "registrationEnd": "Not verified for this cycle",
+      "examDate": "Not verified for this cycle",
+      "resultDate": "Not verified for this cycle",
+      "applicationFee": "Not verified for this cycle",
       "applyLink": "https://exams.nta.nic.in/niftee/",
-      "officialWebsite": "https://www.nift.ac.in/",
+      "officialWebsite": "https://exams.nta.nic.in/niftee/",
       "colleges": [
-        "NIFT Delhi",
-        "NIFT Mumbai",
-        "NIFT Bangalore",
-        "NIFT Kolkata",
-        "NIFT Hyderabad",
-        "NIFT Chennai",
-        "NIFT Gandhinagar",
-        "NIFT Kannur",
-        "18 NIFT campuses across India"
+        "Participating institutions not verified for this cycle"
       ],
-      "totalSeats": "~3,500 B.Des/B.FTech seats across 18 campuses",
+      "totalSeats": "Not verified for this cycle",
       "eligibility": {
-        "education": "12th Pass from recognized board (any stream)",
-        "minimumMarks": "No minimum percentage required",
-        "ageLimit": "Maximum 24 years as of Aug 1, 2026 (UG)"
+        "education": "Not verified for this cycle",
+        "minimumMarks": "Not verified for this cycle",
+        "ageLimit": "Not verified for this cycle"
       },
       "examPattern": {
-        "mode": "Pen & Paper (Offline)",
-        "duration": "GAT: 2 hours, CAT: 3 hours",
-        "sections": "General Ability Test (GAT): 100 Q, Creative Ability Test (CAT): Hands-on sketching",
-        "totalQuestions": 100,
-        "totalMarks": 100,
-        "markingScheme": "+1 for correct, -0.25 for incorrect (GAT), Qualitative (CAT)"
+        "mode": "Not verified for this cycle",
+        "duration": "Not verified for this cycle",
+        "sections": "Not verified for this cycle",
+        "totalQuestions": null,
+        "totalMarks": null,
+        "markingScheme": "Not verified for this cycle"
       },
-      "difficultyLevel": "High (Creative test challenging)",
-      "preparationTip": "GAT: General knowledge + English. CAT: Drawing skills essential. Practice fashion sketching.",
-      "avgPlacement": "₹7-10 LPA",
-      "highestPlacement": "₹20+ LPA (International fashion houses)",
-      "approxFees": "₹1.9-2.4 lakh/year (varies by program)",
+      "difficultyLevel": "Not independently assessed",
+      "preparationTip": "Use the official syllabus and sample papers for the stated cycle; check programme-specific eligibility and selection stages.",
+      "avgPlacement": "Not verified for this cycle",
+      "highestPlacement": "Not verified for this cycle",
+      "approxFees": "Not verified for this cycle",
       "location": "18 campuses across India",
       "topBranches": [
-        "B.Des Fashion Design",
-        "B.Des Textile Design",
-        "B.Des Accessory Design",
-        "B.FTech (Apparel Production)"
+        "Programme list not verified for this cycle"
       ],
       "keyHighlights": [
-        "India's premier fashion institute",
-        "18 campuses nationwide",
-        "Two-stage exam: GAT + CAT",
-        "CAT requires drawing/sketching skills",
-        "Top recruiters: Zara, H&M, Louis Vuitton",
-        "Government institute with affordable fees"
+        "B.Des scope; other NIFT programmes have different requirements.",
+        "The current portal serves 2027; historical 2026 notices need recovery."
       ],
       "colorCode": "high",
-      "sources": [
-        "https://exams.nta.nic.in/niftee/",
-        "https://design.careers360.com/articles/nift-2026"
-      ]
+      "sources": [],
+      "cycleYear": 2026,
+      "status": "needs-review",
+      "verification": {
+        "reviewedAt": "2026-10-23",
+        "status": "unverified",
+        "fields": {},
+        "note": "Indexed official 2026 notices suggested February 8 and reduced fees, but both notice/bulletin URLs now return 404. No stamp or current claim is made. Old fees/patterns were withdrawn; the live portal serves 2027. Only listed evidence fields were checked; other profile details remain incomplete."
+      }
     },
     {
       "id": 32,
@@ -1902,196 +2513,398 @@
       "category": "design",
       "conductedBy": "Symbiosis International University",
       "tier": "Premier Private Design Institute",
-      "priority": "Apply for Symbiosis Institute of Design",
-      "registrationStart": "2026-01-12 (Round 2)",
-      "registrationEnd": "2026-03-15",
-      "examDate": "2026-03-22",
-      "resultDate": "2026-03-25",
-      "applicationFee": "₹3,250 (₹2,250 SEED + ₹1,000 SID)",
-      "applyLink": "https://www.siu.edu.in/",
+      "priority": "Consider if the course and eligibility match",
+      "registrationStart": "2026-09-29",
+      "registrationEnd": "2026-12-25",
+      "examDate": "January 2027 (exact day to be declared)",
+      "resultDate": "To be declared by SID",
+      "applicationFee": "Not verified for this cycle",
+      "applyLink": "https://sid.edu.in/programmes-offered/admission-schedule",
       "officialWebsite": "https://sid.edu.in/",
       "colleges": [
-        "Symbiosis Institute of Design (SID) Pune"
+        "Participating institutions not verified for this cycle"
       ],
-      "totalSeats": "~200 B.Des seats",
+      "totalSeats": "Not verified for this cycle",
       "eligibility": {
-        "education": "10+2 (any stream) or equivalent 10+3 diploma",
-        "minimumMarks": "50% (General), 45% (SC/ST)",
-        "ageLimit": "No age limit"
+        "education": "Not verified for this cycle",
+        "minimumMarks": "Not verified for this cycle",
+        "ageLimit": "Not verified for this cycle"
       },
       "examPattern": {
-        "mode": "Online Test",
-        "duration": "1 hour",
-        "sections": "Design Aptitude, Creativity, Problem-Solving, General Awareness (Design)",
-        "totalQuestions": 60,
-        "totalMarks": 60,
-        "markingScheme": "+1 for correct, no negative marking"
+        "mode": "Not verified for this cycle",
+        "duration": "Not verified for this cycle",
+        "sections": "Not verified for this cycle",
+        "totalQuestions": null,
+        "totalMarks": null,
+        "markingScheme": "Not verified for this cycle"
       },
-      "difficultyLevel": "Moderate-High",
-      "preparationTip": "Focus on visual thinking, design concepts, creativity. 2 rounds available - can apply to both.",
-      "avgPlacement": "₹5-8 LPA",
-      "highestPlacement": "₹15+ LPA",
-      "approxFees": "₹3.5 lakh/year",
+      "difficultyLevel": "Not independently assessed",
+      "preparationTip": "Use the official syllabus and sample papers for the stated cycle; check programme-specific eligibility and selection stages.",
+      "avgPlacement": "Not verified for this cycle",
+      "highestPlacement": "Not verified for this cycle",
+      "approxFees": "Not verified for this cycle",
       "location": "Pune (Maharashtra)",
       "topBranches": [
-        "B.Des (Communication Design)",
-        "B.Des (Fashion Design)",
-        "B.Des (Fashion Communication)",
-        "B.Des (Product Design)"
+        "Programme list not verified for this cycle"
       ],
       "keyHighlights": [
-        "2 rounds per year (Jan & March)",
-        "Can apply to both rounds",
-        "Selection: SEED + Personal Interview",
-        "Strong industry connections",
-        "Pune location advantage",
-        "No negative marking"
+        "The official schedule explicitly covers SEED 2027.",
+        "Exact test day and subsequent stage dates remain to be declared."
       ],
       "colorCode": "high",
       "sources": [
-        "https://sid.edu.in/",
-        "https://www.shiksha.com/college/symbiosis-institute-of-design-symbiosis-international-pune/seed-exam"
-      ]
+        "https://sid.edu.in/programmes-offered/admission-schedule"
+      ],
+      "cycleYear": 2027,
+      "status": "active",
+      "verification": {
+        "reviewedAt": "2026-10-23",
+        "status": "partial",
+        "fields": {
+          "cycleYear": {
+            "checkedAt": "2026-10-23",
+            "sourceUrl": "https://sid.edu.in/programmes-offered/admission-schedule"
+          },
+          "registrationStart": {
+            "checkedAt": "2026-10-23",
+            "sourceUrl": "https://sid.edu.in/programmes-offered/admission-schedule"
+          },
+          "registrationEnd": {
+            "checkedAt": "2026-10-23",
+            "sourceUrl": "https://sid.edu.in/programmes-offered/admission-schedule"
+          },
+          "examDate": {
+            "checkedAt": "2026-10-23",
+            "sourceUrl": "https://sid.edu.in/programmes-offered/admission-schedule"
+          },
+          "resultDate": {
+            "checkedAt": "2026-10-23",
+            "sourceUrl": "https://sid.edu.in/programmes-offered/admission-schedule"
+          }
+        },
+        "note": "The current schedule explicitly publishes the 2027 cycle and only a January month for the exam. This replaces inconsistent historical rounds, without projecting dates. Old fees/patterns were not carried forward. Only listed evidence fields were checked; other profile details remain incomplete."
+      }
     },
     {
       "id": 33,
-      "name": "MIT DAT",
+      "name": "MIT DAT (B.Des)",
       "fullName": "MIT Institute of Design - Design Entrance Test",
       "category": "design",
       "conductedBy": "MIT Institute of Design, Pune",
       "tier": "Premier Private Design Institute",
-      "priority": "Apply for MIT Design programs",
-      "registrationStart": "2025-10-17",
-      "registrationEnd": "2026-02-28",
-      "examDate": "2026-04-12",
-      "resultDate": "May 2026",
-      "applicationFee": "₹3,000 (Indian), ₹4,500 (NRI/Foreign)",
-      "applyLink": "https://www.mitid.edu.in/",
-      "officialWebsite": "https://www.mitid.edu.in/",
+      "priority": "Consider if the course and eligibility match",
+      "registrationStart": "Not verified for this cycle",
+      "registrationEnd": "Not verified for this cycle",
+      "examDate": "Not verified for this cycle",
+      "resultDate": "Not verified for this cycle",
+      "applicationFee": "Not verified for this cycle",
+      "applyLink": "https://www.mitid.edu.in/important-dates/",
+      "officialWebsite": "https://www.mitid.edu.in/important-dates/",
       "colleges": [
-        "MIT Institute of Design (MITID) Pune"
+        "Participating institutions not verified for this cycle"
       ],
-      "totalSeats": "~300 B.Des/M.Des seats",
+      "totalSeats": "Not verified for this cycle",
       "eligibility": {
-        "education": "10+2 (any stream) with 50% for B.Des, Bachelor's degree for M.Des",
-        "minimumMarks": "50% in qualifying exam",
-        "ageLimit": "No age limit"
+        "education": "Not verified for this cycle",
+        "minimumMarks": "Not verified for this cycle",
+        "ageLimit": "Not verified for this cycle"
       },
       "examPattern": {
-        "mode": "Design Entrance Test (DET) - Online, Studio Test - Offline",
-        "duration": "DET: 2 hours, Studio Test: 6-8 hours",
-        "sections": "DET: Design aptitude, analytical skills. Studio Test: Material handling, creative problem-solving",
-        "totalQuestions": 100,
-        "totalMarks": 100,
-        "markingScheme": "DET: MCQs, Studio Test: Qualitative assessment"
+        "mode": "Not verified for this cycle",
+        "duration": "Not verified for this cycle",
+        "sections": "Not verified for this cycle",
+        "totalQuestions": null,
+        "totalMarks": null,
+        "markingScheme": "Not verified for this cycle"
       },
-      "difficultyLevel": "Very High (Studio test intensive)",
-      "preparationTip": "2-stage: DET (online) + Studio Test + Portfolio Interview. Studio test is hands-on creative work.",
-      "avgPlacement": "₹6-10 LPA",
-      "highestPlacement": "₹20+ LPA",
-      "approxFees": "₹5-6 lakh/year",
+      "difficultyLevel": "Not independently assessed",
+      "preparationTip": "Use the official syllabus and sample papers for the stated cycle; check programme-specific eligibility and selection stages.",
+      "avgPlacement": "Not verified for this cycle",
+      "highestPlacement": "Not verified for this cycle",
+      "approxFees": "Not verified for this cycle",
       "location": "Pune (Maharashtra)",
       "topBranches": [
-        "B.Des (Product Design)",
-        "B.Des (Communication Design)",
-        "B.Des (Film & Video)",
-        "B.Des (Fashion Design)"
+        "Programme list not verified for this cycle"
       ],
       "keyHighlights": [
-        "Three-stage selection: DET + Studio Test + Interview",
-        "Studio test is intensive (6-8 hours hands-on)",
-        "Portfolio review mandatory",
-        "Strong industry partnerships",
-        "International faculty",
-        "Located in Pune IT hub"
+        "The official page mixes 2026-27 and 2027-28 headings.",
+        "This 2026 record needs an unambiguous cycle notice."
       ],
       "colorCode": "high",
-      "sources": [
-        "https://www.mitid.edu.in/",
-        "https://design.careers360.com/articles/mitid-dat"
-      ]
+      "sources": [],
+      "cycleYear": 2026,
+      "status": "needs-review",
+      "verification": {
+        "reviewedAt": "2026-10-23",
+        "status": "unverified",
+        "fields": {},
+        "note": "The page has duplicated 2026-27/2027-28 headings and a table of 2027 dates. Old 2026 dates/counts were not verified, and ambiguous next-cycle values were not copied. Only listed evidence fields were checked; other profile details remain incomplete."
+      }
     },
     {
       "id": 34,
-      "name": "Pearl Academy",
+      "name": "Pearl Academy (design, June 2026 round)",
       "fullName": "Pearl Academy Entrance Exam",
       "category": "design",
       "conductedBy": "Pearl Academy",
       "tier": "Private Design Institute",
-      "priority": "Good Backup (Fashion & Design)",
-      "registrationStart": "2025-11-01 (expected)",
-      "registrationEnd": "2026-01-13 (January cycle)",
-      "examDate": "2026-01-17 (January cycle) - 5 cycles yearly",
-      "resultDate": "Within 1 week",
-      "applicationFee": "₹2,000 (Bachelor's/Master's), ₹500 (Certificate)",
+      "priority": "Consider if the course and eligibility match",
+      "registrationStart": "Not verified for this cycle",
+      "registrationEnd": "2026-06-21 (June round; later rounds not represented)",
+      "examDate": "2026-06-22 (written); 2026-06-23 (interview)",
+      "resultDate": "Not verified for this cycle",
+      "applicationFee": "₹2,000 degree programmes; ₹500 professional certificate programmes",
       "applyLink": "https://www.pearlacademy.com/",
       "officialWebsite": "https://www.pearlacademy.com/",
       "colleges": [
-        "Pearl Academy Delhi",
-        "Pearl Academy Mumbai",
-        "Pearl Academy Jaipur",
-        "Pearl Academy Bengaluru"
+        "Participating institutions not verified for this cycle"
       ],
-      "totalSeats": "~1,500 seats across 4 campuses",
+      "totalSeats": "Not verified for this cycle",
       "eligibility": {
-        "education": "10+2 from recognized board (any stream)",
-        "minimumMarks": "No minimum percentage required",
-        "ageLimit": "No age limit"
+        "education": "Not verified for this cycle",
+        "minimumMarks": "Not verified for this cycle",
+        "ageLimit": "Not verified for this cycle"
       },
       "examPattern": {
-        "mode": "Online Test",
-        "duration": "GPT: 60 min, DAT: 90 min",
-        "sections": "General Proficiency Test (GPT): English, GK, Reasoning. Design Aptitude Test (DAT): Creative thinking",
-        "totalQuestions": 100,
-        "totalMarks": 100,
+        "mode": "Online written assessment and personal interview",
+        "duration": "Design: GPT + DAT 90 minutes; interview/portfolio 30 minutes",
+        "sections": "General Proficiency Test and Design Aptitude Test; interview/portfolio stage",
+        "totalQuestions": null,
+        "totalMarks": null,
         "markingScheme": "No negative marking"
       },
-      "difficultyLevel": "Moderate",
-      "preparationTip": "5 cycles yearly (Jan, Apr, Jun, Aug, Sep). Selection: GPT + DAT + Personal Interview. Scholarships available.",
-      "avgPlacement": "₹4-7 LPA",
-      "highestPlacement": "₹12+ LPA",
-      "approxFees": "₹4-5 lakh/year (scholarships available)",
+      "difficultyLevel": "Not independently assessed",
+      "preparationTip": "Use the official syllabus and sample papers for the stated cycle; check programme-specific eligibility and selection stages.",
+      "avgPlacement": "Not verified for this cycle",
+      "highestPlacement": "Not verified for this cycle",
+      "approxFees": "Not verified for this cycle",
       "location": "Delhi, Mumbai, Jaipur, Bengaluru",
       "topBranches": [
-        "B.Des Fashion Design",
-        "B.Des Fashion Styling",
-        "B.Des Interior Design",
-        "B.Des Product Design"
+        "Programme list not verified for this cycle"
       ],
       "keyHighlights": [
-        "5 admission cycles per year",
-        "Multiple campuses (Delhi, Mumbai, Jaipur, Bangalore)",
-        "Scholarship based on exam performance",
-        "No negative marking",
-        "Industry-oriented curriculum",
-        "Fashion & lifestyle design focus"
+        "June 2026 round only.",
+        "Design selection includes written assessment and interview/portfolio review."
       ],
       "colorCode": "medium",
       "sources": [
-        "https://www.pearlacademy.com/",
-        "https://design.careers360.com/articles/pearl-academy-entrance-exam-2026"
-      ]
+        "https://www.pearlacademy.com/blog/explore-pearl/pearl-academy-admission-deadlines",
+        "https://www.pearlacademy.com/admissions/how-to-apply",
+        "https://www.pearlacademy.com/admissions/entrance-exam"
+      ],
+      "cycleYear": 2026,
+      "status": "active",
+      "verification": {
+        "reviewedAt": "2026-10-23",
+        "status": "partial",
+        "fields": {
+          "registrationEnd": {
+            "checkedAt": "2026-10-23",
+            "sourceUrl": "https://www.pearlacademy.com/blog/explore-pearl/pearl-academy-admission-deadlines",
+            "note": "June round only; the later final application deadline is not paired with this earlier exam."
+          },
+          "examDate": {
+            "checkedAt": "2026-10-23",
+            "sourceUrl": "https://www.pearlacademy.com/blog/explore-pearl/pearl-academy-admission-deadlines",
+            "note": "June round only; the later final application deadline is not paired with this earlier exam."
+          },
+          "applicationFee": {
+            "checkedAt": "2026-10-23",
+            "sourceUrl": "https://www.pearlacademy.com/admissions/how-to-apply"
+          },
+          "examPattern.mode": {
+            "checkedAt": "2026-10-23",
+            "sourceUrl": "https://www.pearlacademy.com/admissions/entrance-exam"
+          },
+          "examPattern.duration": {
+            "checkedAt": "2026-10-23",
+            "sourceUrl": "https://www.pearlacademy.com/admissions/entrance-exam"
+          },
+          "examPattern.sections": {
+            "checkedAt": "2026-10-23",
+            "sourceUrl": "https://www.pearlacademy.com/admissions/entrance-exam"
+          },
+          "examPattern.markingScheme": {
+            "checkedAt": "2026-10-23",
+            "sourceUrl": "https://www.pearlacademy.com/admissions/entrance-exam"
+          }
+        },
+        "note": "The official article supports the June round. The fixed five-cycles claim was removed. Design and business durations differ; this profile uses design, with question counts unknown. Only listed evidence fields were checked; other profile details remain incomplete."
+      }
+    },
+    {
+      "id": 35,
+      "name": "JEE Main (Paper 1)",
+      "fullName": "Joint Entrance Examination Main — Paper 1 (B.E./B.Tech)",
+      "conductedBy": "National Testing Agency",
+      "tier": "National engineering entrance",
+      "priority": "Consider if the course and eligibility match",
+      "registrationStart": "Not verified for this cycle",
+      "registrationEnd": "Not verified for this cycle",
+      "examDate": "2026-01-21, 2026-01-22, 2026-01-23, 2026-01-24, 2026-01-28 (Session 1); 2026-04-02, 2026-04-04, 2026-04-05, 2026-04-06, 2026-04-08 (Session 2)",
+      "resultDate": "2026-04-20 (Session 2 Paper 1)",
+      "applicationFee": "Not verified for this cycle",
+      "applyLink": "https://jeemain.nta.nic.in/",
+      "officialWebsite": "https://jeemain.nta.nic.in/",
+      "colleges": [
+        "Participating institutions not verified for this cycle"
+      ],
+      "totalSeats": "Not verified for this cycle",
+      "eligibility": {
+        "education": "Not verified for this cycle",
+        "minimumMarks": "Not verified for this cycle",
+        "ageLimit": "Not verified for this cycle"
+      },
+      "examPattern": {
+        "mode": "Computer-based test",
+        "duration": "Not verified for this cycle",
+        "sections": "Not verified for this cycle",
+        "totalQuestions": null,
+        "totalMarks": null,
+        "markingScheme": "Not verified for this cycle"
+      },
+      "difficultyLevel": "Not independently assessed",
+      "preparationTip": "Use the official syllabus and sample papers for the stated cycle; check programme-specific eligibility and selection stages.",
+      "avgPlacement": "Not verified for this cycle",
+      "highestPlacement": "Not verified for this cycle",
+      "approxFees": "Not verified for this cycle",
+      "location": "India",
+      "topBranches": [
+        "Programme list not verified for this cycle"
+      ],
+      "keyHighlights": [
+        "National engineering entrance route; admission eligibility needs separate checking."
+      ],
+      "colorCode": "high",
+      "sources": [
+        "https://nta.ac.in/Download/Notice/Notice_20260420194021.pdf"
+      ],
+      "category": "engineering",
+      "cycleYear": 2026,
+      "status": "active",
+      "verification": {
+        "reviewedAt": "2026-10-23",
+        "status": "partial",
+        "fields": {
+          "examDate": {
+            "checkedAt": "2026-10-23",
+            "sourceUrl": "https://nta.ac.in/Download/Notice/Notice_20260420194021.pdf"
+          },
+          "resultDate": {
+            "checkedAt": "2026-10-23",
+            "sourceUrl": "https://nta.ac.in/Download/Notice/Notice_20260420194021.pdf"
+          },
+          "examPattern.mode": {
+            "checkedAt": "2026-10-23",
+            "sourceUrl": "https://nta.ac.in/Download/Notice/Notice_20260420194021.pdf"
+          }
+        },
+        "note": "Added the missing national B.E./B.Tech route. The result release establishes actual Paper 1 dates. Registration, fees, pattern and detailed admission criteria require the bulletin. Paper 2 is outside this profile. Only listed evidence fields were checked; other profile details remain incomplete."
+      }
+    },
+    {
+      "id": 36,
+      "name": "JEE Advanced",
+      "fullName": "Joint Entrance Examination Advanced",
+      "conductedBy": "IIT Roorkee (2026 organising institute)",
+      "tier": "National engineering entrance",
+      "priority": "Consider if the course and eligibility match",
+      "registrationStart": "2026-04-23 (JEE Main-qualified candidates); 2026-04-06 (foreign candidates)",
+      "registrationEnd": "2026-05-05 (extended registration and fee deadline, 23:59 IST)",
+      "examDate": "2026-05-17 (Paper 1: 09:00–12:00; Paper 2: 14:30–17:30 IST)",
+      "resultDate": "2026-06-01",
+      "applicationFee": "Indian nationals: ₹1,600 female/SC/ST/PwD; ₹3,200 others. Foreign-national fees differ.",
+      "applyLink": "https://jeeadv.ac.in/",
+      "officialWebsite": "https://jeeadv.ac.in/",
+      "colleges": [
+        "Indian Institutes of Technology (programme eligibility varies)"
+      ],
+      "totalSeats": "Not verified for this cycle",
+      "eligibility": {
+        "education": "Not verified for this cycle",
+        "minimumMarks": "Not verified for this cycle",
+        "ageLimit": "Not verified for this cycle"
+      },
+      "examPattern": {
+        "mode": "Not verified for this cycle",
+        "duration": "Two compulsory papers of 3 hours each",
+        "sections": "Not verified for this cycle",
+        "totalQuestions": null,
+        "totalMarks": null,
+        "markingScheme": "Not verified for this cycle"
+      },
+      "difficultyLevel": "Not independently assessed",
+      "preparationTip": "Use the official syllabus and sample papers for the stated cycle; check programme-specific eligibility and selection stages.",
+      "avgPlacement": "Not verified for this cycle",
+      "highestPlacement": "Not verified for this cycle",
+      "approxFees": "Not verified for this cycle",
+      "location": "India",
+      "topBranches": [
+        "Programme list not verified for this cycle"
+      ],
+      "keyHighlights": [
+        "National engineering entrance route; admission eligibility needs separate checking."
+      ],
+      "colorCode": "high",
+      "sources": [
+        "https://jeeadv.ac.in/registration.html",
+        "https://jeeadv.ac.in/",
+        "https://jeeadv.ac.in/imp_dates.html",
+        "https://jeeadv.ac.in/regfee.html"
+      ],
+      "category": "engineering",
+      "cycleYear": 2026,
+      "status": "active",
+      "verification": {
+        "reviewedAt": "2026-10-23",
+        "status": "partial",
+        "fields": {
+          "registrationStart": {
+            "checkedAt": "2026-10-23",
+            "sourceUrl": "https://jeeadv.ac.in/registration.html"
+          },
+          "registrationEnd": {
+            "checkedAt": "2026-10-23",
+            "sourceUrl": "https://jeeadv.ac.in/",
+            "note": "Latest extension supersedes the original dates table."
+          },
+          "examDate": {
+            "checkedAt": "2026-10-23",
+            "sourceUrl": "https://jeeadv.ac.in/imp_dates.html"
+          },
+          "resultDate": {
+            "checkedAt": "2026-10-23",
+            "sourceUrl": "https://jeeadv.ac.in/imp_dates.html"
+          },
+          "applicationFee": {
+            "checkedAt": "2026-10-23",
+            "sourceUrl": "https://jeeadv.ac.in/regfee.html"
+          },
+          "examPattern.duration": {
+            "checkedAt": "2026-10-23",
+            "sourceUrl": "https://jeeadv.ac.in/imp_dates.html"
+          }
+        },
+        "note": "Added the missing IIT entrance route. The official extension supersedes the original May 2 deadline. Detailed eligibility and variable question/mark totals are not certified. Only listed evidence fields were checked; other profile details remain incomplete."
+      }
     }
   ],
   "generalTips": [
-    "Apply to at least 8-10 exams for safety",
-    "Set calendar reminders for all deadlines",
-    "Keep documents ready: 10th/12th marksheets, ID proof, photo, signature",
-    "Budget ₹10,000-15,000 for all application fees",
-    "Start preparing early - most exams are JEE Main level",
-    "Don't skip state exams - they're affordable and good quality"
+    "Choose routes for your course, qualification, eligibility and budget; there is no universal number of exams to apply for.",
+    "Check the cycle and field-level source before using a deadline. Historical or needs-review records do not establish an open application window.",
+    "Read the official bulletin, later amendments and separate institution/counselling requirements before paying.",
+    "Use the syllabus and sample papers for the particular exam; engineering, medicine, law, management and design have different preparation requirements.",
+    "Budget separately for attempts, programme applications, counselling, travel and accommodation; fees may exclude taxes/charges.",
+    "Prepare the identity, education, category and accommodation documents required by the official instructions."
   ],
   "estimatedBudget": {
-    "allExamFees": "₹15,000-20,000 (for all 15 exams)",
-    "recommendedExams": "₹8,000-12,000 (for 8-10 exams)",
-    "travelCosts": "₹5,000-10,000 (if exam centers are in different cities)"
+    "allExamFees": "No universal total: depends on selected exams, categories, attempts and programmes.",
+    "recommendedExams": "Build a personal shortlist and add the applicable verified fees.",
+    "travelCosts": "Estimate from assigned test locations and travel/accommodation needs; no fixed total verified."
   },
   "dataSourcesCredits": [
-    "https://engineering.careers360.com/",
-    "https://www.shiksha.com/engineering/",
-    "https://collegedunia.com/exams/",
-    "Official university websites",
-    "NIRF Rankings 2024-25",
-    "Compiled by BMAD Research Team - Feb 2026"
+    "Official sources are linked per checked field.",
+    "Review limitations: docs/data-verification.md.",
+    "Unsupported placements, seats, rankings and blanket recommendations were removed; this is not a complete admissions directory."
   ]
 }

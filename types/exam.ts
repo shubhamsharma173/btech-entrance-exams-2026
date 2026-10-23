@@ -24,8 +24,8 @@ export interface Exam {
     mode: string
     duration: string
     sections: string
-    totalQuestions: number
-    totalMarks: number
+    totalQuestions: number | null
+    totalMarks: number | null
     markingScheme: string
   }
   difficultyLevel: string
@@ -38,6 +38,14 @@ export interface Exam {
   keyHighlights: string[]
   colorCode: 'high' | 'medium' | 'low'
   sources: string[]
+  cycleYear?: number
+  status?: 'active' | 'discontinued' | 'merged' | 'needs-review'
+  verification?: {
+    reviewedAt: string
+    status: 'partial' | 'verified' | 'unverified'
+    fields: Record<string, { checkedAt: string; sourceUrl: string; note?: string }>
+    note: string
+  }
 }
 
 export interface ExamsData {

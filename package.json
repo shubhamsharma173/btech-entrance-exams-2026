@@ -1,16 +1,21 @@
 {
   "name": "entrance-exams",
   "version": "1.0.0",
-  "description": "B.Tech Entrance Exams Priority Guide - Helping students make informed decisions",
+  "description": "Indian entrance exam guide with source-reviewed profiles and a review-only update pipeline",
   "scripts": {
     "dev": "next dev",
+    "prebuild": "npm run validate:data",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint",
+    "lint": "eslint . --max-warnings=0",
+    "typecheck": "tsc --noEmit",
+    "validate:data": "node scripts/update-exams.mjs --validate-only",
+    "test": "npm run test:ui && npm run test:update",
+    "test:ui": "node --import tsx --test tests/exam-utils.test.ts",
     "update-data": "node scripts/update-exams.mjs",
     "test:update": "node scripts/test-update.mjs",
     "test:update:unit": "node scripts/test-update.mjs --phase 1",
-    "test:update:api": "node scripts/test-update.mjs --phase 2",
+    "test:update:api": "node scripts/test-update.mjs --phase 2 --live",
     "test:update:integration": "node scripts/test-update.mjs --phase 3"
   },
   "keywords": [
@@ -23,17 +28,24 @@
   ],
   "author": "",
   "license": "MIT",
+  "engines": {
+    "node": ">=22.14.0"
+  },
   "dependencies": {
-    "@tailwindcss/postcss": "^4.2.0",
-    "@types/node": "^25.3.0",
-    "@types/react": "^19.2.14",
-    "@types/react-dom": "^19.2.3",
-    "autoprefixer": "^10.4.24",
-    "next": "^16.1.6",
-    "postcss": "^8.5.6",
-    "react": "^19.2.4",
-    "react-dom": "^19.2.4",
-    "tailwindcss": "^4.2.0",
-    "typescript": "^5.9.3"
+    "next": "16.4.3",
+    "react": "19.3.1",
+    "react-dom": "19.3.1"
+  },
+  "devDependencies": {
+    "@tailwindcss/postcss": "^4.3.3",
+    "@types/node": "^22.0.0",
+    "@types/react": "^19.3.0",
+    "@types/react-dom": "^19.3.0",
+    "eslint": "9.39.5",
+    "eslint-config-next": "16.4.3",
+    "postcss": "^8.5.31",
+    "tailwindcss": "^4.3.3",
+    "tsx": "^4.0.0",
+    "typescript": "~5.9.3"
   }
 }

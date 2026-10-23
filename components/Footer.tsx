@@ -60,7 +60,7 @@ export default function Footer({ lastUpdated }: { lastUpdated: string }) {
             Crafted with <span className="text-red-500">❤️</span> in <strong>Bengaluru</strong>, India
           </p>
           <p className="text-xs text-gray-500 mt-2">
-            Data last updated: <span className="font-semibold">{formatDate(lastUpdated)}</span>
+            Dataset revision: <span className="font-semibold">{formatDate(lastUpdated)}</span>. Individual field checks are listed in each exam’s details.
           </p>
         </div>
       </div>
