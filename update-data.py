@@ -1,3 +1,9 @@
+"""Historical one-time migration. Kept for reference; never rerun on current data."""
+raise SystemExit(
+    "This migration is retired: it resets categories and duplicates records. "
+    "Edit reviewed data/exams-data.json and run npm run validate:data instead."
+)
+
 import json
 
 # Read existing data

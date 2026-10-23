@@ -39,6 +39,12 @@ yarn-error.log*
 *.tsbuildinfo
 next-env.d.ts
 
+# Generated research proposals are workflow artifacts, never published data.
+scripts/.last-update-review.json
+scripts/.last-update-review.json.tmp
+scripts/.last-update-review.json.*.tmp
+updater-run.log
+
 # IDE
 .vscode
 .idea

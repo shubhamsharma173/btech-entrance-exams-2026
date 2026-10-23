@@ -1,33 +1,72 @@
 'use client'
 
-import { useEffect } from 'react'
+import { useEffect, useRef, useId } from 'react'
 import { createPortal } from 'react-dom'
 import type { Exam } from '@/types/exam'
+import { examAction, safeHttpUrl, fieldAgeDays, VERIFICATION_MAX_AGE_DAYS } from '@/lib/exam-utils'
+import VerificationSummary from './VerificationSummary'
 
 interface ExamDetailsModalProps {
   exam: Exam
   isOpen: boolean
   onClose: () => void
+  now: number | null
 }
 
-export default function ExamDetailsModal({ exam, isOpen, onClose }: ExamDetailsModalProps) {
-  // Handle escape key to close modal
+export default function ExamDetailsModal({ exam, isOpen, onClose, now }: ExamDetailsModalProps) {
+  const dialogRef = useRef<HTMLDivElement>(null)
+  const titleId = useId()
+  const descriptionId = useId()
+  const action = examAction(exam, now)
+  const evidence = Object.entries(exam.verification?.fields ?? {})
+  const additionalSources = [...new Set(exam.sources)].filter(source => !evidence.some(([, field]) => field.sourceUrl === source))
+
   useEffect(() => {
     if (!isOpen) return
-
-    const handleEscape = (e: KeyboardEvent) => {
+    const dialog = dialogRef.current
+    if (!dialog) return
+    const returnFocus = document.activeElement instanceof HTMLElement ? document.activeElement : null
+    const oldOverflow = document.body.style.overflow
+    const modalRoot = dialog.parentElement
+    const background = [...document.body.children].filter((element): element is HTMLElement => element instanceof HTMLElement && element !== modalRoot)
+    const oldInert = background.map(element => [element, element.inert] as const)
+    background.forEach(element => { element.inert = true })
+    const focusable = () => [...dialog.querySelectorAll<HTMLElement>('a[href], button:not([disabled]), input:not([disabled]), select:not([disabled]), textarea:not([disabled]), [tabindex]:not([tabindex="-1"])')].filter(element => element.getClientRects().length > 0)
+    const focusFirst = () => (focusable()[0] ?? dialog).focus()
+    const handleKey = (e: KeyboardEvent) => {
       if (e.key === 'Escape') {
         e.preventDefault()
         onClose()
+      } else if (e.key === 'Tab') {
+        const elements = focusable()
+        const first = elements[0]
+        const last = elements[elements.length - 1]
+        if (!first) {
+          e.preventDefault()
+          dialog.focus()
+        } else if (e.shiftKey && (document.activeElement === first || !dialog.contains(document.activeElement) || document.activeElement === dialog)) {
+          e.preventDefault()
+          last.focus()
+        } else if (!e.shiftKey && (document.activeElement === last || !dialog.contains(document.activeElement))) {
+          e.preventDefault()
+          first.focus()
+        }
       }
     }
-
-    document.addEventListener('keydown', handleEscape)
+    const containFocus = (event: FocusEvent) => {
+      if (event.target instanceof Node && !dialog.contains(event.target)) focusFirst()
+    }
+    document.addEventListener('keydown', handleKey)
+    document.addEventListener('focusin', containFocus)
     document.body.style.overflow = 'hidden'
+    focusFirst()
 
     return () => {
-      document.removeEventListener('keydown', handleEscape)
-      document.body.style.overflow = 'unset'
+      document.removeEventListener('keydown', handleKey)
+      document.removeEventListener('focusin', containFocus)
+      document.body.style.overflow = oldOverflow
+      oldInert.forEach(([element, inert]) => { element.inert = inert })
+      if (returnFocus?.isConnected) returnFocus.focus()
     }
   }, [isOpen, onClose])
 
@@ -37,7 +76,7 @@ export default function ExamDetailsModal({ exam, isOpen, onClose }: ExamDetailsM
     <div className="fixed inset-0 z-[9999] flex items-center justify-center p-2 sm:p-4" style={{ isolation: 'isolate' }}>
       {/* Backdrop - Lighter background */}
       <div
-        className="fixed inset-0 bg-slate-900 bg-opacity-40 backdrop-blur-sm transition-opacity"
+        className="fixed inset-0 bg-slate-900/40 backdrop-blur-sm transition-opacity"
         onClick={(e) => {
           e.stopPropagation()
           onClose()
@@ -47,21 +86,27 @@ export default function ExamDetailsModal({ exam, isOpen, onClose }: ExamDetailsM
 
       {/* Modal - Smaller size and better scrolling */}
       <div
+        ref={dialogRef}
+        role="dialog"
+        aria-modal="true"
+        aria-labelledby={titleId}
+        aria-describedby={descriptionId}
+        tabIndex={-1}
         className="relative bg-white rounded-2xl shadow-2xl max-w-3xl w-full max-h-[90vh] sm:max-h-[85vh] flex flex-col z-10"
         onClick={(e) => e.stopPropagation()}
       >
         {/* Header - Fixed at top */}
         <div className="flex-shrink-0 bg-gradient-to-r from-blue-600 to-blue-700 text-white px-4 sm:px-6 py-3 sm:py-4 flex items-center justify-between rounded-t-2xl">
           <div className="flex-1 min-w-0 pr-2">
-            <h2 className="text-lg sm:text-xl font-bold truncate">{exam.name}</h2>
-            <p className="text-xs text-blue-100 mt-1 line-clamp-2">{exam.fullName}</p>
+            <h2 id={titleId} className="text-lg sm:text-xl font-bold">{exam.name}</h2>
+            <p id={descriptionId} className="text-xs text-blue-100 mt-1">{exam.fullName}</p>
           </div>
           <button
             onClick={(e) => {
               e.stopPropagation()
               onClose()
             }}
-            className="text-white hover:bg-white hover:bg-opacity-20 rounded-full p-2 transition flex-shrink-0"
+            className="text-white hover:bg-white/20 rounded-full p-2 transition flex-shrink-0"
             aria-label="Close modal"
             type="button"
           >
@@ -74,6 +119,8 @@ export default function ExamDetailsModal({ exam, isOpen, onClose }: ExamDetailsM
         {/* Content - Scrollable middle section */}
         <div className="flex-1 overflow-y-auto px-4 sm:px-6 py-4 sm:py-6"  style={{ maxHeight: 'calc(90vh - 160px)' }}>
           <div className="space-y-6">
+            <VerificationSummary exam={exam} now={now} />
+            {exam.verification?.note && <p className="text-sm text-slate-700">{exam.verification.note}</p>}
 
             {/* Quick Info */}
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
@@ -164,11 +211,11 @@ export default function ExamDetailsModal({ exam, isOpen, onClose }: ExamDetailsM
                 </div>
                 <div>
                   <div className="text-xs text-slate-600 mb-1">Total Questions</div>
-                  <div className="text-sm font-semibold text-slate-900">{exam.examPattern.totalQuestions}</div>
+                  <div className="text-sm font-semibold text-slate-900">{exam.examPattern.totalQuestions ?? 'Not verified'}</div>
                 </div>
                 <div>
                   <div className="text-xs text-slate-600 mb-1">Total Marks</div>
-                  <div className="text-sm font-semibold text-slate-900">{exam.examPattern.totalMarks}</div>
+                  <div className="text-sm font-semibold text-slate-900">{exam.examPattern.totalMarks ?? 'Not verified'}</div>
                 </div>
               </div>
               <div className="mt-3 pt-3 border-t border-amber-200">
@@ -201,7 +248,7 @@ export default function ExamDetailsModal({ exam, isOpen, onClose }: ExamDetailsM
                 <div className="space-y-2">
                   <div>
                     <div className="text-xs text-slate-600">Application Fee</div>
-                    <div className="text-lg font-bold text-orange-600">{exam.applicationFee}</div>
+                    <div className="text-lg font-bold text-orange-800">{exam.applicationFee}</div>
                   </div>
                   <div>
                     <div className="text-xs text-slate-600">Course Fees</div>
@@ -226,27 +273,48 @@ export default function ExamDetailsModal({ exam, isOpen, onClose }: ExamDetailsM
               </div>
             </div>
 
+            <section className="border border-slate-200 rounded-lg p-5" aria-label="Sources and verification">
+              <h3 className="text-lg font-bold text-slate-900 mb-3">Sources and field checks</h3>
+              <p className="text-sm text-slate-600 mb-3">Each link supports only its named field. Other details remain unverified unless explicitly listed. Dates and fees can change after a check.</p>
+              {evidence.length ? (
+                <ul className="space-y-3 text-sm">
+                  {evidence.map(([field, details]) => {
+                    const href = safeHttpUrl(details.sourceUrl)
+                    const age = now === null ? null : fieldAgeDays(exam, field, now)
+                    const label = field.replaceAll('.', ' / ').replace(/([a-z])([A-Z])/g, '$1 $2')
+                    return <li key={field} className="break-words">
+                      <p className="font-semibold capitalize">{label}</p>
+                      <p className="text-slate-600">Checked: {details.checkedAt}{age !== null && age > VERIFICATION_MAX_AGE_DAYS ? ' · over 30 days old; recheck' : ''}</p>
+                      {details.note && <p className="text-slate-600">{details.note}</p>}
+                      {href ? <a href={href} target="_blank" rel="noopener noreferrer" className="text-blue-700 underline break-all">Source for {label}</a> : <p className="text-slate-600">Valid source link unavailable.</p>}
+                    </li>
+                  })}
+                </ul>
+              ) : <p className="text-sm text-slate-600">No individual fields have a recorded source check.</p>}
+              {additionalSources.length > 0 && <>
+                <h4 className="font-semibold text-slate-900 mt-5 mb-2">Additional references — not verification evidence</h4>
+                <ul className="space-y-2 text-sm">
+                  {additionalSources.map((source, index) => {
+                    const href = safeHttpUrl(source)
+                    return <li key={source}>{href ? <a href={href} target="_blank" rel="noopener noreferrer" className="text-blue-700 underline break-all">Reference {index + 1}: {new URL(href).hostname}</a> : <span className="text-slate-600">{source}</span>}</li>
+                  })}
+                </ul>
+              </>}
+            </section>
           </div>
         </div>
 
         {/* Footer Actions - Fixed at bottom */}
         <div className="flex-shrink-0 bg-slate-50 border-t border-slate-200 px-4 sm:px-6 py-3 sm:py-4 flex flex-col sm:flex-row gap-2 sm:gap-3 rounded-b-2xl">
-          <a
-            href={exam.applyLink}
+          {action.href && <a
+            href={action.href}
             target="_blank"
             rel="noopener noreferrer"
             className="flex-1 bg-blue-600 hover:bg-blue-700 active:bg-blue-800 text-white font-semibold py-3 sm:py-2.5 px-4 rounded-lg text-center text-sm transition touch-manipulation"
           >
-            🔗 Apply Now
-          </a>
-          <a
-            href={exam.officialWebsite}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="flex-1 bg-white hover:bg-slate-100 active:bg-slate-200 border-2 border-slate-300 text-slate-700 font-semibold py-3 sm:py-2.5 px-4 rounded-lg text-center text-sm transition touch-manipulation"
-          >
-            🌐 Official Website
-          </a>
+            {action.label}
+          </a>}
+          <button type="button" onClick={onClose} className="flex-1 bg-white hover:bg-slate-100 border-2 border-slate-300 text-slate-700 font-semibold py-3 px-4 rounded-lg text-sm">Close details</button>
         </div>
       </div>
     </div>

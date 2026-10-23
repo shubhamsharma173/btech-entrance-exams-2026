@@ -1,9 +1,10 @@
 'use client'
 
-import { useState, useMemo } from 'react'
+import { useState, useMemo, useEffect } from 'react'
 import ExamCard from './ExamCard'
 import FilterBar from './FilterBar'
 import type { Exam } from '@/types/exam'
+import { compareExams } from '@/lib/exam-utils'
 
 interface ExamListProps {
   exams: Exam[]
@@ -15,6 +16,16 @@ export default function ExamList({ exams }: ExamListProps) {
   const [filterDifficulty, setFilterDifficulty] = useState<string>('all')
   const [searchQuery, setSearchQuery] = useState<string>('')
   const [filterCategory, setFilterCategory] = useState<string>('engineering')
+  const [now, setNow] = useState<number | null>(null)
+
+  useEffect(() => {
+    const update = () => setNow(Date.now())
+    update()
+    const timer = setInterval(update, 60_000)
+    return () => clearInterval(timer)
+  }, [])
+
+  const difficultyOptions = useMemo(() => [...new Set(exams.map(exam => exam.difficultyLevel))].sort(), [exams])
 
   const filteredAndSortedExams = useMemo(() => {
     let filtered = [...exams]
@@ -24,7 +35,7 @@ export default function ExamList({ exams }: ExamListProps) {
 
     // Apply search filter
     if (searchQuery) {
-      const query = searchQuery.toLowerCase()
+      const query = searchQuery.trim().toLowerCase()
       filtered = filtered.filter(exam =>
         exam.name.toLowerCase().includes(query) ||
         exam.fullName.toLowerCase().includes(query) ||
@@ -33,36 +44,23 @@ export default function ExamList({ exams }: ExamListProps) {
       )
     }
 
-    // Apply priority filter (only for engineering)
-    if (filterPriority !== 'all' && filterCategory === 'engineering') {
+    // The same controls apply to every category.
+    if (filterPriority !== 'all') {
       filtered = filtered.filter(exam => exam.colorCode === filterPriority)
     }
 
     // Apply difficulty filter
     if (filterDifficulty !== 'all') {
       filtered = filtered.filter(exam =>
-        exam.difficultyLevel.toLowerCase().includes(filterDifficulty.toLowerCase())
+        exam.difficultyLevel === filterDifficulty
       )
     }
 
     // Apply sorting
-    filtered.sort((a, b) => {
-      if (sortBy === 'priority') {
-        const priorityOrder = { high: 0, medium: 1, low: 2 }
-        return priorityOrder[a.colorCode] - priorityOrder[b.colorCode]
-      } else if (sortBy === 'deadline') {
-        return new Date(a.registrationEnd).getTime() - new Date(b.registrationEnd).getTime()
-      } else if (sortBy === 'fee') {
-        // Extract first number from fee string for comparison
-        const aFee = parseInt(a.applicationFee.replace(/[^0-9]/g, ''))
-        const bFee = parseInt(b.applicationFee.replace(/[^0-9]/g, ''))
-        return aFee - bFee
-      }
-      return 0
-    })
+    filtered.sort((a, b) => compareExams(a, b, sortBy, now))
 
     return filtered
-  }, [exams, sortBy, filterPriority, filterDifficulty, searchQuery, filterCategory])
+  }, [exams, sortBy, filterPriority, filterDifficulty, searchQuery, filterCategory, now])
 
   return (
     <>
@@ -74,6 +72,7 @@ export default function ExamList({ exams }: ExamListProps) {
         setFilterPriority={setFilterPriority}
         filterDifficulty={filterDifficulty}
         setFilterDifficulty={setFilterDifficulty}
+        difficultyOptions={difficultyOptions}
         searchQuery={searchQuery}
         setSearchQuery={setSearchQuery}
         filterCategory={filterCategory}
@@ -81,11 +80,12 @@ export default function ExamList({ exams }: ExamListProps) {
       />
 
       {/* Main Content */}
-      <main className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+      <section aria-label="Exam results" className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+        <p role="status" className="text-sm text-slate-600 mb-4">{filteredAndSortedExams.length} {filteredAndSortedExams.length === 1 ? 'exam matches' : 'exams match'} your filters.</p>
         {/* Exam Cards Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           {filteredAndSortedExams.map((exam, index) => (
-            <ExamCard key={exam.id} exam={exam} index={index} />
+            <ExamCard key={exam.id} exam={exam} index={index} now={now} />
           ))}
         </div>
 
@@ -95,7 +95,7 @@ export default function ExamList({ exams }: ExamListProps) {
             <p className="text-slate-500 text-lg">No exams match your search. Try different keywords.</p>
           </div>
         )}
-      </main>
+      </section>
     </>
   )
 }

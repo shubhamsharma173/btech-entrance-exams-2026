@@ -1,97 +1,86 @@
-# Entrance Exams Guide — 2026
+# Entrance Exam Guide
 
-A Next.js application for exploring Indian entrance exams by category, priority and deadline. It combines a searchable exam dataset with a reviewable data-update pipeline built around Tavily search, Groq and GitHub Actions.
+A Next.js guide to Indian engineering, medical, law, management and design entrance exams. The repository name reflects its original B.Tech-only scope.
 
-The repository name reflects its original B.Tech scope. The checked-in dataset now contains **34 records across engineering, medical, law, management and design**, including discontinued or merged exams retained for context.
+The website displays searchable profiles, admission cycles, priority and difficulty filters, date/fee sorting, registration status, detailed exam information and official sources. There are no accounts, online tests, scores, payments or admin database.
 
-## What is implemented
+## Data and verification
 
-- Exam cards and detail views with dates, fees, eligibility, college information and source links.
-- Category and priority filters, search, sorting and registration countdowns.
-- Next.js App Router pages, metadata, structured data, sitemap and robots configuration.
-- A script that proposes changes to selected date and application-fee fields, with field restrictions, value checks and a dry-run mode.
-- A scheduled workflow that opens a data-update pull request for human review.
+The application reads **data/exams-data.json**, not the older root-level exams-data.json sometimes present in local copies. Profiles include historical, merged, discontinued and partially checked records.
 
-**Stack:** Next.js 16, React 19, TypeScript and Tailwind CSS 4. Exam data is stored in JSON; the website does not require an application database or updater API keys to render that dataset.
+Each record has a cycleYear and explicit status. verification.reviewedAt records a review attempt; it does not mean the whole profile is accurate. verification.fields identifies the specific fields checked, their dates, official sources and qualifications. Only a full review may be marked verified. Unconfirmed numeric values use null, and unresolved facts are stated explicitly. Dataset lastUpdated is the content revision date, not a promise that every field was checked then.
 
-## Data status and limitations
+Read [the evidence and unresolved items](docs/data-verification.md) before using or editing the data. Editorial priority and difficulty labels are not personalized recommendations. Official sources can change after a review.
 
-As inspected on **18 October 2026**, `data/exams-data.json` reports `lastUpdated: 2026-02-22`. That timestamp describes the dataset, not the freshness of every individual record. Dates, eligibility, fees and placement figures may be stale, and an updater reporting no changes does not establish their accuracy.
+## Setup
 
-Use this as a software project and reference interface. Before making an application decision, verify the relevant information on the exam's official website. Priorities and difficulty labels are editorial data, not personalized recommendations. Automated proposals require source checking before merge; an LLM response is not verification.
-
-## Run locally
-
-Use npm and a supported Node.js release meeting the [Next.js minimum of Node 20.9](https://nextjs.org/docs/app/getting-started/installation#system-requirements). The existing update workflow selects Node 20.
+Use **Node.js 22.14 or newer** (Node 22 is used in CI) and npm.
 
 ```sh
-git clone https://github.com/shubhamsharma173/btech-entrance-exams-2026.git
-cd btech-entrance-exams-2026
 npm ci
 npm run dev
 ```
 
-Open `http://localhost:3000`. To build and serve the production application:
+Open http://localhost:3000. Build and serve production locally with:
 
 ```sh
 npm run build
 npm run start
 ```
 
-The existing `npm run lint` script still invokes `next lint`; it has not been migrated to the direct ESLint/Biome configuration expected by current Next.js. Do not treat that script as a working quality gate. This documentation update does not change application dependencies or tooling.
+The site needs no API keys or database. Optional configuration is documented in [.env.example](.env.example). NEXT_PUBLIC_SITE_URL controls the canonical origin, sitemap and robots. GOOGLE_SITE_VERIFICATION should only contain your real Search Console token.
 
-## How data updates work
-
-[`scripts/update-exams.mjs`](scripts/update-exams.mjs) reads the dataset, selects active exams with nearby deadlines and caps a normal run at 20 records. If no deadlines fall within the configured window, it falls back to active exams. A targeted `--exam` run bypasses that selection.
-
-For each selected exam, the script searches through Tavily and asks Groq to propose a structured diff. Only registration dates, exam/result dates and application fees may change. The script applies value checks, validates the dataset shape and writes through a temporary file before renaming. New-exam suggestions are flagged for manual review rather than added automatically.
-
-Set `GROQ_API_KEY` and `TAVILY_API_KEY` in the process environment to run the updater. They are only needed for update/API checks; never commit their values. The scripts read `process.env` directly and do not load a `.env` file themselves. Calls use external services and are subject to their limits and charges.
-
-Start with a targeted dry run after supplying those environment variables:
+## Validation
 
 ```sh
-npm run update-data -- --dry-run --exam BITSAT
+npm run validate:data
+npm run lint
+npm run typecheck
+npm test
+npm audit
+npm run build
 ```
 
-`--dry-run` still calls the external APIs but does not write the dataset or update log. Running without it can update `data/exams-data.json` and `scripts/.last-update-log.json`; inspect the diff and verify every changed value against its official source.
+Tests exercise the production date/fee helpers and updater implementation, including mocked failures and filesystem behavior. Normal tests are offline. The separate test:update:api command deliberately contacts external services and requires API keys.
 
-Despite its filename, [`.github/workflows/weekly-update.yml`](.github/workflows/weekly-update.yml) is configured to run **daily at 02:00 UTC**. It checks out `dev`, uses repository secrets, and creates or updates `auto/daily-exam-update` with a pull request targeting `dev`. Its PR checklist calls for official-source verification, full-diff review, a build and preview checks. The workflow does not itself establish that those reviews have happened or publish changes to `main`.
+Next.js and React are pinned to reviewed releases; npm ci uses the committed lockfile. ESLint 9 is temporarily pinned because the Next.js React/import/accessibility plugins declare compatibility through ESLint 9. npm warns that this linter major is out of support; upgrade it when those plugins support ESLint 10. This is a development-tool limitation, not an exception to dependency auditing.
 
-## Checks and coverage boundaries
+## Research updates
 
-| Command | Purpose | External calls |
-| --- | --- | --- |
-| `npm run build` | Next.js production build | May fetch configured remote font resources |
-| `npm run test:update:unit` | JSON extraction, field restrictions, date/fee checks, selection and temporary-file checks | No API calls |
-| `npm run test:update:api` | Tavily and Groq connectivity smoke checks | Yes; both API keys required |
-| `npm run test:update:integration` | Runs the production updater in dry-run mode for BITSAT and checks for unintended writes | Yes; both API keys required |
-| `npm run test:update` | Runs all three updater-test phases | API phases skip when keys are absent |
+The updater produces **review proposals**, never edits the published dataset or marks fields verified. It uses Tavily search and Groq. Supply GROQ_API_KEY and TAVILY_API_KEY in the process environment; Node scripts do not automatically load .env files.
 
-Several unit-test helpers duplicate production logic rather than importing it, so those checks alone do not prove the updater behaves identically. The API/integration phases can skip without keys; a successful process exit does not mean every phase ran. There is no claim of complete application, accessibility or end-to-end coverage here. No checks were rerun as part of this README-only revision.
+```sh
+# Offline integrity validation
+npm run validate:data
 
-## Repository map
+# External research, no file writes
+node scripts/update-exams.mjs --dry-run --exam BITSAT
 
-```text
-app/                         Pages, layout, metadata and styles
-components/                  Exam cards, detail views, filters and countdowns
-data/exams-data.json          Dated exam dataset
-types/exam.ts                Dataset types
-scripts/update-exams.mjs      Search/LLM-assisted update pipeline
-scripts/test-update.mjs       Phased updater checks
-.github/workflows/           Scheduled data-update workflow
-.github/PULL_REQUEST_TEMPLATE/ Data review checklist
+# External research, writes a local review report only
+node scripts/update-exams.mjs
 ```
 
-[`ARCHITECTURE.md`](ARCHITECTURE.md) and [`DEPLOYMENT.md`](DEPLOYMENT.md) retain earlier design and deployment notes; some describe the original narrower dataset. Use the checked-in configuration and this README for current scope and commands.
+External calls are subject to provider quotas and charges. Missing keys, invalid responses, incomplete evidence and failed requests must not be interpreted as verified unchanged data. Reports distinguish failures, unchanged responses and proposals. A source URL in an AI proposal still requires a human to read and confirm it.
 
-## Next improvements
+The daily workflow is configured for 02:00 UTC (07:30 IST). It validates the project and uploads research reports for review with read-only repository permissions. It does not push commits, open or merge data changes, publish data, or require GH_PAT. The previously disabled remote schedule remains disabled until deliberately enabled after the repaired code is reviewed.
 
-- Refresh and source-check the dataset, recording provenance for individual changes.
-- Share validation helpers between the updater and tests, and add malformed-response and partial-failure coverage.
-- Migrate lint tooling and add automated build, type and browser checks.
-- Keep automated suggestions separate from reviewed published data.
+To publish a data correction: inspect the official source for the correct cycle, preserve every session and qualification, edit the dataset, add field-level evidence and review notes, run validation, review the preview, and merge through the normal pull-request process.
 
-## Attribution and licensing
+## Structure
 
-Data-source credits are recorded in `data/exams-data.json`; individual records include official links. Source material remains subject to its original terms. The package manifest declares MIT, but this repository does not yet include a standalone license file; that documentation gap should be resolved before relying on the declaration for reuse.
+| Path | Role |
+| --- | --- |
+| app/ | Home page, metadata, robots, sitemap and generated social images |
+| components/ | Filters, cards, details dialog and registration status |
+| lib/exam-utils.ts | Shared UI date, fee and verification rules |
+| lib/site.ts | Shared public site origin and metadata text |
+| data/exams-data.json | Published profiles |
+| docs/data-verification.md | Review evidence and unresolved data |
+| scripts/update-exams.mjs | Research-only CLI |
+| scripts/lib/ | Imported updater validation/research helpers |
+| scripts/test-update.mjs, tests/ | Offline regression tests |
+| .github/workflows/ | Pull-request checks and research schedule |
+
+The old update-data.py and add-private-exams.py migrations now refuse execution because rerunning them would corrupt current categories or duplicate records. They remain as historical reference. Local untracked mockups, the root JSON snapshot and the separate antigravity prototype are not used by this application.
+
+See [architecture](ARCHITECTURE.md) and [deployment](DEPLOYMENT.md). The package declares MIT; no separate license grant is introduced by this maintenance change. Data sources retain their original terms.
